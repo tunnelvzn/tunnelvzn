@@ -1,13 +1,13 @@
-import styles from 'About.module.scss'
+import styles from './About.module.scss'
 import Image from 'next/image'
 
 const About = () => {
     return (  
         <div className="row mt-5">
             <div className="col-3"></div>
-            <div className="col-6" {...styles.about-text}>
-                <Image src='/aboutImages/girl.svg' class={styles.about-bg-img} />
-                <div class="mt-3 ">
+            <div className="col-6" {...styles.aboutText}>
+                <Image src='/aboutImages/girl.svg' className={styles.aboutBgImg} height={500} width={500} />
+                <div className="mt-3 ">
                     <h1 className="text-center mb-5">About Us</h1>
                     <h3>Who are we?</h3>
                     <p>

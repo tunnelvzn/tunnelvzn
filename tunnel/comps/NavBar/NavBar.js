@@ -1,4 +1,4 @@
-import styles from 'NavBar.module.scss'
+import styles from './NavBar.module.scss'
 import Link from 'next/link'
 
 // Content inside of a hamburger icon
