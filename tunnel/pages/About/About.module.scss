@@ -1,0 +1,17 @@
+.about-text{
+    line-height: 2.5;
+    font-family: 'Martel', serif;
+    max-height: 100%;
+}
+
+.about-bg-img{
+    width: inherit;
+    max-height: inherit;
+    position: absolute;
+    opacity: 0.1;
+    object-fit: fit;
+}
+
+.about-text  h1{
+   font-size: 7vw;
+}
