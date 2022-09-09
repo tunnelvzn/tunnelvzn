@@ -1,9 +1,10 @@
-html,
+@import url('https://fonts.googleapis.com/css2?family=Martel:wght@300&family=Nova+Round&display=swap');
+
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
+  background-color: #F9F9F9;
+  font-family: 'Nova Round', cursive;
 }
 
 a {
@@ -20,7 +21,7 @@ a {
     color-scheme: dark;
   }
   body {
-    color: white;
+    color: #F9F9F9;
     background: black;
   }
 }

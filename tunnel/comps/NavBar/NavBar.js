@@ -13,14 +13,6 @@ const Navbar = () => {
                     <Link href="/Credits"><a><sup className={styles.smallText}>IX </sup>Credits</a></Link>
                 </div>
             </div> 
-            <div className="mb-5 linkGroup">
-                <h5 className="linkTitle">Get In Touch!</h5>
-                <ul id="socialLinks">
-                    <li>
-                        check me
-                    </li>
-                </ul>
-            </div>
         </div>
     );
 }
