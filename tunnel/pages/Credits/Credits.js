@@ -1,11 +1,12 @@
 import styles from './Credits.module.scss'
 import Image from 'next/image'
-
+import NavBar from '../../comps/NavBar';
 
 const Credits = () => {
     return (  
         <div>
-            <div className="row">
+            <NavBar/>
+            <div className="row mt-5">
                 <div className="col-md-3"></div>
                 <div  className="col-md-6" {...styles.teamText}>
                     <h1 className="text-center mb-5">Credits</h1> 

@@ -1,8 +1,10 @@
 import styles from './About.module.scss'
 import Image from 'next/image'
-
+import NavBar from '../../comps/NavBar';
 const About = () => {
     return (  
+        <>
+        <NavBar/>
         <div className="row mt-5">
             <div className="col-3"></div>
             <div className="col-6" {...styles.aboutText}>
@@ -33,6 +35,7 @@ const About = () => {
             </div>
             <div className="col-3"></div>
         </div>
+        </>
     );
 }
  

@@ -1,12 +1,10 @@
 import NavBar from "../../comps/NavBar"
-
+import Gallery from "../Gallery"
 const Header = () => {
     return (
         <div>
-            <div>
-                This is header with navbar
-            </div>
             <NavBar />
+            <Gallery/>
         </div>
     )
 }
