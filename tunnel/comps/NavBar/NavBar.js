@@ -3,7 +3,8 @@ import Link from 'next/link'
 import Image from 'next/image'
 import Subnav from './Subnav'
 import { useState } from 'react'
-// Content inside of a hamburger icon
+
+// content at the top of the page
 const Navbar = () => {
     const [nav, setNav] = useState(false)
     function toggleMenu() {
@@ -23,7 +24,6 @@ const Navbar = () => {
                 </div>
             </div>
             <Subnav show={nav}/>
-            
         </>
     );
 }

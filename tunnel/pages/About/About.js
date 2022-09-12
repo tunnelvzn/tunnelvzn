@@ -1,6 +1,7 @@
 import styles from './About.module.scss'
 import Image from 'next/image'
 import NavBar from '../../comps/NavBar';
+import Footer from '../../comps/Footer';
 const About = () => {
     return (  
         <>
@@ -35,6 +36,7 @@ const About = () => {
             </div>
             <div className="col-3"></div>
         </div>
+        <Footer/>
         </>
     );
 }
