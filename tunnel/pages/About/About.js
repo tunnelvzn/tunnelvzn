@@ -8,7 +8,7 @@ const About = () => {
         <NavBar/>
         <div className="row mt-5">
             <div className="col-3"></div>
-            <div className="col-6" {...styles.aboutText}>
+            <div className= {`${styles.aboutText} col-6`}>
                 <Image src='/aboutImages/girl.svg' className={styles.aboutBgImg} height={500} width={500} />
                 <div className="mt-3 ">
                     <h1 className="text-center mb-5">About Us</h1>

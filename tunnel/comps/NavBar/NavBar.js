@@ -16,9 +16,9 @@ const Navbar = () => {
     return (
         <>
             <div className='w-100 d-flex text-center justify-content-between ms-1 me-1'>
-                <Image  src='/icons/volumeYes.svg' height={30} width={30}/>
-                <h5 className='m-2' >TunnelVzn</h5>
-                <div>
+                <Image src='/icons/volumeYes.svg' height={30} width={30} className={styles.topButtons}/>
+                <h5 className={`${styles.logoFont} m-2`}><Link href="/"><a>Tunnel_vzn</a></Link></h5>
+                <div className={styles.topButtons}>
                     <Image className="btn" id="openMenu" src='/icons/hambermenu.svg' height={30} width={30} onClick={()=> {toggleMenu()}}/>
                     <Image className="btn d-none" id="closeMenu" src='/icons/xmenu.svg' height={30} width={30} onClick={()=> {toggleMenu()}}/>
                 </div>

@@ -1,6 +1,7 @@
 import styles from './Credits.module.scss'
 import Image from 'next/image'
 import NavBar from '../../comps/NavBar';
+import Footer from '../../comps/Footer';
 
 const Credits = () => {
     return (  
@@ -47,7 +48,7 @@ const Credits = () => {
                     </div>
 
                     <div>
-                        <div className="m-2">
+                        <div className="m-3">
                             <Image src="/creditsImages/eddy.svg" className={styles.memberVis} height={100} width={100} />
                             <h5>Eddy P.</h5>
                             <small>- Founder & Designer</small>
@@ -62,6 +63,7 @@ const Credits = () => {
                 </div>
                 <div className="col-md-3"></div>
             </div>
+            <Footer/>
         </div>
     );
 }

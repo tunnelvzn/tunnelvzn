@@ -1,7 +1,19 @@
+// top buttons
+.topButtons {
+    background-color: red;
+    margin-left: 2vh;
+    margin-right: 2vh;
+}
 
-
-
-
+// affects only the logo: Tunnel_vzn
+.logoFont {
+    font-family: 'Nova Round', cursive;
+}
+.logoFont a {
+    text-decoration: none;
+    color: #000;
+}
+  
 
 // for subnav or hamburger menu icon content
 .pageTabs a {
