@@ -1,0 +1,14 @@
+
+.galleryMain {
+    margin-top: 20vh;
+    display: flex;
+    justify-content: end;
+    flex-direction: row;
+    .horizontalScroll {
+        overflow-x: auto;
+        white-space: nowrap;
+        overflow-y: hidden;
+      }
+      
+}
+

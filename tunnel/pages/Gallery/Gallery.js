@@ -1,17 +1,88 @@
 import Story from "../Story"
+import styles from './Gallery.module.scss'
+import React from "react"
 
 const Gallery = () => {
-    const stories = ['story1', 'story2', 'story3']
-    return (
-        <>
-            <div className = 'd-flex p-3 m-5 rounded shadow'>
+    const stories = [{
+        name: 'story1',
+        image: 'loneliness.svg'
+    },
+    {
+        name: 'coming soon',
+        image: 'comingSoon.svg'
+    },
+    {
+        name: 'coming soon',
+        image: 'comingSoon.svg'
+    },
+    {
+        name: 'comming soon',
+        image: 'comingSoon.svg'
+    },
+    {
+        name: 'comming soon',
+        image: 'comingSoon.svg'
+    },
+    {
+        name: 'comming soon',
+        image: 'comingSoon.svg'
+    },
+    {
+        name: 'comming soon',
+        image: 'comingSoon.svg'
+    },
+    {
+        name: 'comming soon',
+        image: 'comingSoon.svg'
+    },
+    {
+        name: 'comming soon',
+        image: 'comingSoon.svg'
+    },
+    {
+        name: 'comming soon',
+        image: 'comingSoon.svg'
+    },
+    {
+        name: 'comming soon',
+        image: 'comingSoon.svg'
+    },
+    {
+        name: 'comming soon',
+        image: 'comingSoon.svg'
+    },
+    {
+        name: 'comming soon',
+        image: 'comingSoon.svg'
+    },
+
+    ]
+
+    let ret = (
+        <div className={styles.galleryMain}>
+            <div id="horiscroll" className={styles.horizontalScroll}>
+
                 {stories.map(story => {
                     return (
-                    <div className='bg-black text-white p-3 m-4'><Story content={story}/></div>
+                        <Story content={story} />
                     )
                 })}
+
             </div>
-        </>
+        </div>
+    )
+
+    React.useEffect(() => {
+        const scrollContainer = document.querySelector("#horiscroll");
+
+        scrollContainer.addEventListener("wheel", (evt) => {
+            evt.preventDefault();
+            scrollContainer.scrollLeft += evt.deltaY;
+        });
+      }, []);
+
+    return (
+        ret
     )
 }
 
