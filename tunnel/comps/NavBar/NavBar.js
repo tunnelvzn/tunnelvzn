@@ -15,7 +15,7 @@ const Navbar = () => {
     }
     return (
         <>
-            <div className='w-100 d-flex text-center justify-content-between ms-1 me-1'>
+            <div className= {`${styles.topUiBackground} w-100 d-flex text-center justify-content-between ms-1 me-1`}>
                 <Image src='/icons/volumeYes.svg' height={30} width={30} className={styles.topButtons}/>
                 <h5 className={`${styles.logoFont} m-2`}><Link href="/"><a>Tunnel_vzn</a></Link></h5>
                 <div className={styles.topButtons}>

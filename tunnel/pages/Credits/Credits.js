@@ -2,11 +2,15 @@ import styles from './Credits.module.scss'
 import Image from 'next/image'
 import NavBar from '../../comps/NavBar';
 import Footer from '../../comps/Footer';
+import Head from 'next/head'
 
 const Credits = () => {
     return (  
-        <div>
+        <>
             <NavBar/>
+            <Head>
+                <title>Tunnel_vzn | Credits</title>
+            </Head>
             <div className="row mt-5">
                 <div className="col-md-3"></div>
                 <div  className="col-md-6" {...styles.teamText}>
@@ -56,15 +60,15 @@ const Credits = () => {
                     </div>
 
                     <div className={styles.end}>
-                        <p><b>Images:</b> Unsplash & our own images</p>
+                        <p><b>Images:</b> Unsplash & Private Repo</p>
                         <p><b>BGM:</b> Aurora by Sanchii from Uppbeat</p>
-                        <p><b>Development:</b> HTML, CSS, JS</p>
+                        <p><b>Development:</b> HTML, CSS, Next.JS</p>
                     </div>
                 </div>
                 <div className="col-md-3"></div>
             </div>
             <Footer/>
-        </div>
+        </>
     );
 }
  

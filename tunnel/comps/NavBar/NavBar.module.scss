@@ -3,6 +3,11 @@
     background-color: red;
     margin-left: 2vh;
     margin-right: 2vh;
+    z-index: 200;
+}
+
+.topUiBackground {
+    border-bottom: 1px solid #000;
 }
 
 // affects only the logo: Tunnel_vzn
@@ -30,17 +35,20 @@
 }
 
 .subnav{
-   height: 95%;
+   height: 100%;
    background: white;
    position: fixed; 
    bottom: 0;
    right: -30vw;
    width: 30vw;
-   z-index: 200;
    border-left: 1px solid #000;
    transition: all 0.3s ease-out;
-   z-index: 999;
+   z-index: 100;
 }
 .subnav.show {
     right: 0;
+}
+
+.spaceAbove {
+    margin-top: 10vh;
 }

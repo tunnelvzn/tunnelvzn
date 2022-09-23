@@ -34,29 +34,7 @@ const Gallery = () => {
     {
         name: 'comming soon',
         image: 'comingSoon.svg'
-    },
-    {
-        name: 'comming soon',
-        image: 'comingSoon.svg'
-    },
-    {
-        name: 'comming soon',
-        image: 'comingSoon.svg'
-    },
-    {
-        name: 'comming soon',
-        image: 'comingSoon.svg'
-    },
-    {
-        name: 'comming soon',
-        image: 'comingSoon.svg'
-    },
-    {
-        name: 'comming soon',
-        image: 'comingSoon.svg'
-    },
-
-    ]
+    }]
 
     let ret = (
         <div className={styles.galleryMain}>

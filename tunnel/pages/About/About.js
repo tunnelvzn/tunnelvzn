@@ -2,14 +2,17 @@ import styles from './About.module.scss'
 import Image from 'next/image'
 import NavBar from '../../comps/NavBar';
 import Footer from '../../comps/Footer';
+import Head from 'next/head'
 const About = () => {
     return (  
         <>
         <NavBar/>
+        <Head>
+            <title>Tunnel_vzn | About</title>
+        </Head>
         <div className="row mt-5">
             <div className="col-3"></div>
             <div className= {`${styles.aboutText} col-6`}>
-                <Image src='/aboutImages/girl.svg' className={styles.aboutBgImg} height={500} width={500} />
                 <div className="mt-3 ">
                     <h1 className="text-center mb-5">About Us</h1>
                     <h3>Who are we?</h3>

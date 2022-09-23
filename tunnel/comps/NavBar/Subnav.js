@@ -14,7 +14,7 @@ function Subnav(props) {
     return (
         <div className={styleClass}>
             <div id="sidenav" className="sidenav d-flex justify-content-between flex-column">
-                <ol className="d-flex flex-column h-75 justify-content-around">
+                <ol className={`${styles.spaceAbove} d-flex flex-column h-75 justify-content-around`}>
                     <li className={styles.pageTabs}><Link href="/"><a>Home</a></Link></li>
                     <li className={styles.pageTabs}><Link href="/About"><a>About</a></Link></li>
                     <li className={styles.pageTabs}><Link href="https://docs.google.com/forms/d/1W2M3AvMM0hDVRwwXUgqTHfUfXxNW-ao13U9OoGff3BY/edit?usp=sharing"><a>Feedback</a></Link></li>
