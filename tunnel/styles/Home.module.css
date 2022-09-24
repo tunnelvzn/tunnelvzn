@@ -12,21 +12,10 @@
   align-items: center;
 }
 
-.footer {
-  display: flex;
-  flex: 1;
-  padding: 2rem 0;
-  border-top: 1px solid #eaeaea;
-  justify-content: center;
-  align-items: center;
+.notFound {
+  min-height: 90vh;
 }
 
-.footer a {
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  flex-grow: 1;
-}
 
 .title a {
   color: #0070f3;
@@ -106,6 +95,10 @@
 .logo {
   height: 1em;
   margin-left: 0.5rem;
+}
+
+.home {
+  min-height: 95vh;
 }
 
 @media (max-width: 600px) {
