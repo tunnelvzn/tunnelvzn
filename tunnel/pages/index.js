@@ -9,14 +9,14 @@ export default function Home() {
   
   return (
     <div className={`h-100 ${styles.home} d-flex flex-column justify-content-between`}>
-      <Sound
+      {/* <Sound
       url="cool_sound.mp3"
       playStatus={Sound.status.PLAYING}
-      playFromPosition={0 /* in milliseconds */}
+      playFromPosition={0}
       onLoading={this.handleSongLoading}
       onPlaying={this.handleSongPlaying}
-      onFinishedPlaying={this.handleSongFinishedPlaying}
-    />
+      onFinishedPlaying={this.handleSongFinishedPlaying}/> */}
+      
       <NavBar/>
       <Head>
         <title>Tunnel_vzn | Home</title>
