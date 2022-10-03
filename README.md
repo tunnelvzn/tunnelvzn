@@ -1,18 +1,4 @@
 # Welcome to Tunnel_vzn! 
 
-This program is a read-only website that tells the stories of college student's experiences!
-Copyright (C) 2022 Eddy Peng 
-(Note: the GNU told me to include a copyright even though I have not filed any copyrights pertaining to Tunnel_vzn)
-
-This program is free software: you can redistribute it and/or modify
-it under the terms of the GNU General Public License as published by
-the Free Software Foundation, either version 3 of the License, or
-(at your option) any later version.
-
-This program is distributed in the hope that it will be useful,
-but WITHOUT ANY WARRANTY; without even the implied warranty of
-MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-GNU General Public License for more details.
-
-You should have received a copy of the GNU General Public License
-along with this program.  If not, see [https://www.gnu.org/licenses](https://www.gnu.org/licenses).
+This repo contains a read-only storytelling website that tells the stories of college students!
+Tunnel_vzn is a project led by a couple students from the University of Washington.
