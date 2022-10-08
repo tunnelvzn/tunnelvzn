@@ -16,6 +16,29 @@
   min-height: 90vh;
 }
 
+.introContent {
+  height: 100vh;
+  font-family: 'Nova Round', cursive;
+}
+
+.introHeader{
+  font-size: 90px;
+}
+
+.startBtn {
+  color: #f9f9f9; 
+  background-color: black;
+  width: 200px;
+  cursor: pointer;
+  padding: 1rem;
+  border-radius: 50px;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Nova Round', cursive;
+  margin-top: 2rem;
+  margin-bottom: 4rem;
+}
 
 .title a {
   color: #0070f3;

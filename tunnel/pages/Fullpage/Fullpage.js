@@ -1,6 +1,3 @@
-// Code from: https://github.com/alvarotrigo/react-fullpage
-
-// Install in terminal: npm install @fullpage/react-fullpage
 import React from 'react'
 import styles from './Fullpage.module.scss'
 import Image from 'next/image'
