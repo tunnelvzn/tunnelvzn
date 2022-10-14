@@ -1,4 +1,10 @@
-.story{
+// https://www.geeksforgeeks.org/how-to-zoom-an-image-on-mouse-hover-using-css/
+
+.story {
     cursor: pointer;
-    transition: .3 ease;
+    transition: 0.5s all ease-in-out;
+}
+
+.story:hover {
+    transform: scale(1.2);
 }

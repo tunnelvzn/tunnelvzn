@@ -12,9 +12,8 @@
     color: #000000;
 }
 
-// This no work:/ i tried to use d-flex but it got rid of all the footer styling :(
-.iconContainer {
-    justify-content: right;
+.footerLink:hover {
+    color: #00a6ff;
 }
 
 .iconStyle {
