@@ -3,6 +3,14 @@
 .story {
     cursor: pointer;
     transition: 0.5s all ease-in-out;
+    border-top-left-radius: 200px;
+    border-top-right-radius:  200px;
+    height: 40vh;
+    width: auto;
+    border-collapse: separate; 
+    perspective: 1px;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
 }
 
 .story:hover {
