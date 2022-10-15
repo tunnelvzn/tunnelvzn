@@ -1,4 +1,3 @@
-import Image from 'next/image'
 import styles from './Story.module.scss'
 import Link from 'next/link'
 const Story = ({ content }) => {
