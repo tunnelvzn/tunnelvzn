@@ -1,4 +1,4 @@
-import Story from "../Story"
+import Story from "../../comps/Story"
 import styles from './Gallery.module.scss'
 import React from "react"
 
