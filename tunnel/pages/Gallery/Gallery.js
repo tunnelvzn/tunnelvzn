@@ -42,7 +42,7 @@ const Gallery = () => {
 
                 {stories.map(story => {
                     return (
-                        <Story content={story} />
+                        <Story contentImage={story.image} />
                     )
                 })}
 
