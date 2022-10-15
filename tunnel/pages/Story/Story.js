@@ -8,7 +8,7 @@ const Story = ({ content }) => {
     let defaultReturn = (
         <div className='d-inline ms-5 me-5 cursor-pointer'>
             < Link href="/404">
-                <img className={styles.story} src={`/../../galleryImages/${currImage}`} alt={content.name} />
+                <img className={styles.story} src={`/../../galleryImages/${currImage}`} />
             </Link >
         </div>
     )
