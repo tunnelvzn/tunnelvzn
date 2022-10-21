@@ -30,7 +30,8 @@ export default function Home() {
 
         {/* reference: https://www.npmjs.com/package/react-audio-player */}
         <ReactAudioPlayer
-          src={`https://docs.google.com/uc?export=download&id=1qcaDUv3lxrnOufajibXXL27Ymi8I78Us`}
+          // I commented out the sound... uncomment the below line to make it play again ********************** 
+          // src={`https://docs.google.com/uc?export=download&id=1qcaDUv3lxrnOufajibXXL27Ymi8I78Us`}
           autoPlay
         />
 

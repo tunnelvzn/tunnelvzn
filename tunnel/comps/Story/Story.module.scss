@@ -5,14 +5,16 @@
     transition: 0.5s all ease-in-out;
     border-top-left-radius: 200px;
     border-top-right-radius:  200px;
-    height: 40vh;
+    height: 55vh;
     width: auto;
     border-collapse: separate; 
     perspective: 1px;
     margin-top: 5rem;
     margin-bottom: 5rem;
+    overflow: hidden;
 }
 
 .story:hover {
-    transform: scale(1.2);
+    transform: scale(1.05);
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 25px 50px -12px;
 }
