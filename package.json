@@ -1,5 +1,6 @@
 {
   "dependencies": {
+    "hamburger-react": "^2.5.0",
     "react-sound": "^1.2.0"
   }
 }
