@@ -1,48 +1,15 @@
 import Story from "../../comps/Story"
 import styles from './Gallery.module.scss'
 import React from "react"
-
+import stories from '../../data/stories.json'
 const Gallery = () => {
-    const stories = [{
-        name: 'story1',
-        image: 'loneliness.svg'
-    },
-    {
-        name: 'coming soon',
-        image: 'comingSoon.svg'
-    },
-    {
-        name: 'coming soon',
-        image: 'comingSoon.svg'
-    },
-    {
-        name: 'comming soon',
-        image: 'comingSoon.svg'
-    },
-    {
-        name: 'comming soon',
-        image: 'comingSoon.svg'
-    },
-    {
-        name: 'comming soon',
-        image: 'comingSoon.svg'
-    },
-    {
-        name: 'comming soon',
-        image: 'comingSoon.svg'
-    },
-    {
-        name: 'comming soon',
-        image: 'comingSoon.svg'
-    }]
 
     let ret = (
         <div className={styles.galleryMain}>
             <div id="horiscroll" className={styles.horizontalScroll}>
-
                 {stories.map(story => {
                     return (
-                        <Story contentImage={story.image} />
+                        <Story id={ story.id} name={story.name} contentImage={story.image} />
                     )
                 })}
 

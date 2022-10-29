@@ -1,6 +1,7 @@
 import styles from './Story.module.scss'
 import Link from 'next/link'
-const Story = ({ contentImage }) => {
+const Story = ({ id, name, contentImage }) => {
+   
     let currImage ='comingSoon.svg'
     // if (content.image) {
     //     currImage = content.image
@@ -12,9 +13,17 @@ const Story = ({ contentImage }) => {
             </Link >
         </div>
     )
+
+    let storyContent = (
+        <div className='d-inline ms-5 me-5 cursor-pointer'>
+            < Link href='/StoryContent'>
+                <img className={styles.story} src={`/../../galleryImages/${contentImage}`} />
+            </Link >
+        </div>
+    )
     return (
         <>
-        {defaultReturn}
+        {id == null ? defaultReturn : storyContent}
         </>
         
     )
