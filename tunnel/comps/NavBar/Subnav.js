@@ -19,9 +19,6 @@ function Subnav(props) {
                     <li className={styles.pageTabs}><Link href="/About"><a>About</a></Link></li>
                     <li className={styles.pageTabs}><Link href="https://docs.google.com/forms/d/1W2M3AvMM0hDVRwwXUgqTHfUfXxNW-ao13U9OoGff3BY/edit?usp=sharing"><a>Feedback</a></Link></li>
                     <li className={styles.pageTabs}><Link href="/Credits"><a>Credits</a></Link></li>
-
-                    {/* Temporarey */}
-                    <li className={styles.pageTabs}><Link href="/Fullpage"><a>Story Test</a></Link></li>
                 </ol>
             </div>
         </div>

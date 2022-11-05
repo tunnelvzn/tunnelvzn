@@ -38,11 +38,13 @@ const Navbar = (props) => {
     }
     return (
         <>
-            <div className= {`${styles.topUiBackground} w-100 d-flex text-center justify-content-between ms-1 me-1`}>
-                <Image src= {musicimgSrc} height={30} width={30} className={styles.topButtons} onClick={()=> {toggleMusic()}}/>
+            <div className= {`${styles.topUiBackground} w-100 d-flex text-center justify-content-between`}>
+                <div className={styles.soundButton}>
+                    <Image src={musicimgSrc} height={35} width={35} onClick={()=> {toggleMusic()}}/>
+                </div>
                 <h5 className={`${styles.logoFont} m-2`}><Link href="/"><a>Tunnel_vzn</a></Link></h5>
-                <div className={styles.topButtons}>
-                    <Hamburger toggled={nav} toggle={setNav} color="#000000" duration={0.5} size={35} direction="left" distance="sm" easing="ease-in" />
+                <div className={styles.menuButton}>
+                    <Hamburger toggled={nav} toggle={setNav} color="#000000" duration={0.4} size={35} direction="left" distance="sm" easing="ease-in" />
                 </div>
             </div>
             <Subnav show={nav}/>

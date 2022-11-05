@@ -1,13 +1,21 @@
 // top buttons
-.topButtons {
+.menuButton {
     margin-left: 2vh;
     margin-right: 2vh;
+    z-index: 200;
+}
+
+.soundButton {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    padding-top: 1vh;
     z-index: 200;
 }
 
 .topUiBackground {
     border-bottom: 1px solid #000;
     position: absolute;
+    width: 100%;
     background-color: #F9F9F9;
 }
 
@@ -43,7 +51,7 @@
    right: -30vw;
    width: 30vw;
    border-left: 1px solid #000;
-   transition: all 0.3s ease-out;
+   transition: all 0.5s ease-out;
    z-index: 100;
 }
 .subnav.show {
@@ -51,5 +59,5 @@
 }
 
 .spaceAbove {
-    margin-top: 10vh;
+    margin-top: 20vh;
 }
