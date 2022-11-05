@@ -10,7 +10,6 @@ import { useEffect } from 'react'
 const StoryContent = () => {
     const router = useRouter()
     const { id } = router.query
-    // console.log(stories, id)
     const story = stories.find(story => story.id == id)
 
     // Was trying to do a horizontal progress bar (below video) but i dunno why code no work:/

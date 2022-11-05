@@ -5,9 +5,9 @@
     justify-content: end;
     flex-direction: row;
     .horizontalScroll {
+        display: flex;
+        flex-wrap: nowrap;
         overflow-x: auto;
-        white-space: nowrap;
-        overflow-y: hidden;
     }
 }
 

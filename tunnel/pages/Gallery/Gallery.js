@@ -8,6 +8,7 @@ const Gallery = () => {
         <div className={styles.galleryMain}>
             <div id="horiscroll" className={styles.horizontalScroll}>
                 {stories.map(story => {
+                    console.log(story)
                     return (
                         <Story id={ story.id} name={story.name} contentImage={story.image} />
                     )
