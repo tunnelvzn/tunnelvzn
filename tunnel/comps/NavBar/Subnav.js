@@ -4,7 +4,7 @@ import styles from './NavBar.module.scss'
 
 // content inside of hamburger icon
 function Subnav(props) {
-    console.log(props.show)
+    // console.log(props.show)
     let styleClass
     if (props.show) {
         styleClass = `${styles.subnav} ${styles.show}`

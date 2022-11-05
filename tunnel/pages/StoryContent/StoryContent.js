@@ -10,7 +10,7 @@ import { useEffect } from 'react'
 const StoryContent = () => {
     const router = useRouter()
     const { id } = router.query
-    console.log(stories, id)
+    // console.log(stories, id)
     const story = stories.find(story => story.id == id)
 
     // Was trying to do a horizontal progress bar (below video) but i dunno why code no work:/
@@ -24,15 +24,15 @@ const StoryContent = () => {
         document.getElementById("bar").style.width = `${percentage}%`;
     };
     useEffect(() => {
-    window.addEventListener("scroll", onScroll);
-    return () => window.removeEventListener("scroll", onScroll);
+        window.addEventListener("scroll", onScroll);
+        return () => window.removeEventListener("scroll", onScroll);
     });
 
     return (
         <div className={styles.page}>
             <NavBar/>
-            <div className="progress_wrapper">
-                <div className="progress_bar" id="bar"></div>
+            <div className={styles.progressWrapper}>
+                <div className={styles.progressBar} id="bar"></div>
             </div>
             <div className={styles.container}>
                 <div className={styles.section}>

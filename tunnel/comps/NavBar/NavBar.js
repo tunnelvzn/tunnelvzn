@@ -16,7 +16,7 @@ const Navbar = (props) => {
     const [musicimgSrc, setMusicimgSrc] = useState('/icons/volumeYes.svg')
     let rap = ''
     function toggleMenu() {
-        console.log('toggle menu', nav)
+        // console.log('toggle menu', nav)
         setNav(!nav)
         document.getElementById('openMenu').classList.toggle('d-none')
         document.getElementById('closeMenu').classList.toggle('d-none')

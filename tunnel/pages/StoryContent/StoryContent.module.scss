@@ -2,15 +2,15 @@
 .page {
     height: auto;
 }
-.progress_wrapper {
+.progressWrapper {
     position: fixed;
     top: 0;
     left: 0;
     width: 100%;
 }
-.progress_bar {
+.progressBar {
     position: absolute;
-    top: 50px;
+    top: 45px;
     left: 0;
     width: 0%;
     height: 10px;
@@ -19,7 +19,6 @@
 
 
 // story format structures
-
 .container {
     margin-left: 10px;
     margin: 0;
