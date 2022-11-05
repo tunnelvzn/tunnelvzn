@@ -8,10 +8,13 @@
     height: 55vh;
     width: auto;
     border-collapse: separate; 
-    perspective: 1px;
-    margin-top: 5rem;
-    margin-bottom: 5rem;
+    margin-top: 10vh;
+    margin-bottom: 5vh;
     overflow: hidden;
+}
+
+.storyTitles {
+    font-family: 'Nova Round', cursive;
 }
 
 .story:hover {

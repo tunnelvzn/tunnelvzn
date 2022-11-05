@@ -8,11 +8,11 @@ const Story = ({ id, name, contentImage }) => {
     // }
     let defaultReturn = (
         <div className={styles.storyWrapper}>
-            <div className='text-center ms-4 me-4'>
+            <div className='text-center ms-5 me-5'>
                 <Link href="/404">
                     <img className={styles.story} src={`/../../galleryImages/${currImage}`} />
                 </Link >
-                <h5><b>Coming soon...</b></h5>
+                <h6 className={styles.storyTitles}><b>Coming soon...</b></h6>
             </div>
         </div>
     )
@@ -20,13 +20,11 @@ const Story = ({ id, name, contentImage }) => {
 
     let storyContent = (
         <div className={styles.storyWrapper}>
-            <div className='text-center ms-4 me-4'>
+            <div className='text-center ms-5 me-5'>
                 < Link href='/StoryContent'>
-                            
-                        <img className={styles.story} src={`/../../galleryImages/${contentImage}`} />
-
+                    <img className={styles.story} src={`/../../galleryImages/${contentImage}`} />
                 </Link >
-                <h5><b>{name}</b></h5>
+                <h6 className={styles.storyTitles}><b>{name}</b></h6>
             </div>
         </div>
     )
