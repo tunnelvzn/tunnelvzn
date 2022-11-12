@@ -11,6 +11,9 @@
     padding-top: 1vh;
     z-index: 200;
 }
+.soundButton:hover {
+    cursor: pointer;
+}
 
 .topUiBackground {
     border-bottom: 1px solid #000;
