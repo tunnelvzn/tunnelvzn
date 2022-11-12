@@ -2,19 +2,25 @@ import styles from './NavBar.module.scss'
 import Link from 'next/link'
 import Image from 'next/image'
 import Subnav from './Subnav'
-import { useState } from 'react'
+import { useState, useContext } from 'react'
 import { Rotate as Hamburger } from 'hamburger-react'
 import ReactAudioPlayer from 'react-audio-player';
-
+import { GlobalContext } from '../Global/useGlobalContext'
 // npm install hamburger-react
 
 // content at the top of the page
 const Navbar = (props) => {
-    let song = props.song
+    const {
+        intro, 
+        setIntro,
+        audio
+      } = 
+      useContext(GlobalContext);
+      let song = audio
     const [pause, setPause] = useState(false)
     const [nav, setNav] = useState(false)
     const [musicimgSrc, setMusicimgSrc] = useState('/icons/volumeYes.svg')
-    let rap = ''
+    
     function toggleMenu() {
         // console.log('toggle menu', nav)
         setNav(!nav)

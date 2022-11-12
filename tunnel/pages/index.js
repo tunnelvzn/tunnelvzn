@@ -5,13 +5,18 @@ import NavBar from '../comps/NavBar'
 import Footer from '../comps/Footer';
 import React from "react";
 import Head from 'next/head'
-import { useState, useEffect } from 'react';
+import { useState, useEffect, useContext } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
+import { GlobalContext } from '../comps/Global/useGlobalContext'
 export default function Home() {
   //...
-
-  const [intro, setIntro] = useState(true)
-  const [audio] = useState(typeof Audio !== "undefined" && new Audio(`https://docs.google.com/uc?export=download&id=1qcaDUv3lxrnOufajibXXL27Ymi8I78Us`));
+  const {
+    intro, 
+    setIntro,
+    audio
+  } = 
+  useContext(GlobalContext);
+  console.log(intro)
   let song = audio
   // let returnComponent = intro? :
   let introContent = (
@@ -28,7 +33,7 @@ export default function Home() {
     <>
     {/* reference: https://www.npmjs.com/package/react-audio-player */}
     
-      <NavBar song = {song}/>
+      <NavBar/>
       <div className={`h-100 ${styles.home} d-flex flex-column justify-content-center`}>
 
         {/* <audio src={`https://docs.google.com/uc?export=download&id=1qcaDUv3lxrnOufajibXXL27Ymi8I78Us`} controls autoPlay/> */}
