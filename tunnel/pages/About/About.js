@@ -9,7 +9,7 @@ const About = () => {
             <Head>
                 <title>Tunnel_vzn | About</title>
             </Head>
-            <NavBar/>
+            {/* <NavBar/> */}
             <div className={styles.aboutContent}>
                 <div className={styles.block}></div>
                 <div>
@@ -37,7 +37,6 @@ const About = () => {
                 </div>
                 <div className={styles.block}></div>
             </div>
-            <Footer/>
         </div>
     );
 }

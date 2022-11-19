@@ -13,11 +13,13 @@ const Navbar = (props) => {
     const {
         intro, 
         setIntro,
+        pause, 
+        setPause,
         audio
       } = 
       useContext(GlobalContext);
+      console.log("intro: ",intro)
       let song = audio
-    const [pause, setPause] = useState(false)
     const [nav, setNav] = useState(false)
     const [musicimgSrc, setMusicimgSrc] = useState('/icons/volumeYes.svg')
     

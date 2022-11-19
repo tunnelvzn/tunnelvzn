@@ -10,6 +10,7 @@
     box-shadow: 0px 3px #000;
     margin-bottom: 1vh;
     margin-top: 1.2vh;
+    transition: box-shadow 0.2 ease-in !important;
 }
 
 .menuButton:hover {

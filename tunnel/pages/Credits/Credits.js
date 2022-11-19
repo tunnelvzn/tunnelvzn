@@ -10,7 +10,6 @@ const Credits = () => {
             <Head>
                 <title>Tunnel_vzn | Credits</title>
             </Head>
-            <NavBar/>
             <div className={styles.creditContent}>
                 <div>
                     <div className="col-md-6">
@@ -66,7 +65,6 @@ const Credits = () => {
                     </div>
                 </div>
             </div>
-            <Footer/>
         </div>
     );
 }
