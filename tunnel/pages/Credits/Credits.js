@@ -12,7 +12,7 @@ const Credits = () => {
             </Head>
             <NavBar/>
             <div className={styles.creditContent}>
-                <div className="row">
+                <div>
                     <div className="col-md-6">
                         <div className={styles.block}></div>
                         <h1 className={`${styles.creditTitle} text-center`}>Credits</h1> 
