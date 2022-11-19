@@ -23,13 +23,6 @@ export default function Home() {
   useEffect(()=> {
     console.log('intro', intro)
   }, [])
-
-//   useEffect(() => {
-//     const sessionIntro = sessionStorage.getItem('intro')
-//     const sessionRoute = sessionStorage.getItem('route')
-//     setRoute(sessionRoute? sessionRoute : '/')
-//     setIntro(sessionIntro? sessionIntro: true)
-// },[])
   
   let song = audio
   // let returnComponent = intro? :
