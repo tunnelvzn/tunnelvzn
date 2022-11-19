@@ -3,20 +3,40 @@
     margin-left: 2vh;
     margin-right: 2vh;
     z-index: 200;
+    border: 2px solid #000;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    border-radius: 100px;
+    box-shadow: 0px 3px #000;
+    margin-bottom: 1vh;
+    margin-top: 1.2vh;
+}
+
+.menuButton:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px #000;
 }
 
 .soundButton {
     margin-left: 2vh;
     margin-right: 2vh;
-    padding-top: 1vh;
     z-index: 200;
+    border: 2px solid #000;
+    padding-left: 4.2vh;
+    padding-right: 4.2vh;
+    border-radius: 100px;
+    box-shadow: 0px 3px #000;
+    margin-bottom: 1vh;
+    margin-top: 1.2vh;
+    padding-top: 0.5vh;
 }
 .soundButton:hover {
     cursor: pointer;
+    box-shadow: 0px 0px #000;
 }
 
 .topUiBackground {
-    border-bottom: 1px solid #000;
+    border-bottom: 2px solid #000;
     position: absolute;
     width: 100%;
     background-color: #F9F9F9;
@@ -25,6 +45,8 @@
 // affects only the logo: Tunnel_vzn
 .logoFont {
     font-family: 'Nova Round', cursive;
+    padding-top: 1.5vh;
+    font-size: 3vh;
 }
 .logoFont a {
     text-decoration: none;
@@ -53,7 +75,7 @@
    bottom: 0;
    right: -30vw;
    width: 30vw;
-   border-left: 1px solid #000;
+   border-left: 2px solid #000;
    transition: all 0.5s ease-out;
    z-index: 100;
 }

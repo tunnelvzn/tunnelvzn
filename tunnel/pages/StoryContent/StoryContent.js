@@ -34,9 +34,15 @@ const StoryContent = () => {
                 <div className={styles.progressBar} id="bar"></div>
             </div>
             <div className={`${styles.arrow} ${styles.bounce}`}>
-                <h1 className="theArrow">↓</h1>
+                <h1 className="theArrow">▿</h1>
             </div>
             <div className={styles.container}>
+                <div className={styles.section}>
+                    <div className={styles.coverContainer}>
+                        <Image src="/lonelinessImages/lonelyCover.png" className={styles.storyImg} height={600} width={1280} />
+                        <div className={styles.bottomLeft}><span className={styles.coverText}>Loneliness</span></div>
+                    </div>
+                </div>
                 <div className={styles.section}>
                     <Image src="/lonelinessImages/lightRail.png" className={styles.storyImg} height={400} width={600} />
                     <p className={styles.words}>
@@ -120,6 +126,12 @@ const StoryContent = () => {
                     <p className={styles.words}>
                         John entered the room. However, when he attempted to say something, he couldn’t say anything other than a greeting, which his roommates acknowledged briefly but continued their conversation. John stared awkwardly at the two of them for several seconds wanting to say something but never did. <br/><br/>That night, John found the day bitter-sweet. Although he couldn’t get a conversation going with his roommates, he got to know one person, which was a big step forward. Who knows? Maybe tomorrow would be the day.
                     </p>
+                </div>
+                <div className={styles.section}>
+                    <div className="text-center">
+                        <Image src="/lonelinessImages/goals.svg" className={styles.storyImg} height={400} width={600} />
+                        <h1 className={styles.endText}>A story may end, but another will begin...</h1>
+                    </div>
                 </div>
             </div>
         </div>

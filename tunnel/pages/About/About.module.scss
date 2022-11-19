@@ -1,9 +1,19 @@
-.aboutText{
+.aboutContent {
     line-height: 2.5;
-    font-family: 'Nova Round', cursive;
-    max-height: 100%;
+    max-width: 60%;
+    margin-left: 20%;
 }
 
-.about-text h1{
+.aboutTitle {
    font-size: 7vw;
+   margin-bottom: 10vh;
 }
+
+.subTitle {
+    margin-top: 5vh;
+}
+
+.block {
+    height: 20vh;
+}
+
