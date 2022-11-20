@@ -25,6 +25,7 @@ export default function Home() {
   }, [])
   
   let song = audio
+
   // let returnComponent = intro? :
   let introContent = (
     <div className={ `${styles.introContent} d-flex flex-column justify-content-center` }>

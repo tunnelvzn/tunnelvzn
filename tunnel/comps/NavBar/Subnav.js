@@ -25,9 +25,9 @@ function Subnav(props) {
         <div className={styleClass}>
             <div id="sidenav" className="sidenav d-flex justify-content-between flex-column">
                 <ol className={`${styles.spaceAbove} d-flex flex-column h-75 justify-content-around`}>
-                    <li className={styles.pageTabs} onClick={() => {setRoute('/'); sessionStorage.setItem("route", "/");}}><a>Home</a></li>
+                    <li className={`${styles.pageTabs} ${styles.active}`} onClick={() => {setRoute('/'); sessionStorage.setItem("route", "/");}}><a>Home</a></li>
                     <li className={styles.pageTabs} onClick={() => {setRoute('/About'); sessionStorage.setItem("route", "/About");}}><a>About</a></li>
-                    <li className={styles.pageTabs} ><Link href="https://docs.google.com/forms/d/1W2M3AvMM0hDVRwwXUgqTHfUfXxNW-ao13U9OoGff3BY/edit?usp=sharing"><a>Feedback</a></Link></li>
+                    <li className={styles.pageTabs}><Link href="https://docs.google.com/forms/d/1W2M3AvMM0hDVRwwXUgqTHfUfXxNW-ao13U9OoGff3BY/edit?usp=sharing"><a>Feedback</a></Link></li>
                     <li className={styles.pageTabs} onClick={() => {setRoute('/Credits'); sessionStorage.setItem("route", "/Credits");}}><a>Credits</a></li>
                 </ol>
             </div>
