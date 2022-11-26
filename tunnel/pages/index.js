@@ -26,12 +26,12 @@ export default function Home() {
   
   let song = audio
 
-  // let returnComponent = intro? :
   let introContent = (
     <div className={ `${styles.introContent} d-flex flex-column justify-content-center` }>
       <h5 className={ `${styles.introHeader} text-center` }> Tunnel_vzn </h5>
       <h5 className='text-center'> Story based on UW student experience</h5>
       <div className={styles.startBtn} onClick={() => {
+        console.log('click')
         setIntro(false); 
         song.play()
         sessionStorage.setItem("intro", "false");

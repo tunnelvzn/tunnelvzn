@@ -15,12 +15,15 @@ const Navbar = (props) => {
         setIntro,
         pause, 
         setPause,
-        audio
+        audio,
+        setRoute,
+        nav, 
+        setNav
       } = 
       useContext(GlobalContext);
       console.log("intro: ",intro)
       let song = audio
-    const [nav, setNav] = useState(false)
+    // const [nav, setNav] = useState(false)
     const [musicimgSrc, setMusicimgSrc] = useState('/icons/volumeYes.svg')
     
     function toggleMenu() {
@@ -50,7 +53,10 @@ const Navbar = (props) => {
                 <div className={styles.soundButton}>
                     <Image src={musicimgSrc} height={35} width={35} onClick={()=> {toggleMusic()}}/>
                 </div>
-                <h5 className={`${styles.logoFont} m-2`}><Link href="/"><a>Tunnel_vzn</a></Link></h5>
+                <h5 className={`${styles.logoFont} m-2`}><div onClick={() => 
+                {setRoute('/')
+                    console.log(nav)
+                }}><a>Tunnel_vzn</a></div></h5>
                 <div className={styles.menuButton}>
                     <Hamburger toggled={nav} toggle={setNav} color="#000000" duration={0.4} size={35} direction="left" distance="sm" easing="ease-in" />
                 </div>

@@ -11,24 +11,58 @@ function Subnav(props) {
         setIntro,
         audio,
         route,
-        setRoute
+        setRoute,
+        nav, 
+        setNav
       } = 
       useContext(GlobalContext);
-
+    
+    
     let styleClass
     if (props.show) {
         styleClass = `${styles.subnav} ${styles.show}`
     } else {
         styleClass = `${styles.subnav}`
     }
+
+    function setUnderline(e) {
+        
+        const allTags = document.getElementsByClassName('general-nav-tags')
+        for (let i = 0; i< allTags.length; i++ ) {
+            allTags[i].classList.remove(`${styles.active}`)
+        }
+        console.log(e.currentTarget)
+        e.currentTarget.classList.add(`${styles.active}`)
+
+        
+    }
+
+
     return (
         <div className={styleClass}>
             <div id="sidenav" className="sidenav d-flex justify-content-between flex-column">
                 <ol className={`${styles.spaceAbove} d-flex flex-column h-75 justify-content-around`}>
-                    <li className={`${styles.pageTabs} ${styles.active}`} onClick={() => {setRoute('/'); sessionStorage.setItem("route", "/");}}><a>Home</a></li>
-                    <li className={styles.pageTabs} onClick={() => {setRoute('/About'); sessionStorage.setItem("route", "/About");}}><a>About</a></li>
-                    <li className={styles.pageTabs}><Link href="https://docs.google.com/forms/d/1W2M3AvMM0hDVRwwXUgqTHfUfXxNW-ao13U9OoGff3BY/edit?usp=sharing"><a>Feedback</a></Link></li>
-                    <li className={styles.pageTabs} onClick={() => {setRoute('/Credits'); sessionStorage.setItem("route", "/Credits");}}><a>Credits</a></li>
+                    <li id="home-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
+                        setRoute('/'); 
+                        sessionStorage.setItem("route", "/");
+                        setNav(false)
+                        setUnderline(e)
+                        }}><a>Home</a></li>
+
+                    <li id="about-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
+                        setRoute('/About'); 
+                        sessionStorage.setItem("route", "/About");
+                        setNav(false)
+                        setUnderline(e)
+                        }}><a>About</a></li>
+
+                    <li id="feedback-tag" className={`${styles.pageTabs} general-nav-tags`}><Link href="https://docs.google.com/forms/d/1W2M3AvMM0hDVRwwXUgqTHfUfXxNW-ao13U9OoGff3BY/edit?usp=sharing"><a>Feedback</a></Link></li>
+                    <li id="credits-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
+                        setRoute('/Credits'); 
+                        sessionStorage.setItem("route", "/Credits");
+                        setNav(false)
+                        setUnderline(e)
+                        }}><a>Credits</a></li>
                 </ol>
             </div>
         </div>
