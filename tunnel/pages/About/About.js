@@ -8,6 +8,7 @@ const About = () => {
         <div>
             <Head>
                 <title>Tunnel_vzn | About</title>
+                <link rel="icon" href="/favicon.png" />
             </Head>
             {/* <NavBar/> */}
             <div className={styles.aboutContent}>

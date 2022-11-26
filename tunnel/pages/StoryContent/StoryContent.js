@@ -28,19 +28,28 @@ const StoryContent = () => {
     });
 
     return (
-        <div className={styles.page}>
+        <div>
             <NavBar/>
-            <div className={styles.progressWrapper}>
-                <div className={styles.progressBar} id="bar"></div>
-            </div>
             <div className={`${styles.arrow} ${styles.bounce}`}>
                 <h1 className="theArrow">▿</h1>
             </div>
             <div className={styles.container}>
                 <div className={styles.section}>
-                    <div className={styles.coverContainer}>
-                        <Image src="/lonelinessImages/lonelyCover.png" className={styles.storyImg} height={600} width={1280} />
-                        <div className={styles.bottomLeft}><span className={styles.coverText}>Loneliness</span></div>
+                    <div className={styles.section}>
+                        <Image src="/lonelinessImages/standin.png" className={styles.storyImg} height={400} width={600} />
+                        <p className={styles.words}>
+                            <span className={styles.storyTitle}>Loneliness</span>
+                            <br/>
+                            <br/>
+                            <span className={styles.storySynopsis}>Synopsis:</span>
+                            <br/>
+                            Believing the commute is robbing his time to build relationships with people, John Ethel decides to live on-campus, however, it wasn't what he had expected.
+                            <br/>
+                            <br/>
+                            <br/>
+                            <br/>
+                            Scroll down to read the full story...
+                        </p>
                     </div>
                 </div>
                 <div className={styles.section}>
@@ -80,7 +89,7 @@ const StoryContent = () => {
                     </p>
                 </div>
                 <div className={styles.section}>
-                    <Image src="/lonelinessImages/standin.png" className={styles.storyImg} height={400} width={600} />
+                    <Image src="/lonelinessImages/staircase.png" className={styles.storyImg} height={400} width={600} />
                     <p className={styles.words}>
                         John contemplated what to do. Part of him felt terrible because it was supposed to rain later in the day. He grabbed the umbrella and went to catch up with the classmate already going down the stairs. When he did, John uttered hello and asked if they had forgotten an umbrella.
                     </p>

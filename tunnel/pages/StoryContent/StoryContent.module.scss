@@ -1,39 +1,13 @@
-// progress bar
-.page {
-    height: auto;
-}
-.progressWrapper {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-}
-.progressBar {
-    position: absolute;
-    top: 45px;
-    left: 0;
-    width: 0%;
-    height: 10px;
-    background-color: blue;
-}
-
-
 // story format structures
-.coverContainer {
-  position: relative;
-  margin-top: 8vh;
-}
-.bottomLeft {
-  position: absolute;
-  bottom: 8px;
-  left: 16px;
-  z-index: -1;
-}
-.coverText {
-  color: #F9F9F9;
+.storyTitle {
   font-size: 10vh;
-  text-shadow: 3px 3px #000000;
 }
+.storySynopsis {
+  font-size: 3vh;
+  text-decoration: underline;
+}
+
+
 .endText {
   margin-top: 3vh;
 }

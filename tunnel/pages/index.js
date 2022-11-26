@@ -50,6 +50,7 @@ export default function Home() {
       <div className={`h-100 ${styles.home} d-flex flex-column justify-content-center`}>
         <Head>
           <title>Tunnel_vzn | Home</title>
+          <link rel="icon" href="/favicon.png" />
         </Head>
         
         {route == '/' && <Gallery />}

@@ -8,11 +8,26 @@
     bottom: 0;
 }
 
-.footerLink {
-    color: #000000;
+.iconContainer .footerLink {
+    border: 1px solid #000;
+    margin-left: 1vh;
+    padding: 0.5vh;
+    border-radius: 10%;
+    transition: box-shadow 0.3s ease-in-out;
+    box-shadow: 0px 0px #000;
 }
 
-.footerLink:hover {
+.iconContainer .extraPadding {
+    padding-left: 1vh;
+    padding-right: 1vh;
+}
+
+.iconContainer .footerLink:hover {
+    color: #000000;
+    box-shadow: 3px 3px #000;
+}
+
+.footerLink {
     color: #000000;
 }
 

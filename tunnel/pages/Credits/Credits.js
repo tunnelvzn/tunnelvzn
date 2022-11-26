@@ -9,6 +9,7 @@ const Credits = () => {
         <div>
             <Head>
                 <title>Tunnel_vzn | Credits</title>
+                <link rel="icon" href="/favicon.png" />
             </Head>
             <div className={styles.creditContent}>
                 <div>
