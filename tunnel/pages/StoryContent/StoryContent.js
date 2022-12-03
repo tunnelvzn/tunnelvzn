@@ -1,13 +1,22 @@
 import { useRouter } from 'next/router'
+import { useState, useEffect, useContext } from 'react';
 import stories from '../../data/stories.json'
 import NavBar from '../../comps/NavBar'
 import Footer from '../../comps/Footer'
 import styles from './StoryContent.module.scss'
 import Image from 'next/image'
-import { useEffect } from 'react'
-
+import { GlobalContext } from '../../comps/Global/useGlobalContext'
 
 const StoryContent = () => {
+    const {
+        intro, 
+        setIntro,
+        audio,
+        route,
+        setRoute,
+        setNav
+      } = 
+      useContext(GlobalContext);
     const router = useRouter()
     const { id } = router.query
     const story = stories.find(story => story.id == id)
@@ -29,7 +38,14 @@ const StoryContent = () => {
 
     return (
         <div>
-            <NavBar/>
+            <div>
+                <button onClick={() => {
+                    setRoute('/')
+                    sessionStorage.setItem("route", "/");
+                        setNav(false)
+                        console.log('trigger, to route: ', route)
+                }}>return to home </button>
+            </div>
             <div className={`${styles.arrow} ${styles.bounce}`}>
                 <h1 className="theArrow">▿</h1>
             </div>

@@ -4,6 +4,7 @@ import Gallery from './Gallery'
 import NavBar from '../comps/NavBar'
 import Credits from '../pages/Credits'
 import Footer from '../comps/Footer';
+import StoryContent from './StoryContent'
 import React from "react";
 import Head from 'next/head'
 import { useState, useEffect, useContext } from 'react';
@@ -41,7 +42,7 @@ export default function Home() {
       </div>
     </div>
   )
-
+  console.log(route, 'route in main')
   let afterIntro = (
     <>
     {/* reference: https://www.npmjs.com/package/react-audio-player */}
@@ -56,6 +57,7 @@ export default function Home() {
         {route == '/' && <Gallery />}
         {route == '/About' && <About />}
         {route == '/Credits' && <Credits/>}
+        {route == '/StoryContent' && <StoryContent/>}
         
         <btn onClick={()=> {setIntro(true)}}>back</btn>
         <Footer />

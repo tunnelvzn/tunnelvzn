@@ -1,11 +1,18 @@
 import styles from './Story.module.scss'
 import Link from 'next/link'
+import { GlobalContext } from '../Global/useGlobalContext'
+import { useContext } from 'react'
 const Story = ({ id, name, contentImage }) => {
-
+    const {
+        intro, 
+        setIntro,
+        audio,
+        route,
+        setRoute
+      } = 
+      useContext(GlobalContext);
     let currImage = 'comingSoon.svg'
-    // if (content.image) {
-    //     currImage = content.image
-    // }
+   
     let defaultReturn = (
         <div className={styles.storyWrapper}>
             <div className='text-center ms-5 me-5'>
@@ -21,9 +28,9 @@ const Story = ({ id, name, contentImage }) => {
     let storyContent = (
         <div className={styles.storyWrapper}>
             <div className='text-center ms-5 me-5'>
-                < Link href='/StoryContent'>
+                < div onClick={()=> setRoute('/StoryContent')}>
                     <img className={styles.story} src={`/../../galleryImages/${contentImage}`} />
-                </Link >
+                </div >
                 <h6 className={styles.storyTitles}><b>{name}</b></h6>
             </div>
         </div>

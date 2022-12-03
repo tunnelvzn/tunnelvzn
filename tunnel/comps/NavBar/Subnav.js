@@ -44,6 +44,7 @@ function Subnav(props) {
                 <ol className={`${styles.spaceAbove} d-flex flex-column h-75 justify-content-around`}>
                     <li id="home-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
                         setRoute('/'); 
+                        console.log(route)
                         sessionStorage.setItem("route", "/");
                         setNav(false)
                         setUnderline(e)
