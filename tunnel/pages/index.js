@@ -34,6 +34,7 @@ export default function Home() {
       <div className={styles.startBtn} onClick={() => {
         console.log('click')
         setIntro(false); 
+        song.loop = true;
         song.play()
         sessionStorage.setItem("intro", "false");
         sessionStorage.setItem("route", "/");

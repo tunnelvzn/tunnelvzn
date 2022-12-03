@@ -7,6 +7,23 @@
   text-decoration: underline;
 }
 
+.return{
+  margin-top: 170px;
+  margin-left: 2vw;
+  padding: 10px;
+  border-radius: 10px;
+  box-shadow: #000;
+  position: absolute;
+  transition: all 0.3s ease-in-out;
+  background-color: white;
+}
+
+.return:hover{
+  margin-top: 166px;
+  box-shadow: 3px 3px #000;
+  text-decoration: underline;
+}
+
 
 .endText {
   margin-top: 3vh;
