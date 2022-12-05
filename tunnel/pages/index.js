@@ -29,8 +29,12 @@ export default function Home() {
 
   let introContent = (
     <div className={ `${styles.introContent} d-flex flex-column justify-content-center` }>
+        <Head>
+          <title>Tunnel_vzn</title>
+          <link rel="icon" href="/favicon.png" />
+        </Head>
       <h5 className={ `${styles.introHeader} text-center` }> Tunnel_vzn </h5>
-      <h5 className='text-center'> Story based on UW student experience</h5>
+      <h5 className='text-center'> Storytelling based on UW student experiences</h5>
       <div className={styles.startBtn} onClick={() => {
         console.log('click')
         setIntro(false); 
@@ -39,8 +43,10 @@ export default function Home() {
         sessionStorage.setItem("intro", "false");
         sessionStorage.setItem("route", "/");
         }}>
-        Start the experience
+        Start The Experience
       </div>
+      {/* Commented the below line out for now */}
+      {/* <div className={styles.disclaimer}><h5>This website has BGM.</h5></div> */}
     </div>
   )
   console.log(route, 'route in main')
@@ -60,7 +66,6 @@ export default function Home() {
         {route == '/Credits' && <Credits/>}
         {route == '/StoryContent' && <StoryContent/>}
         
-        <btn onClick={()=> {setIntro(true)}}>back</btn>
         <Footer />
       </div>
     </>

@@ -8,20 +8,21 @@
 }
 
 .return{
-  margin-top: 170px;
-  margin-left: 2vw;
-  padding: 10px;
-  border-radius: 10px;
-  box-shadow: #000;
+  margin-top: 1.3vh;
+  margin-left: 17vh;
+  padding: 1.5vh;
+  border-radius: 50px;
+  border: 2px solid #000;
   position: absolute;
   transition: all 0.3s ease-in-out;
   background-color: white;
+  width: 120px;
+  color: #000;
 }
 
 .return:hover{
-  margin-top: 166px;
+  margin-top: 1vh;
   box-shadow: 3px 3px #000;
-  text-decoration: underline;
 }
 
 
@@ -57,6 +58,10 @@
 }
 .storyImg {
   z-index: -1;
+}
+
+// FRED, THIS CODE IS FOR THE IMAGE BORDERS OF THE STORY. I WANTED TO GET RID OF THE UNEVEN PADDING.
+.imgFrame {
   border: 2px solid #000;
 }
 

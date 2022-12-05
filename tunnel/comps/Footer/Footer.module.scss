@@ -3,17 +3,17 @@
     display: flex;
     justify-content: space-between;
     padding: 20px;
-    margin-top: 20px;
+    margin-top: 60px;
     border-top: 2px solid #eaeaea;
     bottom: 0;
 }
 
 .iconContainer .footerLink {
     border: 1px solid #000;
-    margin-left: 1vh;
+    margin-left: 1.5vh;
     padding: 0.5vh;
     border-radius: 10%;
-    transition: box-shadow 0.3s ease-in-out;
+    transition: all 0.3s ease-in-out;
     box-shadow: 0px 0px #000;
 }
 
@@ -29,6 +29,9 @@
 
 .footerLink {
     color: #000000;
+}
+.footerLink:hover {
+    color: #000000;  
 }
 
 .iconStyle {

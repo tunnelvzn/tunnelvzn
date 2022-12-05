@@ -18,32 +18,43 @@
 
 .introContent {
   height: 100vh;
-  font-family: 'Nova Round', cursive;
+  font-family: 'Martel', serif;
 }
 
 .introHeader{
   font-size: 90px;
+  font-family: 'Nova Round', cursive;
 }
 
 .startBtn {
   color: #000; 
   background-color: #f9f9f9;
-  width: 200px;
+  width: 250px;
   padding: 1rem;
   border-radius: 100px;
   border: 2px solid #000;
   margin-left: auto;
   margin-right: auto;
-  box-shadow: 0px 3px #000;
   text-align: center;
-  font-family: 'Nova Round', cursive;
+  font-family: 'Martel', serif;
   margin-top: 2rem;
   margin-bottom: 4rem;
+  transition: box-shadow 0.3s ease-in-out;
 }
 
 .startBtn:hover {
   cursor: pointer;
-  box-shadow: 0px 0px #000;
+  box-shadow: 3px 3px #000;
+}
+
+// FRED WHY IT NO WORKKKK WHY CAN'T I CENTER THIS TEXT ON THE TRIGGER SCREEN >_<
+.disclaimer {
+  font-family: 'Martel', serif;
+  position: absolute; 
+  bottom: 0;
+}
+.disclaimer h5 {
+  text-align: center;
 }
 
 .title a {
