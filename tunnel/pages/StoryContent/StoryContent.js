@@ -48,11 +48,6 @@ const StoryContent = () => {
                             <span className={styles.storySynopsis}>Synopsis:</span>
                             <br />
                             Believing the commute is robbing his time to build relationships with people, John Ethel decides to live on-campus, however, it wasn't what he had expected.
-                            <br />
-                            <br />
-                            <br />
-                            <br />
-                            Scroll down to read the full story...
                         </p>
                     </div>
                 </div>
