@@ -12,10 +12,6 @@
   align-items: center;
 }
 
-.notFound {
-  min-height: 90vh;
-}
-
 .introContent {
   height: 100vh;
   font-family: 'Martel', serif;
@@ -27,24 +23,25 @@
 }
 
 .startBtn {
+  position:absolute;
   color: #000; 
   background-color: #f9f9f9;
   width: 250px;
-  padding: 1rem;
+  padding: 2vh;
   border-radius: 100px;
   border: 2px solid #000;
   margin-left: auto;
   margin-right: auto;
   text-align: center;
   font-family: 'Martel', serif;
-  margin-top: 2rem;
-  margin-bottom: 4rem;
-  transition: box-shadow 0.3s ease-in-out;
+  margin-top: 2vh;
+  transition: all 0.3s ease-in-out;
 }
 
 .startBtn:hover {
   cursor: pointer;
   box-shadow: 3px 3px #000;
+  margin-top: 1.5vh;
 }
 
 // FRED WHY IT NO WORKKKK WHY CAN'T I CENTER THIS TEXT ON THE TRIGGER SCREEN >_<
@@ -140,6 +137,33 @@
 .home {
   min-height: 95vh;
 }
+
+// 404 styling start
+.notFound {
+  min-height: 100vh;
+  background-color: #F9F9F9;
+}
+.numbers {
+  font-size: 3vh;
+  color: #A9A9A9;
+  padding-top: 5vh;
+  margin-left: 2vh;
+}
+.message {
+  font-size: 8vh;
+  padding-top: 20vh;
+  margin-left: 2vh;
+}
+.personContainer {
+  z-index: 99;
+  position: absolute;
+  margin-top: 23vh;
+  margin-left: 70%;
+}
+.line {
+  margin-top: 35%;
+}
+// 404 styling end
 
 @media (max-width: 600px) {
   .grid {

@@ -11,6 +11,8 @@ import { useState, useEffect, useContext } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 import { GlobalContext } from '../comps/Global/useGlobalContext'
 import About from './About/About';
+import { Icon } from '@iconify/react';
+
 export default function Home() {
   //...
   const {
@@ -28,26 +30,25 @@ export default function Home() {
   let song = audio
 
   let introContent = (
-    <div className={ `${styles.introContent} d-flex flex-column justify-content-center` }>
-        <Head>
-          <title>Tunnel_vzn</title>
-          <link rel="icon" href="/favicon.png" />
-        </Head>
-      <h5 className={ `${styles.introHeader} text-center` }> Tunnel_vzn </h5>
-      <h5 className='text-center'> Storytelling based on UW student experiences</h5>
-      <div className={styles.startBtn} onClick={() => {
-        console.log('click')
-        setIntro(false); 
-        song.loop = true;
-        song.play()
-        sessionStorage.setItem("intro", "false");
-        sessionStorage.setItem("route", "/");
-        }}>
-        Start The Experience
+      <div className={ `${styles.introContent} d-flex flex-column justify-content-center` }>
+          <Head>
+            <title>Tunnel_vzn</title>
+            <link rel="icon" href="/favicon.png" />
+          </Head>
+        <h5 className={ `${styles.introHeader} text-center` }> Tunnel_vzn </h5>
+        <h5 className='text-center'> Storytelling based on UW student experiences</h5>
+        <div className={styles.startBtn} onClick={() => {
+            console.log('click')
+            setIntro(false); 
+            song.loop = true;
+            song.play()
+            sessionStorage.setItem("intro", "false");
+            sessionStorage.setItem("route", "/");
+            }}>
+            Start The Experience
+          </div>
+          <div className={styles.disclaimer}><h5> <Icon icon="game-icons:sound-waves" /> Sound on for better experience.</h5></div>
       </div>
-      {/* Commented the below line out for now */}
-      {/* <div className={styles.disclaimer}><h5>This website has BGM.</h5></div> */}
-    </div>
   )
   console.log(route, 'route in main')
   let afterIntro = (
