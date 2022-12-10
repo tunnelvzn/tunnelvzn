@@ -35,8 +35,8 @@ export default function Home() {
             <title>Tunnel_vzn</title>
             <link rel="icon" href="/favicon.png" />
           </Head>
-        <h5 className={ `${styles.introHeader} text-center` }> Tunnel_vzn </h5>
-        <h5 className='text-center'> Storytelling based on UW student experiences</h5>
+        <h5 className={ `${styles.introHeader} ${styles.introText} text-center` }> Tunnel_vzn </h5>
+        <h5 className={ `${styles.introText} text-center` }> Storytelling based on UW student experiences</h5>
         <div className={styles.startBtn} onClick={() => {
             console.log('click')
             setIntro(false); 
@@ -47,7 +47,7 @@ export default function Home() {
             }}>
             Start The Experience
           </div>
-          <div className={styles.disclaimer}><h5> <Icon icon="game-icons:sound-waves" /> Sound on for better experience.</h5></div>
+          <div className={`${styles.disclaimer} text-center`}><h5> <Icon icon="game-icons:sound-waves" /> Sound on for better experience.</h5></div>
       </div>
   )
   console.log(route, 'route in main')

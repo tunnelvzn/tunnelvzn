@@ -23,7 +23,7 @@
 }
 
 .startBtn {
-  position:absolute;
+  // position:absolute;
   color: #000; 
   background-color: #f9f9f9;
   width: 250px;
@@ -36,12 +36,13 @@
   font-family: 'Martel', serif;
   margin-top: 2vh;
   transition: all 0.3s ease-in-out;
+  cursor: pointer;
 }
 
 .startBtn:hover {
-  cursor: pointer;
   box-shadow: 3px 3px #000;
   margin-top: 1.5vh;
+  margin-bottom: 0.5vh;
 }
 
 // FRED WHY IT NO WORKKKK WHY CAN'T I CENTER THIS TEXT ON THE TRIGGER SCREEN >_<
@@ -49,9 +50,35 @@
   font-family: 'Martel', serif;
   position: absolute; 
   bottom: 0;
+  width: 100%;
+  margin-right: auto;
 }
+
 .disclaimer h5 {
   text-align: center;
+}
+
+.backBtn {
+  z-index: 100000;
+  color: #000; 
+  background-color: #f9f9f9;
+  width: 250px;
+  padding: 2vh;
+  border-radius: 100px;
+  border: 2px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Martel', serif;
+  margin-top: 1vh;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+
+.backBtn:hover {
+  box-shadow: 3px 3px #000;
+  margin-top: 0.5vh;
+  margin-bottom: 0.5vh;
 }
 
 .title a {
@@ -138,10 +165,11 @@
   min-height: 95vh;
 }
 
-// 404 styling start
+// ! 404 styling start
 .notFound {
-  min-height: 100vh;
   background-color: #F9F9F9;
+  z-index: 100;
+  height: 100vh;
 }
 .numbers {
   font-size: 3vh;
@@ -150,20 +178,30 @@
   margin-left: 2vh;
 }
 .message {
+  text-align: center;
   font-size: 8vh;
   padding-top: 20vh;
   margin-left: 2vh;
 }
 .personContainer {
-  z-index: 99;
+  z-index: 9;
+  width: 100%;
+  height: 90px;
   position: absolute;
-  margin-top: 23vh;
-  margin-left: 70%;
 }
+
+.personImg{
+  z-index: 0;
+  position: relative;
+  margin-left: 70vw;
+  margin-top: -80px;
+}
+
 .line {
-  margin-top: 35%;
+  z-index: 9;
+  margin-top: -150px;
 }
-// 404 styling end
+// ! 404 styling end
 
 @media (max-width: 600px) {
   .grid {
