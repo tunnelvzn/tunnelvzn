@@ -1,8 +1,10 @@
 import styles from './About.module.scss'
-import Image from 'next/image'
-import NavBar from '../../comps/NavBar';
-import Footer from '../../comps/Footer';
+import Accordion from 'react-bootstrap/Accordion';
 import Head from 'next/head'
+
+// Fred, do:
+// npm install react-bootstrap bootstrap
+
 const About = () => {
     return (  
         <div>
@@ -10,7 +12,6 @@ const About = () => {
                 <title>Tunnel_vzn | About</title>
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            {/* <NavBar/> */}
             <div className={styles.aboutContent}>
                 <div className={styles.block}></div>
                 <div>
@@ -33,23 +34,39 @@ const About = () => {
                     </p>
                 </div>
                 <div>
-                    <h3 className={styles.subTitle}>Frequently Asked Questions</h3>
-                    <br/>
-                    <p>Q: Are the characters within the stories real UW students?</p>
-                    <p>A: Nope! The characters are fictitious. However, their experiences are similar and inspired by real students.</p>
-                    <br/>
-                    <p>Q: How does Tunnel_vzn gather student experiences?</p>
-                    <p>A: We talk with current students at the university. We also get feedback from students about the relatability of the stories before they go live!</p>
-                    <br/>
-                    <p>Q: Can I suggest a story idea?</p>
-                    <p>A: Yes, you can! We want to hear about all students' experiences. Although we can't guarantee that your exact idea will be an addition by itself, we can assure you that we will adapt your experience into a future story in some capacity.</p>
-                    <br/>
-                    <p>Q: Is Tunnel_vzn making any profit?</p>
-                    <p>A: Nope! Tunnel_vzn is a non-profit project whose sole goal is to tell stories. We do have a Ko-fi donation page. No one is required to donate. We just wanted to feel more official since we have no intention of being sponsored by anyone.</p>
-                    <br/>
-                    <p>Q: Is the Tunnel_vzn team comprised of students?</p>
-                    <p>A: Yes! All team members are students at the University of Washington interested in storytelling and trying to be relatable. No one here is getting paid. Please help. I need to feed myself.</p>
-                    <br/>
+                    <h3 className={`${styles.subTitle} ${styles.customSpace}`}>Frequently Asked Questions</h3>
+                    <Accordion>
+                        <Accordion.Item eventKey="0">
+                            <Accordion.Header>Are the characters within the stories real UW students?</Accordion.Header>
+                            <Accordion.Body>
+                                Nope! The characters are fictitious. However, their experiences are similar and inspired by real students.
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header>How does Tunnel_vzn gather student experiences?</Accordion.Header>
+                            <Accordion.Body>
+                                We talk with current students at the university. We also get feedback from students about the relatability of the stories before they go live!
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="2">
+                            <Accordion.Header>Can I suggest a story idea?</Accordion.Header>
+                            <Accordion.Body>
+                                Yes, you can! We want to hear about all students' experiences. Although we can't guarantee that your exact idea will be an addition by itself, we can assure you that we will adapt your experience into a future story in some capacity.
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="3">
+                            <Accordion.Header>Is Tunnel_vzn making any profit?</Accordion.Header>
+                            <Accordion.Body>
+                                Nope! Tunnel_vzn is a non-profit project whose sole goal is to tell stories. We do have a Ko-fi donation page. No one is required to donate. We just wanted to feel more official since we have no intention of being sponsored by anyone.
+                            </Accordion.Body>
+                        </Accordion.Item>
+                        <Accordion.Item eventKey="4">
+                            <Accordion.Header>Is the Tunnel_vzn team comprised of students?</Accordion.Header>
+                            <Accordion.Body>
+                                Yes! All team members are students at the University of Washington interested in storytelling and trying to be relatable. No one here is getting paid. Please help. I need to feed myself.
+                            </Accordion.Body>
+                        </Accordion.Item>
+                    </Accordion>
                 </div>
                 <div className={styles.block}></div>
             </div>
