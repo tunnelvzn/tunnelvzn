@@ -9,7 +9,6 @@ const Footer = () => {
         <>
             <footer className={styles.footer}>
                 <p>Get In Touch! - <Link href="mailto: tunnelvzn.uw@gmail.com"><a className={styles.footerLink}>tunnelvzn.uw@gmail.com</a></Link></p>
-                
                 <div className={styles.iconContainer}>
                     <Link href="https://www.instagram.com/tunnel_vzn/"><a className={`${styles.footerLink} ${styles.extraPadding}`} target="_blank"><Icon icon="akar-icons:instagram-fill" className={styles.iconStyle}/></a></Link>
                     <Link href="https://www.linkedin.com/company/tunnelvzn/"><a className={`${styles.footerLink} ${styles.extraPadding}`} target="_blank"><Icon icon="akar-icons:linkedin-box-fill" className={styles.iconStyle} /></a></Link>

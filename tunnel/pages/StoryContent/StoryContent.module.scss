@@ -60,21 +60,29 @@
   z-index: -1;
 }
 
+.endSection {
+  z-index: 1000;
+}
+
 // FRED, THIS CODE IS FOR THE IMAGE BORDERS OF THE STORY. I WANTED TO GET RID OF THE UNEVEN PADDING.
 .imgFrame {
   border: 2px solid #000;
+  position: relative;
+  z-index: -1;
+  height: 55vh;
+  width: 80vh;
 }
 
 // The arrow
 .theArrow {
-    color: black; 
-    text-decoration: none; 
+  color: black; 
+  text-decoration: none; 
 }
 
 .arrow {
   position: absolute;
+  z-index: -1;
   margin-top: 90vh;
-  margin-left: 96%;
 }
 
 .bounce {
