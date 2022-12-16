@@ -35,18 +35,18 @@ const Credits = () => {
                             <div className="m-3">
                                 <Image src="/creditsImages/sylvia.svg" className={styles.memberVis} height={120} width={120} />
                                 <h5>Sylvia L.</h5>
-                                <small>- Editor</small>
+                                <small>- Story Editor</small>
                             </div>
                         </div>
                         <div className="mt-4 d-flex justify-content-around">
                             <div className="m-3">
-                                <Image src="/creditsImages/sami.svg" className={styles.memberVis} height={120} width={120} />
-                                <h5>Sami F.</h5>
-                                <small>- Designer</small>
-                            </div>
-                            <div className="m-3">
                                 <Image src="/creditsImages/augene.svg" className={styles.memberVis} height={120} width={120} />
                                 <h5>Augene P.</h5>
+                                <small>- Story Editor</small>
+                            </div>
+                            <div className="m-3">
+                                <Image src="/creditsImages/sami.svg" className={styles.memberVis} height={120} width={120} />
+                                <h5>Sami F.</h5>
                                 <small>- Designer</small>
                             </div>
                             <div className="m-3">

@@ -25,11 +25,6 @@
   box-shadow: 3px 3px #000;
 }
 
-
-.endText {
-  margin-top: 3vh;
-}
-
 .container {
     margin-left: 10px;
     margin: 0;
@@ -60,11 +55,6 @@
   z-index: -1;
 }
 
-.endSection {
-  z-index: 1000;
-}
-
-// FRED, THIS CODE IS FOR THE IMAGE BORDERS OF THE STORY. I WANTED TO GET RID OF THE UNEVEN PADDING.
 .imgFrame {
   border: 2px solid #000;
   position: relative;
@@ -90,6 +80,70 @@
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
+
+
+// code for last panel of story
+.endSection {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #FFFFFF;
+}
+
+.functions {
+  margin-left: 15vh;
+}
+
+.girlFrame {
+  z-index: 0;
+  position: relative;
+  width: 20vh;
+  height: -10vh;
+}
+
+.endSection .endHalf {
+  margin-top: 30vh;
+}
+
+.endText {
+  margin-top: 3vh;
+  font-size: 9vh;
+  width: 130vh;
+}
+
+.endStoryBtn {
+  margin-top: 3vh;
+  z-index: 200;
+  margin-right: 2vh;
+  border: 2px solid #000;    
+  width: 50vh;
+  height: 8vh;
+  border-radius: 100px;
+  text-align: center;
+  padding-top: 2vh;
+  background-color: #F9F9F9;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px #000;
+}
+
+.endStoryBtn h6 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.endStoryBtn:hover {
+  cursor: pointer;
+  margin-top: 2.5vh;
+  box-shadow: 3px 3px #000;
+}
+
+.buttonContainer {
+  display: flex;
+  width: 100%;
+}
+// end of code for last panel of story
+
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {

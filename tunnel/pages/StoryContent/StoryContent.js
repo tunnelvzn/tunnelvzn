@@ -6,6 +6,8 @@ import Footer from '../../comps/Footer'
 import styles from './StoryContent.module.scss'
 import Image from 'next/image'
 import { GlobalContext } from '../../comps/Global/useGlobalContext'
+import Link from 'next/link'
+import { Icon } from '@iconify/react';
 
 const StoryContent = () => {
     const {
@@ -163,12 +165,26 @@ const StoryContent = () => {
                         John entered the room. However, when he attempted to say something, he couldn’t say anything other than a greeting, which his roommates acknowledged briefly but continued their conversation. John stared awkwardly at the two of them for several seconds wanting to say something but never did. <br /><br />That night, John found the day bitter-sweet. Although he couldn’t get a conversation going with his roommates, he got to know one person, which was a big step forward. Who knows? Maybe tomorrow would be the day.
                     </p>
                 </div>
-                <div className={`${styles.section} ${styles.endSection}`}>
-                    <div className="text-center">
-                        <Image src="/lonelinessImages/goals.svg" className={styles.storyImg} height={400} width={600} />
-                        <h1 className={styles.endText}>A story may end, but another will begin...</h1>
+
+                <div className={styles.endSection}>
+                    <div className={`${styles.endHalf} ${styles.functions}`}>
+                        <h1 className={styles.endText}>A chapter may end, but <br/>the story continues...</h1>
+                        <div className={styles.buttonContainer}>
+                            <div className={styles.endStoryBtn}>
+                                <h6><Link href="/"><a>Thoughts On This Story? <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
+                            </div>
+                            <div className={styles.endStoryBtn}>
+                                <h6><Link href="/"><a>Next Story <Icon icon="material-symbols:arrow-forward" width="27" height="27" /></a></Link></h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.endSection}>
+                        <div className={styles.girlFrame}>
+                            <Image src="/lonelinessImages/goals.svg" className={styles.storyImg} layout="fill" />
+                        </div>
                     </div>
                 </div>
+
             </div>
         </div>
     )
