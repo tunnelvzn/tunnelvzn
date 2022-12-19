@@ -1,4 +1,4 @@
-@import url('https://fonts.googleapis.com/css2?family=Martel:wght@300&family=Nova+Round&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Klee+One&family=Nova+Round&display=swap');
 
 body {
   padding: 0;
@@ -6,8 +6,12 @@ body {
   background-color: #F9F9F9;
 }
 
+div {
+  background-color: #F9F9F9;
+}
+
 body, div, p, h1, h2, h3, h4 {
-  font-family: 'Martel', serif;
+  font-family: 'Klee One', cursive;
 }
 
 a {
@@ -19,12 +23,13 @@ a {
   box-sizing: border-box;
 }
 
-@media (prefers-color-scheme: dark) {
+@media (prefers-color-scheme: light) {
   html {
-    color-scheme: dark;
+    color-scheme: light;
+    background-color: #f9f9f9;
   }
   body {
     color: #F9F9F9;
-    background: black;
+    background-color: #f9f9f9;
   }
 }
