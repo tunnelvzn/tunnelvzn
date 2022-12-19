@@ -47,7 +47,7 @@ export default function Home() {
             }}>
             Start The Experience
           </div>
-          <div className={`${styles.disclaimer} text-center`}><h5> <Icon icon="game-icons:sound-waves" width="40" height="40" /> Sound on for better experience.</h5></div>
+        <div className={`${styles.disclaimer} text-center`}><h5> <Icon icon="game-icons:sound-waves" width="40" height="40" /> Sound on for better experience.</h5></div>
       </div>
   )
   console.log(route, 'route in main')
@@ -58,7 +58,7 @@ export default function Home() {
       <NavBar/>
       <div className={`h-100 ${styles.home} d-flex flex-column justify-content-center`}>
         <Head>
-          <title>Tunnel_vzn | Home</title>
+          <title>Tunnel_vzn | Storytelling</title>
           <link rel="icon" href="/favicon.png" />
         </Head>
         
@@ -67,7 +67,7 @@ export default function Home() {
         {route == '/Credits' && <Credits/>}
         {route == '/StoryContent' && <StoryContent/>}
         
-        <Footer />
+      <Footer />
       </div>
     </>
   )

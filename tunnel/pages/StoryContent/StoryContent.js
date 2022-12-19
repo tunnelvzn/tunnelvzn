@@ -48,9 +48,10 @@ const StoryContent = () => {
                             <br />
                             Believing the commute is robbing his time to build relationships with people, John Ethel decides to live on-campus, however, it wasn't what he had expected...
                         </p>
-                        <div className={`${styles.arrow} ${styles.bounce}`}>
+                        <section className={`${styles.arrow} ${styles.bounce} text-center`}>
+                            <h6>Scroll/Arrow Key Down</h6>
                             <h1 className={styles.theArrow}>▿</h1>
-                        </div>
+                        </section>
                     </div>
                 </div>
                 <div className={styles.section}>

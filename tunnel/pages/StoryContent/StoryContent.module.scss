@@ -1,4 +1,5 @@
 // story format structures
+
 .storyTitle {
   font-size: 10vh;
 }
@@ -10,14 +11,16 @@
 .return{
   margin-top: 1.3vh;
   margin-left: 17vh;
-  padding: 1.5vh;
+  padding: 1.6vh;
   border-radius: 50px;
   border: 2px solid #000;
   position: absolute;
   transition: all 0.3s ease-in-out;
-  background-color: white;
+  background-color: #F9F9F9;
   width: 120px;
   color: #000;
+  z-index: 10000;
+  font-size: 2vh;
 }
 
 .return:hover{
@@ -38,27 +41,23 @@
 }
 
 .section {
-    scroll-snap-align: start;
-    width: 100%;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 // story content format
 .words {
-    width: 80vh;
-    margin-left: 5vh;
-}
-.storyImg {
-  z-index: -1;
+  width: 80vh;
+  margin-left: 5vh;
 }
 
 .imgFrame {
   border: 2px solid #000;
   position: relative;
-  z-index: -1;
   height: 55vh;
   width: 80vh;
 }
@@ -71,7 +70,6 @@
 
 .arrow {
   position: absolute;
-  z-index: -1;
   margin-top: 90vh;
 }
 
@@ -88,7 +86,7 @@
   width: 100%;
   height: 100vh;
   display: flex;
-  background-color: #FFFFFF;
+  background-color: #F9F9F9;
 }
 
 .functions {
