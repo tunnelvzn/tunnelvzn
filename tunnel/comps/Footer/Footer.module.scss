@@ -1,11 +1,10 @@
 .footer {
     text-align: center;
-    display: flex;
-    justify-content: space-between;
     padding: 20px;
     margin-top: 60px;
     border-top: 2px solid #eaeaea;
     bottom: 0;
+    background-color: #F9F9F9;
 }
 
 .iconContainer .footerLink {
@@ -15,16 +14,12 @@
     border-radius: 10%;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 0px #000;
+    padding-bottom: 1.2vh;
 }
 
 .iconContainer .extraPadding {
     padding-left: 1vh;
     padding-right: 1vh;
-}
-
-.iconContainer .footerLink:hover {
-    color: #000000;
-    box-shadow: 3px 3px #000;
 }
 
 .footerLink {
@@ -36,4 +31,62 @@
 .iconStyle {
     margin-left: 0.3vh;
     margin-right: 0.3vh;
+}
+
+// --------------------RESPONSIVE DESIGN----------------------------------------
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .footerLink {
+        // color: #d9ff00;
+        color: #000;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .footerLink {
+        // color: #ff0000;
+        color: #000;
+    }
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .footerLink {
+        // color: #0004ff;
+        color: #000;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .footerLink {
+        // color: #00ff22;
+        color: #000;
+    }
+    .iconContainer .footerLink:hover {
+        color: #000000;
+        box-shadow: 3px 3px #000;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+    .footerLink {
+        // color: #ff00c8;
+        color: #000;
+    }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .footerLink {
+        // color: #ff7b00;
+        color: #000;
+    }
 }

@@ -44,6 +44,7 @@
     position: absolute;
     width: 100%;
     background-color: #F9F9F9;
+    z-index: 2;
 }
 
 // affects only the logo: Tunnel_vzn
@@ -70,7 +71,7 @@
 }
 .pageTabs:hover, .pageTabs a:hover {
     cursor: pointer;
-    color: white;
+    color: #F9F9F9;
     -webkit-text-stroke-width: 1px;
     -webkit-text-stroke-color: black;
 }
@@ -82,17 +83,18 @@
 
 .subnav{
    height: 100%;
-   background: white;
+   background: #F9F9F9;
    position: fixed; 
    bottom: 0;
-   right: -30vw;
-   width: 30vw;
+   right: -65vh;
+   width: 65vh;
    border-left: 2px solid #000;
    transition: all 0.5s ease-out;
-   z-index: 100;
+   z-index: 0;
 }
 .subnav.show {
     right: 0;
+    z-index: 1;
 }
 
 .spaceAbove {
