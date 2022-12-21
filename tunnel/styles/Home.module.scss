@@ -12,53 +12,6 @@
   align-items: center;
 }
 
-.introContent {
-  height: 100vh;
-  font-family: 'Klee One', cursive;
-  background-color: #F9F9F9;
-}
-
-.introHeader{
-  font-size: 90px;
-  font-family: 'Nova Round', cursive;
-}
-
-.startBtn {
-  color: #000; 
-  background-color: #f9f9f9;
-  width: 250px;
-  padding: 2vh;
-  padding-bottom: 2.5vh;
-  border-radius: 100px;
-  border: 2px solid #000;
-  margin-left: auto;
-  margin-right: auto;
-  text-align: center;
-  font-family: 'Klee One', cursive;
-  margin-top: 2vh;
-  transition: all 0.3s ease-in-out;
-  cursor: pointer;
-}
-
-.startBtn:hover {
-  box-shadow: 3px 3px #000;
-  margin-top: 1.5vh;
-  margin-bottom: 0.5vh;
-}
-
-.disclaimer {
-  font-family: 'Klee One', cursive;
-  position: absolute; 
-  bottom: 0;
-  width: 100%;
-  margin-right: auto;
-}
-
-.disclaimer h5 {
-  text-align: center;
-  font-size: 2vh;
-}
-
 .backBtn {
   z-index: 100000;
   color: #000; 
@@ -117,14 +70,6 @@
   font-size: 1.1rem;
   font-family: Menlo, Monaco, Lucida Console, Liberation Mono, DejaVu Sans Mono,
     Bitstream Vera Sans Mono, Courier New, monospace;
-}
-
-.grid {
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  flex-wrap: wrap;
-  max-width: 800px;
 }
 
 .card {
@@ -229,12 +174,94 @@
 
 // 404 styling end
 
-@media (max-width: 600px) {
-  .grid {
-    width: 100%;
-    flex-direction: column;
+// trigger screen
+.introContent {
+  height: 100vh;
+  font-family: 'Klee One', cursive;
+  background-color: #F9F9F9;
+}
+.introHeader{
+  font-family: 'Nova Round', cursive;
+}
+.startBtn {
+  color: #000; 
+  background-color: #f9f9f9;
+  width: 250px;
+  padding: 2vh;
+  padding-bottom: 2.5vh;
+  border-radius: 100px;
+  border: 2px solid #000;
+  margin-left: auto;
+  margin-right: auto;
+  text-align: center;
+  font-family: 'Klee One', cursive;
+  margin-top: 2vh;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;
+}
+.disclaimer {
+  font-family: 'Klee One', cursive;
+  position: absolute; 
+  bottom: 0;
+  width: 100%;
+  margin-right: auto;
+}
+.disclaimer h5 {
+  text-align: center;
+  font-size: 2vh;
+}
+// end of trigger screen
+
+// --------------------RESPONSIVE DESIGN----------------------------------------
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .introHeader{
+    font-size: 7vh;
+    font-family: 'Nova Round', cursive;
   }
 }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .introHeader{
+    font-size: 13vh;
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .introHeader{
+    font-size: 9vh;
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .startBtn:hover {
+    box-shadow: 3px 3px #000;
+    margin-top: 1.5vh;
+    margin-bottom: 0.5vh;
+  }
+  .introHeader{
+    font-size: 13vh;
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .introHeader{
+    font-size: 12vh;
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  .introHeader {
+    font-size: 10vh;
+  }
+}
+
 
 @media (prefers-color-scheme: #f9f9f9) {
   .card,

@@ -35,8 +35,8 @@ export default function Home() {
             <title>Tunnel_vzn</title>
             <link rel="icon" href="/favicon.png" />
           </Head>
-        <h5 className={ `${styles.introHeader} ${styles.introText} text-center` }> Tunnel_vzn </h5>
-        <h5 className={ `${styles.introText} text-center` }> Storytelling based on UW student experiences</h5>
+        <h5 className={ `${styles.introHeader} text-center` }> Tunnel_vzn </h5>
+        <h5 className={`text-center`}> Storytelling based on UW student experiences</h5>
         <div className={styles.startBtn} onClick={() => {
             console.log('click')
             setIntro(false); 
