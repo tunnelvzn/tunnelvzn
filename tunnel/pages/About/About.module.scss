@@ -1,15 +1,8 @@
-.aboutContent {
-    line-height: 2.5;
-    max-width: 60%;
-    margin-left: 20%;
-}
-
 .aboutBG {
     background-color: #F9F9F9;
 }
 
 .aboutTitle {
-   font-size: 7vw;
    margin-bottom: 10vh;
 }
 
@@ -31,4 +24,41 @@
 
 .insertLink:hover {
     color: #000;
+}
+
+// --------------------RESPONSIVE DESIGN----------------------------------------
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .aboutContent {
+        line-height: 2;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+    .aboutTitle {
+        font-size: 15vw;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .aboutContent {
+        line-height: 2;
+        max-width: 80%;
+        margin-left: 10%;
+    }
+    .aboutTitle {
+        font-size: 15vw;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .aboutContent {
+        max-width: 60%;
+        margin-left: 20%;
+    }
+    .aboutTitle {
+        font-size: 10vw;
+    }
 }
