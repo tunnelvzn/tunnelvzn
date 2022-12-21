@@ -58,7 +58,7 @@ const Navbar = (props) => {
                     console.log(nav)
                 }}><a>Tunnel_vzn</a></div></h5>
                 <div className={styles.menuButton}>
-                    <Hamburger toggled={nav} toggle={setNav} color="#000000" duration={0.4} size={35} direction="left" distance="sm" easing="ease-in" />
+                    <Hamburger toggled={nav} toggle={setNav} color="#000000" duration={0.4} size={40} direction="left" distance="sm" easing="ease-in" />
                 </div>
             </div>
             <Subnav show={nav}/>

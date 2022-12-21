@@ -11,12 +11,7 @@
     margin-bottom: 1vh;
     margin-top: 1.2vh;
     transition: all 0.3s ease-in-out;
-}
-
-.menuButton:hover {
-    cursor: pointer;    
-    margin-top: 1vh;
-    box-shadow: 3px 3px #000;
+    cursor: pointer;   
 }
 
 .soundButton {
@@ -32,11 +27,7 @@
     margin-top: 1.2vh;
     padding-top: 0.9vh;
     transition: all 0.3s ease-in-out;
-}
-.soundButton:hover {
-    cursor: pointer;
-    margin-top: 1vh;
-    box-shadow: 3px 3px #000;
+    cursor: pointer;    
 }
 
 .topUiBackground {
@@ -47,33 +38,12 @@
     z-index: 2;
 }
 
-// affects only the logo: Tunnel_vzn
-.logoFont {
-    padding-top: 1.5vh;
-    font-size: 3vh;
-    padding-bottom: 1.7vh;
-}
-.logoFont a {
-    text-decoration: none;
-    color: #000;
-    font-family: 'Nova Round', cursive;
-}
-.logoFont a:hover {
-    cursor: pointer;
-}
-  
 
 // for subnav or hamburger menu icon content
 .pageTabs a {
-    font-size: 10vh;
     text-decoration: none;
     color: #000;
-}
-.pageTabs:hover, .pageTabs a:hover {
-    cursor: pointer;
-    color: #F9F9F9;
-    -webkit-text-stroke-width: 1px;
-    -webkit-text-stroke-color: black;
+    cursor: pointer;    
 }
 
 .active {
@@ -86,8 +56,6 @@
    background: #F9F9F9;
    position: fixed; 
    bottom: 0;
-   right: -65vh;
-   width: 65vh;
    border-left: 2px solid #000;
    transition: all 0.5s ease-out;
    z-index: 0;
@@ -99,4 +67,104 @@
 
 .spaceAbove {
     margin-top: 20vh;
+}
+
+// --------------------RESPONSIVE DESIGN----------------------------------------
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    // .topUiBackground {
+    //     background-color: #ff6565;
+    // }
+    .logoFont {
+        display: none;
+    }
+    .subnav {
+        right: -100%;
+        width: 100%;
+    }
+    .pageTabs a {
+        font-size: 8vh;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    // .topUiBackground {
+    //     background-color: #26ff00;
+    // }
+    .logoFont {
+        display: none;
+    }
+    .subnav {
+        right: -100%;
+        width: 100%;
+    }
+    .pageTabs a {
+        font-size: 10vh;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    // .topUiBackground {
+    //     background-color: #006aff;
+    // }
+    .logoFont {
+        display: block;
+        padding: 1.6vh;
+        font-size: 3vh;
+    }
+    .logoFont a {
+        text-decoration: none;
+        color: #000;
+        font-family: 'Nova Round', cursive;
+        cursor: pointer;
+    }
+    .subnav {
+        right: -50%;
+        width: 50%;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    // .topUiBackground {
+    //     background-color: #eeff00;
+    // }
+    .menuButton:hover {
+        margin-top: 1vh;
+        box-shadow: 3px 3px #000;
+    }
+    .soundButton:hover {
+        margin-top: 1vh;
+        box-shadow: 3px 3px #000;
+    }
+    .pageTabs:hover, .pageTabs a:hover {
+        color: #F9F9F9;
+        -webkit-text-stroke-width: 1px;
+        -webkit-text-stroke-color: black;
+    }
+    .subnav {
+        right: -40%;
+        width: 40%;
+    }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//     .topUiBackground {
+//         background-color: #ff00bf;
+//     }
+// }
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    // .topUiBackground {
+    //     background-color: #370808;
+    // }
+    .subnav {
+        right: -30%;
+        width: 30%;
+    }
 }
