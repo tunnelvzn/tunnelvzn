@@ -184,7 +184,7 @@ const StoryContent = () => {
                         <h1 className={styles.endText}>A chapter may end, but <br/>the story continues...</h1>
                         <div className={styles.buttonContainer}>
                             <div className={styles.endStoryBtn}>
-                                <h6><Link href="/"><a>Thoughts On This Story? <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
+                                <h6><Link href="https://docs.google.com/forms/d/1DrB0tHjeUPldV7PZQyn4FFgA_QMIl7GePdfUEoLUAo4/viewform?edit_requested=true"><a target="_blank">Thoughts On This Story? <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
                             </div>
                             <div className={styles.endStoryBtn}>
                                 <h6><Link href="/"><a>Next Story <Icon icon="material-symbols:arrow-forward" width="27" height="27" /></a></Link></h6>

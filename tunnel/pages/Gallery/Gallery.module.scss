@@ -7,7 +7,7 @@
     .horizontalScroll {
         display: flex;
         flex-wrap: nowrap;
-        overflow-x: auto;
+        overflow-x: hidden;
     }
 }
 
