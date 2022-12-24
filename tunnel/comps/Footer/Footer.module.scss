@@ -1,11 +1,26 @@
 .footer {
     text-align: center;
-    padding: 20px;
-    margin-top: 60px;
     border-top: 2px solid #eaeaea;
-    bottom: 0;
     background-color: #F9F9F9;
+    height: 70px !important;
+    margin-left: 10px;
+    margin-right: 10px;
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-between;
 }
+
+.footerDiv{
+    position: fixed;
+    bottom: 0px;  
+    
+    width: 100%;
+    height: 90px !important;
+    padding-top: 20px;
+    padding-bottom: 10px;
+    z-index: 999;
+}
+
 
 .iconContainer .footerLink {
     border: 1px solid #000;
@@ -43,27 +58,20 @@
     }
 }
 
-// Small devices (landscape phones, 576px and up)
-@media (min-width: 576px) {
-    .footerLink {
-        // color: #ff0000;
-        color: #000;
-    }
-    .footer {
-        display: flex;
-        justify-content: space-between;
-    }
-}
 
-// Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    .footerLink {
-        // color: #0004ff;
-        color: #000;
-    }
-}
+// // Medium devices (tablets, 768px and up)
+// @media (min-width: 768px) {
+//     .footerLink {
+//         // color: #0004ff;
+//         color: #000;
+//     }
+//     .footer {
+//         display: flex;
+//         justify-content: space-between;
+//     }
+// }
 
-// Large devices (desktops, 992px and up)
+// // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     .footerLink {
         // color: #00ff22;
@@ -75,18 +83,41 @@
     }
 }
 
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    .footerLink {
-        // color: #ff00c8;
-        color: #000;
-    }
-}
+// // X-Large devices (large desktops, 1200px and up)
+// @media (min-width: 1200px) {
+//     .footerLink {
+//         // color: #ff00c8;
+//         color: #000;
+//     }
+// }
 
-// XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {
+// // XX-Large devices (larger desktops, 1400px and up)
+// @media (min-width: 1400px) {
+//     .footerLink {
+//         // color: #ff7b00;
+//         color: #000;
+//     }
+// }
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
     .footerLink {
-        // color: #ff7b00;
+        // color: #ff0000;
         color: #000;
     }
+    // .footer {
+    //     text-align: center;
+    //     border-top: 2px solid #eaeaea;
+    //     background-color: #F9F9F9;
+    //     height: 150px !important;
+    //     margin-left: 10px;
+    //     margin-right: 10px;
+    //     display: flex;
+    //     justify-content: space-between;
+    // }
+
+    // .iconContainer .footerLink:hover {
+    //             color: #000000;
+    //             box-shadow: 3px 3px #000;
+    // }
 }

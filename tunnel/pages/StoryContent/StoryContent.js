@@ -31,7 +31,7 @@ const StoryContent = () => {
                     sessionStorage.setItem("route", "/");
                     setNav(false)
                     console.log('trigger, to route: ', route)
-                }}>Return</button>
+                }}><span className={`${styles.returnText}`}>Return</span></button>
             </div>
             <section className={`${styles.arrow} ${styles.bounce} text-center`}>
                 <h6>Scroll/Arrow Key Down</h6>

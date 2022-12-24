@@ -56,13 +56,13 @@ export default function Home() {
     {/* reference: https://www.npmjs.com/package/react-audio-player */}
     
       <NavBar/>
-      <div className={`h-100 ${styles.home} d-flex flex-column justify-content-center`}>
+      <div className={` ${styles.home} d-flex flex-column justify-content-center`}>
         <Head>
           <title>Tunnel_vzn | Storytelling</title>
           <link rel="icon" href="/favicon.png" />
         </Head>
         
-        {route == '/' && <Gallery />}
+        {route == '/' && <Gallery /> }
         {route == '/About' && <About />}
         {route == '/Credits' && <Credits/>}
         {route == '/StoryContent' && <StoryContent/>}

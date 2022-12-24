@@ -12,18 +12,46 @@
 }
 
 .return{
-  margin-top: 1.3vh;
-  margin-left: 17vh;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  // margin-top: 1.3vh;
+   margin-left: 17vh;
   padding: 1.6vh;
   border-radius: 50px;
   border: 2px solid #000;
   position: absolute;
   transition: all 0.3s ease-in-out;
   background-color: #F9F9F9;
-  width: 120px;
   color: #000;
   z-index: 10000;
   font-size: 2vh;
+  margin-bottom: 1vh;
+  margin-top: 1.2vh;
+  height: 70px !important;
+  .returnText{
+    height: 35px;
+    margin-bottom: 5px;
+  }
+}
+
+.container::-webkit-scrollbar {
+  width: 0px;
+}
+
+/* Track */
+.container::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+.container::-webkit-scrollbar-thumb {
+  background: #888;
+}
+
+/* Handle on hover */
+.container::-webkit-scrollbar-thumb:hover {
+  background: #555;
 }
 
 .return:hover{
