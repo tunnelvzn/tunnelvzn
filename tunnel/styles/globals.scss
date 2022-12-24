@@ -14,26 +14,26 @@ body, div, p, h1, h2, h3, h4 {
   font-family: 'Klee One', cursive;
 }
 /* Handle on hover */
-body::-webkit-scrollbar-thumb:hover {
-  background: #555;
-  margin-right: 20px;
-  width: 10px !important;
-  border-radius: 10px;
-}
+// body::-webkit-scrollbar-thumb:hover {
+//   background: #555;
+//   margin-right: 20px;
+//   width: 10px !important;
+//   border-radius: 10px;
+// }
 
-body::-webkit-scrollbar {
-  width: 3px;
-}
+// body::-webkit-scrollbar {
+//   width: 3px;
+// }
 
 /* Track */
-body::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
+// body::-webkit-scrollbar-track {
+//   background: #f1f1f1;
+// }
 
 /* Handle */
-body::-webkit-scrollbar-thumb {
-  background: rgb(0, 0, 0);
-}
+// body::-webkit-scrollbar-thumb {
+//   background: rgb(0, 0, 0);
+// }
 
 
 

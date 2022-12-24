@@ -3,23 +3,15 @@
 .story {
     cursor: pointer;
     transition: 0.5s all ease-in-out;
-    border-top-left-radius: 220px;
-    border-top-right-radius:  220px;
+    border-top-left-radius: 100vh;
+    border-top-right-radius: 100vh;
     height: 55vh;
     width: auto;
     border-collapse: separate; 
-    margin-top: 10vh;
     margin-bottom: 5vh;
     // overflow-y: hidden;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 0px #000;
-    // border-bottom-right-radius:  10px;
-    // border-bottom-left-radius:  10px;
-}
-
-.story:hover {
-    margin-top: 9vh;
-    box-shadow: 8px 8px #000;
 }
 
 
@@ -33,41 +25,58 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     .storyTitles {
-        color: rgb(255, 0, 0);
+        font-size: 2vh;
+    }
+    .story {
+        margin-top: 8vh;
+    }
+    .storyWrapper {
+        margin-right: -2vh;
+        margin-left: -3vh;
     }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
     .storyTitles {
-        color: rgb(0, 179, 255);
+        font-size: 2vh;
+    }
+    .story {
+        margin-top: 8vh;
     }
 }
 
 // Medium devices (tablets, 768px and up)
-@media (min-width: 768px) {
-    .storyTitles {
-        color: rgb(225, 0, 255);
-    }
-}
+// @media (min-width: 768px) {
+//     .storyTitles {
+//         color: rgb(225, 0, 255);
+//     }
+// }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    .storyTitles {
-        color: rgb(98, 0, 255);
+    .story {
+        margin-top: 13vh;
     }
-}
-
-// X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-    .storyTitles {
-        color: rgb(255, 157, 0);
+    .story:hover {
+        margin-top: 12vh;
+        box-shadow: 8px 8px #000;
     }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
-    .storyTitles {
-        color: rgb(120, 60, 0);
+    .storyWrapper {
+        margin-right: 3vh;
     }
 }
+
+// XXX-large devices 
+@media (min-width: 1920px) {
+    .story {
+        margin-top: 15vh;
+    }
+    .story:hover {
+        margin-top: 14vh;
+    }
+  }

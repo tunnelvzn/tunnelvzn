@@ -2,12 +2,14 @@ import styles from './About.module.scss'
 import Accordion from 'react-bootstrap/Accordion';
 import Head from 'next/head'
 import Link from 'next/link'
+import Footer from '/comps/Footer';
 
 // Fred, do:
 // npm install react-bootstrap bootstrap
 
 const About = () => {
     return (  
+        <>
         <div className={styles.aboutBG}>
             <Head>
                 <title>Tunnel_vzn | About</title>
@@ -72,6 +74,8 @@ const About = () => {
                 <div className={styles.block}></div>
             </div>
         </div>
+        <Footer/>
+        </>
     );
 }
  

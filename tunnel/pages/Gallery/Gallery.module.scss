@@ -7,10 +7,37 @@
     .horizontalScroll {
         display: flex;
         flex-wrap: nowrap;
-        // do this on mobile and do overflow-x: hidden on desktop
-        overflow-x: auto;
     }
-
     margin-bottom: 10vh;
+}
+
+// --------------------RESPONSIVE DESIGN----------------------------------------
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .galleryMain {
+        .horizontalScroll {
+            overflow-x: auto;
+        }
+    }
+}
+
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .galleryMain {
+        .horizontalScroll {
+            overflow-x: auto;
+        }
+    }
+}
+
+// // XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+    .galleryMain {
+        .horizontalScroll {
+            overflow-x: hidden;
+        }
+    }
 }
 

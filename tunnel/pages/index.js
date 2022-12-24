@@ -3,7 +3,6 @@ import Intro from './Intro'
 import Gallery from './Gallery'
 import NavBar from '../comps/NavBar'
 import Credits from '../pages/Credits'
-import Footer from '../comps/Footer';
 import StoryContent from './StoryContent'
 import React from "react";
 import Head from 'next/head'
@@ -14,7 +13,6 @@ import About from './About/About';
 import { Icon } from '@iconify/react';
 
 export default function Home() {
-  //...
   const {
     intro, 
     setIntro,
@@ -65,9 +63,10 @@ export default function Home() {
         {route == '/' && <Gallery /> }
         {route == '/About' && <About />}
         {route == '/Credits' && <Credits/>}
+
+        {/* <Footer/> */}
+
         {route == '/StoryContent' && <StoryContent/>}
-        
-      <Footer />
       </div>
     </>
   )

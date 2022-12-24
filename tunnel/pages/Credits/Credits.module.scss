@@ -1,13 +1,5 @@
-.memberVis {
-    width: 22vh;
-    margin-bottom: 3vh;
-    margin-top: 5vh;
-}
 .end {
     margin-top: 10vh;
-    margin-bottom: 20vh;
-    padding-left: 10vh;
-    padding-top: 5vh;
 }
 .creditContent {
     width: 100%;
@@ -15,7 +7,6 @@
 }
 
 .creditTitle {
-   font-size: 6vw;
    margin-bottom: 10vh;
 }
 
@@ -28,22 +19,28 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     .creditTitle {
-        color: rgb(255, 0, 0);
+        font-size: 15vw;
     }
-  
+    .memberVisDiv {
+        margin-bottom: 10vh !important;
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
     .creditTitle {
-        color: rgb(0, 179, 255);
+        font-size: 15vw;
     }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     .creditTitle {
-        color: rgb(225, 0, 255);
+        font-size: 10vw;
+    }
+    .memberVisDiv{
+        margin-left: 4vw !important;
+        margin-right: 4vw !important;
     }
 }
 
@@ -51,23 +48,6 @@
 @media (min-width: 992px) {
     .memberVisDiv{
         margin-left: 5vw !important;
-        margin-right: 5vw !important ;
-    }
-    .creditTitle {
-        color: rgb(98, 0, 255);
+        margin-right: 5vw !important;
     }
 }
-
-// // X-Large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) {
-//     .creditTitle {
-//         color: rgb(255, 157, 0);
-//     }
-// }
-
-// // XX-Large devices (larger desktops, 1400px and up)
-// @media (min-width: 1400px) {
-//     .creditTitle {
-//         color: rgb(120, 60, 0);
-//     }
-// }

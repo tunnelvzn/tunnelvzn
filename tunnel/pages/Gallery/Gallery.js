@@ -2,9 +2,12 @@ import Story from "../../comps/Story"
 import styles from './Gallery.module.scss'
 import React from "react"
 import stories from '../../data/stories.json'
+import Footer from '/comps/Footer';
+
 const Gallery = () => {
 
     let ret = (
+        <>
         <div className={styles.galleryMain}>
             <div id="horiscroll" className={styles.horizontalScroll}>
                 {stories.map(story => {
@@ -15,6 +18,8 @@ const Gallery = () => {
 
             </div>
         </div>
+        <Footer/>
+        </>
     )
 
     React.useEffect(() => {
