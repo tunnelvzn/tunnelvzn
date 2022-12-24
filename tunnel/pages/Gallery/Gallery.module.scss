@@ -7,7 +7,8 @@
     .horizontalScroll {
         display: flex;
         flex-wrap: nowrap;
-        overflow-x: hidden;
+        // do this on mobile and do overflow-x: hidden on desktop
+        overflow-x: auto;
     }
 
     margin-bottom: 10vh;
