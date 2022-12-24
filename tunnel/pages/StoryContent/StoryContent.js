@@ -33,28 +33,27 @@ const StoryContent = () => {
                     console.log('trigger, to route: ', route)
                 }}>Return</button>
             </div>
+            <section className={`${styles.arrow} ${styles.bounce} text-center`}>
+                <h6>Scroll/Arrow Key Down</h6>
+                <h1 className={styles.theArrow}>▿</h1>
+            </section>
             <div className={styles.container}>
                 <div className={styles.section}>
-
-                    <div className={styles.section}>
-                        <div className={styles.imgFrame}>
-                            <Image src="/lonelinessImages/cover.png" className={styles.storyImg} layout="fill" />
-                        </div>
-                        <p className={styles.words}>
-                            <span className={styles.storyTitle}>Loneliness</span>
-                            <br />
-                            <br />
-                            <span className={styles.storySynopsis}>Synopsis:</span>
-                            <br />
-                            Believing the commute is robbing his time to build relationships with people, John Ethel decides to live on-campus, however, it wasn't what he had expected...
-                        </p>
-                        <section className={`${styles.arrow} ${styles.bounce} text-center`}>
-                            <h6>Scroll/Arrow Key Down</h6>
-                            <h1 className={styles.theArrow}>▿</h1>
-                        </section>
+                    <div className={styles.block}></div>
+                    <div className={styles.imgFrame}>
+                        <Image src="/lonelinessImages/cover.png" className={styles.storyImg} layout="fill" />
                     </div>
+                    <p className={styles.words}>
+                        <span className={styles.storyTitle}>Loneliness</span>
+                        <br />
+                        <br />
+                        <span className={styles.storySynopsis}>Synopsis:</span>
+                        <br />
+                        Believing the commute is robbing his time to build relationships with people, John Ethel decides to live on-campus, however, it wasn't what he had expected...
+                    </p>
                 </div>
                 <div className={styles.section}>
+                    <div className={styles.block}></div>
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/lightRail.png" className={styles.storyImg} layout="fill" />
                     </div>
@@ -63,6 +62,7 @@ const StoryContent = () => {
                     </p>
                 </div>
                 <div className={styles.section}>
+                    <div className={styles.block}></div>
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/uwStation.png" className={styles.storyImg} layout="fill" />
                     </div>
@@ -71,6 +71,7 @@ const StoryContent = () => {
                     </p>
                 </div>
                 <div className={styles.section}>
+                    <div className={styles.block}></div>
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/lectureRoom.png" className={styles.storyImg} layout="fill" />
                     </div>    
@@ -79,6 +80,7 @@ const StoryContent = () => {
                     </p>
                 </div>
                 <div className={styles.section}>
+                    <div className={styles.block}></div>
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/mccarty.png" className={styles.storyImg} layout="fill" />
                     </div>
@@ -87,6 +89,7 @@ const StoryContent = () => {
                     </p>
                 </div>
                 <div className={styles.section}>
+                    <div className={styles.block}></div>
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/dormStart.png" className={styles.storyImg} layout="fill" />
                     </div>
@@ -95,6 +98,7 @@ const StoryContent = () => {
                     </p>
                 </div>
                 <div className={styles.section}>
+                    <div className={styles.block}></div>
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/floor.png" className={styles.storyImg} layout="fill" />
                     </div>
@@ -103,6 +107,7 @@ const StoryContent = () => {
                     </p>
                 </div>
                 <div className={styles.section}>
+                    <div className={styles.block}></div>
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/staircase.png" className={styles.storyImg} layout="fill" />
                     </div>
@@ -111,6 +116,7 @@ const StoryContent = () => {
                     </p>
                 </div>
                 <div className={styles.section}>
+                    <div className={styles.block}></div>
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/walking.png" className={styles.storyImg} layout="fill" />
                     </div>
@@ -119,6 +125,7 @@ const StoryContent = () => {
                     </p>
                 </div>
                 <div className={styles.section}>
+                    <div className={styles.block}></div>
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/redSquare.png" className={styles.storyImg} layout="fill" />
                     </div>
@@ -127,6 +134,7 @@ const StoryContent = () => {
                     </p>
                 </div>
                 <div className={styles.section}>
+                    <div className={styles.block}></div>
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/hub.png" className={styles.storyImg} layout="fill" />
                     </div>
@@ -135,6 +143,7 @@ const StoryContent = () => {
                     </p>
                 </div>
                 <div className={styles.section}>
+                    <div className={styles.block}></div>
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/hubExit.png" className={styles.storyImg} layout="fill" />
                     </div>
@@ -143,6 +152,7 @@ const StoryContent = () => {
                     </p>
                 </div>
                 <div className={styles.section}>
+                    <div className={styles.block}></div>
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/johnThink.png" className={styles.storyImg} layout="fill" />
                     </div>
@@ -151,6 +161,7 @@ const StoryContent = () => {
                     </p>
                 </div>
                 <div className={styles.section}>
+                    <div className={styles.block}></div>
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/dormRoom.png" className={styles.storyImg} layout="fill" />
                     </div>
@@ -159,6 +170,7 @@ const StoryContent = () => {
                     </p>
                 </div>
                 <div className={styles.section}>
+                    <div className={styles.block}></div>
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/mccarty.png" className={styles.storyImg} layout="fill"/>
                     </div>

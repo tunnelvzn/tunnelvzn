@@ -15,13 +15,10 @@ const NotFound = () => {
                     <h6><Link href="/"><a>Go Back Home</a></Link></h6>
                 </div>
 
-                <section className={styles.personContainer}>
-                    <section className={styles.personImg}>
-                        <img src="/personSitting.svg" height={350} width={350} />
-                    </section>
-                    <hr className={styles.line} />
+                <section className={styles.personImg}>
+                    <Image src="/personSitting.png" layout="fill" />
                 </section>
-
+                <hr className={styles.line} />
             </div>
         </div>
     );

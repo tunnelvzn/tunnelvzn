@@ -1,4 +1,7 @@
 // story format structures
+.block {
+  height: 13vh;
+}
 
 .storyTitle {
   font-size: 10vh;
@@ -71,6 +74,7 @@
 .arrow {
   position: absolute;
   margin-top: 90vh;
+  // margin-left: 85vh;
 }
 
 .bounce {
@@ -152,5 +156,71 @@
   }
   60% {
     transform: translateY(-5px);
+  }
+}
+
+// --------------------RESPONSIVE DESIGN----------------------------------------
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+  .theArrow {
+    color: rgb(255, 0, 0); 
+  }
+  .section {
+    display: block;
+  }
+  .storyTitle {
+    font-size: 6vh;
+  }
+  .words {
+    margin-top: 2vh;
+    width: auto;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    font-size: 2vh;
+  }
+  .imgFrame {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    height: 35vh;
+    width: auto;
+  }
+  .endSection {
+    display: none;
+  }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+  .theArrow {
+    color: rgb(43, 0, 255); 
+  }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+  .theArrow {
+    color: rgb(0, 255, 98); 
+  }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+  .theArrow {
+    color: rgb(0, 255, 242); 
+  }
+}
+
+// X-Large devices (large desktops, 1200px and up)
+@media (min-width: 1200px) {
+  .theArrow {
+    color: rgb(183, 255, 0); 
+  }
+}
+
+// XX-Large devices (larger desktops, 1400px and up)
+@media (min-width: 1400px) {
+  .theArrow {
+    color: rgb(255, 183, 0); 
   }
 }

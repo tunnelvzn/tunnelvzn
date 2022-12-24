@@ -111,69 +111,6 @@
   min-height: 95vh;
 }
 
-// 404 styling start
-.notFound {
-  background-color: #F9F9F9;
-  z-index: 100;
-  height: 100vh;
-}
-.numbers {
-  font-size: 3vh;
-  color: #A9A9A9;
-  padding-top: 5vh;
-  margin-left: 2vh;
-}
-.message {
-  font-size: 8vh;
-  padding-top: 20vh;
-  margin-left: 2vh;
-}
-.personContainer {
-  z-index: 100;
-  width: 100%;
-  position: absolute;
-}
-
-.personImg {
-  z-index: 100;
-  position: relative;
-  margin-left: 70vw;
-}
-
-.line {
-  z-index: -1;
-  margin-top: -21vh;
-}
-
-.goHomeBtn {
-  margin-top: 3vh;
-  z-index: 200;
-  margin-left: 2vh;
-  border: 2px solid #000;    
-  width: 30vh;
-  height: 8vh;
-  border-radius: 100px;
-  text-align: center;
-  padding-top: 2.3vh;
-  background-color: #F9F9F9;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 0px #000;
-  position: absolute;
-}
-
-.goHomeBtn h6 a {
-  text-decoration: none;
-  color: #000;
-}
-
-.goHomeBtn:hover {
-  cursor: pointer;
-  margin-top: 2.5vh;
-  box-shadow: 3px 3px #000;
-}
-
-// 404 styling end
-
 // trigger screen
 .introContent {
   height: 100vh;
@@ -212,6 +149,61 @@
 }
 // end of trigger screen
 
+
+
+// 404 styling start
+.notFound {
+  background-color: #F9F9F9;
+  z-index: 100;
+  height: 100vh;
+}
+.numbers {
+  font-size: 3vh;
+  color: #A9A9A9;
+  padding-top: 5vh;
+}
+.message {
+  font-size: 8vh;
+}
+
+.personImg {
+  z-index: 100;
+  position: relative;
+}
+
+.goHomeBtn {
+  margin-top: 3vh;
+  z-index: 200;
+  margin-left: 2vh;
+  border: 2px solid #000;    
+  width: 30vh;
+  height: 8vh;
+  border-radius: 100px;
+  text-align: center;
+  padding-top: 2.3vh;
+  background-color: #F9F9F9;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px #000;
+  position: absolute;
+}
+
+.goHomeBtn h6 {
+  font-size: 2vh;
+}
+
+.goHomeBtn h6 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.goHomeBtn:hover {
+  cursor: pointer;
+  margin-top: 2.5vh;
+  box-shadow: 3px 3px #000;
+}
+// 404 styling end
+
+
 // --------------------RESPONSIVE DESIGN----------------------------------------
 
 // X-Small devices (portrait phones, less than 576px)
@@ -220,6 +212,27 @@
     font-size: 7vh;
     font-family: 'Nova Round', cursive;
   }
+  .numbers {
+    // color: red;
+    margin-left: 3vh;
+  }
+  .message {
+    margin-left: 3vh;
+    margin-right: 3vh;
+    padding-top: 5vh;
+    font-size: 6vh;
+  }
+  .personImg {
+    margin-left: 10vw;
+  }
+  .line {
+    margin-top: -20vh;
+  }
+  .personImg {
+    width: 120px;
+    height: 250px;
+    margin-top: 20vh;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -227,12 +240,47 @@
   .introHeader{
     font-size: 13vh;
   }
+  .numbers {
+    // color: blue;
+    margin-left: 2vh;
+  }
+  .message {
+    padding-top: 10vh;
+    margin-left: 2vh;
+    font-size: 6vh;
+  }
+  .personImg {
+    margin-left: 50vw;
+    width: 160px;
+    height: 350px;
+    margin-top: 15vh;
+  }
+  .line {
+    margin-top: -21vh;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .introHeader{
     font-size: 9vh;
+  }
+  // .numbers {
+  //   color: green;
+  // }
+  .message {
+    font-size: 5.5vh;
+  }
+  .personImg {
+    margin-left: 30vw;
+  }
+  .line {
+    margin-top: -24vh;
+  }
+  .personImg {
+    width: 180px;
+    height: 400px;
+    margin-top: 20vh;
   }
 }
 
@@ -246,6 +294,17 @@
   .introHeader{
     font-size: 13vh;
   }
+  // .numbers {
+  //   color: #800080;
+  // }
+  .personImg {
+    width: 180px;
+    height: 400px;
+    margin-top: 20vh;
+  }
+  .line {
+    margin-top: -24vh;
+  } 
 }
 
 // X-Large devices (large desktops, 1200px and up)
@@ -253,12 +312,46 @@
   .introHeader{
     font-size: 12vh;
   }
+  // .numbers {
+  //   color: orange;
+  // }
+  .message {
+    padding-top: 20vh;
+  }
+  .personImg {
+    margin-left: 70vw;
+    width: 170px;
+    height: 350px;
+    margin-top: 10vh;
+  }
+  .line {
+    margin-top: -21vh;
+  }
 }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
   .introHeader {
     font-size: 10vh;
+  }
+  // .numbers {
+  //   color: gray;
+  // }
+  .personImg {
+    margin-left: 70vw;
+    width: 210px;
+    height: 450px;
+    margin-top: 5vh;
+  }
+  .line {
+    margin-top: -27vh;
+  }
+}
+
+// XXX-large devices 
+@media (min-width: 1920px) {
+  .line {
+    margin-top: -20vh;
   }
 }
 
