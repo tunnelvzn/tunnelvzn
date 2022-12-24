@@ -46,7 +46,10 @@
     //     color: #d9ff00;
     // }
     .footerDiv {
-        height: 110px; 
+        height: 70px; 
+    }
+    .footer p {
+        display: none;
     }
 }
 
@@ -57,7 +60,10 @@
     //     color: #ff0000;
     // }
     .footerDiv {
-        height: 110px; 
+        height: 70px; 
+    }
+    .footer p {
+        display: none;
     }
 }
 
@@ -75,6 +81,7 @@
         height: 70px; 
     }
     .footer p {
+        display: block;
         margin-left: 2vh;
     }
     .iconContainer {

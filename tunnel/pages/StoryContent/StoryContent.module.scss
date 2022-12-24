@@ -11,6 +11,11 @@
   text-decoration: underline;
 }
 
+.normSection {
+  position: relative;
+  z-index: 1;
+}
+
 .return{
   display: flex;
   justify-content: center;
@@ -102,7 +107,7 @@
 .arrow {
   position: absolute;
   margin-top: 90vh;
-  // margin-left: 85vh;
+  width: 100%;
 }
 
 .bounce {
@@ -213,7 +218,7 @@
     height: 35vh;
     width: auto;
   }
-  .endSection {
+  .finalSection {
     display: none;
   }
 }
