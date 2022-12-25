@@ -99,6 +99,7 @@
 
 .arrow {
   position: absolute;
+  // margin-top: 45%;
   margin-top: 90vh;
   width: 100%;
 }
@@ -221,12 +222,21 @@
   .theArrow {
     color: rgb(43, 0, 255); 
   }
+  .block {
+    display: none;
+  }
+  .finalSection {
+    display: none;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
   .theArrow {
     color: rgb(0, 255, 98); 
+  }
+  .arrow {
+    margin-top: 85vh;
   }
 }
 
