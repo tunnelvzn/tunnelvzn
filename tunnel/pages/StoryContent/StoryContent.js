@@ -25,14 +25,15 @@ const StoryContent = () => {
 
     return (
         <div>
-            <div>
+            {/* once we roll out button component, we can revisit this */}
+            {/* <div>
                 <button className={`${styles.return}`} onClick={() => {
                     setRoute('/')
                     sessionStorage.setItem("route", "/");
                     setNav(false)
                     console.log('trigger, to route: ', route)
-                }}><span className={`${styles.returnText}`}>Return</span></button>
-            </div>
+                }}><span className={`${styles.returnText}`}>Back</span></button>
+            </div> */}
 
             <section className={`${styles.arrow} ${styles.bounce} text-center`}>
                 <h6>Scroll/Arrow Key Down</h6>

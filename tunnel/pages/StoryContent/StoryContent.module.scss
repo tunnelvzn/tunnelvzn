@@ -16,53 +16,46 @@
   z-index: 1;
 }
 
-.return{
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
-  // margin-top: 1.3vh;
-   margin-left: 17vh;
-  padding: 1.6vh;
-  border-radius: 50px;
-  border: 2px solid #000;
-  position: absolute;
-  transition: all 0.3s ease-in-out;
-  background-color: #F9F9F9;
-  color: #000;
-  z-index: 10000;
-  font-size: 2vh;
-  margin-bottom: 1vh;
-  margin-top: 1.2vh;
-  height: 70px !important;
-  .returnText{
-    height: 35px;
-    margin-bottom: 5px;
-  }
-}
+// we will revisit the return button after we roll out the button component
+// .return {
+//   display: flex;
+//   position: absolute;
+//   justify-content: center;
+//   flex-direction: column;
+//   color: #000;
+//   margin-left: 17vh;
+//   z-index: 1000;
+//   border: 2px solid #000;
+//   padding-left: 4.2vh;
+//   padding-right: 4.2vh;
+//   font-size: 2.5vh;
+//   border-radius: 100px;
+//   background-color: #F9F9F9;
+//   box-shadow: 0px 0px #000;
+//   margin-top: 1.2vh;
+//   transition: all 0.3s ease-in-out;
+//   cursor: pointer;  
+//   height: 53px;
+// }
 
-.container::-webkit-scrollbar {
-  width: 0px;
-}
+// .container::-webkit-scrollbar {
+//   width: 0px;
+// }
 
 /* Track */
-.container::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
+// .container::-webkit-scrollbar-track {
+//   background: #f1f1f1;
+// }
 
 /* Handle */
-.container::-webkit-scrollbar-thumb {
-  background: #888;
-}
+// .container::-webkit-scrollbar-thumb {
+//   background: #888;
+// }
 
 /* Handle on hover */
-.container::-webkit-scrollbar-thumb:hover {
-  background: #555;
-}
-
-.return:hover{
-  margin-top: 1vh;
-  box-shadow: 3px 3px #000;
-}
+// .container::-webkit-scrollbar-thumb:hover {
+//   background: #555;
+// }
 
 .container {
     margin-left: 10px;
@@ -241,6 +234,10 @@
 @media (min-width: 992px) {
   .theArrow {
     color: rgb(0, 255, 242); 
+  }
+  .return:hover{
+    margin-top: 1vh;
+    box-shadow: 3px 3px #000;
   }
 }
 

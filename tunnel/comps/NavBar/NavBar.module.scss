@@ -117,6 +117,16 @@
         text-decoration: underline 3px #000;
         text-underline-offset: 5px;
     }
+    .logoFont {
+        padding: 1.6vh;
+        font-size: 3vh;
+    }
+    .logoFont a {
+        text-decoration: none;
+        color: #000;
+        font-family: 'Nova Round', cursive;
+        cursor: pointer;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
