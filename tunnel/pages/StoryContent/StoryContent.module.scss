@@ -1,21 +1,3 @@
-// story format structures
-.block {
-  height: 13vh;
-}
-
-.storyTitle {
-  font-size: 10vh;
-}
-.storySynopsis {
-  font-size: 3vh;
-  text-decoration: underline;
-}
-
-.normSection {
-  position: relative;
-  z-index: 1;
-}
-
 // we will revisit the return button after we roll out the button component
 // .return {
 //   display: flex;
@@ -57,41 +39,38 @@
 //   background: #555;
 // }
 
+.block {
+  height: 13vh;
+}
+.storySynopsis {
+  font-size: 3vh;
+  text-decoration: underline;
+}
+
+.normSection {
+  position: relative;
+  z-index: 1;
+}
+
 .container {
-    margin-left: 10px;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    width: auto;
-    height: 100vh;
-    scroll-snap-type: y mandatory;
-    overflow-y: scroll;
-    scroll-behavior: smooth;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  width: auto;
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
 }
 
 .section {
   scroll-snap-align: start;
   width: 100%;
   height: 100vh;
-  display: flex;
   justify-content: center;
   align-items: center;
 }
 
-// story content format
-.words {
-  width: 80vh;
-  margin-left: 5vh;
-}
-
-.imgFrame {
-  border: 2px solid #000;
-  position: relative;
-  height: 55vh;
-  width: 80vh;
-}
-
-// The arrow
 .theArrow {
   color: black; 
   text-decoration: none; 
@@ -99,7 +78,6 @@
 
 .arrow {
   position: absolute;
-  // margin-top: 45%;
   margin-top: 90vh;
   width: 100%;
 }
@@ -112,6 +90,10 @@
 
 
 // code for last panel of story
+.finalSection {
+  display: none !important;
+}
+
 .endSection {
   scroll-snap-align: start;
   width: 100%;
@@ -204,16 +186,15 @@
     width: auto;
     margin-left: 2vh;
     margin-right: 2vh;
-    font-size: 2vh;
+    font-size: 1.9vh;
   }
   .imgFrame {
+    border: 2px solid #000;
     margin-left: 2vh;
     margin-right: 2vh;
     height: 35vh;
     width: auto;
-  }
-  .finalSection {
-    display: none;
+    position: relative;
   }
 }
 
@@ -222,11 +203,23 @@
   .theArrow {
     color: rgb(43, 0, 255); 
   }
-  .block {
-    display: none;
+  .storyTitle {
+    font-size: 6vh;
   }
-  .finalSection {
-    display: none;
+  .imgFrame {
+    border: 2px solid #000;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    height: 50vh;
+    width: auto;
+    position: relative;
+  }
+  .words {
+    margin-top: 2vh;
+    width: auto;
+    margin-left: 2vh;
+    margin-right: 2vh;
+    font-size: 2vh;
   }
 }
 
@@ -236,7 +229,16 @@
     color: rgb(0, 255, 98); 
   }
   .arrow {
-    margin-top: 85vh;
+    margin-top: 89vh;
+  }
+  .imgFrame {
+    margin-left: 15vh;
+    margin-right: 15vh;
+    height: 50vh;
+  }
+  .words {
+    margin-left: 15vh;
+    margin-right: 15vh;
   }
 }
 
@@ -245,9 +247,31 @@
   .theArrow {
     color: rgb(0, 255, 242); 
   }
-  .return:hover{
-    margin-top: 1vh;
-    box-shadow: 3px 3px #000;
+  .arrow {
+    margin-top: 85vh;
+  }
+  // .return:hover{
+  //   margin-top: 1vh;
+  //   box-shadow: 3px 3px #000;
+  // }
+  .storyTitle {
+    font-size: 10vh;
+  }
+  .block {
+    display: none;
+  }
+  .section {
+    display: flex;
+  }
+  .imgFrame {
+    margin-left: 2vh;
+    margin-right: 0vh;
+    width: 80vh;
+  }
+  .words {
+    width: 80vh;
+    margin-left: 5vh;
+    margin-right: 2vh;
   }
 }
 
@@ -262,5 +286,11 @@
 @media (min-width: 1400px) {
   .theArrow {
     color: rgb(255, 183, 0); 
+  }
+  .words {
+    font-size: 2.3vh;
+  }
+  .imgFrame {
+    height: 55vh;
   }
 }
