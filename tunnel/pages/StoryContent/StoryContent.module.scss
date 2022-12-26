@@ -115,6 +115,8 @@
 
 .endStoryBtn h6 {
   font-size: 2vh;
+  padding-bottom: 0;
+  margin-bottom: 0;
 }
 
 .endStoryBtn {
@@ -126,10 +128,10 @@
   cursor: pointer;
   border-radius: 100px;
   height: 8vh;
-  padding-top: 2vh;
   margin-top: 3vh;
   display: flex;
   justify-content: center;
+  flex-direction: column;
 }
 
 // --------------------RESPONSIVE DESIGN----------------------------------------
