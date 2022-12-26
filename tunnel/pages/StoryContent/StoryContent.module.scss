@@ -88,74 +88,6 @@
   animation: bounce 2s infinite;
 }
 
-
-// code for last panel of story
-.finalSection {
-  display: none !important;
-}
-
-.endSection {
-  scroll-snap-align: start;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  background-color: #F9F9F9;
-}
-
-.functions {
-  margin-left: 15vh;
-}
-
-.girlFrame {
-  z-index: 0;
-  position: relative;
-  width: 20vh;
-  height: -10vh;
-}
-
-.endSection .endHalf {
-  margin-top: 30vh;
-}
-
-.endText {
-  margin-top: 3vh;
-  font-size: 9vh;
-  width: 130vh;
-}
-
-.endStoryBtn {
-  margin-top: 3vh;
-  z-index: 200;
-  margin-right: 2vh;
-  border: 2px solid #000;    
-  width: 50vh;
-  height: 8vh;
-  border-radius: 100px;
-  text-align: center;
-  padding-top: 2vh;
-  background-color: #F9F9F9;
-  transition: all 0.3s ease-in-out;
-  box-shadow: 0px 0px #000;
-}
-
-.endStoryBtn h6 a {
-  text-decoration: none;
-  color: #000;
-}
-
-.endStoryBtn:hover {
-  cursor: pointer;
-  margin-top: 2.5vh;
-  box-shadow: 3px 3px #000;
-}
-
-.buttonContainer {
-  display: flex;
-  width: 100%;
-}
-// end of code for last panel of story
-
-
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
     transform: translateY(0);
@@ -168,13 +100,45 @@
   }
 }
 
+.endSection {
+  scroll-snap-align: start;
+  width: 100%;
+  height: 100vh;
+  display: flex;
+  background-color: #F9F9F9;
+}
+
+.endStoryBtn h6 a {
+  text-decoration: none;
+  color: #000;
+}
+
+.endStoryBtn h6 {
+  font-size: 2vh;
+}
+
+.endStoryBtn {
+  z-index: 200;
+  border: 2px solid #000;    
+  background-color: #F9F9F9;
+  transition: all 0.3s ease-in-out;
+  box-shadow: 0px 0px #000;
+  cursor: pointer;
+  border-radius: 100px;
+  height: 8vh;
+  padding-top: 2vh;
+  margin-top: 3vh;
+  display: flex;
+  justify-content: center;
+}
+
 // --------------------RESPONSIVE DESIGN----------------------------------------
 
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-  .theArrow {
-    color: rgb(255, 0, 0); 
-  }
+  // .theArrow {
+  //   color: rgb(255, 0, 0); 
+  // }
   .section {
     display: block;
   }
@@ -196,13 +160,25 @@
     width: auto;
     position: relative;
   }
+  .endText {
+    margin-top: 3vh;
+    font-size: 4vh;
+    margin-bottom: 10vh;
+    margin-left: 2vh;
+    margin-right: 2vh;
+  }
+  .endStoryBtn {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    width: auto;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  .theArrow {
-    color: rgb(43, 0, 255); 
-  }
+  // .theArrow {
+  //   color: rgb(43, 0, 255); 
+  // }
   .storyTitle {
     font-size: 6vh;
   }
@@ -221,13 +197,25 @@
     margin-right: 2vh;
     font-size: 2vh;
   }
+  .endText {
+    margin-top: 3vh;
+    font-size: 5vh;
+    margin-bottom: 10vh;
+    margin-left: 10vh;
+    margin-right: 10vh;
+  }
+  .endStoryBtn {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    width: auto;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  .theArrow {
-    color: rgb(0, 255, 98); 
-  }
+  // .theArrow {
+  //   color: rgb(0, 255, 98); 
+  // }
   .arrow {
     margin-top: 89vh;
   }
@@ -240,20 +228,20 @@
     margin-left: 15vh;
     margin-right: 15vh;
   }
+  .endStoryBtn {
+    margin-left: 30vh;
+    margin-right: 30vh;
+  }
 }
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  .theArrow {
-    color: rgb(0, 255, 242); 
-  }
+  // .theArrow {
+  //   color: rgb(0, 255, 242); 
+  // }
   .arrow {
     margin-top: 85vh;
   }
-  // .return:hover{
-  //   margin-top: 1vh;
-  //   box-shadow: 3px 3px #000;
-  // }
   .storyTitle {
     font-size: 10vh;
   }
@@ -262,6 +250,18 @@
   }
   .section {
     display: flex;
+  }
+  .endText {
+    margin-top: 3vh;
+    font-size: 6vh;
+    margin-bottom: 3vh;
+    margin-left: 20vh;
+    margin-right: 20vh;
+  }
+  .buttonContainer {
+    display: flex;
+    width: 50%;
+    margin: auto;
   }
   .imgFrame {
     margin-left: 2vh;
@@ -273,20 +273,29 @@
     margin-left: 5vh;
     margin-right: 2vh;
   }
+  .endStoryBtn:hover {
+    margin-top: 2.5vh;
+    box-shadow: 3px 3px #000;
+  }
+  .endStoryBtn {
+    margin-right: 2vh;
+    margin-left: 2vh;
+    width: 80vh;
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)
-@media (min-width: 1200px) {
-  .theArrow {
-    color: rgb(183, 255, 0); 
-  }
-}
+// @media (min-width: 1200px) {
+//   .theArrow {
+//     color: rgb(183, 255, 0); 
+//   }
+// }
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
-  .theArrow {
-    color: rgb(255, 183, 0); 
-  }
+  // .theArrow {
+  //   color: rgb(255, 183, 0); 
+  // }
   .words {
     font-size: 2.3vh;
   }

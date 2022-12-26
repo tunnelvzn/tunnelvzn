@@ -183,9 +183,11 @@ const StoryContent = () => {
                 </div>
 
                 {/* Final section of story deal with this last */}
-                <div className={`${styles.section} ${styles.normSection} ${styles.finalSection}`}>
-                    <div className={`${styles.endHalf} ${styles.functions}`}>
-                        <h1 className={styles.endText}>A chapter may end, but <br/>the story continues...</h1>
+                <div className={`${styles.section} ${styles.normSection} text-center`}>
+                    <div className={styles.block}></div>
+                    <div className={styles.block}></div>
+                    <div className={`${styles.endHalf}`}>
+                        <h1 className={styles.endText}>A chapter may end, but the story continues...</h1>
                         <div className={styles.buttonContainer}>
                             <div className={styles.endStoryBtn}>
                                 <h6><Link href="https://docs.google.com/forms/d/1DrB0tHjeUPldV7PZQyn4FFgA_QMIl7GePdfUEoLUAo4/viewform?edit_requested=true"><a target="_blank">Thoughts On This Story? <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
@@ -193,11 +195,6 @@ const StoryContent = () => {
                             <div className={styles.endStoryBtn}>
                                 <h6><Link href="/"><a>Next Story <Icon icon="material-symbols:arrow-forward" width="27" height="27" /></a></Link></h6>
                             </div>
-                        </div>
-                    </div>
-                    <div className={styles.endSection}>
-                        <div className={styles.girlFrame}>
-                            <Image src="/lonelinessImages/goals.svg" className={styles.storyImg} layout="fill" />
                         </div>
                     </div>
                 </div>
