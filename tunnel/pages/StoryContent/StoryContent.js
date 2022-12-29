@@ -52,7 +52,7 @@ const StoryContent = () => {
                         <br />
                         <span className={styles.storySynopsis}>Synopsis:</span>
                         <br />
-                        Believing the commute is robbing his time to build relationships with people, John Ethel decides to live on-campus, however, it wasn't what he had expected...
+                        Believing the commute is robbing his time to build relationships with people, John decides to live on-campus, however, it wasn't what he had expected...
                     </p>
                 </div>
                 <div className={`${styles.section} ${styles.normSection}`}>
