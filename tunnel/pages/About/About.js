@@ -71,6 +71,12 @@ const About = () => {
                         </Accordion.Item>
                     </Accordion>
                 </div>
+                <div>
+                    <h3 className={styles.subTitle}>Project Updates</h3>
+                    <p>
+                        We are aware of screenreader and keyboard accessibility bugs and are tackling those challenges right now. We want the site to be inclusive to all students. Thank you for understanding.
+                    </p>
+                </div>
                 <div className={styles.block}></div>
             </div>
         </div>

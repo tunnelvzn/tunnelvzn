@@ -16,9 +16,6 @@
     flex-direction: column;
     cursor: pointer;   
 }
-.menuButton:focus {
-    background-color: #e7f1ff;
-}
 
 .soundButton {
     display: flex;
@@ -36,9 +33,6 @@
     margin-top: 1.2vh;
     transition: all 0.3s ease-in-out;
     cursor: pointer;    
-}
-.soundButton:focus {
-    background-color: #e7f1ff;
 }
 
 .topUiBackground {

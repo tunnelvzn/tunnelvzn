@@ -33,6 +33,9 @@ export default function Home() {
           <Head>
             <title>Tunnel_vzn</title>
             <link rel="icon" href="/favicon.png" />
+            <meta name="author" content="Tunnel_vzn"></meta>
+            <meta name="description" content="A student ran organization telling stories inspired by the experiences of University of Washington students."></meta>
+            <meta name="keywords" content="storytelling"></meta>
           </Head>
         <h5 className={ `${styles.introHeader} text-center` }> Tunnel_vzn </h5>
         <h5 className={`text-center`}> Storytelling based on UW student experiences</h5>
