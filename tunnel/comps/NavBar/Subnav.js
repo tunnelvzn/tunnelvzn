@@ -42,28 +42,33 @@ function Subnav(props) {
         <div className={styleClass}>
             <div id="sidenav" className="sidenav d-flex justify-content-between flex-column">
                 <ol className={`${styles.spaceAbove} d-flex flex-column h-75 justify-content-around`}>
-                    <li id="home-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
+                    <li role="link" aria-label="home tab" tabindex="0" id="home-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
                         setRoute('/'); 
                         console.log(route)
                         sessionStorage.setItem("route", "/");
                         setNav(false)
                         setUnderline(e)
-                        }}><a>Home</a></li>
+                        }}><a>Home</a>
+                    </li>
 
-                    <li id="about-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
+                    <li role="link" aria-label="about tab" tabindex="0" id="about-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
                         setRoute('/About'); 
                         sessionStorage.setItem("route", "/About");
                         setNav(false)
                         setUnderline(e)
-                        }}><a>About</a></li>
+                        }}><a>About</a>
+                    </li>
 
-                    <li id="feedback-tag" className={`${styles.pageTabs} ${styles.feedbackTab} general-nav-tags`}><Link href="https://docs.google.com/forms/d/1W2M3AvMM0hDVRwwXUgqTHfUfXxNW-ao13U9OoGff3BY/edit?usp=sharing"><a target="_blank">Feedback</a></Link></li>
-                    <li id="credits-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
+                    <li id="feedback-tag" className={`${styles.pageTabs} ${styles.feedbackTab} general-nav-tags`}>
+                        <Link href="https://docs.google.com/forms/d/1W2M3AvMM0hDVRwwXUgqTHfUfXxNW-ao13U9OoGff3BY/edit?usp=sharing"><a aria-label="feedback tab to an external page" target="_blank">Feedback</a></Link>
+                    </li>
+                    <li role="link" aria-label="credits tab" tabindex="0" id="credits-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
                         setRoute('/Credits'); 
                         sessionStorage.setItem("route", "/Credits");
                         setNav(false)
                         setUnderline(e)
-                        }}><a>Credits</a></li>
+                        }}><a>Credits</a>
+                    </li>
                 </ol>
             </div>
         </div>

@@ -14,6 +14,10 @@
     box-shadow: 0px 0px #000;
 }
 
+.story:focus {
+    background-color: #e7f1ff;
+}
+
 
 .storyTitles {
     font-family: 'Klee One', cursive;
@@ -27,12 +31,13 @@
     .storyTitles {
         font-size: 2vh;
     }
-    .story {
-        margin-top: 8vh;
-    }
+    // .story {
+    //     margin-top: 8vh;
+    // }
     .storyWrapper {
         margin-right: -2vh;
         margin-left: -3vh;
+        margin-top: 8vh;
     }
 }
 
@@ -41,7 +46,10 @@
     .storyTitles {
         font-size: 2vh;
     }
-    .story {
+    // .story {
+    //     margin-top: 8vh;
+    // }
+    .storyWrapper {
         margin-top: 8vh;
     }
 }
@@ -55,11 +63,14 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    .story {
+    // .story {
+    //     margin-top: 13vh;
+    // }
+    .storyWrapper {
         margin-top: 13vh;
     }
     .story:hover {
-        margin-top: 12vh;
+        margin-top: -1vh;
         box-shadow: 8px 8px #000;
     }
 }
@@ -73,10 +84,10 @@
 
 // XXX-large devices 
 @media (min-width: 1920px) {
-    .story {
+    // .story {
+    //     margin-top: 15vh;
+    // }
+    .storyWrapper {
         margin-top: 15vh;
-    }
-    .story:hover {
-        margin-top: 14vh;
     }
   }

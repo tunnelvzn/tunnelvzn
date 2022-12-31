@@ -132,6 +132,9 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+.startBtn:focus {
+  background-color: #e7f1ff;
+}
 .disclaimer {
   font-family: 'Klee One', cursive;
   position: absolute; 

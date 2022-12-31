@@ -50,15 +50,19 @@ const Navbar = (props) => {
     return (
         <>
             <div className= {`${styles.topUiBackground} w-100 d-flex text-center justify-content-between`}>
-                <div className={styles.soundButton}>
+                <div role="button" aria-label="sound toggle" tabindex="0" className={styles.soundButton}>
                     <Image src={musicimgSrc} height={35} width={35} onClick={()=> {toggleMusic()}}/>
                 </div>
-                <h5 className={`${styles.logoFont} m-2`}><div onClick={() => 
-                {setRoute('/')
-                    console.log(nav)
-                }}><a>Tunnel_vzn</a></div></h5>
+                <h5 className={`${styles.logoFont} m-2`}>
+                    <div onClick={() => 
+                        {setRoute('/')
+                            console.log(nav)
+                        }}>
+                        <a role="link" aria-label="site name" tabindex="0">Tunnel_vzn</a>
+                    </div>
+                </h5>
                 <div className={styles.menuButton}>
-                    <Hamburger toggled={nav} toggle={setNav} color="#000000" duration={0.4} size={40} direction="left" distance="sm" easing="ease-in" />
+                    <Hamburger  aria-label="menu" toggled={nav} toggle={setNav} color="#000000" duration={0.4} size={40} direction="left" distance="sm" easing="ease-in" />
                 </div>
             </div>
             <Subnav show={nav}/>

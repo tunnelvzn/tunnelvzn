@@ -54,7 +54,7 @@ const About = () => {
                         <Accordion.Item eventKey="2">
                             <Accordion.Header>Can I suggest a story idea?</Accordion.Header>
                             <Accordion.Body>
-                                Yes, you can! We want to hear about all students' experiences. Although we can't guarantee that your exact idea will be an addition by itself, we can assure you that we will adapt your experience into a future story in some capacity. You can leave your ideas <Link href="https://docs.google.com/forms/d/1W2M3AvMM0hDVRwwXUgqTHfUfXxNW-ao13U9OoGff3BY/edit?usp=sharing"><a className={styles.insertLink} target="_blank">here</a></Link>!
+                                Yes, you can! We want to hear about all students' experiences. Although we can't guarantee that your exact idea will be an addition by itself, we can assure you that we will adapt your experience into a future story in some capacity. <Link href="https://docs.google.com/forms/d/1W2M3AvMM0hDVRwwXUgqTHfUfXxNW-ao13U9OoGff3BY/edit?usp=sharing"><a className={styles.insertLink} target="_blank">You can leave your story ideas here</a></Link>!
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="3">

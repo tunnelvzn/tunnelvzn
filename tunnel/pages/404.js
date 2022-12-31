@@ -16,7 +16,7 @@ const NotFound = () => {
                 </div>
 
                 <section className={styles.personImg}>
-                    <Image src="/personSitting.png" layout="fill" />
+                    <Image src="/personSitting.png" layout="fill" alt="a pencil sketch of a young man sitting on the ground"/>
                 </section>
                 <hr className={styles.line} />
             </div>

@@ -24,7 +24,8 @@ export default function Home() {
   useEffect(()=> {
     console.log('intro', intro)
   }, [])
-  
+
+
   let song = audio
 
   let introContent = (
@@ -35,16 +36,16 @@ export default function Home() {
           </Head>
         <h5 className={ `${styles.introHeader} text-center` }> Tunnel_vzn </h5>
         <h5 className={`text-center`}> Storytelling based on UW student experiences</h5>
-        <div className={styles.startBtn} onClick={() => {
-            console.log('click')
-            setIntro(false); 
-            song.loop = true;
-            song.play()
-            sessionStorage.setItem("intro", "false");
-            sessionStorage.setItem("route", "/");
-            }}>
-            Start The Experience
-          </div>
+        <div role="button" aria-label="enter experience" tabindex="0" className={styles.startBtn} onClick={() => {
+          console.log('click')
+          setIntro(false); 
+          song.loop = true;
+          song.play()
+          sessionStorage.setItem("intro", "false");
+          sessionStorage.setItem("route", "/");
+          }}>
+          Start The Experience
+        </div>
         <div className={`${styles.disclaimer} text-center`}><h5> <Icon icon="game-icons:sound-waves" width="40" height="40" /> Sound on for better experience.</h5></div>
       </div>
   )
