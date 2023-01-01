@@ -20,7 +20,7 @@ const Story = ({ id, name, contentImage }) => {
                 <div role="button" aria-label="story about" tabindex="0" onClick={()=> setRoute('/StoryContent')}>
                     <img className={styles.story} src={`/../../galleryImages/${contentImage}`} />
                 </div>
-                <h6 className={styles.storyTitles}><b>{name}</b></h6>
+                <h6 className={styles.storyTitles}>{name}</h6>
             </div>
         </div>
     )
@@ -31,7 +31,7 @@ const Story = ({ id, name, contentImage }) => {
                 <Link href="/404">
                     <img className={styles.story} src={`/../../galleryImages/${currImage}`} />
                 </Link>
-                <h6 className={styles.storyTitles}><b>Coming soon...</b></h6>
+                <h6 className={styles.storyTitles}>Coming soon...</h6>
             </div>
         </div>
     )
