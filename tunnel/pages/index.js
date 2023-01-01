@@ -63,10 +63,12 @@ export default function Home() {
           <title>Tunnel_vzn | Storytelling</title>
           <link rel="icon" href="/favicon.png" />
         </Head>
-        
-        {route == '/' && <Gallery /> }
-        {route == '/About' && <About />}
-        {route == '/Credits' && <Credits/>}
+        <main>
+          <h1>Storytelling based on UW student experiences</h1>
+          {route == '/' && <Gallery /> }
+          {route == '/About' && <About />}
+          {route == '/Credits' && <Credits/>}
+        </main>
 
         {/* <Footer/> */}
 
