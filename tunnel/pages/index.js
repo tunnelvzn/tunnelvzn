@@ -52,13 +52,6 @@ export default function Home() {
   console.log(route, 'route in main')
   let afterIntro = (
     <>
-      <Head>
-        <title>Tunnel_vzn | Storytelling</title>
-        <link rel="icon" href="/favicon.png" />
-        <meta name="author" content="Tunnel_vzn"></meta>
-        <meta name="description" content="A student ran organization telling stories inspired by the experiences of University of Washington students."></meta>
-        <meta name="keywords" content="storytelling"></meta>
-      </Head>
       {/* reference: https://www.npmjs.com/package/react-audio-player */}
     
       <NavBar/>
