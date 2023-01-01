@@ -10,9 +10,9 @@ function MyApp({ Component, pageProps }) {
         <title>Tunnel_vzn | Storytelling</title>
         <meta charset="UTF-8" />
         <link rel="icon" href="/favicon.png" />
-        <meta name="author" content="Tunnel_vzn"></meta>
-        <meta name="description" content="A student ran organization telling stories inspired by the experiences of University of Washington students."></meta>
-        <meta name="keywords" content="storytelling"></meta>
+        <meta name="author" content="Tunnel_vzn" />
+        <meta name="description" content="A student ran organization telling stories inspired by the experiences of University of Washington students." />
+        <meta name="keywords" content="storytelling" />
       </Head>
       <GlobalProvider>
         <Component {...pageProps} />
