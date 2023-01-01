@@ -37,8 +37,8 @@ export default function Home() {
             <meta name="description" content="A student ran organization telling stories inspired by the experiences of University of Washington students."></meta>
             <meta name="keywords" content="storytelling"></meta>
           </Head>
-        <h5 className={ `${styles.introHeader} text-center` }> Tunnel_vzn </h5>
-        <h5 className={`text-center`}> Storytelling based on UW student experiences</h5>
+        <h1 className={`${styles.introHeader} text-center`}> Tunnel_vzn </h1>
+        <h1 className={`${styles.introSubHeader} text-center`}> Storytelling based on UW student experiences</h1>
         <div role="button" aria-label="enter experience" tabindex="0" className={styles.startBtn} onClick={() => {
           console.log('click')
           setIntro(false); 
