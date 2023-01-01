@@ -20,6 +20,7 @@ const Story = ({ id, name, contentImage }) => {
                 <div role="button" aria-label="story about" tabindex="0" onClick={()=> setRoute('/StoryContent')}>
                     <img className={styles.story} src={`/../../galleryImages/${contentImage}`} />
                 </div>
+                <h1>Storytelling based on UW student experiences</h1>
                 <h6 className={styles.storyTitles}>{name}</h6>
             </div>
         </div>

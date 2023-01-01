@@ -38,7 +38,7 @@ export default function Home() {
             <meta name="keywords" content="storytelling"></meta>
           </Head>
         <h1 className={`${styles.introHeader} text-center`}> Tunnel_vzn </h1>
-        <h1 className={`${styles.introSubHeader} text-center`}> Storytelling based on UW student experiences</h1>
+        <h1 className={`${styles.introSubHeader} text-center`}>Storytelling based on UW student experiences</h1>
         <div role="button" aria-label="enter experience" tabindex="0" className={styles.startBtn} onClick={() => {
           console.log('click')
           setIntro(false); 
@@ -63,12 +63,10 @@ export default function Home() {
           <title>Tunnel_vzn | Storytelling</title>
           <link rel="icon" href="/favicon.png" />
         </Head>
-        <main>
-          <h1>Storytelling based on UW student experiences</h1>
-          {route == '/' && <Gallery /> }
-          {route == '/About' && <About />}
-          {route == '/Credits' && <Credits/>}
-        </main>
+
+        {route == '/' && <Gallery /> }
+        {route == '/About' && <About />}
+        {route == '/Credits' && <Credits/>}
 
         {/* <Footer/> */}
 
