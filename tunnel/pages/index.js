@@ -33,9 +33,6 @@ export default function Home() {
           <Head>
             <title>Tunnel_vzn</title>
             <link rel="icon" href="/favicon.png" />
-            <meta name="author" content="Tunnel_vzn"></meta>
-            <meta name="description" content="A student ran organization telling stories inspired by the experiences of University of Washington students."></meta>
-            <meta name="keywords" content="storytelling"></meta>
           </Head>
         <h1 className={`${styles.introHeader} text-center`}> Tunnel_vzn </h1>
         <h1 className={`${styles.introSubHeader} text-center`}>Storytelling based on UW student experiences</h1>
@@ -55,14 +52,17 @@ export default function Home() {
   console.log(route, 'route in main')
   let afterIntro = (
     <>
-    {/* reference: https://www.npmjs.com/package/react-audio-player */}
+      <Head>
+        <title>Tunnel_vzn | Storytelling</title>
+        <link rel="icon" href="/favicon.png" />
+        <meta name="author" content="Tunnel_vzn"></meta>
+        <meta name="description" content="A student ran organization telling stories inspired by the experiences of University of Washington students."></meta>
+        <meta name="keywords" content="storytelling"></meta>
+      </Head>
+      {/* reference: https://www.npmjs.com/package/react-audio-player */}
     
       <NavBar/>
-      <div className={` ${styles.home} d-flex flex-column justify-content-center`}>
-        <Head>
-          <title>Tunnel_vzn | Storytelling</title>
-          <link rel="icon" href="/favicon.png" />
-        </Head>
+      <div className={`${styles.home} d-flex flex-column justify-content-center`}>
 
         {route == '/' && <Gallery /> }
         {route == '/About' && <About />}
