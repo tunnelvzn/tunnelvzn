@@ -18,9 +18,14 @@ export const GlobalProvider = ({ children }) => {
         setIntro(sessionIntro == null? sessionIntro : true)
     }, intro)
     
+    // Eclipse
+    // https://drive.google.com/u/0/uc?id=1xFWLoxKWYk6Ub8reLvzVg89a-p__Cvzl&export=download
+
+    // Aurora
+    // https://docs.google.com/uc?export=download&id=1qcaDUv3lxrnOufajibXXL27Ymi8I78Us
    
     const [pause, setPause] = useState(false)
-    const [audio] = useState(typeof Audio !== "undefined" && new Audio(`https://docs.google.com/uc?export=download&id=1qcaDUv3lxrnOufajibXXL27Ymi8I78Us`));
+    const [audio] = useState(typeof Audio !== "undefined" && new Audio(`https://drive.google.com/u/0/uc?id=1xFWLoxKWYk6Ub8reLvzVg89a-p__Cvzl&export=download`));
     
    return(
     <GlobalContext.Provider value = {{intro, setIntro, audio, pause, setPause, route, setRoute, nav, setNav}}> 
