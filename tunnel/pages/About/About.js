@@ -21,7 +21,7 @@ const About = () => {
                     <h1 className={`${styles.aboutTitle} text-center`}>About Us</h1>
                     <h3 className={styles.subTitle}>Who are we?</h3>
                     <p>
-                        We tell stories representing the shared struggles of students at the University of Washington. We craft stories based on true recountings that we have researched.
+                        We tell stories representing the shared struggles of students at the University of Washington. We craft stories based on true recountings that we have researched. We are a student-run organization unaffiliated with the university.
                     </p>
                 </div>
                 <div>
