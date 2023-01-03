@@ -37,6 +37,13 @@ const About = () => {
                     </p>
                 </div>
                 <div>
+                    <h3 className={styles.subTitle}>Official Humans Of UW Partnership</h3>
+                    <p>
+                        We are collaborating with <Link href="https://www.instagram.com/officialhumansofuw/"><a target="_blank">Official Humans Of UW</a></Link> because both organizations seek to accomplish the same goal through differing approaches.
+                        Tunnel_vzn gathers many experiences and combines them into one story like a collage. On the other hand, Official Humans Of UW focuses on amplifying the voices of individual students. 
+                    </p>
+                </div>
+                <div>
                     <h3 className={`${styles.subTitle} ${styles.customSpace}`}>Frequently Asked Questions</h3>
                     <Accordion>
                         <Accordion.Item eventKey="0">
@@ -48,13 +55,13 @@ const About = () => {
                         <Accordion.Item eventKey="1">
                             <Accordion.Header>How does Tunnel_vzn gather student experiences?</Accordion.Header>
                             <Accordion.Body>
-                                We talk with current students at the university. We also get feedback from students about the relatability of the stories before they go live!
+                                We talk with current students at the university, gather personal accounts from social media, and take inspiration from our friends at Official Humans Of UW. We also get feedback from students about the relatability and realism of the stories before they go live!
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="2">
-                            <Accordion.Header>Can I suggest a story idea?</Accordion.Header>
+                            <Accordion.Header>What can I do to make my story heard?</Accordion.Header>
                             <Accordion.Body>
-                                Yes, you can! We want to hear about all students' experiences. Although we can't guarantee that your exact idea will be an addition by itself, we can assure you that we will adapt your experience into a future story in some capacity. <Link href="https://docs.google.com/forms/d/1W2M3AvMM0hDVRwwXUgqTHfUfXxNW-ao13U9OoGff3BY/edit?usp=sharing"><a className={styles.insertLink} target="_blank">You can leave your story ideas here</a></Link>!
+                                If you want to share your story, we encourage you to submit them to Official Humans Of UW to ensure that your experience gets heard by as many people as possible!
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="3">
@@ -70,12 +77,6 @@ const About = () => {
                             </Accordion.Body>
                         </Accordion.Item>
                     </Accordion>
-                </div>
-                <div>
-                    <h3 className={styles.subTitle}>Project Updates</h3>
-                    <p>
-                        We are aware of screenreader and keyboard accessibility bugs and are tackling those challenges right now. We want the site to be inclusive to all students. Thank you for understanding.
-                    </p>
                 </div>
                 <div className={styles.block}></div>
             </div>

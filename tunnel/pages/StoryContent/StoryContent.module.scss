@@ -69,6 +69,7 @@
   height: 100vh;
   justify-content: center;
   align-items: center;
+  overflow-x: hidden;
 }
 
 .theArrow {
@@ -132,6 +133,16 @@
   display: flex;
   justify-content: center;
   flex-direction: column;
+}
+
+.partnership {
+  margin-top: 15vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+}
+
+.partnership h5 {
+  font-size: 3vh;
 }
 
 // --------------------RESPONSIVE DESIGN----------------------------------------

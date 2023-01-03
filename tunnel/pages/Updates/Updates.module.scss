@@ -1,0 +1,78 @@
+.updateBG {
+    background-color: #F9F9F9;
+}
+
+.updateTitle {
+   margin-bottom: 10vh;
+}
+
+// .updateContent {
+//     background-image: url(/girl.png);
+//     background-repeat: no-repeat;
+//     background-position: center;
+//     background-size: 50%;
+//     background-color: transparent;
+// }
+
+.subTitle {
+    margin-top: 5vh;
+}
+
+.block {
+    height: 20vh;
+}
+
+.customSpace {
+    margin-bottom: 3vh;
+}
+
+.insertLink {
+    color: #000;
+}
+
+.insertLink:hover {
+    color: #000;
+}
+
+// .girlFrame {
+//     display: flex;
+//     justify-content: center;
+//     z-index: -1;
+// }
+
+// --------------------RESPONSIVE DESIGN----------------------------------------
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .updateContent {
+        line-height: 2;
+        max-width: 90%;
+        margin-left: 5%;
+    }
+    .updateTitle {
+        font-size: 15vw;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .updateContent {
+        line-height: 2;
+        max-width: 80%;
+        margin-left: 10%;
+    }
+    .updateTitle {
+        font-size: 15vw;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .updateContent {
+        max-width: 60%;
+        margin-left: 20%;
+    }
+    .updateTitle {
+        font-size: 10vw;
+    }
+}

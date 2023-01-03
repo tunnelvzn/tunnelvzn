@@ -1,6 +1,7 @@
 import styles from './Credits.module.scss'
 import Image from 'next/image'
 import Footer from '/comps/Footer';
+import Link from 'next/link'
 import Head from 'next/head'
 
 const Credits = () => {
@@ -71,7 +72,16 @@ const Credits = () => {
                             </div>
                             <div className="mt-4 d-flex justify-content-around">
                                 <div className={styles.end}>
-                                    <p>BGM: Aurora by Sanchii from Uppbeat</p>
+                                    <p>
+                                        Images of McCarty Hall from the loneliness story were from <Link href="https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/McCarty-Hall"><a className={styles.creditLink} target="_blank">hfs.uw.edu</a></Link>.
+                                    </p>
+                                    <p>
+                                        BGM: Eclipse - Cinematic Dark Hybrid Music [FREE DOWNLOAD] by Keys of Moon Music 
+                                        <br/>
+                                        <Link href="https://soundcloud.com/keysofmoon"><a className={styles.creditLink} target="_blank">https://soundcloud.com/keysofmoon</a></Link>
+                                        <br/>
+                                        Music provided by <Link href="https://www.plugnplaymusic.net"><a className={styles.creditLink} target="_blank"> https://www.plugnplaymusic.net</a></Link>
+                                    </p>
                                 </div>
                             </div>
                             <div className={styles.block}></div>

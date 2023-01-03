@@ -62,6 +62,15 @@ function Subnav(props) {
                     <li id="feedback-tag" className={`${styles.pageTabs} ${styles.feedbackTab} general-nav-tags`}>
                         <Link href="https://docs.google.com/forms/d/1W2M3AvMM0hDVRwwXUgqTHfUfXxNW-ao13U9OoGff3BY/edit?usp=sharing"><a aria-label="feedback tab to an external page" target="_blank">Feedback</a></Link>
                     </li>
+
+                    <li role="link" aria-label="project updates tab" tabindex="0" id="updates-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
+                        setRoute('/Updates'); 
+                        sessionStorage.setItem("route", "/Updates");
+                        setNav(false)
+                        setUnderline(e)
+                        }}><a>Updates</a>
+                    </li>
+
                     <li role="link" aria-label="credits tab" tabindex="0" id="credits-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
                         setRoute('/Credits'); 
                         sessionStorage.setItem("route", "/Credits");
@@ -69,6 +78,7 @@ function Subnav(props) {
                         setUnderline(e)
                         }}><a>Credits</a>
                     </li>
+                    
                 </ol>
             </div>
         </div>

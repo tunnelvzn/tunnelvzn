@@ -46,14 +46,14 @@ const StoryContent = () => {
                     <div className={styles.imgFrame}>
                         <Image src="/lonelinessImages/cover.png" className={styles.storyImg} layout="fill" alt="a dude named John walking past a bench looking downwards"/>
                     </div>
-                    <p className={styles.words}>
-                        <span className={styles.storyTitle}>Loneliness</span>
+                    <div className={styles.words}>
+                        <h1 className={styles.storyTitle}>Loneliness</h1>
                         <br />
                         <br />
-                        <span className={styles.storySynopsis}>Synopsis:</span>
+                        <h2 className={styles.storySynopsis}>Synopsis:</h2>
                         <br />
-                        Believing the commute is robbing his time to build relationships with people, John decides to live on-campus, however, it wasn't what he had expected...
-                    </p>
+                        <p>Believing the commute is robbing his time to build relationships with people, John decides to live on-campus, however, it wasn't what he had expected...</p>
+                    </div>
                 </div>
                 <div className={`${styles.section} ${styles.normSection}`}>
                     <div className={styles.block}></div>
@@ -182,7 +182,7 @@ const StoryContent = () => {
                         <Image src="/lonelinessImages/mccarty.png" className={styles.storyImg} layout="fill" alt="mccarty hall, a dorm building on the UW's campus"/>
                     </div>
                     <p className={styles.words}>
-                    John entered the room. However, when he attempted to say something, he couldn’t say anything other than a greeting, which his roommates acknowledged briefly but continued their conversation. John stared awkwardly at the two of them for several seconds wanting to say something but never did. <br/><br/>That night, John found the day bitter-sweet. Although he couldn’t get a conversation going with his roommates, he got to know one person, which was a big step forward. Who knows? Maybe tomorrow would be the day.
+                        John entered the room. However, when he attempted to say something, he couldn’t say anything other than a greeting, which his roommates acknowledged briefly but continued their conversation. John stared awkwardly at the two of them for several seconds wanting to say something but never did. <br/><br/>That night, John found the day bitter-sweet. Although he couldn’t get a conversation going with his roommates, he got to know one person, which was a big step forward. Who knows? Maybe tomorrow would be the day.
                     </p>
                 </div>
 
@@ -190,7 +190,7 @@ const StoryContent = () => {
                 <div className={`${styles.section} ${styles.normSection} text-center`}>
                     <div className={styles.block}></div>
                     <div className={styles.block}></div>
-                    <div className={`${styles.endHalf}`}>
+                    <div>
                         <h1 className={styles.endText}>A chapter may end, but the story continues...</h1>
                         <div className={styles.buttonContainer}>
                             <div className={styles.endStoryBtn}>
@@ -199,6 +199,10 @@ const StoryContent = () => {
                             <div className={styles.endStoryBtn}>
                                 <h6><Link href="/"><a>Next Story <Icon icon="material-symbols:arrow-forward" width="27" height="27" /></a></Link></h6>
                             </div>
+                        </div>
+                        <div className={styles.partnership}>
+                            <h5>Interested in telling your story?</h5>
+                            <h6>Submit it to our friends <Link href="https://www.instagram.com/officialhumansofuw/"><a target="_blank">@officialhumansofuw</a></Link>!</h6>
                         </div>
                     </div>
                 </div>

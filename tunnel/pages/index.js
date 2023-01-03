@@ -3,6 +3,7 @@ import Intro from './Intro'
 import Gallery from './Gallery'
 import NavBar from '../comps/NavBar'
 import Credits from '../pages/Credits'
+import Updates from '../pages/Updates'
 import StoryContent from './StoryContent'
 import React from "react";
 import Head from 'next/head'
@@ -60,6 +61,7 @@ export default function Home() {
         {route == '/' && <Gallery /> }
         {route == '/About' && <About />}
         {route == '/Credits' && <Credits/>}
+        {route == '/Updates' && <Updates/>}
 
         {/* <Footer/> */}
 
