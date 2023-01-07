@@ -20,7 +20,9 @@ export const Anxiety = () => {
         <h1 className="mt-5">ahhhhh so anxious</h1>
         <h1 className="mt-5">ahhhhh so anxious</h1>
         <h1 className="mt-5">ahhhhh so anxious</h1>
-        
+
         </div>
     )
 }
+
+export default Anxiety
