@@ -3,19 +3,30 @@ import styles from './Gallery.module.scss'
 import React from "react"
 import stories from '../../data/stories.json'
 import Footer from '/comps/Footer';
+import { GlobalContext } from '../../comps/Global/useGlobalContext'
+import { useCallback, useContext } from "react"
 
 const Gallery = () => {
-
+    const {
+        intro, 
+        setIntro,
+        pause, 
+        setPause,
+        audio,
+        setRoute,
+        nav, 
+        setNav
+      } = 
+      useContext(GlobalContext);
     let ret = (
         <>
         <div className={styles.galleryMain}>
             <div id="horiscroll" className={styles.horizontalScroll}>
                 {stories.map(story => {
                     return (
-                        <Story id={ story.id} name={story.name} contentImage={story.image} />
+                        <Story id={ story.id} name={story.name} contentImage={story.image}/>
                     )
                 })}
-
             </div>
         </div>
         <Footer/>

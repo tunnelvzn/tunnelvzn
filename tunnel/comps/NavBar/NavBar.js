@@ -54,8 +54,15 @@ const Navbar = (props) => {
                 </div>
                 <h5 className={`${styles.logoFont} m-2`}>
                     <div onClick={() => 
-                        {setRoute('/')
+                        {
+                            setRoute('/')
                             console.log(nav)
+                            const allTags = document.getElementsByClassName('general-nav-tags')
+                            for (let i = 0; i< allTags.length; i++ ) {
+                                allTags[i].classList.remove(`${styles.active}`)
+                            }
+                            document.getElementById('home-tag').classList.add(`${styles.active}`)
+                            setNav(false)
                         }}>
                         <a role="link" aria-label="site name" tabindex="0">Tunnel_vzn</a>
                     </div>

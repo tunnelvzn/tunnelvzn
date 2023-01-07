@@ -4,6 +4,11 @@
     "image": "loneliness.svg"
 },
 {
+    "id": "2", 
+    "name": "Anxiety",
+    "image": "loneliness.svg"
+},
+{
     "id": "null", 
     "name": "coming soon",
     "image": "loneliness.svg"
