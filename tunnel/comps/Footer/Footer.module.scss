@@ -30,9 +30,14 @@
     padding-right: 1vh;
 }
 
-.footerLink, .footerLink:hover {
+.footerLink {
     color: #000000;
 }
+
+.footerLink:hover {
+    color: #0d6efd;
+}
+
 .iconStyle {
     margin-left: 0.3vh;
     margin-right: 0.3vh;
@@ -95,7 +100,7 @@
     //     color: #00ff22;
     // }
     .iconContainer .footerLink:hover {
-        color: #000000;
+        color: #000;
         box-shadow: 3px 3px #000;
     }
 }

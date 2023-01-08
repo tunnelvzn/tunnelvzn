@@ -1,3 +1,22 @@
+.baseLayoutContainer {
+  position: relative;
+}
+
+.skipNavigationLink {
+  left: -10000px;
+  position: absolute;
+  z-index: 100;
+  background-color: #F9F9F9;
+
+  &:focus {
+    left: 0;
+  }
+}
+
+.mainElement:focus {
+  outline: none;
+}
+
 .container {
   padding: 0 2rem;
 }

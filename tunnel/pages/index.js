@@ -52,11 +52,14 @@ export default function Home() {
   )
   console.log(route, 'route in main')
   let afterIntro = (
-    <>
+    <div className={styles.baseLayoutContainer}>
       {/* reference: https://www.npmjs.com/package/react-audio-player */}
     
+      <a className={styles.skipNavigationLink} href="#mainContent">
+        Skip Navigation
+      </a>
       <NavBar/>
-      <div className={`${styles.home} d-flex flex-column justify-content-center`}>
+      <div id="mainContent" className={`${styles.home} ${styles.mainElement} d-flex flex-column justify-content-center`} tabIndex={-1}>
 
         {route == '/' && <Gallery /> }
         {route == '/About' && <About />}
@@ -67,7 +70,7 @@ export default function Home() {
 
         {route == '/StoryContent' && <StoryContent/>}
       </div>
-    </>
+    </div>
   )
   return (
     <>

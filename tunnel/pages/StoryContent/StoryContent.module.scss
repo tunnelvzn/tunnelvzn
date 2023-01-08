@@ -39,12 +39,25 @@
 //   background: #555;
 // }
 
+.partnerLink {
+  color: #000;
+}
+
+.partnerLink:hover {
+  color: #0d6efd;
+}
+
 .block {
   height: 13vh;
 }
 .storySynopsis {
   font-size: 3vh;
   text-decoration: underline;
+}
+
+.words {
+  line-height: 3vh;
+  letter-spacing: -1px;
 }
 
 .normSection {

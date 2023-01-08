@@ -39,7 +39,7 @@ const About = () => {
                 <div>
                     <h3 className={styles.subTitle}>Official Humans Of UW Partnership</h3>
                     <p>
-                        We are collaborating with <Link href="https://www.instagram.com/officialhumansofuw/"><a target="_blank">Official Humans Of UW</a></Link> because both organizations seek to accomplish the same goal through differing approaches.
+                        We are collaborating with <Link href="https://www.instagram.com/officialhumansofuw/"><a className={styles.partnerLink} target="_blank">Official Humans Of UW</a></Link> because both organizations seek to accomplish the same goal through differing approaches.
                         Tunnel_vzn gathers many experiences and combines them into one story like a collage. On the other hand, Official Humans Of UW focuses on amplifying the voices of individual students. 
                     </p>
                 </div>

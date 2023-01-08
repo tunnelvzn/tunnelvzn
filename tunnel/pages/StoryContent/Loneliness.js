@@ -174,7 +174,7 @@ export const Loneliness = () => {
                     </div>
                     <div className={styles.partnership}>
                         <h5>Interested in telling your story?</h5>
-                        <h6>Submit it to our friends <Link href="https://www.instagram.com/officialhumansofuw/"><a target="_blank">@officialhumansofuw</a></Link>!</h6>
+                        <h6>Submit it to our friends <Link href="https://www.instagram.com/officialhumansofuw/"><a className={styles.partnerLink} target="_blank">@officialhumansofuw</a></Link>!</h6>
                     </div>
                 </div>
             </div>
