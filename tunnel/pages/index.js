@@ -22,10 +22,6 @@ export default function Home() {
     setRoute
   } = 
   useContext(GlobalContext);
-  useEffect(()=> {
-    console.log('intro', intro)
-  }, [])
-
 
   let song = audio
 

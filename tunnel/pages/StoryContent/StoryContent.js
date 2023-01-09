@@ -26,15 +26,15 @@ const StoryContent = () => {
     const story = stories.find(story => story.id == id)
     console.log(storyName)
     let renderComponent;
-    switch (storyName){
-        case "Loneliness": 
-            renderComponent = <Loneliness/>
-        break
+    switch (storyName) {
+        case "Loneliness":
+            renderComponent = <Loneliness />
+            break
         case "Anxiety":
-            renderComponent = <Anxiety/>
-        break 
+            renderComponent = <Anxiety />
+            break
     }
-    
+
     return (
         <div>
             {/* once we roll out button component, we can revisit this */}
@@ -53,6 +53,8 @@ const StoryContent = () => {
             </section>
 
             {renderComponent}
+
+           
         </div>
     )
 }

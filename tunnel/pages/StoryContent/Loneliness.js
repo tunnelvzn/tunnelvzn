@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from 'next/router'
-import { useState, useEffect, useContext } from 'react';
+import { useState, useEffect, useContext, componentDidMount } from 'react';
 import stories from '../../data/stories.json'
 import NavBar from '../../comps/NavBar'
 import Footer from '../../comps/Footer'
@@ -9,8 +9,54 @@ import Image from 'next/image'
 import { GlobalContext } from '../../comps/Global/useGlobalContext'
 import Link from 'next/link'
 import { Icon } from '@iconify/react';
+import { collection, addDoc, getDocs, runTransaction, doc  } from "firebase/firestore";
+import { async } from "@firebase/util";
 
 export const Loneliness = () => {
+    const [like, setLike] = useState(0)
+    const {
+        db,
+        storyName
+    } =
+        useContext(GlobalContext);
+
+    useEffect(() => {
+        const fetchData = async () => {
+            const querySnapshot = await getDocs(collection(db, "likes"));
+            querySnapshot.forEach((doc) => {
+                console.log(`${doc.id} => ${doc.data()}`);
+                if (storyName.toLowerCase() == doc.id) {
+                    console.log('data', doc.data().likes)
+                    setLike(doc.data().likes)
+                }
+            });
+        }
+
+        fetchData().catch(console.log('hey'))
+    }, [])
+
+    const addLike = async() => {
+        console.log('add likes')
+        setLike(like + 1)
+        const sfDocRef = doc(db, "likes", storyName.toLowerCase());
+        console.log('doc ref', sfDocRef, storyName)
+
+        try {
+            await runTransaction(db, async (transaction) => {
+              const sfDoc = await transaction.get(sfDocRef);
+              if (!sfDoc.exists()) {
+                throw "Document does not exist!";
+              } 
+          
+              const newLike = sfDoc.data().likes + 1;
+              transaction.update(sfDocRef, { likes: newLike });
+            });
+            // console.log("Transaction successfully committed!");
+          } catch (e) {
+            console.log("Transaction failed: ", e);
+          }
+    }
+
     return (
         <div className={styles.container}>
             <div className={styles.section}>
@@ -20,6 +66,7 @@ export const Loneliness = () => {
                 </div>
                 <div className={styles.words}>
                     <h1 className={styles.storyTitle}>Loneliness</h1>
+                    <small>Likes: {like}</small>
                     <br />
                     <br />
                     <h2 className={styles.storySynopsis}>Synopsis:</h2>
@@ -164,6 +211,9 @@ export const Loneliness = () => {
                 <div className={styles.block}></div>
                 <div>
                     <h1 className={styles.endText}>A chapter may end, but the story continues...</h1>
+                    <button className={styles.interactionBtn} onClick={() => addLike()}>
+                        <h6>Like {like}</h6>
+                    </button>
                     <div className={styles.buttonContainer}>
                         <div className={styles.endStoryBtn}>
                             <h6><Link href="https://docs.google.com/forms/d/1DrB0tHjeUPldV7PZQyn4FFgA_QMIl7GePdfUEoLUAo4/viewform?edit_requested=true"><a target="_blank">Thoughts On This Story? <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
