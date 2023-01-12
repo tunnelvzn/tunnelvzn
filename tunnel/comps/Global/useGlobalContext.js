@@ -1,6 +1,7 @@
 import React, { createContext, useReducer, useEffect, useState, onMount } from 'react';
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
+import { getAuth } from "firebase/auth";
 
 const initialState = {    
 }
@@ -20,7 +21,8 @@ export const GlobalProvider = ({ children }) => {
       
       const app = initializeApp(firebaseConfig);
       const db = getFirestore(app);
-      
+
+      const auth = getAuth(app);
 
     const [route, setRoute] = useState( '/')
     const [intro, setIntro] = useState(true)
@@ -44,7 +46,7 @@ export const GlobalProvider = ({ children }) => {
     const [audio] = useState(typeof Audio !== "undefined" && new Audio(`https://drive.google.com/u/0/uc?id=1xFWLoxKWYk6Ub8reLvzVg89a-p__Cvzl&export=download`));
     
    return(
-    <GlobalContext.Provider value = {{intro, setIntro, audio, pause, setPause, route, setRoute, nav, setNav, storyName, setStoryName, db}}> 
+    <GlobalContext.Provider value = {{intro, setIntro, audio, pause, setPause, route, setRoute, nav, setNav, storyName, setStoryName, db, auth}}> 
         {children} 
     </GlobalContext.Provider>
    )

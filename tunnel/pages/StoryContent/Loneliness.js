@@ -9,11 +9,13 @@ import Image from 'next/image'
 import { GlobalContext } from '../../comps/Global/useGlobalContext'
 import Link from 'next/link'
 import { Icon } from '@iconify/react';
-import { collection, addDoc, getDocs, runTransaction, doc  } from "firebase/firestore";
+import { collection, addDoc, getDocs, runTransaction, doc } from "firebase/firestore";
 import { async } from "@firebase/util";
+import { setConfig } from "next/config";
 
 export const Loneliness = () => {
     const [like, setLike] = useState(0)
+    const [view, setView] = useState(0)
     const {
         db,
         storyName
@@ -30,12 +32,42 @@ export const Loneliness = () => {
                     setLike(doc.data().likes)
                 }
             });
+
+            const sfDocRef = doc(db, "viewCounts", storyName.toLowerCase());
+            console.log('doc ref', sfDocRef, storyName)
+
+            try {
+                await runTransaction(db, async (transaction) => {
+                    const sfDoc = await transaction.get(sfDocRef);
+                    if (!sfDoc.exists()) {
+                        throw "Document does not exist!";
+                    }
+
+                    const newCount = sfDoc.data().count + 1;
+                    transaction.update(sfDocRef, { count: newCount });
+                });
+                // console.log("Transaction successfully committed!");
+            } catch (e) {
+                console.log("Transaction failed: ", e);
+            }
+
+            const querySnapshot_view = await getDocs(collection(db, "viewCounts"));
+            querySnapshot_view.forEach((doc) => {
+                console.log(`${doc.id} => ${doc.data()}`);
+                if (storyName.toLowerCase() == doc.id) {
+                    console.log('data', doc.data().count)
+                    setView(doc.data().count)
+                }
+            });
+            console.log(view)
         }
 
         fetchData().catch(console.log('hey'))
+
+
     }, [])
 
-    const addLike = async() => {
+    const addLike = async () => {
         console.log('add likes')
         setLike(like + 1)
         const sfDocRef = doc(db, "likes", storyName.toLowerCase());
@@ -43,18 +75,18 @@ export const Loneliness = () => {
 
         try {
             await runTransaction(db, async (transaction) => {
-              const sfDoc = await transaction.get(sfDocRef);
-              if (!sfDoc.exists()) {
-                throw "Document does not exist!";
-              } 
-          
-              const newLike = sfDoc.data().likes + 1;
-              transaction.update(sfDocRef, { likes: newLike });
+                const sfDoc = await transaction.get(sfDocRef);
+                if (!sfDoc.exists()) {
+                    throw "Document does not exist!";
+                }
+
+                const newLike = sfDoc.data().likes + 1;
+                transaction.update(sfDocRef, { likes: newLike });
             });
             // console.log("Transaction successfully committed!");
-          } catch (e) {
+        } catch (e) {
             console.log("Transaction failed: ", e);
-          }
+        }
     }
 
     return (
@@ -66,7 +98,10 @@ export const Loneliness = () => {
                 </div>
                 <div className={styles.words}>
                     <h1 className={styles.storyTitle}>Loneliness</h1>
-                    <small>Likes: {like}</small>
+                    <div className="d-flex">
+                        <small className="me-4">Likes: {like}</small>
+                        <small>Views: {view}</small>
+                    </div>
                     <br />
                     <br />
                     <h2 className={styles.storySynopsis}>Synopsis:</h2>
