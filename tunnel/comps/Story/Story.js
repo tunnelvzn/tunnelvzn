@@ -43,7 +43,6 @@ const Story = ({ id, name, contentImage }) => {
             </div>
         </div>
     )
-    console.log(defaultReturn)
     return (
         <>
             {id == "null" ? defaultReturn : storyContent}

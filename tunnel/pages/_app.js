@@ -1,5 +1,6 @@
 import '../styles/globals.scss'
 import 'bootstrap/dist/css/bootstrap.css'
+// import "bootstrap/dist/js/bootstrap.js";
 import { GlobalProvider } from '../comps/Global/useGlobalContext'
 import Head from 'next/head'
 
