@@ -9,6 +9,7 @@ import { GlobalContext } from '../Global/useGlobalContext'
 // npm install hamburger-react
 
 // content at the top of the page
+
 const Navbar = (props) => {
     const {
         intro, 
@@ -18,11 +19,15 @@ const Navbar = (props) => {
         audio,
         setRoute,
         nav, 
-        setNav
+        setNav,
+        user,
+        auth
       } = 
       useContext(GlobalContext);
       console.log("intro: ",intro)
       let song = audio
+
+      console.log('from nav', auth.currentUser)
     // const [nav, setNav] = useState(false)
     const [musicimgSrc, setMusicimgSrc] = useState('/icons/volumeYes.svg')
     
@@ -46,6 +51,9 @@ const Navbar = (props) => {
         }
         setPause(!pause)
     }
+    console.log(user.displayName)
+    auth.currentUser.reload()
+    console.log('from nav', auth.currentUser)
     return (
         <>
             <div className= {`${styles.topUiBackground} w-100 d-flex text-center justify-content-between`}>
@@ -65,6 +73,7 @@ const Navbar = (props) => {
                             setNav(false)
                         }}>
                         <a role="link" aria-label="site name" tabindex="0">Tunnel_vzn</a>
+                        {/* <small className='ms-5'>hi {user.displayName}</small> */}
                     </div>
                 </h5>
                 <div className={styles.menuButton}>

@@ -52,9 +52,9 @@ function Subnav(props) {
         <div className={styleClass}>
             <div id="sidenav" className="sidenav d-flex justify-content-between flex-column">
                 <ol className={`${styles.spaceAbove} d-flex flex-column h-75 justify-content-around`}>
-                    <li>
+                    {/* <li>
                         <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#exampleModal" onClick={() => userLogIn()}>Log in</button>
-                    </li>
+                    </li> */}
 
 
                     <li role="link" aria-label="home tab" tabindex="0" id="home-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {

@@ -24,6 +24,7 @@ export const GlobalProvider = ({ children }) => {
 
       const auth = getAuth(app);
 
+    const [user, setUser] = useState({})
     const [route, setRoute] = useState( '/')
     const [intro, setIntro] = useState(true)
     const [storyName, setStoryName] = useState('')
@@ -47,7 +48,7 @@ export const GlobalProvider = ({ children }) => {
     const [audio] = useState(typeof Audio !== "undefined" && new Audio(`https://drive.google.com/u/0/uc?id=1xFWLoxKWYk6Ub8reLvzVg89a-p__Cvzl&export=download`));
     
    return(
-    <GlobalContext.Provider value = {{intro, setIntro, audio, pause, setPause, route, setRoute, nav, setNav, storyName, setStoryName, db, auth,loginModal, setLoginModal}}> 
+    <GlobalContext.Provider value = {{intro, setIntro, audio, pause, setPause, route, setRoute, nav, setNav, storyName, setStoryName, db, auth,loginModal, setLoginModal,user, setUser}}> 
         {children} 
     </GlobalContext.Provider>
    )

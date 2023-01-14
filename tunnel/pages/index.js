@@ -12,7 +12,8 @@ import ReactAudioPlayer from 'react-audio-player';
 import { GlobalContext } from '../comps/Global/useGlobalContext'
 import About from './About/About';
 import { Icon } from '@iconify/react';
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword } from "firebase/auth";
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged , updateProfile} from "firebase/auth";
+import { doc, setDoc,getDoc, runTransaction } from "firebase/firestore";
 
 export default function Home() {
   const {
@@ -22,36 +23,47 @@ export default function Home() {
     route,
     setRoute,
     loginModal,
-    setLoginModal
+    setLoginModal,
+    user,
+    setUser,
+    db
   } =
     useContext(GlobalContext);
 
+  const auth = getAuth();
+
   const userSignin = () => {
+    
     const email = document.getElementById('email').value
     const password = document.getElementById('password').value
-    const auth = getAuth();
+
     signInWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
         // Signed in 
         const user = userCredential.user;
         // ...
+        setLoginModal(false)
+        setUser(user)
       })
       .catch((error) => {
         const errorCode = error.code;
         const errorMessage = error.message;
         console.log(errorCode, ": ", errorMessage)
       });
+      
+
   }
 
-  const userSignup = () => {
+  const userSignup = (event) => {
     const email = document.getElementById('email_new').value
     const password = document.getElementById('password_new').value
-    const auth = getAuth();
     createUserWithEmailAndPassword(auth, email, password)
       .then((userCredential) => {
-        // Signed in 
         const user = userCredential.user;
-        // ...
+        console.log(user)
+        setUserDb(user)
+        setLoginModal(false)
+        console.log()
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -59,6 +71,58 @@ export default function Home() {
         console.log(errorCode, ": ", errorMessage)
         // ..
       });
+      let name = document.getElementById('username').value
+      console.log('update display name:', name)
+      updateProfile(auth.currentUser, {
+        displayName: name,
+        photoURL: ''
+      }).then(() => {
+        console.log('profile updated')
+        auth.currentUser.reload()
+        console.log('reload user')
+        setUser(auth.currentUser)
+        console.log('user:', user)
+      }).catch((error) => {
+        console.log(error)
+      });
+
+      
+  }
+
+  onAuthStateChanged(auth, (user) => {
+    if (user) {
+      // User is signed in, see docs for a list of available properties
+      // https://firebase.google.com/docs/reference/js/firebase.User
+      const uid = user.uid;
+      // console.log(user)
+      // getUserDb(user)
+    } else {
+      console.log('user not logged in')
+    }
+  });
+
+  // const getUserDb = async(user) => {
+    // const docRef = doc(db, "users", user.id);
+    // const docSnap = await getDoc(docRef);
+
+    // if (docSnap.exists()) {
+    //   console.log("Document data:", docSnap.data());
+    // } else {
+      
+    //   console.log("No such document!, create new");
+    // }
+  
+  // }
+
+  const setUserDb = async(user) => {
+    console.log(user)
+    console.log('set db')
+    await setDoc(doc(db, "users", user.uid), {
+      displayName: user.displayName,
+      email: user.email,
+      uid: user.uid,
+      liked: []
+    });
   }
 
   let song = audio
@@ -116,7 +180,7 @@ export default function Home() {
                 <input id='password' type="text" class="form-control" aria-label="Small" aria-describedby="inputGroup-sizing-sm"></input>
               </div>
 
-              <button className="ms-4 me-4 mb-3 mt-3 p-1" onClick={() => { userSignin() }}>Log in</button>
+              <button className="ms-4 me-4 mb-3 mt-3 p-1" onClick={(event) => { event.preventDefault(); userSignin() }}>Log in</button>
               <small className='text-center'>don't have an account? <button onClick={() => {
                 document.getElementById('loginCard').classList.add('d-none')
                 document.getElementById('signupCard').classList.remove('d-none')
