@@ -97,7 +97,7 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/cover.png" className={styles.storyImg} layout="fill" alt="a dude named John walking past a bench looking downwards" />
                 </div>
                 <div className={styles.words}>
-                    <h1 className={styles.storyTitle}>Loneliness</h1>
+                    <h1 className={styles.storyTitle}>Preview</h1>
                     <div className="d-flex">
                         <small className="me-4">Likes: {like}</small>
                         <small>Views: {view}</small>
@@ -111,12 +111,12 @@ export const Loneliness = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/lightRail.png" className={styles.storyImg} layout="fill" alt="John sitting on the lightrail train and looking out the window" />
-                </div>
                 <p className={styles.words}>
                     John found himself staring out at the surroundings from the light rail during his usual commute to the University of Washington. He felt isolated. What infuriated him was that it wasn't his choice. <br /><br />In the distant past, John made efforts to initiate conversations. Yet, despite his commitment, he came off as disingenuine, which turned people away. So, he gave up and forced himself to live a quiet life.
                 </p>
+                <div className={styles.imgFrame}>
+                    <Image src="/lonelinessImages/lightRail.png" className={styles.storyImg} layout="fill" alt="John sitting on the lightrail train and looking out the window" />
+                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -129,12 +129,12 @@ export const Loneliness = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/lectureRoom.png" className={styles.storyImg} layout="fill" alt="John alone in his lecture room" />
-                </div>
                 <p className={styles.words}>
                     Unable to pay attention in class, John wondered whether commuting robbed him of opportunities to connect with people at certain events, which excluded him from conversations. <br /><br />The people who were often laughing and having a good time talked about the latest happenings on and off campus. They discussed their club activities or how they would eat out with their friends daily. John yearned for that lifestyle daily until he couldn’t bear it any longer.
                 </p>
+                <div className={styles.imgFrame}>
+                    <Image src="/lonelinessImages/lectureRoom.png" className={styles.storyImg} layout="fill" alt="John alone in his lecture room" />
+                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -147,12 +147,12 @@ export const Loneliness = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/dormStart.png" className={styles.storyImg} layout="fill" alt="John's new roommates talk while John is left in the background" />
-                </div>
                 <p className={styles.words}>
                     Or so he thought. His two roommates knew each other, which meant he was already the outcast of the group. The two preferred hanging out with their friends. They never bothered to invite John. Evening after evening, John's roommates have an outing with their friends, leaving John to fend for himself. <br /><br />Understandably, John was frustrated. After waiting a year in anticipation, he was already off to a bad start. His new home felt like his lecture room from last year. He blamed his roommates, thought they were scum and debated going to the resident advisor to complain. Maybe she could do something.
                 </p>
+                <div className={styles.imgFrame}>
+                    <Image src="/lonelinessImages/dormStart.png" className={styles.storyImg} layout="fill" alt="John's new roommates talk while John is left in the background" />
+                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -165,13 +165,13 @@ export const Loneliness = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/staircase.png" className={styles.storyImg} layout="fill" alt="John catches up with his classmate at the stairwell to give back the umbrella" />
-                </div>
                 <p className={styles.words}>
                     John contemplated what to do. Part of him felt terrible because it was supposed to rain later in the day. He grabbed the umbrella and went to catch up with the classmate already going down the stairs. When he did, John uttered hello and asked if they had forgotten an umbrella.
                     The classmate, a bit surprised, responded with confirmation and appreciation, and John handed it over. <br /><br />As John was about to leave, she asked him why he sat in the back when everyone preferred to sit near the front. To John, the answer was obvious. However, he couldn't admit that he liked observing people from a distance because that would be weird. So, John said he could drift off to sleep without getting noticed. The classmate thought it was understandable, and John felt he could connect with this classmate.
                 </p>
+                <div className={styles.imgFrame}>
+                    <Image src="/lonelinessImages/staircase.png" className={styles.storyImg} layout="fill" alt="John catches up with his classmate at the stairwell to give back the umbrella" />
+                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -186,13 +186,13 @@ export const Loneliness = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/redSquare.png" className={styles.storyImg} layout="fill" alt="John and his new friend part ways at red square" />
-                </div>
                 <p className={styles.words}>
                     Yet, because he felt indebted to his classmate in that they were the ones who reached out to him first, John dug deep into his mind to find some sort of logical answer that would make him seem intelligent.
                     The two stopped at the entrance of Red Square, where John gave his suggestion. <br /><br />The classmate seemed to like his “advice,” so John was thrilled with himself, though part of him was still a bit confused as to why anyone would ask him for advice. As the conversation winded down, the classmate asked to exchange discord handles, which John quickly agreed to. After chatting more, the two friends parted ways.
                 </p>
+                <div className={styles.imgFrame}>
+                    <Image src="/lonelinessImages/redSquare.png" className={styles.storyImg} layout="fill" alt="John and his new friend part ways at red square" />
+                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -205,12 +205,12 @@ export const Loneliness = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/hubExit.png" className={styles.storyImg} layout="fill" alt="John spots his two roommates leave the hub" />
-                </div>
                 <p className={styles.words}>
                     By chance, just as he was about to leave the Hub after finishing his meal, he spotted his roommates exit ahead of him. The sight of them broke his illusion that he was in a good place in his life and reminded him of the situation between him and his roommates. John contemplated talking to them this evening. But, because John made a new friend today, he had a bit of confidence. He felt invigorated.
                 </p>
+                <div className={styles.imgFrame}>
+                    <Image src="/lonelinessImages/hubExit.png" className={styles.storyImg} layout="fill" alt="John spots his two roommates leave the hub" />
+                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -223,12 +223,12 @@ export const Loneliness = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/dormRoom.png" className={styles.storyImg} layout="fill" alt="John gets home but does not know how to talk to his roommates" />
-                </div>
                 <p className={styles.words}>
                     Inevitably, John arrived at his dorm room door. He could hear his roommates talking through a closed door. When he peeked through the entrance, he found his roommates on their laptops, gossiping about how their TA put the section to sleep in the first five minutes. Not a good time to interrupt them, John thought. <br /><br />He felt sad but relieved he wouldn’t need to face the dilemma of talking to his roommates today. However, John had good momentum. If he ignores this opportunity, he might fall back into his old cycle again. It was a risk he was not willing to take.
                 </p>
+                <div className={styles.imgFrame}>
+                    <Image src="/lonelinessImages/dormRoom.png" className={styles.storyImg} layout="fill" alt="John gets home but does not know how to talk to his roommates" />
+                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -243,15 +243,14 @@ export const Loneliness = () => {
             {/* Final section of story deal with this last */}
             <div className={`${styles.section} ${styles.normSection} text-center`}>
                 <div className={styles.block}></div>
-                <div className={styles.block}></div>
                 <div>
                     <h1 className={styles.endText}>A chapter may end, but the story continues...</h1>
-                    <button className={styles.interactionBtn} onClick={() => addLike()}>
-                        <h6>Like {like}</h6>
-                    </button>
                     <div className={styles.buttonContainer}>
+                        <div className={styles.endStoryBtn} aria-label="like" role="button" tabindex="0" onClick={() => addLike()}>
+                            <h6>Like {like} <Icon icon="mdi:cards-heart-outline" width="25" height="25" /></h6>
+                        </div>
                         <div className={styles.endStoryBtn}>
-                            <h6><Link href="https://docs.google.com/forms/d/1DrB0tHjeUPldV7PZQyn4FFgA_QMIl7GePdfUEoLUAo4/viewform?edit_requested=true"><a target="_blank">Thoughts On This Story? <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
+                            <h6><Link href="https://docs.google.com/forms/d/1DrB0tHjeUPldV7PZQyn4FFgA_QMIl7GePdfUEoLUAo4/viewform?edit_requested=true"><a target="_blank">Thoughts? <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
                         </div>
                         <div className={styles.endStoryBtn}>
                             <h6><Link href="/"><a>Next Story <Icon icon="material-symbols:arrow-forward" width="27" height="27" /></a></Link></h6>

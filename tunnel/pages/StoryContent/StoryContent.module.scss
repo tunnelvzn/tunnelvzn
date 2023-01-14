@@ -102,18 +102,19 @@
   animation: bounce 2s infinite;
 }
 
-.interactionBtn {
-  border-color: #000 1px;
-  border-radius: 10px;
-  padding: 5px;
-  background-color: #F9F9F9;
-  margin-bottom: 5vh;
-}
+// Fred testing the like button and used this styling
+// .interactionBtn {
+//   border-color: #000 1px;
+//   border-radius: 10px;
+//   padding: 5px;
+//   background-color: #F9F9F9;
+//   margin-bottom: 5vh;
+// }
 
-.interactionBtn:hover {
-  border: red 2px solid;
-  transition: 0.3s ease-in-out;
-}
+// .interactionBtn:hover {
+//   border: red 2px solid;
+//   transition: 0.3s ease-in-out;
+// }
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -304,12 +305,12 @@
   }
   .imgFrame {
     margin-left: 2vh;
-    margin-right: 0vh;
+    margin-right: 2vh;
     width: 80vh;
   }
   .words {
     width: 80vh;
-    margin-left: 5vh;
+    margin-left: 2vh;
     margin-right: 2vh;
   }
   .endStoryBtn:hover {
