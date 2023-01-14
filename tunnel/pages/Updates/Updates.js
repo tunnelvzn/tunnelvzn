@@ -19,16 +19,40 @@ const Updates = () => {
                 <div className={styles.block}></div>
                 <h1 className={`${styles.updateTitle} text-center`}>Updates</h1>
                 <section>
-                    <h3 className={styles.subTitle}>Website Notices</h3>
+                    <h3 className={styles.subTitle}>Transparency Statement</h3>
                     <p>
-                        We are aware of screenreader and keyboard accessibility bugs and are tackling those challenges right now. We want the site to be inclusive to all students. Thank you for understanding.
+                        We are actively improving user experience. There are two main aspects we are focused on: content and website. 
+                        We believe in transparency and maintaining good communication with students. 
+                        Thus, the purpose of this page is to inform you about the state of the organization.
                     </p>
                 </section>
                 <section>
-                    <h3 className={styles.subTitle}>Story Notices</h3>
-                    <p>
-                        Story two will be releasing on January 16th, 2023. Although a story may be live, it is still subject to change for we are actively seeking feedback to make them better!
-                    </p>
+                    <h3 className={styles.subTitle}>Content Aspect</h3>
+                    <ul>
+                        <li>
+                            Published stories are still subject to change due to new feedback.
+                        </li>
+                        <li>
+                            Story three will release on March 16th, 2023.
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 className={styles.subTitle}>Website Aspect</h3>
+                    <ul>
+                        <li>
+                            Screenreader accessibility improvements
+                        </li>
+                        <li>
+                            Responsiveness for tablet orientation 
+                        </li>
+                        <li>
+                            User Sign-in for additional features
+                        </li>
+                        <li>
+                            Page Transition Animations
+                        </li>
+                    </ul>
                 </section>
                 <div className={styles.block}></div>
             </div>
