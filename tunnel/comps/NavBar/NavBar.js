@@ -52,7 +52,7 @@ const Navbar = (props) => {
         setPause(!pause)
     }
     console.log(user.displayName)
-    auth.currentUser.reload()
+    // auth.currentUser.reload()
     console.log('from nav', auth.currentUser)
     return (
         <>
