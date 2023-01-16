@@ -210,7 +210,7 @@ export default function Home() {
       }}>
         Start The Experience
       </div>
-      <div className={`${styles.disclaimer} text-center`}><h5> <Icon icon="game-icons:sound-waves" width="40" height="40" /> Sound on for better experience.</h5></div>
+      <div className={`${styles.disclaimer} text-center`}><h5> <Icon icon="game-icons:sound-waves" width="40" height="40" /> This site has sound for better experience.</h5></div>
     </div>
   )
 
