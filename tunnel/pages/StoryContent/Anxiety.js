@@ -272,6 +272,9 @@ export const Anxiety = () => {
                         <div className={styles.endStoryBtn}>
                             <h6><Link href="https://docs.google.com/forms/d/e/1FAIpQLSc_IHh0iCPXc0ZmqulyAWzyGA5WeospP4UJjAjOO0N6PfCUUw/viewform?usp=sf_link"><a target="_blank">Thoughts? <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
                         </div>
+                        <div className={styles.endStoryBtn}>
+                            <h6><Link href="https://www.instagram.com/tunnel_vzn/"><a target="_blank">Follow Us! <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
+                        </div>
                     </div>
                     <div className={styles.partnership}>
                         <h5>Interested in telling your story?</h5>

@@ -27,7 +27,7 @@ const Updates = () => {
                     </p>
                 </section>
                 <section>
-                    <h3 className={styles.subTitle}>Content Aspect</h3>
+                    <h3 className={styles.subTitle}>Upcoming Content</h3>
                     <ul>
                         <li>
                             Published stories are still subject to change due to new feedback.
@@ -38,22 +38,28 @@ const Updates = () => {
                     </ul>
                 </section>
                 <section>
-                    <h3 className={styles.subTitle}>Website Aspect</h3>
+                    <h3 className={styles.subTitle}>Upcoming Website Improvements</h3>
                     <ul>
                         <li>
                             Screenreader accessibility improvements
                         </li>
                         <li>
+                            Mobile reading enhancement
+                        </li>
+                        <li>
                             Responsiveness for tablet orientation 
                         </li>
                         <li>
-                            User Sign-in for additional features
+                            Dark mode
                         </li>
                         <li>
-                            Dark Mode
+                            User account for additional features
                         </li>
                         <li>
-                            Page Transition Animations
+                            Page transition animations
+                        </li>
+                        <li>
+                            General UI updates
                         </li>
                     </ul>
                 </section>

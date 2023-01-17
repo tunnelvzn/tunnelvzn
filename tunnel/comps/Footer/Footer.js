@@ -9,7 +9,8 @@ const Footer = () => {
         <div className={styles.footerDiv}>
             <footer className={styles.footer}>
                 <h6 className={styles.copyright}>© 2023 Tunnel_vzn</h6>
-                <p aria-label="is our contact email">Get In Touch! - <Link tabindex="0" href="mailto: tunnelvzn.uw@gmail.com"><a className={styles.footerLink}>tunnelvzn.uw@gmail.com</a></Link></p>
+                {/* <p aria-label="is our contact email">Get In Touch! - <Link tabindex="0" href="mailto: tunnelvzn.uw@gmail.com"><a className={styles.footerLink}>tunnelvzn.uw@gmail.com</a></Link></p> */}
+                <p aria-label="Follow us on instagram">Follow us on <Link tabindex="0" href="https://www.instagram.com/tunnel_vzn/"><a target="_blank" className={styles.footerLink}>Instagram</a></Link> for the latest updates!</p>
                 <div className={styles.iconContainer}>
                     <Link href="https://www.instagram.com/tunnel_vzn/"><a tabindex="0" aria-label="instagram" className={`${styles.footerLink} ${styles.extraPadding}`} target="_blank"><Icon icon="akar-icons:instagram-fill" className={styles.iconStyle}/></a></Link>
                     <Link href="https://www.linkedin.com/company/tunnelvzn/"><a tabindex="0" aria-label="linkedin" className={`${styles.footerLink} ${styles.extraPadding}`} target="_blank"><Icon icon="akar-icons:linkedin-box-fill" className={styles.iconStyle} /></a></Link>
