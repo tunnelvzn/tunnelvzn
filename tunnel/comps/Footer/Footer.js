@@ -8,6 +8,7 @@ const Footer = () => {
     return (
         <div className={styles.footerDiv}>
             <footer className={styles.footer}>
+                <h6 className={styles.copyright}>© 2023 Tunnel_vzn</h6>
                 <p aria-label="is our contact email">Get In Touch! - <Link tabindex="0" href="mailto: tunnelvzn.uw@gmail.com"><a className={styles.footerLink}>tunnelvzn.uw@gmail.com</a></Link></p>
                 <div className={styles.iconContainer}>
                     <Link href="https://www.instagram.com/tunnel_vzn/"><a tabindex="0" aria-label="instagram" className={`${styles.footerLink} ${styles.extraPadding}`} target="_blank"><Icon icon="akar-icons:instagram-fill" className={styles.iconStyle}/></a></Link>
