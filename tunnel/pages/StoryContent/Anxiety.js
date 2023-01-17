@@ -68,13 +68,16 @@ export const Anxiety = () => {
     }, [])
 
     const addLike = async () => {
+        let updateValue = 0
        const likebtn = document.getElementById('likeIcon')
         if(likebtn.classList.contains(styles.liked))  {
             setLike(like - 1)
             likebtn.classList.remove(styles.liked)
+            updateValue = like - 1
         } else {
             setLike(like + 1)
             likebtn.classList.add(styles.liked)
+            updateValue = like + 1
         }
 
         const sfDocRef = doc(db, "likes", storyName.toLowerCase());
@@ -87,7 +90,7 @@ export const Anxiety = () => {
                     throw "Document does not exist!";
                 }
 
-                const newLike = like;
+                const newLike = updateValue
                 transaction.update(sfDocRef, { likes: newLike });
             });
             // console.log("Transaction successfully committed!");
