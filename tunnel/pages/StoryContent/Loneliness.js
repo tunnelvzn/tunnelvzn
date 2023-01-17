@@ -18,7 +18,9 @@ export const Loneliness = () => {
     const [view, setView] = useState(0)
     const {
         db,
-        storyName
+        storyName,
+        setRoute,
+        setStoryName
     } =
         useContext(GlobalContext);
 
@@ -68,8 +70,15 @@ export const Loneliness = () => {
     }, [])
 
     const addLike = async () => {
-        console.log('add likes')
-        setLike(like + 1)
+        const likebtn = document.getElementById('likeIcon')
+        if(likebtn.classList.contains(styles.liked))  {
+            setLike(like - 1)
+            likebtn.classList.remove(styles.liked)
+        } else {
+            setLike(like + 1)
+            likebtn.classList.add(styles.liked)
+        }
+        
         const sfDocRef = doc(db, "likes", storyName.toLowerCase());
         console.log('doc ref', sfDocRef, storyName)
 
@@ -80,7 +89,7 @@ export const Loneliness = () => {
                     throw "Document does not exist!";
                 }
 
-                const newLike = sfDoc.data().likes + 1;
+                const newLike = like
                 transaction.update(sfDocRef, { likes: newLike });
             });
             // console.log("Transaction successfully committed!");
@@ -266,14 +275,21 @@ export const Loneliness = () => {
                 <div>
                     <h1 className={styles.endText}>A chapter may end, but the story continues...</h1>
                     <div className={styles.buttonContainer}>
-                        <div className={styles.endStoryBtn} aria-label="like" role="button" tabindex="0" onClick={() => addLike()}>
-                            <h6>Like {like} <Icon icon="mdi:cards-heart-outline" width="25" height="25" /></h6>
+                        <div className={styles.endStoryBtn} aria-label="like" role="button" tabindex="0" onClick={() => {
+                            addLike()
+                            }}>
+                            <h6>Like {like} <Icon id="likeIcon" icon="mdi:cards-heart-outline" width="25" height="25" /></h6>
                         </div>
                         <div className={styles.endStoryBtn}>
                             <h6><Link href="https://docs.google.com/forms/d/1DrB0tHjeUPldV7PZQyn4FFgA_QMIl7GePdfUEoLUAo4/viewform?edit_requested=true"><a target="_blank">Thoughts? <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
                         </div>
                         <div className={styles.endStoryBtn}>
-                            <h6><Link href="/"><a>Next Story <Icon icon="material-symbols:arrow-forward" width="27" height="27" /></a></Link></h6>
+                            <h6><a onClick={()=> {
+
+                                setStoryName('Anxiety')
+                                setRoute('/StoryContent'); 
+                                
+                            }}>Next Story <Icon icon="material-symbols:arrow-forward" width="27" height="27" /></a></h6>
                         </div>
                     </div>
                     <div className={styles.partnership}>

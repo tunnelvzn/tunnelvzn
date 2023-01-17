@@ -32,7 +32,7 @@ export const Anxiety = () => {
                     setLike(doc.data().likes)
                 }
             });
-
+            console.log(storyName)
             const sfDocRef = doc(db, "viewCounts", storyName.toLowerCase());
             console.log('doc ref', sfDocRef, storyName)
 
@@ -68,8 +68,15 @@ export const Anxiety = () => {
     }, [])
 
     const addLike = async () => {
-        console.log('add likes')
-        setLike(like + 1)
+       const likebtn = document.getElementById('likeIcon')
+        if(likebtn.classList.contains(styles.liked))  {
+            setLike(like - 1)
+            likebtn.classList.remove(styles.liked)
+        } else {
+            setLike(like + 1)
+            likebtn.classList.add(styles.liked)
+        }
+
         const sfDocRef = doc(db, "likes", storyName.toLowerCase());
         console.log('doc ref', sfDocRef, storyName)
 
@@ -80,7 +87,7 @@ export const Anxiety = () => {
                     throw "Document does not exist!";
                 }
 
-                const newLike = sfDoc.data().likes + 1;
+                const newLike = like;
                 transaction.update(sfDocRef, { likes: newLike });
             });
             // console.log("Transaction successfully committed!");
@@ -266,8 +273,10 @@ export const Anxiety = () => {
                 <div>
                     <h1 className={styles.endText}>A chapter may end, but the story continues...</h1>
                     <div className={styles.buttonContainer}>
-                        <div className={styles.endStoryBtn} aria-label="like" role="button" tabindex="0" onClick={() => addLike()}>
-                            <h6>Like {like} <Icon icon="mdi:cards-heart-outline" width="25" height="25" /></h6>
+                         <div className={styles.endStoryBtn} aria-label="like" role="button" tabindex="0" onClick={() => {
+                            addLike()
+                            }}>
+                            <h6>Like {like} <Icon id="likeIcon" icon="mdi:cards-heart-outline" width="25" height="25" /></h6>
                         </div>
                         <div className={styles.endStoryBtn}>
                             <h6><Link href="https://docs.google.com/forms/d/e/1FAIpQLSc_IHh0iCPXc0ZmqulyAWzyGA5WeospP4UJjAjOO0N6PfCUUw/viewform?usp=sf_link"><a target="_blank">Thoughts? <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
