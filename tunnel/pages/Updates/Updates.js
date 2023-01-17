@@ -50,6 +50,9 @@ const Updates = () => {
                             User Sign-in for additional features
                         </li>
                         <li>
+                            Dark Mode
+                        </li>
+                        <li>
                             Page Transition Animations
                         </li>
                     </ul>
