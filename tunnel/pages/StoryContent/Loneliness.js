@@ -97,7 +97,7 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/cover.png" className={styles.storyImg} layout="fill" alt="a dude named John walking past a bench looking downwards" />
                 </div>
                 <div className={styles.words}>
-                    <h1 className={styles.storyTitle}>Preview</h1>
+                    <h1 className={styles.storyTitle}>Loneliness</h1>
                     <div className="d-flex">
                         <small className="me-4">Likes: {like}</small>
                         <small>Views: {view}</small>
@@ -112,7 +112,9 @@ export const Loneliness = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <p className={styles.words}>
-                    John found himself staring out at the surroundings from the light rail during his usual commute to the University of Washington. He felt isolated. What infuriated him was that it wasn't his choice. <br /><br />In the distant past, John made efforts to initiate conversations. Yet, despite his commitment, he came off as disingenuine, which turned people away. So, he gave up and forced himself to live a quiet life.
+                    During my usual commute to the University of Washington on the light rail, I couldn't help but stare out at the surroundings wishing my life was more vibrant. I realized that I wanted some company, but felt frustrated that I didn't have any. 
+                    <br/><br/>
+                    In the past, I made great efforts to initiate conversations with others, but despite my commitment, I must have come across as insincere, which turned people away. So, I decided to accept it and enjoy my quiet time alone.
                 </p>
                 <div className={styles.imgFrame}>
                     <Image src="/lonelinessImages/lightRail.png" className={styles.storyImg} layout="fill" alt="John sitting on the lightrail train and looking out the window" />
@@ -124,13 +126,15 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/uwStation.png" className={styles.storyImg} layout="fill" alt="John leaving the lightrail car and walking on the platform towards the exit" />
                 </div>
                 <p className={styles.words}>
-                    John hopped off the light rail feeling drained of enthusiasm and emotionlessly made his way to his first class while loathing the lecture-packed day ahead of him. John strolled into the lecture room and sat in his usual spot at the back to observe his classmates engage in seemingly amusing conversations. <br /><br />Due to his observations, every day, John waited for someone to converse with him one day so he could finally have the same company. However, the combination of people talking around him and fantasizing about his social interactions made him feel cold and unwanted.
+                    I stepped off the light rail feeling a bit drained and made my way to my first class with a bit of reluctance. As I sat in my usual spot at the back of the lecture room, I couldn't help but notice my classmates engaging in lively conversations around me. 
+                    <br/><br/>
+                    I found myself wishing that someone would talk to me and make me feel more alive. Although I daydreamed about all the social interactions I wanted to have, it left me feeling disconnected.
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <p className={styles.words}>
-                    Unable to pay attention in class, John wondered whether commuting robbed him of opportunities to connect with people at certain events, which excluded him from conversations. <br /><br />The people who were often laughing and having a good time talked about the latest happenings on and off campus. They discussed their club activities or how they would eat out with their friends daily. John yearned for that lifestyle daily until he couldn’t bear it any longer.
+                    As I sat in class, I found myself struggling to pay attention. I wondered if my daily commute had robbed me of opportunities to connect with others. I noticed my classmates laughing and having a good time as they chatted about all the latest events on and off campus, their club activities, and plans to hang out with friends. It made me realize how much I longed to have that same experience in my own life. It was a feeling that I couldn't shake off.
                 </p>
                 <div className={styles.imgFrame}>
                     <Image src="/lonelinessImages/lectureRoom.png" className={styles.storyImg} layout="fill" alt="John alone in his lecture room" />
@@ -142,13 +146,19 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/mccarty.png" className={styles.storyImg} layout="fill" alt="mccarty hall, a dorm building on the UW's campus" />
                 </div>
                 <p className={styles.words}>
-                    Thankfully, that was a year ago. Now, things in John’s life may be looking up. After applying for on-campus housing the prior year, John can move in and finally have company.
+                    It's been a year since I had those thoughts, and now I'm in my Sophomore year and things are looking up. I'm excited to move into my on-campus dorm and finally have roommates to keep me company. It's a change I've been looking forward to for a while now. 
+                    <br/><br/>
+                    I thought things were finally looking up when I moved in, but it turned out to be a bit more complicated than I had hoped.
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <p className={styles.words}>
-                    Or so he thought. His two roommates knew each other, which meant he was already the outcast of the group. The two preferred hanging out with their friends. They never bothered to invite John. Evening after evening, John's roommates have an outing with their friends, leaving John to fend for himself. <br /><br />Understandably, John was frustrated. After waiting a year in anticipation, he was already off to a bad start. His new home felt like his lecture room from last year. He blamed his roommates, thought they were scum and debated going to the resident advisor to complain. Maybe she could do something.
+                My roommates already knew each other and it quickly became clear that I was the outsider. Night after night, they would go out with their friends, leaving me feeling left out. I couldn't help but feel frustrated. 
+                <br/><br/>
+                My new home felt just like my old lecture room, and I couldn't help but blame my roommates. I even considered complaining to the resident advisor in hopes that she could help me get out of this situation.
+                <br/><br/>
+                In the end, I never complained. I was hopeful that not wasting time on the commute would drastically change my life, but it didn't. Just like last year, I found myself sitting in the back of all my lectures, feeling invisible. None of my classes had group work, which meant that I had very few opportunities to interact with my classmates. 
                 </p>
                 <div className={styles.imgFrame}>
                     <Image src="/lonelinessImages/dormStart.png" className={styles.storyImg} layout="fill" alt="John's new roommates talk while John is left in the background" />
@@ -160,14 +170,17 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/floor.png" className={styles.storyImg} layout="fill" alt="John discovers an umbrella on his lecture room floor" />
                 </div>
                 <p className={styles.words}>
-                    In the end, he never complained. He was hopeful his life would change drastically just by living on campus, but it did not. Like last year, John still sat in the back of all his lectures. He felt invisible. No professor would ever call on him (whether positive or negative, he didn’t know either), and none of his classes during this quarter was group work, so he had a low chance of interacting with his classmates. <br /><br />Four weeks fly by, and John found himself at the end of another uneventful wet, cloudy Seattle day. He was about to get up from his seat and leave the Savery Hall classroom like everyone else. However, upon standing up, his eyes drifted onto an umbrella on the concrete floor. He knew the umbrella belonged to a student sitting in front of him, and they were walking out the door without it.
+                    Four weeks have flown by and here I am at the end of another uneventful, wet, and cloudy Seattle day. As I'm getting ready to leave the Savery Hall classroom, I notice an umbrella on the floor. I assume it must have belonged to a student who was sitting in front of me.
+                    <br/><br/>
+                    I contemplate on what to do. A part of me feels terrible knowing that it might rain later and my classmate who left the umbrella behind might get caught in the rain. I decide to grab the umbrella and catch my classmate halfway down the stairs. I ask her if she had forgotten an umbrella by any chance.
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <p className={styles.words}>
-                    John contemplated what to do. Part of him felt terrible because it was supposed to rain later in the day. He grabbed the umbrella and went to catch up with the classmate already going down the stairs. When he did, John uttered hello and asked if they had forgotten an umbrella.
-                    The classmate, a bit surprised, responded with confirmation and appreciation, and John handed it over. <br /><br />As John was about to leave, she asked him why he sat in the back when everyone preferred to sit near the front. To John, the answer was obvious. However, he couldn't admit that he liked observing people from a distance because that would be weird. So, John said he could drift off to sleep without getting noticed. The classmate thought it was understandable, and John felt he could connect with this classmate.
+                    The classmate, who looks a bit surprised, thanks me with appreciation as I hand them the umbrella. As I am about to leave, she asks a strange question about why I always sit in the back of the class when most people prefer sitting near the front. 
+                    <br/><br/>
+                    I don't want to admit that I like observing people from a distance, as I think it will come across as weird. So, I tell her that I sit in the back for sleeping purposes, and she nods understandingly. We continue our conversation outside the building.
                 </p>
                 <div className={styles.imgFrame}>
                     <Image src="/lonelinessImages/staircase.png" className={styles.storyImg} layout="fill" alt="John catches up with his classmate at the stairwell to give back the umbrella" />
@@ -179,16 +192,15 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/walking.png" className={styles.storyImg} layout="fill" alt="John and his classmate walk out of the building while talking" />
                 </div>
                 <p className={styles.words}>
-                    Thus, the two continued their conversation as they headed out of the building and into the gray day.
-                    As they exited Savery Hall, John joked about why anyone would need an umbrella when living in Seattle. The classmate laughed off and clarified that she was new to the area. The two went on to talk about the classes they were taking and what their goals were after graduation.
-                    <br /><br />The classmate told John about herself and how her first quarter was going and asked if he could give any words of wisdom. John didn’t feel like he was in a position to provide any sort of advice. He thought of pointing them toward an academic counselor.
+                    I start to joke about the need for an umbrella when living in Seattle, and my classmate laughs it off and mentions that she is new to the area. We start talking about the classes we're taking and our post-graduation plans. My classmate tells me about herself and how her first quarter is going, and she wants to hear my thoughts about course content and stress. 
+                    <br/><br/>
+                    I don't feel like I'm in a great position to provide any advice, but I feel indebted to my classmate who reached out to me first. I try to think of something helpful to say, hoping to come across as intelligent.
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <p className={styles.words}>
-                    Yet, because he felt indebted to his classmate in that they were the ones who reached out to him first, John dug deep into his mind to find some sort of logical answer that would make him seem intelligent.
-                    The two stopped at the entrance of Red Square, where John gave his suggestion. <br /><br />The classmate seemed to like his “advice,” so John was thrilled with himself, though part of him was still a bit confused as to why anyone would ask him for advice. As the conversation winded down, the classmate asked to exchange discord handles, which John quickly agreed to. After chatting more, the two friends parted ways.
+                    We stop at the entrance of Red Square, and I share my thoughts with my classmate. They seem to appreciate my “advice”, so I feel pretty satisfied with myself. As our conversation comes to a close, my classmate asks if we can exchange Discord handles, which I happily agree to. We chat some more before going our separate ways.
                 </p>
                 <div className={styles.imgFrame}>
                     <Image src="/lonelinessImages/redSquare.png" className={styles.storyImg} layout="fill" alt="John and his new friend part ways at red square" />
@@ -200,13 +212,15 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/hub.png" className={styles.storyImg} layout="fill" alt="John waits in line at the hub to get food" />
                 </div>
                 <p className={styles.words}>
-                    John decided to get some food at the Hub before returning to his dorm room. He stood in line to make his order while pondering the events that had transpired. John reminisced about the times he tried to initiate conversations and failed. Today, John felt accepted by society. He also felt good and warm that he was able to help out his new friend in some way. After some time waiting, John made his order and got his food.
+                    I decide to grab food at the Hub before returning to my room. As I stand in line to place my order, I can't help but reflect on the events of the day. I reminisce about the times when I struggled to initiate conversations and how badly I failed. Today, I feel accepted by society, and I'm also happy that I was able to help out my new friend in some way. It's a warm feeling that I can't help but smile about.
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <p className={styles.words}>
-                    By chance, just as he was about to leave the Hub after finishing his meal, he spotted his roommates exit ahead of him. The sight of them broke his illusion that he was in a good place in his life and reminded him of the situation between him and his roommates. John contemplated talking to them this evening. But, because John made a new friend today, he had a bit of confidence. He felt invigorated.
+                    As I'm getting ready to leave the Hub after finishing my meal, I spot my roommates walking out ahead of me. Seeing them breaks my illusion that I’m in a good position and reminds me of the ongoing tension between us. I contemplate how to approach them.
+                    <br/><br/>
+                    The idea of talking to my roommates right now doesn't seem like the best idea. After all, the most interaction I've had with them so far has been simple greetings followed by them having conversations with each other while I watch from the sidelines. 
                 </p>
                 <div className={styles.imgFrame}>
                     <Image src="/lonelinessImages/hubExit.png" className={styles.storyImg} layout="fill" alt="John spots his two roommates leave the hub" />
@@ -218,13 +232,19 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/johnThink.png" className={styles.storyImg} layout="fill" alt="John walks back to his dorm hall in thought" />
                 </div>
                 <p className={styles.words}>
-                    However, the thought of talking to his roommates now didn’t make sense to John. After all, the most he had ever interacted with them was the usual greetings followed by the two talking between each other while John watched from the sidelines. He felt that if he jumped in, it would disrupt their conversation. <br /><br />Even if he used the dead space, it would seem awkward because John had never done that before, and if he suddenly said something, his roommates would think something was off, and they would start to judge. John didn’t want that.
+                    I feel like if I try to jump in, it might disrupt their conversation, and even if I try to use the silence it might be awkward because I've never done anything like that before. I'm afraid that if I suddenly say something, my roommates would think something is wrong.
+                    <br/><br/>
+                    Inevitably, I arrive at the dorm. I can hear my roommates' voices through the closed door. 
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <p className={styles.words}>
-                    Inevitably, John arrived at his dorm room door. He could hear his roommates talking through a closed door. When he peeked through the entrance, he found his roommates on their laptops, gossiping about how their TA put the section to sleep in the first five minutes. Not a good time to interrupt them, John thought. <br /><br />He felt sad but relieved he wouldn’t need to face the dilemma of talking to his roommates today. However, John had good momentum. If he ignores this opportunity, he might fall back into his old cycle again. It was a risk he was not willing to take.
+                    When I open the door, I see that they are both on their laptops, chatting about how their TA put the section to sleep in the first five minutes. I realize that now isn't the best time to interrupt them. 
+                    <br/><br/>
+                    I feel a mix of disappointment and relief that I don't have to face the dilemma of talking to my roommates today. But I also know that I have a good momentum going and if I don't take advantage of this opportunity, I might never get my chance again. It's a risk I am not willing to take.
+                    <br/><br/>
+                    I enter the room, but as I try to start a conversation, the only thing that comes out is a greeting. My roommates acknowledge me briefly before going back to their conversation. 
                 </p>
                 <div className={styles.imgFrame}>
                     <Image src="/lonelinessImages/dormRoom.png" className={styles.storyImg} layout="fill" alt="John gets home but does not know how to talk to his roommates" />
@@ -236,7 +256,7 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/mccarty.png" className={styles.storyImg} layout="fill" alt="mccarty hall, a dorm building on the UW's campus" />
                 </div>
                 <p className={styles.words}>
-                    John entered the room. However, when he attempted to say something, he couldn’t say anything other than a greeting, which his roommates acknowledged briefly but continued their conversation. John stared awkwardly at the two of them for several seconds wanting to say something but never did. <br /><br />That night, John found the day bitter-sweet. Although he couldn’t get a conversation going with his roommates, he got to know one person, which was a big step forward. Who knows? Maybe tomorrow would be the day.
+                    I stand there awkwardly for a few seconds, wanting to say something but not a word came out. I find today to be bittersweet. Even though I wasn't able to have a conversation with my roommates, I made a new friend, which is a big step forward. Who knows? Maybe tomorrow would be the day.
                 </p>
             </div>
 
