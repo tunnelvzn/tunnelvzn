@@ -121,14 +121,14 @@ export const Anxiety = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={styles.words}>
+                <div className={styles.imgFrame}>
+                    <Image src="/anxietyImages/wakingUp.png" className={styles.storyImg} layout="fill" alt="John sitting on the lightrail train and looking out the window" />
+                </div>
+                <p className={`${styles.words} ${styles.offset}`}>
                     I wake up at 10 AM on a chilly, overcast morning to stare out the window of my U-district apartment. My relatively new surroundings jolt my memory, and I recall getting my CSE midterm results yesterday. The harsh reality sweeps through my mind like a wave, giving me chills. 
                     <br/><br/>
                     Despite my initial reluctance, I push myself out of bed to start the day. I need to get my usual Starbucks order on the way to class but noticed that my lecture was going to start in forty-five minutes. Consulting the clock, I quickly grab my stuff and head out.
                 </p>
-                <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/wakingUp.png" className={styles.storyImg} layout="fill" alt="John sitting on the lightrail train and looking out the window" />
-                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -143,14 +143,14 @@ export const Anxiety = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={styles.words}>
+                <div className={styles.imgFrame}>
+                    <Image src="/anxietyImages/familyPhoto.png" className={styles.storyImg} layout="fill" alt="John alone in his lecture room" />
+                </div>
+                <p className={`${styles.words} ${styles.offset}`}>
                     In the aftermath of the decision, I found myself increasingly drawn to UW. The university had already left a lasting impression on me during a visit as a high school freshman, where my family and I traveled to UW for a photo shoot with the cherry blossoms. I’ve cherished those photos ever since. So, here I am. 
                     <br/><br/>
                     I pull myself back into reality after realizing that twenty minutes have passed and my drink was probably long done to the point that it had gotten cold. I head to the counter to receive my drink. 
                 </p>
-                <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/familyPhoto.png" className={styles.storyImg} layout="fill" alt="John alone in his lecture room" />
-                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -165,14 +165,14 @@ export const Anxiety = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={styles.words}>
+                <div className={styles.imgFrame}>
+                    <Image src="/anxietyImages/lectureTalking.png" className={styles.storyImg} layout="fill" alt="John's new roommates talk while John is left in the background" />
+                </div>
+                <p className={`${styles.words} ${styles.offset}`}>
                     Upon arriving at the lecture hall, I take my seat near the stairs among a sea of students. My seatmate greets me as I unpack my laptop. “I gotta study harder, it’s confusing,” he utters in a defeated tone. “Yeah, it’s sad,” I respond in agreement. His words inadvertently remind me of my disappointing midterm results, and a sense of unease washes over me.
                     <br/><br/>
                     I studied for many hours and days. I went to TA office hours like it was my hobby. I did tons of practice problems. So, how in the world did I still have a rough time on the exam? 55% does not make me feel good. Although the midterm made a sizable dent in my confidence, I attempt to put it in the back of my mind to focus on the new content, or else my knowledge and grades would lag even further behind.                    
                 </p>
-                <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/lectureTalking.png" className={styles.storyImg} layout="fill" alt="John's new roommates talk while John is left in the background" />
-                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -187,14 +187,14 @@ export const Anxiety = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={styles.words}>
+                <div className={styles.imgFrame}>
+                    <Image src="/anxietyImages/goingMad.png" className={styles.storyImg} layout="fill" alt="John catches up with his classmate at the stairwell to give back the umbrella" />
+                </div>
+                <p className={`${styles.words} ${styles.offset}`}>
                     With each passing moment, I know that the finals would creep closer to deciding my fate. Every second I spend pondering an unrelated topic, my goal of majoring in CS slips further away. From the financial burden of tuition to my lack of support, it’s too much for me. 
                     <br/><br/>
                     What if I don’t make it? What will happen to me? Where will I go? The thought of not succeeding and the subsequent ramifications causes my heart to beat even faster. My mind spirals out of control, and my consciousness is thrown back to random moments of my past. 
                 </p>
-                <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/goingMad.png" className={styles.storyImg} layout="fill" alt="John catches up with his classmate at the stairwell to give back the umbrella" />
-                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -209,14 +209,14 @@ export const Anxiety = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={styles.words}>
+                <div className={styles.imgFrame}>
+                    <Image src="/anxietyImages/leaving.png" className={styles.storyImg} layout="fill" alt="John and his new friend part ways at red square" />
+                </div>
+                <p className={`${styles.words} ${styles.offset}`}>
                     As the lecture concludes, my seatmate turns to me and says, "I gotta head to my next class. See you." I simply nod in response, still flabbergasted that I had learned nothing. Throughout the day, the CS class was at the back of my mind slowly eating away at my sanity. In the blink of an eye, I’m in my last class of the day: a mere elective. Not a chance I would pay any attention. 
                     <br/><br/>
                     The temptation to skip my remaining classes and immerse myself fully in CS arises, but I realize that it would do me more harm. My desire to return home and re-watch the recording of today's lecture and begin working on the new assignment drives me crazy.
                 </p>
-                <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/leaving.png" className={styles.storyImg} layout="fill" alt="John and his new friend part ways at red square" />
-                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -231,12 +231,12 @@ export const Anxiety = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={styles.words}>
-                    I can't help but express, “I miss California and, above all, my friends. I wish I had heeded the warning from my high school classmate, but now, it’s too late to turn back. Now, I’m trapped in weed-out hell and I believe no one will understand my suffering” I say, which surprises even me. Why did I even tell him that? What good would it do? My problems, my fault, right? This situation is so dumb. I pause, awaiting my classmate's response.
-                </p>
                 <div className={styles.imgFrame}>
                     <Image src="/anxietyImages/goingMadTwo.png" className={styles.storyImg} layout="fill" alt="John spots his two roommates leave the hub" />
                 </div>
+                <p className={`${styles.words} ${styles.offset}`}>
+                    I can't help but express, “I miss California and, above all, my friends. I wish I had heeded the warning from my high school classmate, but now, it’s too late to turn back. Now, I’m trapped in weed-out hell and I believe no one will understand my suffering” I say, which surprises even me. Why did I even tell him that? What good would it do? My problems, my fault, right? This situation is so dumb. I pause, awaiting my classmate's response.
+                </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -251,12 +251,12 @@ export const Anxiety = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={styles.words}>
-                    I walk back to my apartment, and my thoughts are in a state of turmoil. I am fortunate to have met someone willing to listen to my problems and offer suggestions. But now, someone else knows about my problems. Will he be let down if I fail? Will he laugh at me when that happens? These thoughts weigh heavily on my mind.
-                </p>
                 <div className={styles.imgFrame}>
                     <Image src="/anxietyImages/wayHome.png" className={styles.storyImg} layout="fill" alt="John gets home but does not know how to talk to his roommates" />
                 </div>
+                <p className={`${styles.words} ${styles.offset}`}>
+                    I walk back to my apartment, and my thoughts are in a state of turmoil. I am fortunate to have met someone willing to listen to my problems and offer suggestions. But now, someone else knows about my problems. Will he be let down if I fail? Will he laugh at me when that happens? These thoughts weigh heavily on my mind.
+                </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -289,7 +289,7 @@ export const Anxiety = () => {
                         </div>
                     </div>
                     <div className={styles.partnership}>
-                        <h5>Interested in telling your story?</h5>
+                        <h5>Want to tell your story?</h5>
                         <h6>Submit it to our friends <Link href="https://www.instagram.com/officialhumansofuw/"><a className={styles.partnerLink} target="_blank">@officialhumansofuw</a></Link>!</h6>
                     </div>
                 </div>

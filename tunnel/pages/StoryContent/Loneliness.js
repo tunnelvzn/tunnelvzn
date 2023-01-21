@@ -124,14 +124,14 @@ export const Loneliness = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={styles.words}>
+                <div className={styles.imgFrame}>
+                    <Image src="/lonelinessImages/lightRail.png" className={styles.storyImg} layout="fill" alt="John sitting on the lightrail train and looking out the window" />
+                </div>
+                <p className={`${styles.words} ${styles.offset}`}>
                     During my usual commute to the University of Washington on the light rail, I couldn't help but stare out at the surroundings wishing my life was more vibrant. I realized that I wanted some company, but felt frustrated that I didn't have any. 
                     <br/><br/>
                     In the past, I made great efforts to initiate conversations with others, but despite my commitment, I must have come across as insincere, which turned people away. So, I decided to accept it and enjoy my quiet time alone.
                 </p>
-                <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/lightRail.png" className={styles.storyImg} layout="fill" alt="John sitting on the lightrail train and looking out the window" />
-                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -146,12 +146,12 @@ export const Loneliness = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={styles.words}>
-                    As I sat in class, I found myself struggling to pay attention. I wondered if my daily commute had robbed me of opportunities to connect with others. I noticed my classmates laughing and having a good time as they chatted about all the latest events on and off campus, their club activities, and plans to hang out with friends. It made me realize how much I longed to have that same experience in my own life. It was a feeling that I couldn't shake off.
-                </p>
                 <div className={styles.imgFrame}>
                     <Image src="/lonelinessImages/lectureRoom.png" className={styles.storyImg} layout="fill" alt="John alone in his lecture room" />
                 </div>
+                <p className={`${styles.words} ${styles.offset}`}>
+                    As I sat in class, I found myself struggling to pay attention. I wondered if my daily commute had robbed me of opportunities to connect with others. I noticed my classmates laughing and having a good time as they chatted about all the latest events on and off campus, their club activities, and plans to hang out with friends. It made me realize how much I longed to have that same experience in my own life. It was a feeling that I couldn't shake off.
+                </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -166,16 +166,16 @@ export const Loneliness = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={styles.words}>
+                <div className={styles.imgFrame}>
+                    <Image src="/lonelinessImages/dormStart.png" className={styles.storyImg} layout="fill" alt="John's new roommates talk while John is left in the background" />
+                </div>
+                <p className={`${styles.words} ${styles.offset}`}>
                 My roommates already knew each other and it quickly became clear that I was the outsider. Night after night, they would go out with their friends, leaving me feeling left out. I couldn't help but feel frustrated. 
                 <br/><br/>
                 My new home felt just like my old lecture room, and I couldn't help but blame my roommates. I even considered complaining to the resident advisor in hopes that she could help me get out of this situation.
                 <br/><br/>
                 In the end, I never complained. I was hopeful that not wasting time on the commute would drastically change my life, but it didn't. Just like last year, I found myself sitting in the back of all my lectures, feeling invisible. None of my classes had group work, which meant that I had very few opportunities to interact with my classmates. 
                 </p>
-                <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/dormStart.png" className={styles.storyImg} layout="fill" alt="John's new roommates talk while John is left in the background" />
-                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -190,14 +190,14 @@ export const Loneliness = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={styles.words}>
+                <div className={styles.imgFrame}>
+                    <Image src="/lonelinessImages/staircase.png" className={styles.storyImg} layout="fill" alt="John catches up with his classmate at the stairwell to give back the umbrella" />
+                </div>
+                <p className={`${styles.words} ${styles.offset}`}>
                     The classmate, who looks a bit surprised, thanks me with appreciation as I hand them the umbrella. As I am about to leave, she asks a strange question about why I always sit in the back of the class when most people prefer sitting near the front. 
                     <br/><br/>
                     I don't want to admit that I like observing people from a distance, as I think it will come across as weird. So, I tell her that I sit in the back for sleeping purposes, and she nods understandingly. We continue our conversation outside the building.
                 </p>
-                <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/staircase.png" className={styles.storyImg} layout="fill" alt="John catches up with his classmate at the stairwell to give back the umbrella" />
-                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -212,12 +212,12 @@ export const Loneliness = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={styles.words}>
-                    We stop at the entrance of Red Square, and I share my thoughts with my classmate. They seem to appreciate my “advice”, so I feel pretty satisfied with myself. As our conversation comes to a close, my classmate asks if we can exchange Discord handles, which I happily agree to. We chat some more before going our separate ways.
-                </p>
                 <div className={styles.imgFrame}>
                     <Image src="/lonelinessImages/redSquare.png" className={styles.storyImg} layout="fill" alt="John and his new friend part ways at red square" />
                 </div>
+                <p className={`${styles.words} ${styles.offset}`}>
+                    We stop at the entrance of Red Square, and I share my thoughts with my classmate. They seem to appreciate my “advice”, so I feel pretty satisfied with myself. As our conversation comes to a close, my classmate asks if we can exchange Discord handles, which I happily agree to. We chat some more before going our separate ways.
+                </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -230,14 +230,14 @@ export const Loneliness = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={styles.words}>
+                <div className={styles.imgFrame}>
+                    <Image src="/lonelinessImages/hubExit.png" className={styles.storyImg} layout="fill" alt="John spots his two roommates leave the hub" />
+                </div>
+                <p className={`${styles.words} ${styles.offset}`}>
                     As I'm getting ready to leave the Hub after finishing my meal, I spot my roommates walking out ahead of me. Seeing them breaks my illusion that I’m in a good position and reminds me of the ongoing tension between us. I contemplate how to approach them.
                     <br/><br/>
                     The idea of talking to my roommates right now doesn't seem like the best idea. After all, the most interaction I've had with them so far has been simple greetings followed by them having conversations with each other while I watch from the sidelines. 
                 </p>
-                <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/hubExit.png" className={styles.storyImg} layout="fill" alt="John spots his two roommates leave the hub" />
-                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -252,16 +252,16 @@ export const Loneliness = () => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={styles.words}>
+                <div className={styles.imgFrame}>
+                    <Image src="/lonelinessImages/dormRoom.png" className={styles.storyImg} layout="fill" alt="John gets home but does not know how to talk to his roommates" />
+                </div>
+                <p className={`${styles.words} ${styles.offset}`}>
                     When I open the door, I see that they are both on their laptops, chatting about how their TA put the section to sleep in the first five minutes. I realize that now isn't the best time to interrupt them. 
                     <br/><br/>
                     I feel a mix of disappointment and relief that I don't have to face the dilemma of talking to my roommates today. But I also know that I have a good momentum going and if I don't take advantage of this opportunity, I might never get my chance again. It's a risk I am not willing to take.
                     <br/><br/>
                     I enter the room, but as I try to start a conversation, the only thing that comes out is a greeting. My roommates acknowledge me briefly before going back to their conversation. 
                 </p>
-                <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/dormRoom.png" className={styles.storyImg} layout="fill" alt="John gets home but does not know how to talk to his roommates" />
-                </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
@@ -297,7 +297,7 @@ export const Loneliness = () => {
                         </div>
                     </div>
                     <div className={styles.partnership}>
-                        <h5>Interested in telling your story?</h5>
+                        <h5>Want to tell your story?</h5>
                         <h6>Submit it to our friends <Link href="https://www.instagram.com/officialhumansofuw/"><a className={styles.partnerLink} target="_blank">@officialhumansofuw</a></Link>!</h6>
                     </div>
                 </div>

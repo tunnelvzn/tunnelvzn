@@ -44,10 +44,7 @@ const Updates = () => {
                             Screenreader accessibility improvements
                         </li>
                         <li>
-                            Mobile reading enhancement
-                        </li>
-                        <li>
-                            Responsiveness for tablet orientation 
+                            Responsiveness for tablets 
                         </li>
                         <li>
                             Dark mode

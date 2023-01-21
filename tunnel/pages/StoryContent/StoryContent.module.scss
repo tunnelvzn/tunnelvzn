@@ -65,26 +65,6 @@
   z-index: 1;
 }
 
-.container {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
-  width: auto;
-  height: 100vh;
-  scroll-snap-type: y mandatory;
-  overflow-y: scroll;
-  scroll-behavior: smooth;
-}
-
-.section {
-  scroll-snap-align: start;
-  width: 100%;
-  height: 100vh;
-  justify-content: center;
-  align-items: center;
-  overflow-x: hidden;
-}
-
 .theArrow {
   color: black; 
   text-decoration: none; 
@@ -105,20 +85,6 @@
   -webkit-animation: bounce 2s infinite;
   animation: bounce 2s infinite;
 }
-
-// Fred testing the like button and used this styling
-// .interactionBtn {
-//   border-color: #000 1px;
-//   border-radius: 10px;
-//   padding: 5px;
-//   background-color: #F9F9F9;
-//   margin-bottom: 5vh;
-// }
-
-// .interactionBtn:hover {
-//   border: red 2px solid;
-//   transition: 0.3s ease-in-out;
-// }
 
 @keyframes bounce {
   0%, 20%, 50%, 80%, 100% {
@@ -176,6 +142,10 @@
   font-size: 3vh;
 }
 
+.offset {
+  order: -1;
+}
+
 // --------------------RESPONSIVE DESIGN----------------------------------------
 
 // X-Small devices (portrait phones, less than 576px)
@@ -183,8 +153,25 @@
   // .theArrow {
   //   color: rgb(255, 0, 0); 
   // }
+  .arrow {
+    display: none;
+  }
   .section {
     display: block;
+    scroll-snap-align: start;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
   }
   .storyTitle {
     font-size: 6vh;
@@ -223,6 +210,9 @@
   // .theArrow {
   //   color: rgb(43, 0, 255); 
   // }
+  .arrow {
+    display: none;
+  }
   .storyTitle {
     font-size: 6vh;
   }
@@ -253,6 +243,22 @@
     margin-right: 10vh;
     width: auto;
   }
+  .section {
+    scroll-snap-align: start;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    overflow-x: hidden;
+  }
+  .container {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    width: auto;
+    height: 100vh;
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+  }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -262,6 +268,7 @@
   // }
   .arrow {
     margin-top: 89vh;
+    display: block;
   }
   .imgFrame {
     margin-left: 15vh;
@@ -275,6 +282,13 @@
   .endStoryBtn {
     margin-left: 30vh;
     margin-right: 30vh;
+  }
+  .container {
+    scroll-snap-type: y mandatory;
+  }
+  
+  .section {
+    height: 100vh;
   }
 }
 
