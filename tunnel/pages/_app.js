@@ -3,7 +3,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 // import "bootstrap/dist/js/bootstrap.js";
 import { GlobalProvider } from '../comps/Global/useGlobalContext'
 import Head from 'next/head'
-import { Analytics } from '@vercel/analytics/react';
+
 function MyApp({ Component, pageProps }) {
   return (
     <>
