@@ -24,8 +24,6 @@ export const GlobalProvider = ({ children }) => {
       const db = getFirestore(app);
 
       const auth = getAuth(app);
-      const analytics = getAnalytics(app);
-      logEvent(analytics, 'touch global context');
       
     const [user, setUser] = useState({})
     const [route, setRoute] = useState( '/')
