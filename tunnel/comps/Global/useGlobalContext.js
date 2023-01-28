@@ -2,6 +2,7 @@ import React, { createContext, useReducer, useEffect, useState, onMount } from '
 import { initializeApp } from "firebase/app";
 import { getFirestore } from "firebase/firestore";
 import { getAuth } from "firebase/auth";
+import { getAnalytics, logEvent  } from "firebase/analytics";
 
 const initialState = {    
 }
@@ -23,7 +24,9 @@ export const GlobalProvider = ({ children }) => {
       const db = getFirestore(app);
 
       const auth = getAuth(app);
-
+      const analytics = getAnalytics(app);
+      logEvent(analytics, 'touch global context');
+      
     const [user, setUser] = useState({})
     const [route, setRoute] = useState( '/')
     const [intro, setIntro] = useState(true)
