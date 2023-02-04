@@ -270,6 +270,19 @@ export const Anxiety = () => {
                 </p>
             </div>
 
+            <div className={`${styles.section} ${styles.normSection}`}>
+                <div className={styles.block}></div>
+                <div className={styles.imgFrame}>
+                    <Image src="/anxietyImages/credits.png" className={styles.storyImg} layout="fill" alt="Credits" />
+                </div>
+                <p className={styles.words}>
+                    This story was written by Eddy, illustrated by Anna, edited by Sylvia and Augene, and peer-reviewed by 15 UW Students. 
+                    <br/>
+                    <br/>
+                    Also, special thanks to members of the <Link href="https://www.instagram.com/writersinprogressuw/"><a className={styles.partnerLink} target="_blank">Writers In Progress</a></Link> club for providing additional feedback!
+                </p>
+            </div>
+
             {/* Final section of story deal with this last */}
             <div className={`${styles.section} ${styles.normSection} text-center`}>
                 <div className={styles.block}></div>

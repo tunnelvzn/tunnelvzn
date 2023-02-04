@@ -273,6 +273,22 @@ export const Loneliness = () => {
                 </p>
             </div>
 
+            <div className={`${styles.section} ${styles.normSection}`}>
+                <div className={styles.block}></div>
+                <div className={styles.imgFrame}>
+                    <Image src="/lonelinessImages/credits.png" className={styles.storyImg} layout="fill" alt="Credits" />
+                </div>
+                <p className={styles.words}>
+                    This story was written and illustrated by Eddy, edited by Sylvia, Augene, and Sami, and peer-reviewed by 23 UW Students. 
+                    <br/>
+                    <br/>
+                    Images of McCarty Hall from the loneliness story were from <Link href="https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/McCarty-Hall"><a className={styles.partnerLink} target="_blank">hfs.uw.edu</a></Link>.
+                    <br/>
+                    <br/>
+                    Also, special thanks to members of the <Link href="https://www.instagram.com/writersinprogressuw/"><a className={styles.partnerLink} target="_blank">Writers In Progress</a></Link> club for providing additional feedback! 
+                </p>
+            </div>
+
             {/* Final section of story deal with this last */}
             <div className={`${styles.section} ${styles.normSection} text-center`}>
                 <div className={styles.block}></div>
