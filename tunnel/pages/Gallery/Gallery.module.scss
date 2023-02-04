@@ -1,6 +1,7 @@
 
 .galleryMain {
     margin-top: 10vh;
+    padding-bottom: 10vh;
     display: flex;
     justify-content: end;
     flex-direction: row;
@@ -8,7 +9,6 @@
         display: flex;
         flex-wrap: nowrap;
     }
-    margin-bottom: 10vh;
 }
 
 // --------------------RESPONSIVE DESIGN----------------------------------------
@@ -33,11 +33,11 @@
 }
 
 // // XX-Large devices (larger desktops, 1400px and up)
-@media (min-width: 1400px) {
-    .galleryMain {
-        .horizontalScroll {
-            overflow-x: hidden;
-        }
-    }
-}
+// @media (min-width: 1400px) {
+//     .galleryMain {
+//         .horizontalScroll {
+//             overflow-x: hidden;
+//         }
+//     }
+// }
 

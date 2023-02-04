@@ -16,24 +16,23 @@ body, div, p, h1, h2, h3, h4 {
 }
 /* Handle on hover */
 div::-webkit-scrollbar-thumb:hover {
-  background: rgba(78, 78, 78, 0.8);
+  background: #000;
   margin-right: 20px;
   border-radius: 10px;
 }
 
 div::-webkit-scrollbar {
-  width: 8px;
   border-radius: 10px;
   height: 5px;
 }
 
 /* Track */
 div::-webkit-scrollbar-track {
-  background: white;
-  border: 2px solid lightgray;
+  background: #F9F9F9;
+  border: 1px solid lightgray;
   border-radius: 10px;
-  margin-left: 20vw;
-  margin-right: 20vw;
+  margin-left: 30vw;
+  margin-right: 30vw;
 }
 
 /* Handle */
