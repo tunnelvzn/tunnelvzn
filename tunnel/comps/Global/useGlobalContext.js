@@ -47,9 +47,15 @@ export const GlobalProvider = ({ children }) => {
    
     const [pause, setPause] = useState(false)
     const [audio] = useState(typeof Audio !== "undefined" && new Audio(`https://drive.google.com/u/0/uc?id=1xFWLoxKWYk6Ub8reLvzVg89a-p__Cvzl&export=download`));
-    
+    let click;
+    if(typeof Audio != "undefined") {
+        click  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+      }
+    const makeNoise = () => {
+        click.play()
+    }
    return(
-    <GlobalContext.Provider value = {{intro, setIntro, audio, pause, setPause, route, setRoute, nav, setNav, storyName, setStoryName, db, auth,loginModal, setLoginModal,user, setUser}}> 
+    <GlobalContext.Provider value = {{intro, setIntro, audio, pause, setPause, route, setRoute, nav, setNav, storyName, setStoryName, db, auth,loginModal, setLoginModal,user, setUser, makeNoise}}> 
         {children} 
     </GlobalContext.Provider>
    )

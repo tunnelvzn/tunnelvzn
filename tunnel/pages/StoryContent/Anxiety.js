@@ -18,7 +18,8 @@ export const Anxiety = () => {
     const [view, setView] = useState(0)
     const {
         db,
-        storyName
+        storyName,
+        makeNoise
     } =
         useContext(GlobalContext);
 
@@ -291,6 +292,7 @@ export const Anxiety = () => {
                     <div className={styles.buttonContainer}>
                          <div className={styles.endStoryBtn} aria-label="like" role="button" tabindex="0" onClick={() => {
                             addLike()
+                            makeNoise()
                             }}>
                             <h6>Like {like} <Icon id="likeIcon" icon="mdi:cards-heart-outline" width="25" height="25" /></h6>
                         </div>

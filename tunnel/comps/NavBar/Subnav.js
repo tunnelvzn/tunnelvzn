@@ -17,7 +17,8 @@ function Subnav(props) {
         setNav,
         auth,
         loginModal,
-        setLoginModal
+        setLoginModal,
+        makeNoise
     } =
         useContext(GlobalContext);
 
@@ -63,6 +64,7 @@ function Subnav(props) {
                         sessionStorage.setItem("route", "/");
                         setNav(false)
                         setUnderline(e)
+                        makeNoise()
                     }}><a>Home</a>
                     </li>
 
@@ -71,6 +73,7 @@ function Subnav(props) {
                         sessionStorage.setItem("route", "/About");
                         setNav(false)
                         setUnderline(e)
+                        makeNoise()
                     }}><a>About</a>
                     </li>
 
@@ -83,6 +86,7 @@ function Subnav(props) {
                         sessionStorage.setItem("route", "/Updates");
                         setNav(false)
                         setUnderline(e)
+                        makeNoise()
                     }}><a>Updates</a>
                     </li>
 
@@ -91,6 +95,7 @@ function Subnav(props) {
                         sessionStorage.setItem("route", "/Credits");
                         setNav(false)
                         setUnderline(e)
+                        makeNoise()
                     }}><a>Credits</a>
                     </li>
                 </ol>

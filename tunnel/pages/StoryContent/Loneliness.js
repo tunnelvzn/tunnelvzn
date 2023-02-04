@@ -20,7 +20,8 @@ export const Loneliness = () => {
         db,
         storyName,
         setRoute,
-        setStoryName
+        setStoryName,
+        makeNoise
     } =
         useContext(GlobalContext);
 
@@ -297,6 +298,7 @@ export const Loneliness = () => {
                     <div className={styles.buttonContainer}>
                         <div className={styles.endStoryBtn} aria-label="like" role="button" tabindex="0" onClick={() => {
                             addLike()
+                            makeNoise()
                             }}>
                             <h6>Like {like} <Icon id="likeIcon" icon="mdi:cards-heart-outline" width="25" height="25" /></h6>
                         </div>

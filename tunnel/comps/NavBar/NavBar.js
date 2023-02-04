@@ -21,7 +21,8 @@ const Navbar = (props) => {
         nav, 
         setNav,
         user,
-        auth
+        auth,
+        makeNoise
       } = 
       useContext(GlobalContext);
       console.log("intro: ",intro)
@@ -39,7 +40,7 @@ const Navbar = (props) => {
     }
 
     function toggleMusic() {
-        console.log(pause)
+        makeNoise()
         if (pause) {
             console.log('play')
             song.play()
@@ -51,11 +52,10 @@ const Navbar = (props) => {
         }
         setPause(!pause)
     }
-    console.log(user.displayName)
     // auth.currentUser.reload()
     console.log('from nav', auth.currentUser)
     return (
-        <>
+        <>  
             <div className= {`${styles.topUiBackground} w-100 d-flex text-center justify-content-between`}>
                 <div role="button" aria-label="sound toggle" tabindex="0" className={styles.soundButton} onClick={()=> {toggleMusic()}}>
                     <Image src={musicimgSrc} height={35} width={35}/>
@@ -76,7 +76,7 @@ const Navbar = (props) => {
                         {/* <small className='ms-5'>hi {user.displayName}</small> */}
                     </div>
                 </h5>
-                <div className={styles.menuButton}>
+                <div className={styles.menuButton} onClick={()=> { makeNoise()}}>
                     <Hamburger label="Show menu" hideOutline={false} toggled={nav} toggle={setNav} color="#000000" duration={0.4} size={40} direction="left" distance="sm" easing="ease-in" />
                 </div>
             </div>
