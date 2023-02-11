@@ -12,9 +12,11 @@ import ReactAudioPlayer from 'react-audio-player';
 import { GlobalContext } from '../comps/Global/useGlobalContext'
 import About from './About/About';
 import { Icon } from '@iconify/react';
-import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged , updateProfile} from "firebase/auth";
-import { doc, setDoc,getDoc, runTransaction } from "firebase/firestore";
+import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, updateProfile } from "firebase/auth";
+import { doc, setDoc, getDoc, runTransaction } from "firebase/firestore";
 
+
+const delay = ms => new Promise(res => setTimeout(res, ms));
 export default function Home() {
   const {
     intro,
@@ -29,11 +31,11 @@ export default function Home() {
     db
   } =
     useContext(GlobalContext);
-
+  const [initialLoad, setInitialLoad] = useState(true)
   const auth = getAuth();
 
   const userSignin = () => {
-    
+
     const email = document.getElementById('email').value
     const password = document.getElementById('password').value
 
@@ -50,7 +52,7 @@ export default function Home() {
         const errorMessage = error.message;
         console.log(errorCode, ": ", errorMessage)
       });
-      
+
 
   }
 
@@ -71,22 +73,22 @@ export default function Home() {
         console.log(errorCode, ": ", errorMessage)
         // ..
       });
-      let name = document.getElementById('username').value
-      console.log('update display name:', name)
-      updateProfile(auth.currentUser, {
-        displayName: name,
-        photoURL: ''
-      }).then(() => {
-        console.log('profile updated')
-        auth.currentUser.reload()
-        console.log('reload user')
-        setUser(auth.currentUser)
-        console.log('user:', user)
-      }).catch((error) => {
-        console.log(error)
-      });
+    let name = document.getElementById('username').value
+    console.log('update display name:', name)
+    updateProfile(auth.currentUser, {
+      displayName: name,
+      photoURL: ''
+    }).then(() => {
+      console.log('profile updated')
+      auth.currentUser.reload()
+      console.log('reload user')
+      setUser(auth.currentUser)
+      console.log('user:', user)
+    }).catch((error) => {
+      console.log(error)
+    });
 
-      
+
   }
 
   onAuthStateChanged(auth, (user) => {
@@ -102,19 +104,19 @@ export default function Home() {
   });
 
   // const getUserDb = async(user) => {
-    // const docRef = doc(db, "users", user.id);
-    // const docSnap = await getDoc(docRef);
+  // const docRef = doc(db, "users", user.id);
+  // const docSnap = await getDoc(docRef);
 
-    // if (docSnap.exists()) {
-    //   console.log("Document data:", docSnap.data());
-    // } else {
-      
-    //   console.log("No such document!, create new");
-    // }
-  
+  // if (docSnap.exists()) {
+  //   console.log("Document data:", docSnap.data());
+  // } else {
+
+  //   console.log("No such document!, create new");
   // }
 
-  const setUserDb = async(user) => {
+  // }
+
+  const setUserDb = async (user) => {
     console.log(user)
     console.log('set db')
     await setDoc(doc(db, "users", user.uid), {
@@ -190,7 +192,13 @@ export default function Home() {
         </div>
       </div>
     </div>)
+  const yourFunction = async () => {
+    await delay(5000);
+    setInitialLoad(false)
+    console.log("Waited 5s");
+  };
 
+  yourFunction()
 
   let introContent = (
     <div className={`${styles.introContent} d-flex flex-column justify-content-center`}>
@@ -200,16 +208,36 @@ export default function Home() {
       </Head>
       <h1 className={`${styles.introHeader} text-center`}> Tunnel_vzn </h1>
       <h1 className={`${styles.introSubHeader} text-center`}>Storytelling based on UW student experiences</h1>
-      <div role="button" aria-label="enter experience" tabindex="0" className={styles.startBtn} onClick={() => {
-        console.log('click')
-        setIntro(false);
-        song.loop = true;
-        song.play()
-        sessionStorage.setItem("intro", "false");
-        sessionStorage.setItem("route", "/");
-      }}>
-        Start The Experience
+      <div>
+        {!initialLoad &&
+          <div role="button" aria-label="enter experience" tabindex="0" className={styles.startBtn} onClick={() => {
+            console.log('click')
+            setIntro(false);
+            song.loop = true;
+            song.play()
+            sessionStorage.setItem("intro", "false");
+            sessionStorage.setItem("route", "/");
+          }}>
+            Start The Experience
+          </div>
+        }
+        {initialLoad &&
+          <div className={styles.center}>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+            <div className={styles.wave}></div>
+          </div>
+        }
+
       </div>
+
       <div className={`${styles.disclaimer} text-center`}><h5> <Icon icon="game-icons:sound-waves" width="40" height="40" /> This site has sound for better experience.</h5></div>
     </div>
   )

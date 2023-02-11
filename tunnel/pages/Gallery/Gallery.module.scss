@@ -1,11 +1,13 @@
 
 .galleryMain {
     margin-top: 10vh;
+    padding-bottom: 100px;
     padding-bottom: 10vh;
     display: flex;
     justify-content: end;
     flex-direction: row;
     .horizontalScroll {
+        padding-bottom: 5vh;
         display: flex;
         flex-wrap: nowrap;
     }
