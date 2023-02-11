@@ -193,9 +193,9 @@ export default function Home() {
       </div>
     </div>)
   const yourFunction = async () => {
-    await delay(5000);
+    await delay(10000);
     setInitialLoad(false)
-    console.log("Waited 5s");
+    console.log("Waited 10s");
   };
 
   yourFunction()
