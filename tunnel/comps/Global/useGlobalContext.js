@@ -49,7 +49,8 @@ export const GlobalProvider = ({ children }) => {
     const [audio] = useState(typeof Audio !== "undefined" && new Audio(`https://drive.google.com/u/0/uc?id=1xFWLoxKWYk6Ub8reLvzVg89a-p__Cvzl&export=download`));
     let click;
     if(typeof Audio != "undefined") {
-        click  = new Audio('https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3');
+        // old audio: https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3
+        click  = new Audio('https://drive.google.com/u/0/uc?id=1_43OmEv8PdHNwq31E41oGMM3d6tputTL&export=download');
       }
     const makeNoise = () => {
         click.play()

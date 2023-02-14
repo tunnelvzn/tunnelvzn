@@ -61,7 +61,7 @@ const Navbar = (props) => {
                     <Image src={musicimgSrc} height={35} width={35}/>
                 </div>
                 <h5 className={`${styles.logoFont} m-2`}>
-                    <div onClick={() => 
+                    <section onClick={() => 
                         {
                             setRoute('/')
                             console.log(nav)
@@ -72,9 +72,8 @@ const Navbar = (props) => {
                             document.getElementById('home-tag').classList.add(`${styles.active}`)
                             setNav(false)
                         }}>
-                        <a role="link" aria-label="site name" tabindex="0">Tunnel_vzn</a>
-                        {/* <small className='ms-5'>hi {user.displayName}</small> */}
-                    </div>
+                        <a role="link" aria-label="site name" tabindex="0" className={styles.logoText}>Tunnel_vzn</a>
+                    </section>
                 </h5>
                 <div className={styles.menuButton} onClick={()=> { makeNoise()}}>
                     <Hamburger label="Show menu" hideOutline={false} toggled={nav} toggle={setNav} color="#000000" duration={0.4} size={40} direction="left" distance="sm" easing="ease-in" />

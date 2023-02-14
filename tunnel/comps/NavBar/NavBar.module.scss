@@ -37,10 +37,12 @@
 
 .topUiBackground {
     border-bottom: 2px solid #000;
-    position: absolute;
+    position: fixed;
     width: 100%;
-    background-color: #F9F9F9;
+    // background-color: #F9F9F9;
     z-index: 3;
+    background-color: rgba(255, 255, 255, .15);  
+    backdrop-filter: blur(10px);
 }
 
 
