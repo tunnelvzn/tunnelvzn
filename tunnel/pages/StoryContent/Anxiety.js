@@ -303,10 +303,12 @@ export const Anxiety = () => {
                             <h6><Link href="https://www.instagram.com/tunnel_vzn/"><a target="_blank">Follow Us! <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
                         </div>
                     </div>
-                    <div className={styles.partnership}>
+
+                    {/* Commented out partnership message */}
+                    {/* <div className={styles.partnership}>
                         <h5>Want to tell your story?</h5>
                         <h6>Submit it to our friends <Link href="https://www.instagram.com/officialhumansofuw/"><a className={styles.partnerLink} target="_blank">@officialhumansofuw</a></Link>!</h6>
-                    </div>
+                    </div> */}
                 </div>
             </div>
 

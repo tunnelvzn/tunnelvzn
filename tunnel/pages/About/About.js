@@ -36,13 +36,15 @@ const About = () => {
                         Through thought-provoking storytelling, our project allows students to see various perspectives from those who have experienced similar situations, thus, gaining greater awareness and a sense of comfort, allowing them to push forward. We hope the ideas presented will stay with students long after leaving the website.
                     </p>
                 </div>
-                <div>
+
+                {/* This part is about the partnership */}
+                {/* <div>
                     <h3 className={styles.subTitle}>Official Humans Of UW Partnership</h3>
                     <p>
                         We are collaborating with <Link href="https://www.instagram.com/officialhumansofuw/"><a className={styles.partnerLink} target="_blank">Official Humans Of UW</a></Link> because both organizations seek to accomplish the same goal through differing approaches.
                         Tunnel_vzn gathers many experiences and combines them into one story like a collage. On the other hand, Official Humans Of UW focuses on amplifying the voices of individual students. 
                     </p>
-                </div>
+                </div> */}
                 <div>
                     <h3 className={`${styles.subTitle} ${styles.customSpace}`}>Frequently Asked Questions</h3>
                     <Accordion>
@@ -52,18 +54,30 @@ const About = () => {
                                 Nope! The characters are fictitious. However, their experiences are similar and inspired by real students.
                             </Accordion.Body>
                         </Accordion.Item>
-                        <Accordion.Item eventKey="1">
+
+                        {/* Section with partner */}
+                        {/* <Accordion.Item eventKey="1">
                             <Accordion.Header>How does Tunnel_vzn gather student experiences?</Accordion.Header>
                             <Accordion.Body>
                                 We talk with current students at the university, gather personal accounts from social media, and take inspiration from our friends at Official Humans Of UW. We also get feedback from students about the relatability and realism of the stories before they go live!
                             </Accordion.Body>
+                        </Accordion.Item> */}
+
+                        {/* Section without partner */}
+                        <Accordion.Item eventKey="1">
+                            <Accordion.Header>How does Tunnel_vzn gather student experiences?</Accordion.Header>
+                            <Accordion.Body>
+                                We talk with current students at the university and gather personal accounts from social media. We also get feedback from students about the relatability and realism of the stories before they go live!
+                            </Accordion.Body>
                         </Accordion.Item>
-                        <Accordion.Item eventKey="2">
+
+                        {/* This section is about the partnership too */}
+                        {/* <Accordion.Item eventKey="2">
                             <Accordion.Header>What can I do to make my story heard?</Accordion.Header>
                             <Accordion.Body>
                                 If you want to share your story, we encourage you to submit them to Official Humans Of UW to ensure that your experience gets heard by as many people as possible!
                             </Accordion.Body>
-                        </Accordion.Item>
+                        </Accordion.Item> */}
                         <Accordion.Item eventKey="3">
                             <Accordion.Header>Is Tunnel_vzn making any profit?</Accordion.Header>
                             <Accordion.Body>
