@@ -1,6 +1,5 @@
 {
   "dependencies": {
-    "@vercel/analytics": "^0.1.8",
     "boostrap": "^2.0.0",
     "bootstrap": "^5.2.3",
     "hamburger-react": "^2.5.0",

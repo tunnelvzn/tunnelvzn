@@ -14,6 +14,7 @@ import About from './About/About';
 import { Icon } from '@iconify/react';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, updateProfile } from "firebase/auth";
 import { doc, setDoc, getDoc, runTransaction } from "firebase/firestore";
+import Feedback from './Feedback/Feedback'
 
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
@@ -259,6 +260,7 @@ export default function Home() {
         {route == '/About' && <About />}
         {route == '/Credits' && <Credits />}
         {route == '/Updates' && <Updates />}
+        {route == '/Feedback' && <Feedback/>}
 
         {/* <Footer/> */}
 
