@@ -172,7 +172,7 @@ export const Anxiety = () => {
                 <p className={`${styles.words} ${styles.offset}`}>
                     Upon arriving at the lecture hall, I take my seat near the stairs among a sea of students. My seatmate greets me as I unpack my laptop. “I gotta study harder, it’s confusing,” he utters in a defeated tone. “Yeah, it’s sad,” I respond in agreement. His words inadvertently remind me of my disappointing midterm results, and a sense of unease washes over me.
                     <br/><br/>
-                    I studied for many hours and days. I went to TA office hours like it was my hobby. I did tons of practice problems. So, how in the world did I still have a rough time on the exam? 55% does not make me feel good. Although the midterm made a sizable dent in my confidence, I attempt to put it in the back of my mind to focus on the new content, or else my knowledge and grades would lag even further behind.                    
+                    <i>I studied for many hours and days. I went to TA office hours like it was my hobby. I did tons of practice problems. So, how in the world did I still have a rough time on the exam?</i> 55% does not make me feel good. Although the midterm made a sizable dent in my confidence, I attempt to put it in the back of my mind to focus on the new content, or else my knowledge and grades would lag even further behind.                    
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
@@ -183,7 +183,7 @@ export const Anxiety = () => {
                 <p className={styles.words}>
                     However, as the professor delves into the introduction of new concepts, I find myself struggling to keep pace, and eventually, I subconsciously began to lose interest. Due to disengagement, I feel my eyes getting heavier, and a strong sense of sleepiness begins to set in. Not even my Matcha Latte can cure the fatigue.
                     <br/><br/>
-                    Thankfully, having my terrible midterm results lingering over me like a dark cloud, drives me to resist sleepiness. I have to make sense of this information or have a high chance of failing the class. I did not equate a number to my worth as a person, but it seemed believable with every result I got. 
+                    Thankfully, having my terrible midterm results lingering over me like a dark cloud, drives me to resist sleepiness. <i>I have to make sense of this information or have a high chance of failing the class.</i> I did not equate a number to my worth as a person, but it seemed believable with every result I got. 
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
@@ -194,7 +194,7 @@ export const Anxiety = () => {
                 <p className={`${styles.words} ${styles.offset}`}>
                     With each passing moment, I know that the finals would creep closer to deciding my fate. Every second I spend pondering an unrelated topic, my goal of majoring in CS slips further away. From the financial burden of tuition to my lack of support, it’s too much for me. 
                     <br/><br/>
-                    What if I don’t make it? What will happen to me? Where will I go? The thought of not succeeding and the subsequent ramifications causes my heart to beat even faster. My mind spirals out of control, and my consciousness is thrown back to random moments of my past. 
+                    <i>What if I don’t make it? What will happen to me? Where will I go?</i> The thought of not succeeding and the subsequent ramifications causes my heart to beat even faster. My mind spirals out of control, and my consciousness is thrown back to random moments of my past. 
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
@@ -203,9 +203,9 @@ export const Anxiety = () => {
                     <Image src="/anxietyImages/walls.png" className={styles.storyImg} layout="fill" alt="John and his classmate walk out of the building while talking" />
                 </div>
                 <p className={styles.words}>
-                    Among those memories is lurking in my old friend group’s Discord. They would talk about their shared struggles, and I saw them overcome their obstacles together and celebrate. In contrast, I find myself alone in my current predicament. I guess my friends moved on without me. 
+                    Among those memories is lurking in my old friend group’s Discord. They would talk about their shared struggles, and I saw them overcome their obstacles together and celebrate. In contrast, I find myself alone in my current predicament. <i>I guess my friends moved on without me.</i>
                     <br/><br/>
-                    On the rare occasions when they pinged me and asked how I was doing, I answered: “alright.” How would they understand anyways? They most likely didn’t put up with a competitive-major system. Moments like these have stacked up to create walls that continuously close in on me, leaving no room to breathe nor an exit in sight.
+                    On the rare occasions when they pinged me and asked how I was doing, I answered: “alright.” <i>How would they understand anyways? They most likely didn’t put up with a competitive-major system.</i> Moments like these have stacked up to create walls that continuously close in on me, leaving no room to breathe nor an exit in sight.
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
@@ -214,7 +214,7 @@ export const Anxiety = () => {
                     <Image src="/anxietyImages/leaving.png" className={styles.storyImg} layout="fill" alt="John and his new friend part ways at red square" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
-                    As the lecture concludes, my seatmate turns to me and says, "I gotta head to my next class. See you." I simply nod in response, still flabbergasted that I had learned nothing. Throughout the day, the CS class was at the back of my mind slowly eating away at my sanity. In the blink of an eye, I’m in my last class of the day: a mere elective. Not a chance I would pay any attention. 
+                    As the lecture concludes, my seatmate turns to me and says, "I gotta head to my next class. See you." I simply nod in response, still flabbergasted that I had learned nothing. Throughout the day, the CS class was at the back of my mind slowly eating away at my sanity. In the blink of an eye, I’m in my last class of the day: a mere elective. <i>Not a chance I would pay any attention.</i>
                     <br/><br/>
                     The temptation to skip my remaining classes and immerse myself fully in CS arises, but I realize that it would do me more harm. My desire to return home and re-watch the recording of today's lecture and begin working on the new assignment drives me crazy.
                 </p>
@@ -236,7 +236,7 @@ export const Anxiety = () => {
                     <Image src="/anxietyImages/goingMadTwo.png" className={styles.storyImg} layout="fill" alt="John spots his two roommates leave the hub" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
-                    I can't help but express, “I miss California and, above all, my friends. I wish I had heeded the warning from my high school classmate, but now, it’s too late to turn back. Now, I’m trapped in weed-out hell and I believe no one will understand my suffering” I say, which surprises even me. Why did I even tell him that? What good would it do? My problems, my fault, right? This situation is so dumb. I pause, awaiting my classmate's response.
+                    I can't help but express, “I miss California and, above all, my friends. I wish I had heeded the warning from my high school classmate, but now, it’s too late to turn back. Now, I’m trapped in weed-out hell and I believe no one will understand my suffering” I say, which surprises even me. <i>Why did I even tell him that? What good would it do? My problems, my fault, right? This situation is so dumb.</i> I pause, awaiting my classmate's response.
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
@@ -256,7 +256,7 @@ export const Anxiety = () => {
                     <Image src="/anxietyImages/wayHome.png" className={styles.storyImg} layout="fill" alt="John gets home but does not know how to talk to his roommates" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
-                    I walk back to my apartment, and my thoughts are in a state of turmoil. I am fortunate to have met someone willing to listen to my problems and offer suggestions. But now, someone else knows about my problems. Will he be let down if I fail? Will he laugh at me when that happens? These thoughts weigh heavily on my mind.
+                    I walk back to my apartment, and my thoughts are in a state of turmoil. I am fortunate to have met someone willing to listen to my problems and offer suggestions. But now, someone else knows about my problems. <i>Will he be let down if I fail? Will he laugh at me when that happens?</i> These thoughts weigh heavily on my mind.
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
@@ -267,7 +267,7 @@ export const Anxiety = () => {
                 <p className={styles.words}>
                     Back at my place, I devote several hours to attempting to grasp the lecture material. Although I start to make progress, the concepts remain hazy. It’s overwhelming, and I decide to leave it for tomorrow. Maybe I will ask my seatmate to join my study group.
                     <br/><br/>
-                    Being so far from home, and having lost touch with my friend group, today's encounter has reminded me that there are good people out there who I can form new friendships with. Maybe if we help each other out, we will all be successful. Regardless, having a plan has provided me with a sense of relief that allowed me to quiet my anxieties for the time being.
+                    Being so far from home, and having lost touch with my friend group, today's encounter has reminded me that there are good people out there who I can form new friendships with. <i>Maybe if we help each other out, we will all be successful.</i> Regardless, having a plan has provided me with a sense of relief that allowed me to quiet my anxieties for the time being.
                 </p>
             </div>
 

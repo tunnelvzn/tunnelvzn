@@ -6,17 +6,8 @@
     margin-bottom: 10vh;
 }
 
-.feedbackTitle {
-    font-size: 8vw;
-}
-
 .buttonContainer {
     height: 10vh;
-}
-
-.feedbackContent {
-    margin-left: 30vw;
-    margin-right: 30vw;
 }
 
 .input {
@@ -54,4 +45,39 @@
 .button:hover {
     margin-top: -1vh;
     box-shadow: 3px 3px #000;
+}
+
+// --------------------RESPONSIVE DESIGN----------------------------------------
+
+// X-Small devices (portrait phones, less than 576px)
+@media (max-width: 575.98px) {
+    .feedbackContent {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .feedbackTitle {
+        font-size: 15vw;
+    }
+}
+
+// Small devices (landscape phones, 576px and up)
+@media (min-width: 576px) {
+    .feedbackContent {
+        margin-left: 5vw;
+        margin-right: 5vw;
+    }
+    .feedbackTitle {
+        font-size: 15vw;
+    }
+}
+
+// Medium devices (tablets, 768px and up)
+@media (min-width: 768px) {
+    .feedbackContent {
+        margin-left: 25vw;
+        margin-right: 25vw;
+    }
+    .feedbackTitle {
+        font-size: 8vw;
+    }
 }
