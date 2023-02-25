@@ -16,11 +16,11 @@ export const Feedback = () => {
                     <h6>We value your ideas! Thank you in advance for filling out this form!</h6>
                 </div>
                 <div className='mt-4'>
-                    <label className={`${styles.question} mb-1`}>1. Your preferred email.</label>
+                    <label className={`${styles.question} mb-1`}>1. Your preferred email.*</label>
                     <input type="email" placeholder="email123@email.com" className={`${styles.input} w-100`}></input>
                 </div>
                 <div className={`${styles.multi} mt-4`}>
-                    <label className={`${styles.question} mb-1`}>2. What do you think about the project so far?</label>
+                    <label className={`${styles.question} mb-1`}>2. What do you think about the project so far?*</label>
 
                     <div className='mt-2'>
                         <input className='me-2' type="radio" id="Awesome" name="fav_language" value="Awesome"></input>
@@ -48,17 +48,17 @@ export const Feedback = () => {
                     </div>
                 </div>
                 <div className='mt-4'>
-                    <label className={`${styles.question} mb-1`}>3. Based on the previous question, explain why.</label>
-                    <textarea type="text" placeholder="I think this because..." className={`${styles.input} ${styles.largeInput} w-100`}></textarea >
+                    <label className={`${styles.question} mb-1`}>3. Elaborate on your answer to the previous question.*</label>
+                    <textarea type="text" placeholder="I believe this because..." className={`${styles.input} ${styles.largeInput} w-100`}></textarea >
                 </div>
 
                 <div className='mt-4'>
-                    <label className={`${styles.question} mb-1`}>4. Is there anything you want us to add to the project? Explain!</label>
+                    <label className={`${styles.question} mb-1`}>4. Is there anything you want us to add to the project? Tell us more!</label>
                     <textarea type="text" placeholder="I want you to add..." className={`${styles.input} ${styles.largeInput}  w-100`}></textarea >
                 </div>
 
                 <div className='mt-4'>
-                    <label className={`${styles.question} mb-1`}>5. Any usability issues or other obstacles you want to bring to our attention?</label>
+                    <label className={`${styles.question} mb-1`}>5. Is there anything else you want us to know? Feel free to say it!</label>
                     <textarea type="text" placeholder="Something I want to bring to your attention is..." className={`${styles.input} ${styles.largeInput}  w-100`}></textarea >
                 </div>
                 <div className={`${styles.buttonContainer} text-center mt-3`}>
