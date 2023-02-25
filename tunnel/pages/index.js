@@ -35,6 +35,9 @@ export default function Home() {
   const [initialLoad, setInitialLoad] = useState(true)
   const auth = getAuth();
 
+  const CLIENT_ID = '397365732589-h80pt9uicbepf4ttimn2sjupfc9hbc4j.apps.googleusercontent.com';
+  const API_KEY = 'AIzaSyD4sh7zqBRP7FAholgOLkTL6f6dQ12pZL0';
+
   const userSignin = () => {
 
     const email = document.getElementById('email').value
