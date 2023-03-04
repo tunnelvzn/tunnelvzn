@@ -45,7 +45,10 @@ export const Feedback = () => {
                 <div className={styles.block}></div>
                 <div className={`${styles.header} text-center`}>
                     <h1 className={styles.feedbackTitle}>Feedback</h1>
-                    <h6>We value your ideas! Thank you in advance for filling out this form!</h6>
+                    {/* <h6>We value your ideas! Thank you in advance for filling out this form!</h6> */}
+                    <h6>
+                        IMPORTANT ANNOUNCEMENT: This form is not yet functional because we are overhauling our database! We apologize for the inconvenience. You can access the form <Link href="https://forms.gle/eRjujEzuH123hfc9A"><a target="_blank">here</a></Link>.
+                    </h6>
                 </div>
                 <div className='mt-4'>
                     <label className={`${styles.question} mb-1`}>1. Your preferred email.*</label>

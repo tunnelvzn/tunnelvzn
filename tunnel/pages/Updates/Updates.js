@@ -21,7 +21,7 @@ const Updates = () => {
                 <section>
                     <h3 className={styles.subTitle}>Transparency Statement</h3>
                     <p>
-                        We are actively improving user experience. There are two main aspects we are focused on: content and website. 
+                        We are actively improving user experience in two main aspects: content and website.  
                         We believe in transparency and maintaining good communication with students. 
                         Thus, the purpose of this page is to inform you about the state of the organization.
                     </p>
@@ -33,7 +33,7 @@ const Updates = () => {
                             Published stories are still subject to change due to new feedback.
                         </li>
                         <li>
-                            Story three will release on March 16th, 2023.
+                            Story three will release on March 31st, 2023.
                         </li>
                     </ul>
                 </section>
@@ -41,7 +41,10 @@ const Updates = () => {
                     <h3 className={styles.subTitle}>Upcoming Website Improvements</h3>
                     <ul>
                         <li>
-                            Screenreader accessibility improvements
+                            Database updates & feedback functionality improvements
+                        </li>
+                        <li>
+                            Screenreader accessibility enhancements
                         </li>
                         <li>
                             Responsiveness for tablets 
