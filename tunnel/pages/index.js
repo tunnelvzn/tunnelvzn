@@ -214,7 +214,7 @@ export default function Home() {
       <h1 className={`${styles.introSubHeader} text-center`}>Storytelling based on UW student experiences</h1>
       <div>
         {!initialLoad &&
-          <div role="button" aria-label="enter experience" tabindex="0" className={styles.startBtn} onClick={() => {
+          <div role="button" aria-label="enter experience" tabIndex="0" className={styles.startBtn} onClick={() => {
             console.log('click')
             setIntro(false);
             song.loop = true;

@@ -21,7 +21,7 @@ const Story = ({ id, name, contentImage }) => {
     let storyContent = (
         <div className={styles.storyWrapper} onClick={()=> {setNav(false)}}>
             <div className='text-center ms-5 me-5'>
-                <div role="button" aria-label="story available" tabindex="0" onClick={()=> {
+                <div role="button" aria-label="story available" tabIndex="0" onClick={()=> {
                     setRoute('/StoryContent'); 
                     setStoryName(name)
                     console.log(name)
@@ -35,7 +35,7 @@ const Story = ({ id, name, contentImage }) => {
 
     let defaultReturn = (
         <div className={styles.storyWrapper}>
-            <div role="button" aria-label="story coming soon" tabindex="0" className='text-center ms-5 me-5'>
+            <div role="button" aria-label="story coming soon" tabIndex="0" className='text-center ms-5 me-5'>
                 <Link href="/404">
                     <img className={styles.story} src={`/../../galleryImages/${currImage}`} />
                 </Link>

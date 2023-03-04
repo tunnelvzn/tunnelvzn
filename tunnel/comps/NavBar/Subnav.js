@@ -58,7 +58,7 @@ function Subnav(props) {
                     </li> */}
 
 
-                    <li role="link" aria-label="home tab" tabindex="0" id="home-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
+                    <li role="link" aria-label="home tab" tabIndex="0" id="home-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
                         setRoute('/');
                         console.log(route)
                         sessionStorage.setItem("route", "/");
@@ -68,7 +68,7 @@ function Subnav(props) {
                     }}><a>Home</a>
                     </li>
 
-                    <li role="link" aria-label="about tab" tabindex="0" id="about-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
+                    <li role="link" aria-label="about tab" tabIndex="0" id="about-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
                         setRoute('/About');
                         sessionStorage.setItem("route", "/About");
                         setNav(false)
@@ -87,7 +87,7 @@ function Subnav(props) {
                         <a>Feedback</a>
                     </li>
 
-                    <li role="link" aria-label="project updates tab" tabindex="0" id="updates-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
+                    <li role="link" aria-label="project updates tab" tabIndex="0" id="updates-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
                         setRoute('/Updates');
                         sessionStorage.setItem("route", "/Updates");
                         setNav(false)
@@ -96,7 +96,7 @@ function Subnav(props) {
                     }}><a>Updates</a>
                     </li>
 
-                    <li role="link" aria-label="credits tab" tabindex="0" id="credits-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
+                    <li role="link" aria-label="credits tab" tabIndex="0" id="credits-tag" className={`${styles.pageTabs} general-nav-tags`} onClick={(e) => {
                         setRoute('/Credits');
                         sessionStorage.setItem("route", "/Credits");
                         setNav(false)

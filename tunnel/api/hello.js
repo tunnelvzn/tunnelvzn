@@ -15,8 +15,8 @@ app.get('/', async (req, res) => {
 // });
 
 const doc = new GoogleSpreadsheet();
-await doc.useServiceAccountAuth('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');
-await doc.createNewSpreadsheetDocument({ title: 'This is a new doc' });
+// await doc.useServiceAccountAuth('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');
+// await doc.createNewSpreadsheetDocument({ title: 'This is a new doc' });
 console.log(doc.spreadsheetId);
   res.send(doc.spreadsheetId)
 })

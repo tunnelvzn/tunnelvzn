@@ -290,7 +290,7 @@ export const Anxiety = () => {
                 <div>
                     <h1 className={styles.endText}>A chapter may end, but the story continues...</h1>
                     <div className={styles.buttonContainer}>
-                         <div className={styles.endStoryBtn} aria-label="like" role="button" tabindex="0" onClick={() => {
+                         <div className={styles.endStoryBtn} aria-label="like" role="button" tabIndex="0" onClick={() => {
                             addLike()
                             makeNoise()
                             }}>

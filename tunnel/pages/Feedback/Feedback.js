@@ -1,15 +1,47 @@
 import styles from './Feedback.module.scss'
 import Footer from '/comps/Footer';
 import Head from 'next/head'
-
+import { useState, useContext } from 'react';
+import Image from 'next/image';
+import Link from 'next/link';
+import homeStyles from '../../styles/Home.module.scss'
+import { GlobalContext } from '../../comps/Global/useGlobalContext';
+import { Button } from '../../comps/Button';
 export const Feedback = () => {
+
+    const [submit, setSubmit] = useState(false)
+    const [error, setError] = useState('')
+    const {
+     
+        setRoute,
+        
+    } =
+        useContext(GlobalContext);
+
+
+    const upLoadToFirebase = () => {
+        console.log('upLoadToFirebase')
+        const email = document.getElementById('userEmail').value
+        console.log('email', email)
+        if(!email){
+            setError('email')
+            return false
+        }
+        const ratingOption  = document.querySelector('input[name="overall-rating"]:checked');
+        console.log(ratingOption)
+        if(!ratingOption){
+            setError('overall')
+        }
+    }
+
+
     return (
         <>
             <Head>
                 <title>Tunnel_vzn | Feedback</title>
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <div className={styles.feedbackContent}>
+            {!submit && <div className={styles.feedbackContent}>
                 <div className={styles.block}></div>
                 <div className={`${styles.header} text-center`}>
                     <h1 className={styles.feedbackTitle}>Feedback</h1>
@@ -17,34 +49,36 @@ export const Feedback = () => {
                 </div>
                 <div className='mt-4'>
                     <label className={`${styles.question} mb-1`}>1. Your preferred email.*</label>
-                    <input type="email" placeholder="email123@email.com" className={`${styles.input} w-100`}></input>
+                    <input id="userEmail" type="email" placeholder="email123@email.com" className={`${styles.input} w-100`}></input>
+                    {error=="email" && <div className='alert alert-danger'>Please put in your email</div>}
                 </div>
-                <div className={`${styles.multi} mt-4`}>
+                <div className={`${styles.multi} mt-4`} >
+                
                     <label className={`${styles.question} mb-1`}>2. What do you think about the project so far?*</label>
-
-                    <div className='mt-2'>
-                        <input className='me-2' type="radio" id="Awesome" name="fav_language" value="Awesome"></input>
-                        <label for="Awesome">Awesome</label>
+                    {error=="overall" && <div className='alert alert-danger'>Please select one option</div>}
+                    <div className='mt-2  '>
+                        <input className='me-2' type="radio" id="Awesome" name="overall-rating" value="Awesome"></input>
+                        <label htmlFor="Awesome">Awesome</label>
+                    </div>
+ 
+                    <div className='mt-2  '>
+                        <input className='me-2' type="radio" id="Good" name="overall-rating" value="Good"></input>
+                        <label htmlFor="Good">Good</label>
                     </div>
 
-                    <div className='mt-2'>
-                        <input className='me-2' type="radio" id="Good" name="fav_language" value="Good"></input>
-                        <label for="Good">Good</label>
+                    <div className='mt-2  '>
+                        <input className='me-2' type="radio" id="Decent" name="overall-rating" value="Decent"></input>
+                        <label htmlFor="Decent">Decent</label>
                     </div>
 
-                    <div className='mt-2'>
-                        <input className='me-2' type="radio" id="Decent" name="fav_language" value="Decent"></input>
-                        <label for="Decent">Decent</label>
+                    <div className='mt-2  '>
+                        <input className='me-2' type="radio" id="Bad" name="overall-rating" value="Bad"></input>
+                        <label htmlFor="Bad">Bad</label>
                     </div>
 
-                    <div className='mt-2'>
-                        <input className='me-2' type="radio" id="Bad" name="fav_language" value="Bad"></input>
-                        <label for="Bad">Bad</label>
-                    </div>
-
-                    <div className='mt-2'>
-                        <input className='me-2' type="radio" id="Bad" name="fav_language" value="Bad"></input>
-                        <label for="Bad">Terrible</label>
+                    <div className='mt-2  '>
+                        <input className='me-2' type="radio" id="Bad" name="overall-rating" value="Bad"></input>
+                        <label htmlFor="Bad">Terrible</label>
                     </div>
                 </div>
                 <div className='mt-4'>
@@ -62,11 +96,38 @@ export const Feedback = () => {
                     <textarea type="text" placeholder="Something I want to bring to your attention is..." className={`${styles.input} ${styles.largeInput}  w-100`}></textarea >
                 </div>
                 <div className={`${styles.buttonContainer} text-center mt-3`}>
-                    <button className={`${styles.button}`}>Submit</button>
+                    <button className={`${styles.button}`} onClick={() => {
+                        console.log('submit')
+                        const pass = upLoadToFirebase()
+                        if(pass) {
+                            setSubmit(true)
+                        }
+                        
+                    }}>Submit</button>
                 </div>
                 <div className={styles.block}></div>
-            </div>  
-            <Footer/>  
+            </div>}
+
+            {submit &&
+                <div className={styles.feedbackContent}>
+                    <div className={styles.block}></div>
+                    <div className='text-center'>
+                        <div className={styles.submitImage}>
+                            <Image src={'/shootingStars.svg'} layout='fill' />
+                        </div>
+
+                        <h2>Thank you for your feedback!</h2>
+                        <h3>If we end up using your ideas, we will contact you to see how we can give you credit! Have a nice day!</h3>
+                        <button  className={`${homeStyles.goHomeBtn}`} onClick={()=> {
+                            setRoute('/')
+                        }}><h6>Go Back Home</h6></button>
+
+                        <Button size={"large"}/>
+                    </div>
+
+                </div>
+            }
+            <Footer />
         </>
     )
 }

@@ -57,7 +57,7 @@ const Navbar = (props) => {
     return (
         <>  
             <div className= {`${styles.topUiBackground} w-100 d-flex text-center justify-content-between`}>
-                <div role="button" aria-label="sound toggle" tabindex="0" className={styles.soundButton} onClick={()=> {toggleMusic()}}>
+                <div role="button" aria-label="sound toggle" className={styles.soundButton} onClick={()=> {toggleMusic()}}>
                     <Image src={musicimgSrc} height={35} width={35}/>
                 </div>
                 <h5 className={`${styles.logoFont} m-2`}>
@@ -72,7 +72,7 @@ const Navbar = (props) => {
                             document.getElementById('home-tag').classList.add(`${styles.active}`)
                             setNav(false)
                         }}>
-                        <a role="link" aria-label="site name" tabindex="0" className={styles.logoText}>Tunnel_vzn</a>
+                        <a role="link" aria-label="site name" className={styles.logoText}>Tunnel_vzn</a>
                     </section>
                 </h5>
                 <div className={styles.menuButton} onClick={()=> { makeNoise()}}>
