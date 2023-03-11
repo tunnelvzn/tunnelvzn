@@ -1,7 +1,7 @@
 import styles from './Feedback.module.scss'
 import Footer from '/comps/Footer';
 import Head from 'next/head'
-import { useState, useContext } from 'react';
+import { useState, useContext, React } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
 import homeStyles from '../../styles/Home.module.scss'
@@ -9,7 +9,7 @@ import { GlobalContext } from '../../comps/Global/useGlobalContext';
 import { Button } from '../../comps/Button';
 import { doc, setDoc, Timestamp, collection } from "firebase/firestore";
 import { async } from '@firebase/util';
-export const Feedback = () => {
+export const Feedback = ({}) => {
 
     const [submit, setSubmit] = useState(false)
     const [error, setError] = useState('')
