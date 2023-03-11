@@ -21,7 +21,7 @@ const Story = ({ id, name, contentImage }) => {
     let storyContent = (
         <div className={styles.storyWrapper} onClick={()=> {setNav(false)}}>
             <div className='text-center ms-5 me-5'>
-                <div role="button" aria-label="story available" tabIndex="0" onClick={()=> {
+                <div role="button" aria-label={`story about ${name}`} tabIndex="0" onClick={()=> {
                     setRoute('/StoryContent'); 
                     setStoryName(name)
                     console.log(name)
