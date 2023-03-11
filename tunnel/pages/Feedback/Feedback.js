@@ -106,29 +106,29 @@ export const Feedback = ({}) => {
 
                     <label className={`${styles.question} mb-1`}>2. What do you think about the project so far?*</label>
                     {error == "overall" && <div className='alert alert-danger'>Please select one option</div>}
-                    <div className='mt-2  '>
+                    <div className='mt-2'>
                         <input className='me-2' type="radio" id="Awesome" name="overall-rating" value="5"></input>
                         <label htmlFor="Awesome">Awesome</label>
                     </div>
 
-                    <div className='mt-2  '>
+                    <div className='mt-2'>
                         <input className='me-2' type="radio" id="Good" name="overall-rating" value="4"></input>
                         <label htmlFor="Good">Good</label>
                     </div>
 
-                    <div className='mt-2  '>
+                    <div className='mt-2'>
                         <input className='me-2' type="radio" id="Decent" name="overall-rating" value="3"></input>
                         <label htmlFor="Decent">Decent</label>
                     </div>
 
-                    <div className='mt-2  '>
+                    <div className='mt-2'>
                         <input className='me-2' type="radio" id="Bad" name="overall-rating" value="2"></input>
                         <label htmlFor="Bad">Bad</label>
                     </div>
 
-                    <div className='mt-2  '>
-                        <input className='me-2' type="radio" id="Bad" name="overall-rating" value="1"></input>
-                        <label htmlFor="Bad">Terrible</label>
+                    <div className='mt-2'>
+                        <input className='me-2' type="radio" id="Terrible" name="overall-rating" value="1"></input>
+                        <label htmlFor="Terrible">Terrible</label>
                     </div>
                 </div>
                 <div className='mt-4'>
@@ -145,7 +145,7 @@ export const Feedback = ({}) => {
 
                 <div className='mt-4'>
                     <label className={`${styles.question} mb-1`}>5. Is there anything else you want us to know? Feel free to say it!</label>
-                    <textarea id="otherThoughts " type="text" placeholder="Something I want to bring to your attention is..." className={`${styles.input} ${styles.largeInput}  w-100`}></textarea >
+                    <textarea id="otherThoughts" type="text" placeholder="Something I want to bring to your attention is..." className={`${styles.input} ${styles.largeInput}  w-100`}></textarea >
                 </div>
                 <div className={`${styles.buttonContainer} text-center mt-3`}>
                     <button className={`${styles.button}`} onClick={() => {
