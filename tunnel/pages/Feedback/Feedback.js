@@ -4,7 +4,6 @@ import Head from 'next/head'
 import { useState, useContext, React } from 'react';
 import Image from 'next/image';
 import Link from 'next/link';
-import homeStyles from '../../styles/Home.module.scss'
 import { GlobalContext } from '../../comps/Global/useGlobalContext';
 import { Button } from '../../comps/Button';
 import { doc, setDoc, Timestamp, collection } from "firebase/firestore";
@@ -158,25 +157,24 @@ export const Feedback = ({}) => {
             </div>}
 
             {submit &&
-                <div className={styles.feedbackContent}>
+                <div className={styles.submitScreenContent}>
                     <div className={styles.block}></div>
                     <div className='text-center'>
                         <div className={styles.submitImage}>
-                            <Image src={'/shootingStars.svg'} layout='fill' />
+                            <Image src="/shootingStars.svg" layout="fill"/>
                         </div>
-
-                        <h2>Thank you for your feedback!</h2>
-                        <h3>If we end up using your ideas, we will contact you to see how we can give you credit! Have a nice day!</h3>
-                        <button className={`${homeStyles.goHomeBtn}`} onClick={() => {
-                            setRoute('/')
-                        }}><h6>Go Back Home</h6></button>
-
-                        <Button size={"large"} />
+                        <div className={styles.submitText}>
+                            <h2>Thank you for your feedback!</h2>
+                            <h3>If we end up using your ideas, we will contact you to see how we can give you credit! Have a nice day!</h3>
+                        </div>
+                        <button className={`${styles.button} ${styles.submitScreenBtn}`} onClick={() => {setRoute('/')}}>
+                            <h6>Go Back Home</h6>
+                        </button>
                     </div>
-
+                    <div className={styles.block}></div>
                 </div>
             }
-            <Footer />
+            <Footer/>
         </>
     )
 }

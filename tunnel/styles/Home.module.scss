@@ -62,6 +62,10 @@
 }
 
 // trigger screen
+.firstContactBtn {
+  z-index: 100;
+}
+
 .introContent {
   height: 100vh;
   font-family: 'Klee One', cursive;
@@ -275,6 +279,9 @@
     height: 250px;
     margin-top: 20vh;
   }
+  .triggerImg {
+    display: none;
+  }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -299,6 +306,9 @@
   }
   .line {
     margin-top: -21vh;
+  }
+  .triggerImg {
+    display: none;
   }
 }
 
@@ -347,6 +357,16 @@
   .line {
     margin-top: -24vh;
   } 
+  .triggerImg {
+    position: absolute;
+    width: 50vh;
+    height: 50vh;
+    right: 1vh;
+    bottom: 1vh;
+    z-index: 0;
+    opacity: 10%;
+    display: block;
+  }
 }
 
 // X-Large devices (large desktops, 1200px and up)

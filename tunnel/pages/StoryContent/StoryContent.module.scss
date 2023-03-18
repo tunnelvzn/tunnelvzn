@@ -20,14 +20,6 @@
 //   height: 53px;
 // }
 
-.partnerLink {
-  color: #000;
-}
-
-.partnerLink:hover {
-  color: #0d6efd;
-}
-
 .block {
   height: 13vh;
 }
@@ -57,10 +49,6 @@
   width: 100%;
 }
 
-.liked {
-  color:red
-}
-
 .bounce {
   -moz-animation: bounce 2s infinite;
   -webkit-animation: bounce 2s infinite;
@@ -79,12 +67,21 @@
   }
 }
 
-.endSection {
-  scroll-snap-align: start;
-  width: 100%;
-  height: 100vh;
+.offset {
+  order: -1;
+}
+
+// CODE FOR LAST PANEL OF THE STORIES (THE FORM)
+
+.formContainer {
+  border-radius: 10px;
+  border: 1px solid #c5c5c5;
+  padding: 3vh;
+  margin-bottom: 10vh;
+}
+
+.choiceContainer {
   display: flex;
-  background-color: #F9F9F9;
 }
 
 .endStoryBtn h6 a {
@@ -113,27 +110,16 @@
   flex-direction: column;
 }
 
-.partnership {
-  margin-top: 15vh;
-  margin-left: 2vh;
-  margin-right: 2vh;
+.liked {
+  color:red
 }
 
-.partnership h5 {
-  font-size: 3vh;
-}
-
-.offset {
-  order: -1;
-}
+// END OF CODE FOR LAST PANEL OF THE STORIES (THE FORM)
 
 // --------------------RESPONSIVE DESIGN----------------------------------------
 
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
-  // .theArrow {
-  //   color: rgb(255, 0, 0); 
-  // }
   .arrow {
     display: none;
   }
@@ -172,25 +158,14 @@
     width: auto;
     position: relative;
   }
-  .endText {
-    margin-top: 3vh;
-    font-size: 4vh;
-    margin-bottom: 10vh;
-    margin-left: 2vh;
-    margin-right: 2vh;
-  }
   .endStoryBtn {
     margin-left: 2vh;
     margin-right: 2vh;
-    width: auto;
   }
 }
 
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
-  // .theArrow {
-  //   color: rgb(43, 0, 255); 
-  // }
   .arrow {
     display: none;
   }
@@ -212,17 +187,9 @@
     margin-right: 2vh;
     font-size: 2vh;
   }
-  .endText {
-    margin-top: 3vh;
-    font-size: 5vh;
-    margin-bottom: 10vh;
-    margin-left: 10vh;
-    margin-right: 10vh;
-  }
   .endStoryBtn {
     margin-left: 10vh;
     margin-right: 10vh;
-    width: auto;
   }
   .section {
     scroll-snap-align: start;
@@ -244,9 +211,6 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
-  // .theArrow {
-  //   color: rgb(0, 255, 98); 
-  // }
   .arrow {
     margin-top: 89vh;
     display: block;
@@ -275,9 +239,6 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-  // .theArrow {
-  //   color: rgb(0, 255, 242); 
-  // }
   .arrow {
     margin-top: 85vh;
   }
@@ -289,13 +250,6 @@
   }
   .section {
     display: flex;
-  }
-  .endText {
-    margin-top: 3vh;
-    font-size: 6vh;
-    margin-bottom: 3vh;
-    margin-left: 20vh;
-    margin-right: 20vh;
   }
   .buttonContainer {
     display: flex;
@@ -317,9 +271,10 @@
     box-shadow: 3px 3px #000;
   }
   .endStoryBtn {
-    margin-right: 2vh;
-    margin-left: 2vh;
-    width: 80vh;
+    margin-right: 1vh;
+    margin-left: 1vh;
+    padding-right: 5vh;
+    padding-left: 5vh;
   }
 }
 
@@ -332,9 +287,6 @@
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
-  // .theArrow {
-  //   color: rgb(255, 183, 0); 
-  // }
   .words {
     font-size: 2.3vh;
   }

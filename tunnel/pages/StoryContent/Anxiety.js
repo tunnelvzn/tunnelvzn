@@ -271,7 +271,8 @@ export const Anxiety = () => {
                 </p>
             </div>
 
-            <div className={`${styles.section} ${styles.normSection}`}>
+            {/* THE BELOW IS THE CODE FOR THE CREDIT PANEL (CURRENTLY BEING WORKED ON) */}
+            {/* <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
                     <Image src="/anxietyImages/credits.png" className={styles.storyImg} layout="fill" alt="Credits" />
@@ -282,12 +283,13 @@ export const Anxiety = () => {
                     <br/>
                     Also, special thanks to members of the <Link href="https://www.instagram.com/writersinprogressuw/"><a className={styles.partnerLink} target="_blank">Writers In Progress</a></Link> club for providing additional feedback!
                 </p>
-            </div>
+            </div> */}
 
-            {/* Final section of story deal with this last */}
             <div className={`${styles.section} ${styles.normSection} text-center`}>
                 <div className={styles.block}></div>
-                <div>
+
+                {/* THE BELOW COMMENTED CODE IS THE OLD DESIGN FOR THE LAST PANEL OF THE STORY */}
+                {/* <div>
                     <h1 className={styles.endText}>A chapter may end, but the story continues...</h1>
                     <div className={styles.buttonContainer}>
                          <div className={styles.endStoryBtn} aria-label="like" role="button" tabIndex="0" onClick={() => {
@@ -303,15 +305,54 @@ export const Anxiety = () => {
                             <h6><Link href="https://www.instagram.com/tunnel_vzn/"><a target="_blank">Follow Us! <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
                         </div>
                     </div>
-
-                    {/* Commented out partnership message */}
-                    {/* <div className={styles.partnership}>
-                        <h5>Want to tell your story?</h5>
-                        <h6>Submit it to our friends <Link href="https://www.instagram.com/officialhumansofuw/"><a className={styles.partnerLink} target="_blank">@officialhumansofuw</a></Link>!</h6>
-                    </div> */}
+                </div> */}
+                <div className={styles.formContents}>
+                    <div className={styles.formContainer}>
+                        <h2>What do you think?</h2>
+                        <div className={styles.choiceContainer}>
+                            <div className={styles.endStoryBtn} aria-label="like" role="button" tabIndex="0" onClick={() => {
+                                addLike()
+                                makeNoise()
+                                }}>
+                                <h6><Icon icon="material-symbols:thumb-up-outline" hFlip={true} width="25" height="25" />Like</h6>
+                            </div>
+                            <div className={styles.endStoryBtn} aria-label="love" role="button" tabIndex="0" onClick={() => {
+                                addLike()
+                                makeNoise()
+                                }}>
+                                <h6><Icon id="likeIcon" icon="mdi:cards-heart-outline" width="25" height="25" />Love</h6>
+                            </div>
+                            <div className={styles.endStoryBtn} aria-label="relatable" role="button" tabIndex="0" onClick={() => {
+                                addLike()
+                                makeNoise()
+                                }}>
+                                <h6><Icon icon="mdi:people-check-outline" width="25" height="25"/>Relatable</h6>
+                            </div>
+                            <div className={styles.endStoryBtn} aria-label="insightful" role="button" tabIndex="0" onClick={() => {
+                                addLike()
+                                makeNoise()
+                                }}>
+                                <h6><Icon icon="majesticons:lightbulb-shine-line" width="25" height="25"/>Insightful</h6>
+                            </div>
+                        </div>
+                    </div>
+                    <div className={styles.formContainer}>
+                        <div>
+                            <label className={`${styles.question} mb-1`}>Anything you want to say about the story? What should be changed? What do you want to see added?</label>
+                            <textarea id="anxietyAnythingElse" type="text" placeholder="Spill your mind here..." className={`${styles.input} ${styles.largeInput}  w-100`}></textarea>
+                        </div>
+                        <div className={`${styles.buttonContainer} text-center mt-3`}>
+                            <button className={`${styles.button}`} onClick={() => {
+                                console.log('submit')
+                                upLoadToFirebase()
+                            }}>Submit</button>
+                        </div>
+                    </div>
+                    <Link href="#"><a>Go Home</a></Link>
                 </div>
+                <div className={styles.block}></div>
             </div>
-
+        
         </div>
     )
 }

@@ -30,9 +30,14 @@
     padding-bottom: 1.2vh;
 }
 
-.iconContainer .extraPadding {
+.iconContainer {
     padding-left: 1vh;
     padding-right: 1vh;
+}
+
+.iconContainer .extraPadding {
+    padding-left: 0.7vh;
+    padding-right: 0.7vh;
 }
 
 .footerLink {
@@ -103,10 +108,6 @@
     .footerDiv {
         height: 70px; 
     }
-    .footer p {
-        display: block;
-        margin-left: 2vh;
-    }
     .iconContainer {
         margin-right: 2vh;
     }
@@ -120,6 +121,10 @@
     .iconContainer .footerLink:hover {
         color: #000;
         box-shadow: 3px 3px #000;
+    }
+    .footer p {
+        display: block;
+        margin-left: 2vh;
     }
 }
 

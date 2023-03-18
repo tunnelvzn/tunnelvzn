@@ -7,6 +7,7 @@ import Updates from '../pages/Updates'
 import StoryContent from './StoryContent'
 import React from "react";
 import Head from 'next/head'
+import Image from 'next/image'
 import { useState, useEffect, useContext } from 'react';
 import ReactAudioPlayer from 'react-audio-player';
 import { GlobalContext } from '../comps/Global/useGlobalContext'
@@ -212,7 +213,7 @@ export default function Home() {
       </Head>
       <h1 className={`${styles.introHeader} text-center`}> Tunnel_vzn </h1>
       <h1 className={`${styles.introSubHeader} text-center`}>Storytelling based on UW student experiences</h1>
-      <div>
+      <section className={styles.firstContactBtn}>
         {!initialLoad &&
           <div role="button" aria-label="enter experience" tabIndex="0" className={styles.startBtn} onClick={() => {
             console.log('click')
@@ -226,7 +227,7 @@ export default function Home() {
           </div>
         }
         {initialLoad &&
-          <div className={styles.center}>
+          <section className={styles.center}>
             <div className={styles.wave}></div>
             <div className={styles.wave}></div>
             <div className={styles.wave}></div>
@@ -237,12 +238,14 @@ export default function Home() {
             <div className={styles.wave}></div>
             <div className={styles.wave}></div>
             <div className={styles.wave}></div>
-          </div>
+          </section>
         }
 
-      </div>
-
-      <div className={`${styles.disclaimer} text-center`}><h5> <Icon icon="game-icons:sound-waves" width="40" height="40" /> This site has sound for better experience.</h5></div>
+      </section>
+      <section className={styles.triggerImg}>
+        <Image src="/triggerScreen.svg" layout="fill" alt="a pencil sketch of a young man sitting"/>
+      </section>
+      <section className={`${styles.disclaimer} text-center`}><h5> <Icon icon="game-icons:sound-waves" width="40" height="40" /> This site has sound for better experience.</h5></section>
     </div>
   )
 

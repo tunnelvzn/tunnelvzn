@@ -1,5 +1,5 @@
 .block {
-    height: 20vh;
+    height: 10vh;
 }
 
 .header {
@@ -42,16 +42,38 @@
     font-size: 2.6vh;
 }
 
+.submitScreenBtn {
+    max-width: 40vh;
+}
+
 .button:hover {
     margin-top: -1vh;
     box-shadow: 3px 3px #000;
 }
-.submitImage{
-    height: 20vw;
-    width: 20vw;
-}
-.feedbackContent {
+
+
+.submitImage {
+    height: 50vh;
+    width: 50vh;
     position: relative;
+    margin: auto;
+}
+
+.submitText {
+    max-width: 60vh;
+    margin: auto;
+}
+
+.submitText h2 {
+    font-size: 3.5vh;
+}
+
+.submitText h3 {
+    font-size: 2vh;
+}
+.submitScreenContent {
+    margin-left: 5vh;
+    margin-right: 5vh;
 }
 
 // --------------------RESPONSIVE DESIGN----------------------------------------
@@ -65,6 +87,9 @@
     .feedbackTitle {
         font-size: 15vw;
     }
+    .submitText {
+        margin-bottom: 4vh;
+    }
 }
 
 // Small devices (landscape phones, 576px and up)
@@ -76,6 +101,9 @@
     .feedbackTitle {
         font-size: 15vw;
     }
+    .submitText {
+        margin-bottom: 4vh;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -86,5 +114,19 @@
     }
     .feedbackTitle {
         font-size: 8vw;
+    }
+    .submitScreenContent {
+        margin-left: 20vh;
+        margin-right: 20vh;
+    }
+    .submitText {
+        margin-top: 4vh;
+    }
+}
+
+// XXX-large devices 
+@media (min-width: 1920px) {
+    .block {
+        height: 15vh;
     }
 }
