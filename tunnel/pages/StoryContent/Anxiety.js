@@ -272,7 +272,7 @@ export const Anxiety = () => {
             </div>
 
             {/* THE BELOW IS THE CODE FOR THE CREDIT PANEL (CURRENTLY BEING WORKED ON) */}
-            {/* <div className={`${styles.section} ${styles.normSection}`}>
+            <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
                     <Image src="/anxietyImages/credits.png" className={styles.storyImg} layout="fill" alt="Credits" />
@@ -283,13 +283,13 @@ export const Anxiety = () => {
                     <br/>
                     Also, special thanks to members of the <Link href="https://www.instagram.com/writersinprogressuw/"><a className={styles.partnerLink} target="_blank">Writers In Progress</a></Link> club for providing additional feedback!
                 </p>
-            </div> */}
+            </div>
 
             <div className={`${styles.section} ${styles.normSection} text-center`}>
                 <div className={styles.block}></div>
 
-                {/* THE BELOW COMMENTED CODE IS THE OLD DESIGN FOR THE LAST PANEL OF THE STORY */}
-                {/* <div>
+                {/* THE BELOW CODE IS THE OLD DESIGN FOR THE LAST PANEL OF THE STORY */}
+                <div>
                     <h1 className={styles.endText}>A chapter may end, but the story continues...</h1>
                     <div className={styles.buttonContainer}>
                          <div className={styles.endStoryBtn} aria-label="like" role="button" tabIndex="0" onClick={() => {
@@ -305,8 +305,10 @@ export const Anxiety = () => {
                             <h6><Link href="https://www.instagram.com/tunnel_vzn/"><a target="_blank">Follow Us! <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
                         </div>
                     </div>
-                </div> */}
-                <div className={styles.formContents}>
+                </div>
+
+                {/* THE BELOW COMENTED CODE IS THE NEW DESIGN FOR THE LAST PANEL OF THE STORY */}
+                {/* <div className={styles.formContents}>
                     <div className={styles.formContainer}>
                         <h2>What do you think?</h2>
                         <div className={styles.choiceContainer}>
@@ -349,7 +351,7 @@ export const Anxiety = () => {
                         </div>
                     </div>
                     <Link href="#"><a>Go Home</a></Link>
-                </div>
+                </div> */}
                 <div className={styles.block}></div>
             </div>
         

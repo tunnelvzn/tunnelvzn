@@ -116,6 +116,16 @@
 
 // END OF CODE FOR LAST PANEL OF THE STORIES (THE FORM)
 
+
+// DELETE NEXT TIME I WORK ON IT AND DELETE THE LINE AT 290.
+.partnerLink {
+  color: #000;
+}
+
+.partnerLink:hover {
+  color: #0d6efd;
+}
+
 // --------------------RESPONSIVE DESIGN----------------------------------------
 
 // X-Small devices (portrait phones, less than 576px)
@@ -275,6 +285,9 @@
     margin-left: 1vh;
     padding-right: 5vh;
     padding-left: 5vh;
+
+    // DUDE DUDE HERE DELETE NEXT TIME YOU WORK ON THE CODE MANNNNNN
+    width: 80vh;
   }
 }
 
