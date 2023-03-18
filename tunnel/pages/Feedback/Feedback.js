@@ -61,6 +61,7 @@ export const Feedback = ({}) => {
             // add to firebase 
             const docData = {
                 overall_rating: ratingOptionValue,
+                rating_explaination: Elaborate,
                 email: email,
                 advice: advice ?? '',
                 other_ideas: otherThoughts ?? '',
