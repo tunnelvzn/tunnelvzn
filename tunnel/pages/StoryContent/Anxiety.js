@@ -105,7 +105,7 @@ export const Anxiety = () => {
             <div className={styles.section}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/cover.png" className={styles.storyImg} layout="fill" alt="a dude named John walking past a bench looking downwards" />
+                    <Image src="/anxietyImages/cover.png" className={styles.storyImg} layout="fill" alt="A girl named mia walking with a cup of coffee in her hand while chaos rages in her head" />
                 </div>
                 <div className={styles.words}>
                     <h1 className={styles.storyTitle}>Anxiety</h1>
@@ -123,7 +123,7 @@ export const Anxiety = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/wakingUp.png" className={styles.storyImg} layout="fill" alt="John sitting on the lightrail train and looking out the window" />
+                    <Image src="/anxietyImages/wakingUp.png" className={styles.storyImg} layout="fill" alt="mia waking up and looks out the window from her bed" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     I wake up at 10 AM on a chilly, overcast morning to stare out the window of my U-district apartment. My relatively new surroundings jolt my memory, and I recall getting my CSE midterm results yesterday. The harsh reality sweeps through my mind like a wave, giving me chills. 
@@ -134,7 +134,7 @@ export const Anxiety = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/cafe.png" className={styles.storyImg} layout="fill" alt="John leaving the lightrail car and walking on the platform towards the exit" />
+                    <Image src="/anxietyImages/cafe.png" className={styles.storyImg} layout="fill" alt="mia waiting for her starbucks drink and the people engaged in conversation make her reminisce about her past" />
                 </div>
                 <p className={styles.words}>
                     As I enter the bustling U-District Starbucks, I find a seat to await my drink. While waiting, my gaze inadvertently fixates upon a group of conversing students. The scene evokes memories of my close-knit friend group from high school. 
@@ -145,7 +145,7 @@ export const Anxiety = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/familyPhoto.png" className={styles.storyImg} layout="fill" alt="John alone in his lecture room" />
+                    <Image src="/anxietyImages/familyPhoto.png" className={styles.storyImg} layout="fill" alt="A picture stand containing an image of mia and her family at the quad" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     In the aftermath of the decision, I found myself increasingly drawn to UW. The university had already left a lasting impression on me during a visit as a high school freshman, where my family and I traveled to UW for a photo shoot with the cherry blossoms. I’ve cherished those photos ever since. So, here I am. 
@@ -156,7 +156,7 @@ export const Anxiety = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/walking.png" className={styles.storyImg} layout="fill" alt="mccarty hall, a dorm building on the UW's campus" />
+                    <Image src="/anxietyImages/walking.png" className={styles.storyImg} layout="fill" alt="mia walking to class with her coffee in hand" />
                 </div>
                 <p className={styles.words}>
                     I hasten to my first class of the day, my computer science lecture in Kane Hall. This class is a nerve-racking experience because I need to do well. Unfortunately, I didn’t get into the CS major as a direct admit. 
@@ -167,7 +167,7 @@ export const Anxiety = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/lectureTalking.png" className={styles.storyImg} layout="fill" alt="John's new roommates talk while John is left in the background" />
+                    <Image src="/anxietyImages/lectureTalking.png" className={styles.storyImg} layout="fill" alt="mia sitting with her seat mate in lecture" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     Upon arriving at the lecture hall, I take my seat near the stairs among a sea of students. My seatmate greets me as I unpack my laptop. “I gotta study harder, it’s confusing,” he utters in a defeated tone. “Yeah, it’s sad,” I respond in agreement. His words inadvertently remind me of my disappointing midterm results, and a sense of unease washes over me.
@@ -178,7 +178,7 @@ export const Anxiety = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/clouds.png" className={styles.storyImg} layout="fill" alt="John discovers an umbrella on his lecture room floor" />
+                    <Image src="/anxietyImages/clouds.png" className={styles.storyImg} layout="fill" alt="mia struggling to focus because her mind is in the clouds" />
                 </div>
                 <p className={styles.words}>
                     However, as the professor delves into the introduction of new concepts, I find myself struggling to keep pace, and eventually, I subconsciously began to lose interest. Due to disengagement, I feel my eyes getting heavier, and a strong sense of sleepiness begins to set in. Not even my Matcha Latte can cure the fatigue.
@@ -189,7 +189,7 @@ export const Anxiety = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/goingMad.png" className={styles.storyImg} layout="fill" alt="John catches up with his classmate at the stairwell to give back the umbrella" />
+                    <Image src="/anxietyImages/goingMad.png" className={styles.storyImg} layout="fill" alt="mia stressing out" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     With each passing moment, I know that the finals would creep closer to deciding my fate. Every second I spend pondering an unrelated topic, my goal of majoring in CS slips further away. From the financial burden of tuition to my lack of support, it’s too much for me. 
@@ -200,7 +200,7 @@ export const Anxiety = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/walls.png" className={styles.storyImg} layout="fill" alt="John and his classmate walk out of the building while talking" />
+                    <Image src="/anxietyImages/walls.png" className={styles.storyImg} layout="fill" alt="mia thinking about how she is now away from her friends and feels isolated" />
                 </div>
                 <p className={styles.words}>
                     Among those memories is lurking in my old friend group’s Discord. They would talk about their shared struggles, and I saw them overcome their obstacles together and celebrate. In contrast, I find myself alone in my current predicament. <i>I guess my friends moved on without me.</i>
@@ -211,7 +211,7 @@ export const Anxiety = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/leaving.png" className={styles.storyImg} layout="fill" alt="John and his new friend part ways at red square" />
+                    <Image src="/anxietyImages/leaving.png" className={styles.storyImg} layout="fill" alt="mia's seatmate saying goodbye to her as the lecture ends" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     As the lecture concludes, my seatmate turns to me and says, "I gotta head to my next class. See you." I simply nod in response, still flabbergasted that I had learned nothing. Throughout the day, the CS class was at the back of my mind slowly eating away at my sanity. In the blink of an eye, I’m in my last class of the day: a mere elective. <i>Not a chance I would pay any attention.</i>
@@ -222,7 +222,7 @@ export const Anxiety = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/umbrella.png" className={styles.storyImg} layout="fill" alt="John waits in line at the hub to get food" />
+                    <Image src="/anxietyImages/umbrella.png" className={styles.storyImg} layout="fill" alt="a classmate giving mia her umbrella that she dropped" />
                 </div>
                 <p className={styles.words}>
                     As the class dismisses, I make a beeline for the exit, eager to return home as soon as possible. I’m halfway down the stairs when a classmate approaches me, handing me my forgotten umbrella. We talk a bit about the classes we are taking and post-graduation plans. 
@@ -233,7 +233,7 @@ export const Anxiety = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/goingMadTwo.png" className={styles.storyImg} layout="fill" alt="John spots his two roommates leave the hub" />
+                    <Image src="/anxietyImages/goingMadTwo.png" className={styles.storyImg} layout="fill" alt="mia stressing out again" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     I can't help but express, “I miss California and, above all, my friends. I wish I had heeded the warning from my high school classmate, but now, it’s too late to turn back. Now, I’m trapped in weed-out hell and I believe no one will understand my suffering” I say, which surprises even me. <i>Why did I even tell him that? What good would it do? My problems, my fault, right? This situation is so dumb.</i> I pause, awaiting my classmate's response.
@@ -242,7 +242,7 @@ export const Anxiety = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/connecting.png" className={styles.storyImg} layout="fill" alt="John walks back to his dorm hall in thought" />
+                    <Image src="/anxietyImages/connecting.png" className={styles.storyImg} layout="fill" alt="mia exchanging discord contacts with the classmate" />
                 </div>
                 <p className={styles.words}>
                     The classmate offers a suggestion, “Maybe you could try forming a study group.” He points out how I have been facing the challenges alone and having difficulties with the course content. I respond with a realization, "I haven't done that yet." 
@@ -253,7 +253,7 @@ export const Anxiety = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/wayHome.png" className={styles.storyImg} layout="fill" alt="John gets home but does not know how to talk to his roommates" />
+                    <Image src="/anxietyImages/wayHome.png" className={styles.storyImg} layout="fill" alt="mia walking back home" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     I walk back to my apartment, and my thoughts are in a state of turmoil. I am fortunate to have met someone willing to listen to my problems and offer suggestions. But now, someone else knows about my problems. <i>Will he be let down if I fail? Will he laugh at me when that happens?</i> These thoughts weigh heavily on my mind.
@@ -262,7 +262,7 @@ export const Anxiety = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/home.png" className={styles.storyImg} layout="fill" alt="mccarty hall, a dorm building on the UW's campus" />
+                    <Image src="/anxietyImages/home.png" className={styles.storyImg} layout="fill" alt="mia thinking about what to do next" />
                 </div>
                 <p className={styles.words}>
                     Back at my place, I devote several hours to attempting to grasp the lecture material. Although I start to make progress, the concepts remain hazy. It’s overwhelming, and I decide to leave it for tomorrow. Maybe I will ask my seatmate to join my study group.

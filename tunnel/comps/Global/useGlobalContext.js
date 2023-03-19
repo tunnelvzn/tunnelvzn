@@ -50,7 +50,8 @@ export const GlobalProvider = ({ children }) => {
     let click;
     if(typeof Audio != "undefined") {
         // old audio: https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3
-        click  = new Audio('https://drive.google.com/u/0/uc?id=1_43OmEv8PdHNwq31E41oGMM3d6tputTL&export=download');
+        // another old audio: https://drive.google.com/u/0/uc?id=1_43OmEv8PdHNwq31E41oGMM3d6tputTL&export=download
+        click  = new Audio('https://drive.google.com/u/0/uc?id=1uW1Pdf2vdZ-jc8W0Rvrx4Nvi8Q8No2Ms&export=download');
       }
     const makeNoise = () => {
         click.play()
