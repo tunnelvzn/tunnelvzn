@@ -1,5 +1,5 @@
 import { runTransaction, doc } from "firebase/firestore";
-import styles from './StoryContent.module.scss'
+import styles from '../pages/StoryContent/StoryContent.module.scss'
 
 /**
  * change the button style and update attribute counts when onclick, upload new count to firebase based on story name
