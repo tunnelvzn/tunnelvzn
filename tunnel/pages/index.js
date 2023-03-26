@@ -215,7 +215,7 @@ export default function Home() {
       <h1 className={`${styles.introSubHeader} text-center`}>Storytelling based on UW student experiences</h1>
 
       {/* Comment the below line out when you work on the code and uncomment the section stuff */}
-      <h1 className={`${styles.introSubHeader} text-center`}>We are currently undergoing maintenance. Check back later!</h1>
+      <h1 className={`${styles.introSubHeader} text-center`}>We are currently undergoing maintenance. Check back at 9pm PST!</h1>
 
       {/* <section className={styles.firstContactBtn}>
         {!initialLoad &&
