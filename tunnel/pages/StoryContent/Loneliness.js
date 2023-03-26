@@ -74,7 +74,7 @@ export const Loneliness = () => {
 
 
     }, [])
-    const toAddLike = (attribute, setLike, like, iconId) => {addLike(db, storyName, setLike, like, attribute, iconId)}
+    const toAddLike = (attribute, setLike, like, iconId) => {addLike(document, db, storyName, setLike, like, attribute, iconId)}
     
 
     return (

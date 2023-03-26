@@ -73,7 +73,7 @@ export const Anxiety = () => {
 
 
     }, [])
-    const toAddLike = (attribute, setLike, like, iconId) => {addLike(db, storyName, setLike, like, attribute, iconId)}
+    const toAddLike = (attribute, setLike, like, iconId) => {addLike(document, db, storyName, setLike, like, attribute, iconId)}
     // const addLike = async () => {
     //     let updateValue = 0
     //    const likebtn = document.getElementById('likeIcon')
