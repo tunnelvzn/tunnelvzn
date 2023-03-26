@@ -27,28 +27,24 @@
 .largeInput{
     height: 15vh;
     margin-bottom: 5vh;
+    min-height: 15vh;
 }
 
 .button {
     width: 60%;
     border-radius: 100px;
-    box-shadow: 0px 0px #000;
-    border: 2px solid #000;
+    box-shadow: 0px 0px #212121;
+    border: 2px solid #212121;
     transition: all 0.3s ease-in-out;
     cursor: pointer;    
     height: 60px;
-    background-color: #F9F9F9;
+    background-color: #FFFFFF;
     margin-bottom: 1vh;
     font-size: 2.6vh;
 }
 
 .submitScreenBtn {
     max-width: 40vh;
-}
-
-.button:hover {
-    margin-top: -1vh;
-    box-shadow: 3px 3px #000;
 }
 
 
@@ -121,6 +117,14 @@
     }
     .submitText {
         margin-top: 4vh;
+    }
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .button:hover {
+        margin-top: -1vh;
+        box-shadow: 3px 3px #212121;
     }
 }
 

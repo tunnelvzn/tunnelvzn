@@ -213,7 +213,11 @@ export default function Home() {
       </Head>
       <h1 className={`${styles.introHeader} text-center`}> Tunnel_vzn </h1>
       <h1 className={`${styles.introSubHeader} text-center`}>Storytelling based on UW student experiences</h1>
-      <section className={styles.firstContactBtn}>
+
+      {/* Comment the below line out when you work on the code and uncomment the section stuff */}
+      <h1 className={`${styles.introSubHeader} text-center`}>We are currently undergoing maintenance. Check back later!</h1>
+
+      {/* <section className={styles.firstContactBtn}>
         {!initialLoad &&
           <div role="button" aria-label="enter experience" tabIndex="0" className={styles.startBtn} onClick={() => {
             console.log('click')
@@ -240,8 +244,8 @@ export default function Home() {
             <div className={styles.wave}></div>
           </section>
         }
+      </section> */}
 
-      </section>
       <section className={styles.triggerImg}>
         <Image src="/triggerScreen.svg" layout="fill" alt="a pencil sketch of a young man sitting"/>
       </section>

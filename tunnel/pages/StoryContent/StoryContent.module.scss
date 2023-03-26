@@ -4,21 +4,76 @@
 //   position: absolute;
 //   justify-content: center;
 //   flex-direction: column;
-//   color: #000;
+//   color: #212121;
 //   margin-left: 17vh;
 //   z-index: 1000;
-//   border: 2px solid #000;
+//   border: 2px solid #212121;
 //   padding-left: 4.2vh;
 //   padding-right: 4.2vh;
 //   font-size: 2.5vh;
 //   border-radius: 100px;
-//   background-color: #F9F9F9;
-//   box-shadow: 0px 0px #000;
+//   background-color: #FFFFFF;
+//   box-shadow: 0px 0px #212121;
 //   margin-top: 1.2vh;
 //   transition: all 0.3s ease-in-out;
 //   cursor: pointer;  
 //   height: 53px;
 // }
+
+.tooltip {
+  position: relative;
+  display: inline-block;
+  z-index: 0;
+}
+
+.tooltip .tooltiptext::after {
+  content: " ";
+  position: absolute;
+  bottom: 100%;  /* At the top of the tooltip */
+  left: 50%;
+  margin-left: -5px;
+  border-width: 5px;
+  border-style: solid;
+  border-color: transparent transparent black transparent;
+}
+
+/* Tooltip text */
+.tooltip .tooltiptext {
+  visibility: hidden;
+  width: 120px;
+  background-color: black;
+  color: #fff;
+  text-align: center;
+  padding: 5px 0;
+  border-radius: 6px;
+  opacity: 0;
+  transition: opacity 1s;
+  position: absolute;
+  z-index: 1;
+  width: 120px;
+  top: 100%;
+  left: 50%;
+  margin-left: -60px; /* Use half of the width (120/2 = 60), to center the tooltip */
+}
+
+.circle {
+  height: 30px;
+  width: 30px;
+  background-color: #FFFFFF;
+  border: 1px solid #212121;  
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  margin-right: 1vh;
+}
+
+.reactionCount {
+  margin-left: 5vh;
+}
+
+.reactionCount .circle {
+  margin-left: -2vh;
+}
 
 .block {
   height: 13vh;
@@ -39,7 +94,7 @@
 }
 
 .theArrow {
-  color: black; 
+  color: #212121; 
   text-decoration: none; 
 }
 
@@ -71,59 +126,108 @@
   order: -1;
 }
 
+.partnerLink {
+  color: #212121;
+}
+
+.partnerLink:hover {
+  color: #0d6efd;
+}
+
+
 // CODE FOR LAST PANEL OF THE STORIES (THE FORM)
 
 .formContainer {
   border-radius: 10px;
-  border: 1px solid #c5c5c5;
   padding: 3vh;
-  margin-bottom: 10vh;
+  margin-left: 2vh;
+  margin-right: 2vh;
+  background-color: white;
 }
 
 .choiceContainer {
-  display: flex;
+  margin-top: 4vh;
 }
 
 .endStoryBtn h6 a {
   text-decoration: none;
-  color: #000;
+  color: #212121;
 }
 
 .endStoryBtn h6 {
   font-size: 2vh;
   padding-bottom: 0;
   margin-bottom: 0;
+  text-align: center;
 }
 
 .endStoryBtn {
   z-index: 200;
-  border: 2px solid #000;    
-  background-color: #F9F9F9;
+  border: 2px solid #212121;    
+  background-color: #FFFFFF;
   transition: all 0.3s ease-in-out;
-  box-shadow: 0px 0px #000;
+  box-shadow: 0px 0px #212121;
   cursor: pointer;
   border-radius: 100px;
   height: 8vh;
-  margin-top: 3vh;
   display: flex;
   justify-content: center;
   flex-direction: column;
 }
 
+
+// when user selects one of the four, the corresponding icon will be changed to this color.
 .liked {
-  color:red
+  color: blue;
 }
 
-// END OF CODE FOR LAST PANEL OF THE STORIES (THE FORM)
-
-
-// DELETE NEXT TIME I WORK ON IT AND DELETE THE LINE AT 290.
-.partnerLink {
-  color: #000;
+.loved {
+  color: pink;
 }
 
-.partnerLink:hover {
-  color: #0d6efd;
+.relatable {
+  color: green;
+}
+
+.insightful {
+  color: orange;
+}
+
+.question {
+  font-size: 2.6vh;
+  padding-bottom: 1vh;
+  margin-top: 5vh;
+}
+
+.buttonContainer {
+  height: 10vh;
+}
+
+.reactIcon {
+  margin-right: 1vh;
+}
+
+.input {
+  padding: 6px;
+}
+
+.largeInput{
+  height: 15vh;
+  min-height: 15vh;
+  margin-bottom: 5vh;
+}
+
+.button {
+  width: 100%;
+  border-radius: 100px;
+  box-shadow: 0px 0px #212121;
+  border: 2px solid #212121;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer;    
+  height: 60px;
+  background-color: #FFFFFF;
+  margin-bottom: 1vh;
+  font-size: 2.6vh;
 }
 
 // --------------------RESPONSIVE DESIGN----------------------------------------
@@ -161,16 +265,18 @@
     font-size: 1.9vh;
   }
   .imgFrame {
-    border: 2px solid #000;
+    border: 2px solid #212121;
     margin-left: 2vh;
     margin-right: 2vh;
     height: 40vh;
     width: auto;
     position: relative;
   }
-  .endStoryBtn {
-    margin-left: 2vh;
-    margin-right: 2vh;
+  .choiceContainer {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
 }
 
@@ -183,7 +289,7 @@
     font-size: 6vh;
   }
   .imgFrame {
-    border: 2px solid #000;
+    border: 2px solid #212121;
     margin-left: 2vh;
     margin-right: 2vh;
     height: 50vh;
@@ -196,10 +302,6 @@
     margin-left: 2vh;
     margin-right: 2vh;
     font-size: 2vh;
-  }
-  .endStoryBtn {
-    margin-left: 10vh;
-    margin-right: 10vh;
   }
   .section {
     scroll-snap-align: start;
@@ -216,6 +318,12 @@
     height: 100vh;
     overflow-y: scroll;
     scroll-behavior: smooth;
+  }
+  .choiceContainer {
+    display: grid;
+    grid-template-columns: 2fr 2fr;
+    grid-column-gap: 10px;
+    grid-row-gap: 10px;
   }
 }
 
@@ -234,14 +342,18 @@
     margin-left: 15vh;
     margin-right: 15vh;
   }
+  .formContainer {
+    margin-left: 10vh;
+    margin-right: 10vh;
+    // margin-top: 5vh;
+  }
   .endStoryBtn {
-    margin-left: 30vh;
-    margin-right: 30vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
   }
   .container {
     scroll-snap-type: y mandatory;
   }
-  
   .section {
     height: 100vh;
   }
@@ -263,7 +375,6 @@
   }
   .buttonContainer {
     display: flex;
-    width: 50%;
     margin: auto;
   }
   .imgFrame {
@@ -277,26 +388,35 @@
     margin-right: 2vh;
   }
   .endStoryBtn:hover {
-    margin-top: 2.5vh;
-    box-shadow: 3px 3px #000;
+    margin-top: -1vh;
+    box-shadow: 3px 3px #212121;
   }
   .endStoryBtn {
-    margin-right: 1vh;
-    margin-left: 1vh;
     padding-right: 5vh;
     padding-left: 5vh;
-
-    // DUDE DUDE HERE DELETE NEXT TIME YOU WORK ON THE CODE MANNNNNN
-    width: 80vh;
+    width: 100%;
+  }
+  .button:hover {
+    margin-top: -1vh;
+    box-shadow: 3px 3px #212121;
+  }
+  .choiceContainer {
+    display: flex;
+  }
+  .tooltip:hover .tooltiptext {
+    visibility: visible;
+    opacity: 1;
   }
 }
 
 // X-Large devices (large desktops, 1200px and up)
-// @media (min-width: 1200px) {
-//   .theArrow {
-//     color: rgb(183, 255, 0); 
-//   }
-// }
+@media (min-width: 1200px) {
+  .formContainer {
+    margin-left: 25vh;
+    margin-right: 25vh;
+    margin-top: 10vh;
+  }
+}
 
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
@@ -305,5 +425,9 @@
   }
   .imgFrame {
     height: 55vh;
+  }
+  .formContainer {
+    margin-left: 35vh;
+    margin-right: 35vh;
   }
 }

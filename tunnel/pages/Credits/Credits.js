@@ -53,7 +53,7 @@ const Credits = () => {
                                     <div className={`${styles.memberVisDiv} m-3 text-center`}>
                                         <Image src="/creditsImages/eddy.svg" className={styles.memberVis} height={120} width={120} />
                                         <h5>Eddy P.</h5>
-                                        <small>Writer</small>
+                                        <small>Founder</small>
                                     </div>
                                 </div>
 

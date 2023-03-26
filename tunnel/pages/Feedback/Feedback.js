@@ -101,7 +101,7 @@ export const Feedback = ({}) => {
                 </div>
                 <div className={`${styles.multi} mt-4`} >
 
-                    <label className={`${styles.question} mb-1`}>2. What do you think about the project so far?*</label>
+                    <label className={`${styles.question} mb-1`}>2. What do you think about the project?*</label>
                     {error == "overall" && <div className='alert alert-danger'>Please select one option</div>}
                     <div className='mt-2'>
                         <input className='me-2' type="radio" id="Awesome" name="overall-rating" value="5"></input>
@@ -151,6 +151,7 @@ export const Feedback = ({}) => {
 
                     }}>Submit</button>
                 </div>
+                <div className={styles.block}></div>
                 <div className={styles.block}></div>
             </div>}
 

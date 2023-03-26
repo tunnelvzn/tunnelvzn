@@ -1,5 +1,5 @@
 .copyright {
-    color: #000;
+    color: #212121;
     padding-bottom: 10px;
     margin-left: 1.5vh;
 }
@@ -7,7 +7,7 @@
 .footer {
     text-align: center;
     border-top: 2px solid #eaeaea;
-    background-color: #F9F9F9;
+    background-color: #FFFFFF;
     padding-top: 20px;
 }
 
@@ -21,12 +21,12 @@
 }
 
 .iconContainer .footerLink {
-    border: 1px solid #000;
+    border: 1px solid #212121;
     margin-left: 1.5vh;
     padding: 0.5vh;
     border-radius: 10%;
     transition: all 0.3s ease-in-out;
-    box-shadow: 0px 0px #000;
+    box-shadow: 0px 0px #212121;
     padding-bottom: 1.2vh;
 }
 
@@ -41,7 +41,7 @@
 }
 
 .footerLink {
-    color: #000000;
+    color: #212121;
 }
 
 .footerLink:hover {
@@ -70,7 +70,7 @@
         display: none;
     }
     .footerLink:hover {
-        color: #000;
+        color: #212121;
     }
 }
 
@@ -90,7 +90,7 @@
         display: none;
     }
     .iconContainer .footerLink:hover {
-        color: #000;
+        color: #212121;
     }
 }
 
@@ -98,7 +98,7 @@
 // // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
     // .footerLink {
-    //     color: #0004ff;
+    //     color: #2121214ff;
     // }
     .footer { 
         padding-top: 20px;
@@ -119,8 +119,8 @@
     //     color: #00ff22;
     // }
     .iconContainer .footerLink:hover {
-        color: #000;
-        box-shadow: 3px 3px #000;
+        color: #212121;
+        box-shadow: 3px 3px #212121;
     }
     .footer p {
         display: block;

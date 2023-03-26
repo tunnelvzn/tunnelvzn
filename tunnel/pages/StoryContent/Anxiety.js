@@ -109,10 +109,39 @@ export const Anxiety = () => {
                 </div>
                 <div className={styles.words}>
                     <h1 className={styles.storyTitle}>Anxiety</h1>
-                    <div className="d-flex">
-                        <small className="me-4">Likes: {like}</small>
-                        <small>Views: {view}</small>
+
+                    <div className={`${styles.reactionContain} d-flex`}>
+
+                        {/* Old reaction counter code */}
+                        {/* <small className="me-4">Likes: {like}</small>
+                        <small>Views: {view}</small> */}
+
+                        {/* New reaction counter code */}
+                        <div className={styles.viewCount}>
+                            <span className={styles.circle}><Icon icon="mdi:eye-outline" color="#212121" /></span>
+                            <small>{view}</small>
+                        </div>
+                        <div className={styles.reactionCount}>
+                            <span className={`${styles.circle} ${styles.tooltip}`}>
+                                <Icon icon="material-symbols:thumb-up-outline" hFlip={true}/>
+                                <span className={styles.tooltiptext}>Like: {like}</span>
+                            </span>
+                            <span className={`${styles.circle} ${styles.tooltip}`}>
+                                <Icon id="likeIcon" icon="mdi:cards-heart-outline"/>
+                                <span className={styles.tooltiptext}>Love: 0</span>
+                            </span>
+                            <span className={`${styles.circle} ${styles.tooltip}`}>
+                                <Icon icon="mdi:people-check-outline"/>
+                                <span className={styles.tooltiptext}>Relatable: 0</span>
+                            </span>
+                            <span className={`${styles.circle} ${styles.tooltip}`}>
+                                <Icon icon="majesticons:lightbulb-shine-line"/>
+                                <span className={styles.tooltiptext}>Insightful: 0</span>
+                            </span>
+                            <small>{like}</small>
+                        </div>
                     </div>
+
                     <br />
                     <br />
                     <h2 className={styles.storySynopsis}>Preview:</h2>
@@ -271,25 +300,11 @@ export const Anxiety = () => {
                 </p>
             </div>
 
-            {/* THE BELOW IS THE CODE FOR THE CREDIT PANEL (CURRENTLY BEING WORKED ON) */}
-            <div className={`${styles.section} ${styles.normSection}`}>
-                <div className={styles.block}></div>
-                <div className={styles.imgFrame}>
-                    <Image src="/anxietyImages/credits.png" className={styles.storyImg} layout="fill" alt="Credits" />
-                </div>
-                <p className={styles.words}>
-                    This story was written by Eddy, illustrated by Anna, edited by Sylvia and Augene, and peer-reviewed by 15 UW Students. 
-                    <br/>
-                    <br/>
-                    Also, special thanks to members of the <Link href="https://www.instagram.com/writersinprogressuw/"><a className={styles.partnerLink} target="_blank">Writers In Progress</a></Link> club for providing additional feedback!
-                </p>
-            </div>
-
             <div className={`${styles.section} ${styles.normSection} text-center`}>
                 <div className={styles.block}></div>
 
                 {/* THE BELOW CODE IS THE OLD DESIGN FOR THE LAST PANEL OF THE STORY */}
-                <div>
+                {/* <div>
                     <h1 className={styles.endText}>A chapter may end, but the story continues...</h1>
                     <div className={styles.buttonContainer}>
                          <div className={styles.endStoryBtn} aria-label="like" role="button" tabIndex="0" onClick={() => {
@@ -305,42 +320,36 @@ export const Anxiety = () => {
                             <h6><Link href="https://www.instagram.com/tunnel_vzn/"><a target="_blank">Follow Us! <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
                         </div>
                     </div>
-                </div>
+                </div> */}
 
                 {/* THE BELOW COMENTED CODE IS THE NEW DESIGN FOR THE LAST PANEL OF THE STORY */}
-                {/* <div className={styles.formContents}>
+                <div className={styles.formContents}>
                     <div className={styles.formContainer}>
                         <h2>What do you think?</h2>
                         <div className={styles.choiceContainer}>
                             <div className={styles.endStoryBtn} aria-label="like" role="button" tabIndex="0" onClick={() => {
                                 addLike()
-                                makeNoise()
                                 }}>
-                                <h6><Icon icon="material-symbols:thumb-up-outline" hFlip={true} width="25" height="25" />Like</h6>
+                                <h6><Icon icon="material-symbols:thumb-up-outline" hFlip={true} width="25" height="25" className={styles.reactIcon}/>Like</h6>
                             </div>
                             <div className={styles.endStoryBtn} aria-label="love" role="button" tabIndex="0" onClick={() => {
-                                addLike()
-                                makeNoise()
+                                addLove()
                                 }}>
-                                <h6><Icon id="likeIcon" icon="mdi:cards-heart-outline" width="25" height="25" />Love</h6>
+                                <h6><Icon id="likeIcon" icon="mdi:cards-heart-outline" width="25" height="25" className={styles.reactIcon}/>Love</h6>
                             </div>
                             <div className={styles.endStoryBtn} aria-label="relatable" role="button" tabIndex="0" onClick={() => {
-                                addLike()
-                                makeNoise()
+                                addRelatable()
                                 }}>
-                                <h6><Icon icon="mdi:people-check-outline" width="25" height="25"/>Relatable</h6>
+                                <h6><Icon icon="mdi:people-check-outline" width="25" height="25" className={styles.reactIcon}/>Relatable</h6>
                             </div>
                             <div className={styles.endStoryBtn} aria-label="insightful" role="button" tabIndex="0" onClick={() => {
-                                addLike()
-                                makeNoise()
+                                addInsightful()
                                 }}>
-                                <h6><Icon icon="majesticons:lightbulb-shine-line" width="25" height="25"/>Insightful</h6>
+                                <h6><Icon icon="majesticons:lightbulb-shine-line" width="25" height="25" className={styles.reactIcon}/>Insightful</h6>
                             </div>
                         </div>
-                    </div>
-                    <div className={styles.formContainer}>
                         <div>
-                            <label className={`${styles.question} mb-1`}>Anything you want to say about the story? What should be changed? What do you want to see added?</label>
+                            <label className={`${styles.question} mb-1`}>What else about the story? What should be changed? What do you want to add? (Optional)</label>
                             <textarea id="anxietyAnythingElse" type="text" placeholder="Spill your mind here..." className={`${styles.input} ${styles.largeInput}  w-100`}></textarea>
                         </div>
                         <div className={`${styles.buttonContainer} text-center mt-3`}>
@@ -350,11 +359,19 @@ export const Anxiety = () => {
                             }}>Submit</button>
                         </div>
                     </div>
-                    <Link href="#"><a>Go Home</a></Link>
-                </div> */}
-                <div className={styles.block}></div>
+                </div>
             </div>
-        
+
+            {/* THE BELOW IS THE CODE FOR THE CREDIT PANEL (CURRENTLY BEING WORKED ON) */}
+            <div className={`${styles.section} ${styles.normSection}`}>
+                <div className={styles.block}></div>
+                <p className={styles.words}>
+                    This story was written by Eddy, illustrated by Anna, edited by Sylvia and Augene, and peer-reviewed by 15 UW Students. 
+                    <br/>
+                    <br/>
+                    Also, special thanks to members of the <Link href="https://www.instagram.com/writersinprogressuw/"><a className={styles.partnerLink} target="_blank">Writers In Progress</a></Link> club for providing additional feedback!
+                </p>
+            </div>
         </div>
     )
 }
