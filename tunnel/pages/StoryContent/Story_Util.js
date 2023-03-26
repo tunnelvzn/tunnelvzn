@@ -10,7 +10,7 @@ import styles from './StoryContent.module.scss'
  * @param {*} attribute the name of the attribute ('like love relatable or insightful')
  * @param {*} btnId the button id to change the style when on click 
  */
-export const addLike = async (db, storyName, setLike, like, attribute, btnId) => {
+const addLike = async (db, storyName, setLike, like, attribute, btnId) => {
 
     console.log(like, setLike,)
     let setAttribute
@@ -71,3 +71,5 @@ export const addLike = async (db, storyName, setLike, like, attribute, btnId) =>
         console.log("Transaction failed: ", e);
     }
 }
+
+export default addLike
