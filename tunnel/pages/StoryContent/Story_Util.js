@@ -8,9 +8,9 @@ import styles from './StoryContent.module.scss'
  * @param {*} setLike the setter of the attribute from useState
  * @param {*} like the accessor of the attribute from useState 
  * @param {*} attribute the name of the attribute ('like love relatable or insightful')
- * @param {*} btnId the button id to change the style when on click 
+ * @param {*} btn the button object to change the style when on click 
  */
-const addLike = async (document, db, storyName, setLike, like, attribute, btnId) => {
+const addLike = async (document, db, storyName, setLike, like, attribute, btn) => {
 
     console.log(like, setLike,)
     let setAttribute
@@ -32,12 +32,8 @@ const addLike = async (document, db, storyName, setLike, like, attribute, btnId)
 
     console.log(like)
     let updateValue = 0
-    let likebtn;
-    if(document){
-        likebtn = document.getElementById(btnId)
-    } else {
-        return 
-    }
+    let likebtn = btn
+    
    
     if (likebtn.classList.contains(styles.liked)) {
         setLike(like - 1)
