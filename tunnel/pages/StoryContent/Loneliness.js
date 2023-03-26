@@ -12,7 +12,7 @@ import { Icon } from '@iconify/react';
 import { collection, addDoc, getDocs, runTransaction, doc } from "firebase/firestore";
 import { async } from "@firebase/util";
 import { setConfig } from "next/config";
-import { addLike } from "./Story_Util";
+import  addLike from "./Story_Util";
 export const Loneliness = () => {
 
     const [like, setLike] = useState(0)
