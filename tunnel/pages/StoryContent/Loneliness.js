@@ -12,9 +12,13 @@ import { Icon } from '@iconify/react';
 import { collection, addDoc, getDocs, runTransaction, doc } from "firebase/firestore";
 import { async } from "@firebase/util";
 import { setConfig } from "next/config";
-
+import { addLike } from "./Story_Util";
 export const Loneliness = () => {
+
     const [like, setLike] = useState(0)
+    const [love, setLove] = useState(0)
+    const [relate, setRelate] = useState(0)
+    const [insight, setInsight] = useState(0)
     const [view, setView] = useState(0)
     const {
         db,
@@ -24,6 +28,7 @@ export const Loneliness = () => {
         makeNoise
     } =
         useContext(GlobalContext);
+
 
     useEffect(() => {
         const fetchData = async () => {
@@ -69,39 +74,8 @@ export const Loneliness = () => {
 
 
     }, [])
-
-    const addLike = async () => {
-        let updateValue = 0
-        const likebtn = document.getElementById('likeIcon')
-        if(likebtn.classList.contains(styles.liked))  {
-            setLike(like - 1)
-            likebtn.classList.remove(styles.liked)
-            updateValue = like - 1
-        } else {
-            setLike(like + 1)
-            likebtn.classList.add(styles.liked)
-            updateValue = like + 1
-        }
-        
-        const sfDocRef = doc(db, "likes", storyName.toLowerCase());
-        console.log('doc ref', sfDocRef, storyName)
-
-        try {
-            await runTransaction(db, async (transaction) => {
-                const sfDoc = await transaction.get(sfDocRef);
-                if (!sfDoc.exists()) {
-                    throw "Document does not exist!";
-                }
-
-                const newLike = updateValue
-                
-                transaction.update(sfDocRef, { likes: newLike });
-            });
-            // console.log("Transaction successfully committed!");
-        } catch (e) {
-            console.log("Transaction failed: ", e);
-        }
-    }
+    const toAddLike = (attribute, setLike, like, iconId) => {addLike(db, storyName, setLike, like, attribute, iconId)}
+    
 
     return (
         <div className={styles.container}>
@@ -131,17 +105,17 @@ export const Loneliness = () => {
                             </span>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
                                 <Icon id="likeIcon" icon="mdi:cards-heart-outline"/>
-                                <span className={styles.tooltiptext}>Love: 0</span>
+                                <span className={styles.tooltiptext}>Love: {love}</span>
                             </span>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
                                 <Icon icon="mdi:people-check-outline"/>
-                                <span className={styles.tooltiptext}>Relatable: 0</span>
+                                <span className={styles.tooltiptext}>Relatable: {relate}</span>
                             </span>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
                                 <Icon icon="majesticons:lightbulb-shine-line"/>
-                                <span className={styles.tooltiptext}>Insightful: 0</span>
+                                <span className={styles.tooltiptext}>Insightful: {insight}</span>
                             </span>
-                            <small>{like}</small>
+                            <small>{like + love + relate + insight}</small>
                         </div>
                     </div>
 
@@ -306,29 +280,7 @@ export const Loneliness = () => {
             <div className={`${styles.section} ${styles.normSection} text-center`}>
                 <div className={styles.block}></div>
 
-                {/* THE BELOW CODE IS THE OLD DESIGN FOR THE LAST PANEL OF THE STORY */}
-                {/* <div>
-                    <h1 className={styles.endText}>A chapter may end, but the story continues...</h1>
-                    <div className={styles.buttonContainer}>
-                        <div className={styles.endStoryBtn} aria-label="like" role="button" tabIndex="0" onClick={() => {
-                            addLike()
-                            makeNoise()
-                            }}>
-                            <h6>Like {like} <Icon id="likeIcon" icon="mdi:cards-heart-outline" width="25" height="25" /></h6>
-                        </div>
-                        <div className={styles.endStoryBtn}>
-                            <h6><Link href="https://docs.google.com/forms/d/1DrB0tHjeUPldV7PZQyn4FFgA_QMIl7GePdfUEoLUAo4/viewform?edit_requested=true"><a target="_blank">Thoughts? <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
-                        </div>
-                        <div className={styles.endStoryBtn}>
-                            <h6><a onClick={()=> {
-
-                                setStoryName('Anxiety')
-                                setRoute('/StoryContent'); 
-                                
-                            }}>Next Story <Icon icon="material-symbols:arrow-forward" width="27" height="27" /></a></h6>
-                        </div>
-                    </div>
-                </div> */}
+               
 
                 {/* THE BELOW COMENTED CODE IS THE NEW DESIGN FOR THE LAST PANEL OF THE STORY */}
                 <div className={styles.formContents}>
@@ -336,24 +288,26 @@ export const Loneliness = () => {
                         <h2>What do you think?</h2>
                         <div className={styles.choiceContainer}>
                             <div className={styles.endStoryBtn} aria-label="like" role="button" tabIndex="0" onClick={() => {
-                                addLike()
+                                console.log('add like')
+                                toAddLike('like', setLike, like, "likeIcon")
                                 }}>
-                                <h6><Icon icon="material-symbols:thumb-up-outline" hFlip={true} width="25" height="25" className={styles.reactIcon}/>Like</h6>
+                                <h6><Icon id="likeIcon" icon="material-symbols:thumb-up-outline" hFlip={true} width="25" height="25" className={styles.reactIcon}/>Like</h6>
                             </div>
                             <div className={styles.endStoryBtn} aria-label="love" role="button" tabIndex="0" onClick={() => {
-                                addLove()
+                                toAddLike('love', setLove, love, "loveIcon")
                                 }}>
-                                <h6><Icon id="likeIcon" icon="mdi:cards-heart-outline" width="25" height="25" className={styles.reactIcon}/>Love</h6>
+                                <h6><Icon id="loveIcon" icon="mdi:cards-heart-outline" width="25" height="25" className={styles.reactIcon}/>Love</h6>
                             </div>
                             <div className={styles.endStoryBtn} aria-label="relatable" role="button" tabIndex="0" onClick={() => {
-                                addRelatable()
+                               
+                                toAddLike('relatable', setRelate, relate, "relateIcon")
                                 }}>
-                                <h6><Icon icon="mdi:people-check-outline" width="25" height="25" className={styles.reactIcon}/>Relatable</h6>
+                                <h6><Icon id ="relateIcon" icon="mdi:people-check-outline" width="25" height="25" className={styles.reactIcon}/>Relatable</h6>
                             </div>
                             <div className={styles.endStoryBtn} aria-label="insightful" role="button" tabIndex="0" onClick={() => {
-                                addInsightful()
+                                toAddLike('insightful', setInsight, insight, "insightIcon")
                                 }}>
-                                <h6><Icon icon="majesticons:lightbulb-shine-line" width="25" height="25" className={styles.reactIcon}/>Insightful</h6>
+                                <h6><Icon id ="insightIcon" icon="majesticons:lightbulb-shine-line" width="25" height="25" className={styles.reactIcon}/>Insightful</h6>
                             </div>
                         </div>
                         <div>

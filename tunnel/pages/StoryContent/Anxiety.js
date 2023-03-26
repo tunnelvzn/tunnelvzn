@@ -12,9 +12,12 @@ import { Icon } from '@iconify/react';
 import { collection, addDoc, getDocs, runTransaction, doc } from "firebase/firestore";
 import { async } from "@firebase/util";
 import { setConfig } from "next/config";
-
+import { addLike } from "./Story_Util";
 export const Anxiety = () => {
     const [like, setLike] = useState(0)
+    const [love, setLove] = useState(0)
+    const [relate, setRelate] = useState(0)
+    const [insight, setInsight] = useState(0)
     const [view, setView] = useState(0)
     const {
         db,
@@ -30,7 +33,10 @@ export const Anxiety = () => {
                 console.log(`${doc.id} => ${doc.data()}`);
                 if (storyName.toLowerCase() == doc.id) {
                     console.log('data', doc.data().likes)
-                    setLike(doc.data().likes)
+                    setLike(doc.data().likes ? doc.data().likes: 0)
+                    setLove(doc.data().loves ? doc.data().loves: 0)
+                    setRelate(doc.data().relatable ? doc.data().relatable: 0)
+                    setInsight(doc.data().insightful ? doc.data().insightful: 0)
                 }
             });
             console.log(storyName)
@@ -67,38 +73,38 @@ export const Anxiety = () => {
 
 
     }, [])
+    const toAddLike = (attribute, setLike, like, iconId) => {addLike(db, storyName, setLike, like, attribute, iconId)}
+    // const addLike = async () => {
+    //     let updateValue = 0
+    //    const likebtn = document.getElementById('likeIcon')
+    //     if(likebtn.classList.contains(styles.liked))  {
+    //         setLike(like - 1)
+    //         likebtn.classList.remove(styles.liked)
+    //         updateValue = like - 1
+    //     } else {
+    //         setLike(like + 1)
+    //         likebtn.classList.add(styles.liked)
+    //         updateValue = like + 1
+    //     }
 
-    const addLike = async () => {
-        let updateValue = 0
-       const likebtn = document.getElementById('likeIcon')
-        if(likebtn.classList.contains(styles.liked))  {
-            setLike(like - 1)
-            likebtn.classList.remove(styles.liked)
-            updateValue = like - 1
-        } else {
-            setLike(like + 1)
-            likebtn.classList.add(styles.liked)
-            updateValue = like + 1
-        }
+    //     const sfDocRef = doc(db, "likes", storyName.toLowerCase());
+    //     console.log('doc ref', sfDocRef, storyName)
 
-        const sfDocRef = doc(db, "likes", storyName.toLowerCase());
-        console.log('doc ref', sfDocRef, storyName)
+    //     try {
+    //         await runTransaction(db, async (transaction) => {
+    //             const sfDoc = await transaction.get(sfDocRef);
+    //             if (!sfDoc.exists()) {
+    //                 throw "Document does not exist!";
+    //             }
 
-        try {
-            await runTransaction(db, async (transaction) => {
-                const sfDoc = await transaction.get(sfDocRef);
-                if (!sfDoc.exists()) {
-                    throw "Document does not exist!";
-                }
-
-                const newLike = updateValue
-                transaction.update(sfDocRef, { likes: newLike });
-            });
-            // console.log("Transaction successfully committed!");
-        } catch (e) {
-            console.log("Transaction failed: ", e);
-        }
-    }
+    //             const newLike = updateValue
+    //             transaction.update(sfDocRef, { likes: newLike });
+    //         });
+    //         // console.log("Transaction successfully committed!");
+    //     } catch (e) {
+    //         console.log("Transaction failed: ", e);
+    //     }
+    // }
 
     return (
         <div className={styles.container}>
@@ -128,17 +134,17 @@ export const Anxiety = () => {
                             </span>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
                                 <Icon id="likeIcon" icon="mdi:cards-heart-outline"/>
-                                <span className={styles.tooltiptext}>Love: 0</span>
+                                <span className={styles.tooltiptext}>Love: {love}</span>
                             </span>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
                                 <Icon icon="mdi:people-check-outline"/>
-                                <span className={styles.tooltiptext}>Relatable: 0</span>
+                                <span className={styles.tooltiptext}>Relatable: {relate}</span>
                             </span>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
                                 <Icon icon="majesticons:lightbulb-shine-line"/>
-                                <span className={styles.tooltiptext}>Insightful: 0</span>
+                                <span className={styles.tooltiptext}>Insightful: {insight}</span>
                             </span>
-                            <small>{like}</small>
+                            <small>{like + love + relate + insight}</small>
                         </div>
                     </div>
 
@@ -149,6 +155,7 @@ export const Anxiety = () => {
                     <p>Far from home, separated from her friends, and picking up the pieces after her computer science midterm, Mia struggles to put her mind at ease...</p>
                 </div>
             </div>
+
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
@@ -328,24 +335,26 @@ export const Anxiety = () => {
                         <h2>What do you think?</h2>
                         <div className={styles.choiceContainer}>
                             <div className={styles.endStoryBtn} aria-label="like" role="button" tabIndex="0" onClick={() => {
-                                addLike()
+                                console.log('add like')
+                                toAddLike('like', setLike, like, "likeIcon")
                                 }}>
-                                <h6><Icon icon="material-symbols:thumb-up-outline" hFlip={true} width="25" height="25" className={styles.reactIcon}/>Like</h6>
+                                <h6><Icon id="likeIcon" icon="material-symbols:thumb-up-outline" hFlip={true} width="25" height="25" className={styles.reactIcon}/>Like</h6>
                             </div>
                             <div className={styles.endStoryBtn} aria-label="love" role="button" tabIndex="0" onClick={() => {
-                                addLove()
+                                toAddLike('love', setLove, love, "loveIcon")
                                 }}>
-                                <h6><Icon id="likeIcon" icon="mdi:cards-heart-outline" width="25" height="25" className={styles.reactIcon}/>Love</h6>
+                                <h6><Icon id="loveIcon" icon="mdi:cards-heart-outline" width="25" height="25" className={styles.reactIcon}/>Love</h6>
                             </div>
                             <div className={styles.endStoryBtn} aria-label="relatable" role="button" tabIndex="0" onClick={() => {
-                                addRelatable()
+                               
+                                toAddLike('relatable', setRelate, relate, "relateIcon")
                                 }}>
-                                <h6><Icon icon="mdi:people-check-outline" width="25" height="25" className={styles.reactIcon}/>Relatable</h6>
+                                <h6><Icon id ="relateIcon" icon="mdi:people-check-outline" width="25" height="25" className={styles.reactIcon}/>Relatable</h6>
                             </div>
                             <div className={styles.endStoryBtn} aria-label="insightful" role="button" tabIndex="0" onClick={() => {
-                                addInsightful()
+                                toAddLike('insightful', setInsight, insight, "insightIcon")
                                 }}>
-                                <h6><Icon icon="majesticons:lightbulb-shine-line" width="25" height="25" className={styles.reactIcon}/>Insightful</h6>
+                                <h6><Icon id ="insightIcon" icon="majesticons:lightbulb-shine-line" width="25" height="25" className={styles.reactIcon}/>Insightful</h6>
                             </div>
                         </div>
                         <div>
