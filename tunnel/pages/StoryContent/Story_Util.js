@@ -11,7 +11,7 @@ import styles from './StoryContent.module.scss'
  * @param {*} btn the button object to change the style when on click 
  */
 const addLike = async (document, db, storyName, setLike, like, attribute, btn) => {
-
+    if(btn === undefined) return
     console.log(like, setLike,)
     let setAttribute
     console.log(attribute)
