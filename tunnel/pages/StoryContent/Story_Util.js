@@ -32,8 +32,13 @@ const addLike = async (db, storyName, setLike, like, attribute, btnId) => {
 
     console.log(like)
     let updateValue = 0
-
-    const likebtn = document.getElementById(btnId)
+    let likebtn;
+    if(document){
+        likebtn = document.getElementById(btnId)
+    } else {
+        return 
+    }
+   
     if (likebtn.classList.contains(styles.liked)) {
         setLike(like - 1)
         likebtn.classList.remove(styles.liked)
