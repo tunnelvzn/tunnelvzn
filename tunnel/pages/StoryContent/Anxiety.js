@@ -136,7 +136,7 @@ export const Anxiety = () => {
                                 <span className={styles.tooltiptext}>Like: {like}</span>
                             </span>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
-                                <Icon id="likeIcon" icon="mdi:cards-heart-outline" />
+                                <Icon icon="mdi:cards-heart-outline" />
                                 <span className={styles.tooltiptext}>Love: {love}</span>
                             </span>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
@@ -312,27 +312,6 @@ export const Anxiety = () => {
 
             <div className={`${styles.section} ${styles.normSection} text-center`}>
                 <div className={styles.block}></div>
-
-                {/* THE BELOW CODE IS THE OLD DESIGN FOR THE LAST PANEL OF THE STORY */}
-                {/* <div>
-                    <h1 className={styles.endText}>A chapter may end, but the story continues...</h1>
-                    <div className={styles.buttonContainer}>
-                         <div className={styles.endStoryBtn} aria-label="like" role="button" tabIndex="0" onClick={() => {
-                            addLike()
-                            makeNoise()
-                            }}>
-                            <h6>Like {like} <Icon id="likeIcon" icon="mdi:cards-heart-outline" width="25" height="25" /></h6>
-                        </div>
-                        <div className={styles.endStoryBtn}>
-                            <h6><Link href="https://docs.google.com/forms/d/e/1FAIpQLSc_IHh0iCPXc0ZmqulyAWzyGA5WeospP4UJjAjOO0N6PfCUUw/viewform?usp=sf_link"><a target="_blank">Thoughts? <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
-                        </div>
-                        <div className={styles.endStoryBtn}>
-                            <h6><Link href="https://www.instagram.com/tunnel_vzn/"><a target="_blank">Follow Us! <Icon icon="gg:external" width="27" height="27" /></a></Link></h6>
-                        </div>
-                    </div>
-                </div> */}
-
-                {/* THE BELOW COMENTED CODE IS THE NEW DESIGN FOR THE LAST PANEL OF THE STORY */}
                 <div className={styles.formContents}>
                     <div className={styles.formContainer}>
                         <h2>What do you think?</h2>
@@ -360,7 +339,7 @@ export const Anxiety = () => {
                                 <h6><Icon id="insightIcon" icon="majesticons:lightbulb-shine-line" width="25" height="25" className={styles.reactIcon} />Insightful</h6>
                             </div>
                         </div>
-                        <div>
+                        {/* <div>
                             <label className={`${styles.question} mb-1`}>What else about the story? What should be changed? What do you want to add? (Optional)</label>
                             <textarea id="anxietyAnythingElse" type="text" placeholder="Spill your mind here..." className={`${styles.input} ${styles.largeInput}  w-100`}></textarea>
                         </div>
@@ -369,12 +348,12 @@ export const Anxiety = () => {
                                 console.log('submit')
                                 upLoadToFirebase()
                             }}>Submit</button>
-                        </div>
+                        </div> */}
                     </div>
                 </div>
             </div>
 
-            {/* THE BELOW IS THE CODE FOR THE CREDIT PANEL (CURRENTLY BEING WORKED ON) */}
+            {/* THE BELOW IS THE CODE FOR THE CREDIT PANEL */}
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <p className={styles.words}>

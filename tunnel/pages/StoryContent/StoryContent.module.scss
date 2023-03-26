@@ -131,7 +131,7 @@
 }
 
 .partnerLink:hover {
-  color: #0d6efd;
+  color: #6213ff;
 }
 
 
@@ -178,19 +178,7 @@
 
 // when user selects one of the four, the corresponding icon will be changed to this color.
 .liked {
-  color: blue;
-}
-
-.loved {
-  color: pink;
-}
-
-.relatable {
-  color: green;
-}
-
-.insightful {
-  color: orange;
+  color: #6213ff;
 }
 
 .question {
@@ -400,9 +388,10 @@
     margin-top: -1vh;
     box-shadow: 3px 3px #212121;
   }
-  .choiceContainer {
-    display: flex;
-  }
+  // Uncomment this when the short answer is added.
+  // .choiceContainer {
+  //   display: flex;
+  // }
   .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
