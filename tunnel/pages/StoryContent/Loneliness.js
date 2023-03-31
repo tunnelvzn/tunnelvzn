@@ -312,7 +312,7 @@ export const Loneliness = () => {
                                 <h6><Icon id ="insightIcon" icon="majesticons:lightbulb-shine-line" width="25" height="25" className={styles.reactIcon}/>Insightful</h6>
                             </div>
                         </div>
-                        {/* <div>
+                        <div>
                             <label className={`${styles.question} mb-1`}>What else about the story? What should be changed? What do you want to add? (Optional)</label>
                             <textarea id="anxietyAnythingElse" type="text" placeholder="Spill your mind here..." className={`${styles.input} ${styles.largeInput}  w-100`}></textarea>
                         </div>
@@ -321,7 +321,7 @@ export const Loneliness = () => {
                                 console.log('submit')
                                 upLoadToFirebase()
                             }}>Submit</button>
-                        </div> */}
+                        </div>
                     </div>
                 </div>
             </div>
