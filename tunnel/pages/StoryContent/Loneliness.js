@@ -12,7 +12,8 @@ import { Icon } from '@iconify/react';
 import { collection, addDoc, getDocs, runTransaction, doc } from "firebase/firestore";
 import { async } from "@firebase/util";
 import { setConfig } from "next/config";
-import  addLike from "../../comps/Story_Util";
+import  {addLike, StoryForm} from "../../comps/Story_Util";
+
 export const Loneliness = () => {
 
     const [like, setLike] = useState(0)
@@ -312,16 +313,7 @@ export const Loneliness = () => {
                                 <h6><Icon id ="insightIcon" icon="majesticons:lightbulb-shine-line" width="25" height="25" className={styles.reactIcon}/>Insightful</h6>
                             </div>
                         </div>
-                        <div>
-                            <label className={`${styles.question} mb-1`}>What else about the story? What should be changed? What do you want to add? (Optional)</label>
-                            <textarea id="anxietyAnythingElse" type="text" placeholder="Spill your mind here..." className={`${styles.input} ${styles.largeInput}  w-100`}></textarea>
-                        </div>
-                        <div className={`${styles.buttonContainer} text-center mt-3`}>
-                            <button className={`${styles.button}`} onClick={() => {
-                                console.log('submit')
-                                upLoadToFirebase()
-                            }}>Submit</button>
-                        </div>
+                        <StoryForm styles={styles} />
                     </div>
                 </div>
             </div>

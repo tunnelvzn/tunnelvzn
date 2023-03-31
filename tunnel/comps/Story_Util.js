@@ -1,4 +1,4 @@
-import { runTransaction, doc } from "firebase/firestore";
+import { runTransaction, doc, addDoc, collection } from "firebase/firestore";
 import styles from '../pages/StoryContent/StoryContent.module.scss'
 
 /**
@@ -11,7 +11,7 @@ import styles from '../pages/StoryContent/StoryContent.module.scss'
  * @param {*} btn the button object to change the style when on click 
  */
 const addLike = async (document, db, storyName, setLike, like, attribute, btn) => {
-    if(btn === undefined) return
+    if (btn === undefined) return
     console.log(like, setLike,)
     let setAttribute
     console.log(attribute)
@@ -33,8 +33,8 @@ const addLike = async (document, db, storyName, setLike, like, attribute, btn) =
     console.log(like)
     let updateValue = 0
     let likebtn = btn
-    
-   
+
+
     if (likebtn.classList.contains(styles.liked)) {
         setLike(like - 1)
         likebtn.classList.remove(styles.liked)
@@ -72,5 +72,76 @@ const addLike = async (document, db, storyName, setLike, like, attribute, btn) =
         console.log("Transaction failed: ", e);
     }
 }
+
+
+import React, { useState, useContext } from 'react';
+import { GlobalContext } from "./Global/useGlobalContext";
+
+
+export function StoryForm(props) {
+    const { upLoadToFirebase } = props;
+    const {
+        db,
+        setRoute,
+        storyName,
+        setStoryName,
+        makeNoise
+    } =
+        useContext(GlobalContext);
+    const styles = props.styles
+
+    const [userInput, setUserInput] = useState('')
+
+    const handleSubmit = async () => {
+        try {
+            await runTransaction(db, async (transaction) => {
+                const docRef = await addDoc(collection(db, "story_feedback"), {
+                    name: storyName,
+                    feedback: userInput
+                });
+            });
+            console.log("Transaction successfully committed!");
+            props.onSubmit()
+            document.getElementById('feedback').value = ''
+        } catch (e) {
+            console.log("Transaction failed: ", e);
+        }
+    };
+
+    return (
+        <>
+            <div>
+                <label className={`${styles.question} mb-1`}>What else about the story? What should be changed? What do you want to add? (Optional)</label>
+                <textarea 
+                    id="feedback"
+                    onInput={(e) => { setUserInput(e.target.value) }}
+                    type="text"
+                    placeholder="Spill your mind here..."
+                    className={`${styles.input} ${styles.largeInput} w-100`}
+                ></textarea>
+            </div>
+            <div className={`${styles.buttonContainer} text-center mt-3`}>
+                <button className={`${styles.button}`} onClick={() => { handleSubmit() }}>
+                    Submit
+                </button>
+            </div>
+        </>
+    );
+}
+
+export const SuccessModal = (props) => {
+    const isOpen = props.isOpen
+    const setIsOpen = props.setIsOpen
+    return (
+        <div className={`${isOpen ? props.styles.modalDivOpen : props.styles.modalDivClose} p-5`}>
+            <div className={`${ isOpen ? props.styles.modalDivContent : 'd-none' } w-auto `} >
+                <h2>{props.message}</h2>
+                <button onClick={() => {setIsOpen(false)}}>Close</button>
+            </div>
+        </div>
+    );
+};
+
+
 
 export default addLike
