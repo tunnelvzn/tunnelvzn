@@ -12,7 +12,7 @@ import { Icon } from '@iconify/react';
 import { collection, addDoc, getDocs, runTransaction, doc } from "firebase/firestore";
 import { async } from "@firebase/util";
 import { setConfig } from "next/config";
-import  {addLike, StoryForm} from "../../comps/Story_Util";
+import { addLike, StoryForm, SuccessModal } from "../../comps/Story_Util";
 
 export const Loneliness = () => {
 
@@ -79,10 +79,15 @@ export const Loneliness = () => {
         const icon = document.getElementById(iconId)
         addLike(document, db, storyName, setLike, like, attribute, icon)
     }
-    
 
+    const [isOpen, setIsOpen] = useState(true)
     return (
         <div className={styles.container}>
+            <SuccessModal className="mt-5"
+                styles={styles}
+                message={'Your comment has been sent :)'}
+                isOpen={isOpen}
+                setIsOpen={setIsOpen} />
             <div className={styles.section}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
@@ -104,19 +109,19 @@ export const Loneliness = () => {
                         </div>
                         <div className={styles.reactionCount}>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
-                                <Icon icon="material-symbols:thumb-up-outline" hFlip={true}/>
+                                <Icon icon="material-symbols:thumb-up-outline" hFlip={true} />
                                 <span className={styles.tooltiptext}>Like: {like}</span>
                             </span>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
-                                <Icon icon="mdi:cards-heart-outline"/>
+                                <Icon icon="mdi:cards-heart-outline" />
                                 <span className={styles.tooltiptext}>Love: {love}</span>
                             </span>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
-                                <Icon icon="mdi:people-check-outline"/>
+                                <Icon icon="mdi:people-check-outline" />
                                 <span className={styles.tooltiptext}>Relatable: {relate}</span>
                             </span>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
-                                <Icon icon="majesticons:lightbulb-shine-line"/>
+                                <Icon icon="majesticons:lightbulb-shine-line" />
                                 <span className={styles.tooltiptext}>Insightful: {insight}</span>
                             </span>
                             <small>{like + love + relate + insight}</small>
@@ -136,8 +141,8 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/lightRail.png" className={styles.storyImg} layout="fill" alt="John sitting on the lightrail train and looking out the window" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
-                    During my usual commute to the University of Washington on the light rail, I couldn't help but stare out at the surroundings wishing my life was more vibrant. I realized that I wanted some company, but felt frustrated that I didn't have any. 
-                    <br/><br/>
+                    During my usual commute to the University of Washington on the light rail, I couldn't help but stare out at the surroundings wishing my life was more vibrant. I realized that I wanted some company, but felt frustrated that I didn't have any.
+                    <br /><br />
                     In the past, I made great efforts to initiate conversations with others, but despite my commitment, I must have come across as insincere, which turned people away. So, I decided to accept it and enjoy my quiet time alone.
                 </p>
             </div>
@@ -147,8 +152,8 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/uwStation.png" className={styles.storyImg} layout="fill" alt="John leaving the lightrail car and walking on the platform towards the exit" />
                 </div>
                 <p className={styles.words}>
-                    I stepped off the light rail feeling a bit drained and made my way to my first class with a bit of reluctance. As I sat in my usual spot at the back of the lecture room, I couldn't help but notice my classmates engaging in lively conversations around me. 
-                    <br/><br/>
+                    I stepped off the light rail feeling a bit drained and made my way to my first class with a bit of reluctance. As I sat in my usual spot at the back of the lecture room, I couldn't help but notice my classmates engaging in lively conversations around me.
+                    <br /><br />
                     I found myself wishing that someone would talk to me and make me feel more alive. Although I daydreamed about all the social interactions I wanted to have, it left me feeling disconnected.
                 </p>
             </div>
@@ -167,8 +172,8 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/mccarty.png" className={styles.storyImg} layout="fill" alt="mccarty hall, a dorm building on the UW's campus" />
                 </div>
                 <p className={styles.words}>
-                    It's been a year since I had those thoughts, and now I'm in my Sophomore year and things are looking up. I'm excited to move into my on-campus dorm and finally have roommates to keep me company. It's a change I've been looking forward to for a while now. 
-                    <br/><br/>
+                    It's been a year since I had those thoughts, and now I'm in my Sophomore year and things are looking up. I'm excited to move into my on-campus dorm and finally have roommates to keep me company. It's a change I've been looking forward to for a while now.
+                    <br /><br />
                     I thought things were finally looking up when I moved in, but it turned out to be a bit more complicated than I had hoped.
                 </p>
             </div>
@@ -178,11 +183,11 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/dormStart.png" className={styles.storyImg} layout="fill" alt="John's new roommates talk while John is left in the background" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
-                My roommates already knew each other and it quickly became clear that I was the outsider. Night after night, they would go out with their friends, leaving me feeling left out. I couldn't help but feel frustrated. 
-                <br/><br/>
-                My new home felt just like my old lecture room, and I couldn't help but blame my roommates. I even considered complaining to the resident advisor in hopes that she could help me get out of this situation.
-                <br/><br/>
-                In the end, I never complained. I was hopeful that not wasting time on the commute would drastically change my life, but it didn't. Just like last year, I found myself sitting in the back of all my lectures, feeling invisible. None of my classes had group work, which meant that I had very few opportunities to interact with my classmates. 
+                    My roommates already knew each other and it quickly became clear that I was the outsider. Night after night, they would go out with their friends, leaving me feeling left out. I couldn't help but feel frustrated.
+                    <br /><br />
+                    My new home felt just like my old lecture room, and I couldn't help but blame my roommates. I even considered complaining to the resident advisor in hopes that she could help me get out of this situation.
+                    <br /><br />
+                    In the end, I never complained. I was hopeful that not wasting time on the commute would drastically change my life, but it didn't. Just like last year, I found myself sitting in the back of all my lectures, feeling invisible. None of my classes had group work, which meant that I had very few opportunities to interact with my classmates.
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
@@ -192,7 +197,7 @@ export const Loneliness = () => {
                 </div>
                 <p className={styles.words}>
                     Four weeks have flown by and here I am at the end of another uneventful, wet, and cloudy Seattle day. As I'm getting ready to leave the Savery Hall classroom, I notice an umbrella on the floor. I assume it must have belonged to a student who was sitting in front of me.
-                    <br/><br/>
+                    <br /><br />
                     I contemplate on what to do. A part of me feels terrible knowing that it might rain later and my classmate who left the umbrella behind might get caught in the rain. I decide to grab the umbrella and catch my classmate halfway down the stairs. I ask her if she had forgotten an umbrella by any chance.
                 </p>
             </div>
@@ -202,8 +207,8 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/staircase.png" className={styles.storyImg} layout="fill" alt="John catches up with his classmate at the stairwell to give back the umbrella" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
-                    The classmate, who looks a bit surprised, thanks me with appreciation as I hand them the umbrella. As I am about to leave, she asks a strange question about why I always sit in the back of the class when most people prefer sitting near the front. 
-                    <br/><br/>
+                    The classmate, who looks a bit surprised, thanks me with appreciation as I hand them the umbrella. As I am about to leave, she asks a strange question about why I always sit in the back of the class when most people prefer sitting near the front.
+                    <br /><br />
                     I don't want to admit that I like observing people from a distance, as I think it will come across as weird. So, I tell her that I sit in the back for sleeping purposes, and she nods understandingly. We continue our conversation outside the building.
                 </p>
             </div>
@@ -213,8 +218,8 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/walking.png" className={styles.storyImg} layout="fill" alt="John and his classmate walk out of the building while talking" />
                 </div>
                 <p className={styles.words}>
-                    I start to joke about the need for an umbrella when living in Seattle, and my classmate laughs it off and mentions that she is new to the area. We start talking about the classes we're taking and our post-graduation plans. My classmate tells me about herself and how her first quarter is going, and she wants to hear my thoughts about course content and stress. 
-                    <br/><br/>
+                    I start to joke about the need for an umbrella when living in Seattle, and my classmate laughs it off and mentions that she is new to the area. We start talking about the classes we're taking and our post-graduation plans. My classmate tells me about herself and how her first quarter is going, and she wants to hear my thoughts about course content and stress.
+                    <br /><br />
                     I don't feel like I'm in a great position to provide any advice, but I feel indebted to my classmate who reached out to me first. I try to think of something helpful to say, hoping to come across as intelligent.
                 </p>
             </div>
@@ -243,8 +248,8 @@ export const Loneliness = () => {
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     As I'm getting ready to leave the Hub after finishing my meal, I spot my roommates walking out ahead of me. Seeing them breaks my illusion that I’m in a good position and reminds me of the ongoing tension between us. I contemplate how to approach them.
-                    <br/><br/>
-                    The idea of talking to my roommates right now doesn't seem like the best idea. After all, the most interaction I've had with them so far has been simple greetings followed by them having conversations with each other while I watch from the sidelines. 
+                    <br /><br />
+                    The idea of talking to my roommates right now doesn't seem like the best idea. After all, the most interaction I've had with them so far has been simple greetings followed by them having conversations with each other while I watch from the sidelines.
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
@@ -254,8 +259,8 @@ export const Loneliness = () => {
                 </div>
                 <p className={styles.words}>
                     I feel like if I try to jump in, it might disrupt their conversation, and even if I try to use the silence it might be awkward because I've never done anything like that before. I'm afraid that if I suddenly say something, my roommates would think something is wrong.
-                    <br/><br/>
-                    Inevitably, I arrive at the dorm. I can hear my roommates' voices through the closed door. 
+                    <br /><br />
+                    Inevitably, I arrive at the dorm. I can hear my roommates' voices through the closed door.
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
@@ -264,11 +269,11 @@ export const Loneliness = () => {
                     <Image src="/lonelinessImages/dormRoom.png" className={styles.storyImg} layout="fill" alt="John gets home but does not know how to talk to his roommates" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
-                    When I open the door, I see that they are both on their laptops, chatting about how their TA put the section to sleep in the first five minutes. I realize that now isn't the best time to interrupt them. 
-                    <br/><br/>
+                    When I open the door, I see that they are both on their laptops, chatting about how their TA put the section to sleep in the first five minutes. I realize that now isn't the best time to interrupt them.
+                    <br /><br />
                     I feel a mix of disappointment and relief that I don't have to face the dilemma of talking to my roommates today. But I also know that I have a good momentum going and if I don't take advantage of this opportunity, I might never get my chance again. It's a risk I am not willing to take.
-                    <br/><br/>
-                    I enter the room, but as I try to start a conversation, the only thing that comes out is a greeting. My roommates acknowledge me briefly before going back to their conversation. 
+                    <br /><br />
+                    I enter the room, but as I try to start a conversation, the only thing that comes out is a greeting. My roommates acknowledge me briefly before going back to their conversation.
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
@@ -291,26 +296,26 @@ export const Loneliness = () => {
                             <div className={styles.endStoryBtn} aria-label="like" role="button" tabIndex="0" onClick={() => {
                                 console.log('add like')
                                 toAddLike('like', setLike, like, "likeIcon")
-                                }}>
-                                <h6><Icon id="likeIcon" icon="material-symbols:thumb-up-outline" hFlip={true} width="25" height="25" className={styles.reactIcon}/>Like</h6>
+                            }}>
+                                <h6><Icon id="likeIcon" icon="material-symbols:thumb-up-outline" hFlip={true} width="25" height="25" className={styles.reactIcon} />Like</h6>
                             </div>
 
                             <div className={styles.endStoryBtn} aria-label="love" role="button" tabIndex="0" onClick={() => {
                                 toAddLike('love', setLove, love, "loveIcon")
-                                }}>
-                                <h6><Icon id="loveIcon" icon="mdi:cards-heart-outline" width="25" height="25" className={styles.reactIcon}/>Love</h6>
+                            }}>
+                                <h6><Icon id="loveIcon" icon="mdi:cards-heart-outline" width="25" height="25" className={styles.reactIcon} />Love</h6>
                             </div>
 
                             <div className={styles.endStoryBtn} aria-label="relatable" role="button" tabIndex="0" onClick={() => {
                                 toAddLike('relatable', setRelate, relate, "relateIcon")
-                                }}>
-                                <h6><Icon id ="relateIcon" icon="mdi:people-check-outline" width="25" height="25" className={styles.reactIcon}/>Relatable</h6>
+                            }}>
+                                <h6><Icon id="relateIcon" icon="mdi:people-check-outline" width="25" height="25" className={styles.reactIcon} />Relatable</h6>
                             </div>
 
                             <div className={styles.endStoryBtn} aria-label="insightful" role="button" tabIndex="0" onClick={() => {
                                 toAddLike('insightful', setInsight, insight, "insightIcon")
-                                }}>
-                                <h6><Icon id ="insightIcon" icon="majesticons:lightbulb-shine-line" width="25" height="25" className={styles.reactIcon}/>Insightful</h6>
+                            }}>
+                                <h6><Icon id="insightIcon" icon="majesticons:lightbulb-shine-line" width="25" height="25" className={styles.reactIcon} />Insightful</h6>
                             </div>
                         </div>
                         <StoryForm styles={styles} />
@@ -322,13 +327,13 @@ export const Loneliness = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <p className={styles.words}>
-                    This story was written and illustrated by Eddy, edited by Sylvia, Augene, and Sami, and peer-reviewed by 23 UW Students. 
-                    <br/>
-                    <br/>
+                    This story was written and illustrated by Eddy, edited by Sylvia, Augene, and Sami, and peer-reviewed by 23 UW Students.
+                    <br />
+                    <br />
                     Images of McCarty Hall from the loneliness story were from <Link href="https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/McCarty-Hall"><a className={styles.partnerLink} target="_blank">hfs.uw.edu</a></Link>.
-                    <br/>
-                    <br/>
-                    Also, special thanks to members of the <Link href="https://www.instagram.com/writersinprogressuw/"><a className={styles.partnerLink} target="_blank">Writers In Progress</a></Link> club for providing additional feedback! 
+                    <br />
+                    <br />
+                    Also, special thanks to members of the <Link href="https://www.instagram.com/writersinprogressuw/"><a className={styles.partnerLink} target="_blank">Writers In Progress</a></Link> club for providing additional feedback!
                 </p>
             </div>
         </div>

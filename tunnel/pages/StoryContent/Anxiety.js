@@ -113,11 +113,11 @@ export const Anxiety = () => {
     const [isOpen, setIsOpen] = useState(true)
     return (
         <div className={styles.container}>
-            <SuccessModal className="mt-5" 
-            styles={styles} 
-            message={'Your comment has been sent :)'} 
-            isOpen={isOpen} 
-            setIsOpen={setIsOpen}/>
+            <SuccessModal className="mt-5"
+                styles={styles}
+                message={'Your comment has been sent :)'}
+                isOpen={isOpen}
+                setIsOpen={setIsOpen} />
             <div className={styles.section}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
@@ -346,7 +346,7 @@ export const Anxiety = () => {
                                 <h6><Icon id="insightIcon" icon="majesticons:lightbulb-shine-line" width="25" height="25" className={styles.reactIcon} />Insightful</h6>
                             </div>
                         </div>
-                        <StoryForm styles={styles} onSubmit={() => {setIsOpen(true)}}/>
+                        <StoryForm styles={styles} onSubmit={() => { setIsOpen(true) }} />
                     </div>
                 </div>
             </div>
