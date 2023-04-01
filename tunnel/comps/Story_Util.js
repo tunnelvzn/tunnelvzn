@@ -92,8 +92,12 @@ export function StoryForm(props) {
     const styles = props.styles
 
     const [userInput, setUserInput] = useState('')
-
+    const [error, setError] = useState(false)
     const handleSubmit = async () => {
+        if (userInput.length == 0) {
+            setError(true)
+            return
+        }
         try {
             await runTransaction(db, async (transaction) => {
                 const docRef = await addDoc(collection(db, "story_feedback"), {
@@ -115,11 +119,17 @@ export function StoryForm(props) {
                 <label className={`${styles.question} mb-1`}>Any feedback about the story? What should be changed? What do you want to see added? Anything at all! (Optional)</label>
                 <textarea 
                     id="feedback"
-                    onInput={(e) => { setUserInput(e.target.value) }}
+                    onInput={(e) => { setUserInput(e.target.value); setError(false) }}
                     type="text"
                     placeholder="Spill your mind here..."
                     className={`${styles.input} ${styles.largeInput} w-100`}
                 ></textarea>
+                {error &&
+                    <div class="alert alert-danger" role="alert">
+                        You forgot to write something :P
+                    </div>
+                }
+
             </div>
             <div className={`${styles.buttonContainer} text-center mt-3`}>
                 <button className={`${styles.button}`} onClick={() => { handleSubmit() }}>

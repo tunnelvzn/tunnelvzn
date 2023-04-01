@@ -80,7 +80,7 @@ export const Loneliness = () => {
         addLike(document, db, storyName, setLike, like, attribute, icon)
     }
 
-    const [isOpen, setIsOpen] = useState(true)
+    const [isOpen, setIsOpen] = useState(false)
     return (
         <div className={styles.container}>
             <SuccessModal className="mt-5"
