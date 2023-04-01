@@ -94,6 +94,7 @@ export function StoryForm(props) {
     const [userInput, setUserInput] = useState('')
     const [error, setError] = useState(false)
     const handleSubmit = async () => {
+        console.log(userInput, userInput.length)
         if (userInput.length == 0) {
             setError(true)
             return
@@ -108,6 +109,7 @@ export function StoryForm(props) {
             console.log("Transaction successfully committed!");
             props.onSubmit()
             document.getElementById('feedback').value = ''
+            setUserInput('')
         } catch (e) {
             console.log("Transaction failed: ", e);
         }
