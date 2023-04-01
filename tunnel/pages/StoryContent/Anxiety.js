@@ -115,7 +115,7 @@ export const Anxiety = () => {
         <div className={styles.container}>
             <SuccessModal className="mt-5"
                 styles={styles}
-                message={'Your comment has been sent :)'}
+                message={'Thank you! Your feedback has been sent!'}
                 isOpen={isOpen}
                 setIsOpen={setIsOpen} />
             <div className={styles.section}>
@@ -346,7 +346,9 @@ export const Anxiety = () => {
                                 <h6><Icon id="insightIcon" icon="majesticons:lightbulb-shine-line" width="25" height="25" className={styles.reactIcon} />Insightful</h6>
                             </div>
                         </div>
-                        <StoryForm styles={styles} onSubmit={() => { setIsOpen(true) }} />
+                        <div className={styles.textboxContainer}>
+                            <StoryForm styles={styles} onSubmit={() => { setIsOpen(true) }} />
+                        </div>
                     </div>
                 </div>
             </div>

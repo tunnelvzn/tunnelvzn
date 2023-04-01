@@ -20,6 +20,21 @@
 //   height: 53px;
 // }
 
+.submitImage {
+  height: 50vh;
+  width: 50vh;
+  position: relative;
+  margin: auto;
+}
+
+.submitText {
+  margin-bottom: 4vh;
+}
+
+.popupBtnSpace {
+  margin-left: 2vh;
+}
+
 .modalDivOpen{
   background-color: rgba(0, 0, 0, 0.5);
   width: 100vw;
@@ -42,7 +57,7 @@
 
 .modalDivContent {
   background-color: white;
-  border-radius: 10px;
+  border-radius: 20px;
   padding: 20px;
   max-width: 800px;
   margin: auto;
@@ -96,6 +111,7 @@
   display: inline-block;
   text-align: center;
   margin-right: 1vh;
+  vertical-align: middle;
 }
 
 .reactionCount {
@@ -122,6 +138,7 @@
 .normSection {
   position: relative;
   z-index: 1;
+  background-color: #FFFFFF;
 }
 
 .theArrow {
@@ -178,6 +195,11 @@
 
 .choiceContainer {
   margin-top: 4vh;
+  background-color: #fbfaff;
+  padding: 2vh;
+  border-radius: 20px;
+  border: 1px solid #e2dbff;  
+  height: 22vh; 
 }
 
 .endStoryBtn h6 a {
@@ -207,7 +229,6 @@
 }
 
 
-// when user selects one of the four, the corresponding icon will be changed to this color.
 .liked {
   color: #6213ff;
 }
@@ -215,11 +236,11 @@
 .question {
   font-size: 2.6vh;
   padding-bottom: 1vh;
-  margin-top: 5vh;
+  text-align: left;
 }
 
 .buttonContainer {
-  height: 10vh;
+  height: 8vh;
 }
 
 .reactIcon {
@@ -233,7 +254,14 @@
 .largeInput{
   height: 15vh;
   min-height: 15vh;
-  margin-bottom: 5vh;
+}
+
+.textboxContainer {
+  margin-top: 5vh;
+  background-color: #fbfaff;
+  padding: 2vh;
+  border-radius: 20px;
+  border: 1px solid #e2dbff;   
 }
 
 .button {
@@ -245,7 +273,6 @@
   cursor: pointer;    
   height: 60px;
   background-color: #FFFFFF;
-  margin-bottom: 1vh;
   font-size: 2.6vh;
 }
 

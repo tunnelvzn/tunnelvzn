@@ -1,4 +1,5 @@
 import { runTransaction, doc, addDoc, collection } from "firebase/firestore";
+import Image from 'next/image';
 import styles from '../pages/StoryContent/StoryContent.module.scss'
 
 /**
@@ -111,7 +112,7 @@ export function StoryForm(props) {
     return (
         <>
             <div>
-                <label className={`${styles.question} mb-1`}>What else about the story? What should be changed? What do you want to add? (Optional)</label>
+                <label className={`${styles.question} mb-1`}>Any feedback about the story? What should be changed? What do you want to see added? Anything at all! (Optional)</label>
                 <textarea 
                     id="feedback"
                     onInput={(e) => { setUserInput(e.target.value) }}
@@ -135,8 +136,13 @@ export const SuccessModal = (props) => {
     return (
         <div className={`${isOpen ? props.styles.modalDivOpen : props.styles.modalDivClose} p-5`}>
             <div className={`${ isOpen ? props.styles.modalDivContent : 'd-none' } w-auto `} >
-                <h2>{props.message}</h2>
-                <button onClick={() => {setIsOpen(false)}}>Close</button>
+                    <div className={styles.submitImage}>
+                         <Image src="/shootingStars.svg" layout="fill"/>
+                    </div>
+                <h2 className={styles.submitText}>{props.message}</h2>
+                <div className={styles.buttonContainer}>
+                    <button onClick={() => {setIsOpen(false)}} className={styles.button}>Close</button>
+                </div>
             </div>
         </div>
     );

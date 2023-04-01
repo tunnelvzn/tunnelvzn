@@ -33,7 +33,7 @@ const Updates = () => {
                             Published stories are still subject to change due to new feedback.
                         </li>
                         <li>
-                            Story three will release on March 31st, 2023.
+                            Story three will release on March 31st, 2023. [Delayed due to new feedback]
                         </li>
                     </ul>
                 </section>
