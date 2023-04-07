@@ -75,41 +75,50 @@ export const Anxiety = () => {
 
 
     }, [])
-    const toAddLike = (attribute, setLike, like, iconId) => {
+    const toAddLike = (attribute, setState, state, iconId) => {
+        const ids = ['likeIcon', 'loveIcon', 'relateIcon', 'insightIcon']
+        let selectedId
+        let selectedAttribute
+        let resetState
+        let resetSetState
+        for (const id of ids) {
+            const icon = document.getElementById(id)
+            console.log(icon.classList)
+            if (Array.from(icon.classList).includes(styles.liked)) {
+                selectedId = id
+                switch (iconId) {
+                    case 'likeIcon':
+                        selectedAttribute = 'like'
+                        resetState = like
+                        resetSetState = setLike
+                        break;
+                    case 'loveIcon':
+                        selectedAttribute = 'love'
+                        resetState = love
+                        resetSetState = setLove
+                        break;
+                    case 'relateIcon':
+                        selectedAttribute = 'relatable'
+                        resetState = relate
+                        resetSetState = setRelate
+                        break;
+                    case 'insightIcon':
+                        selectedAttribute = 'insightful'
+                        resetState = insight
+                        resetSetState = setInsight
+                        break;
+                }
+            }
+        }
+
+        if (selectedId) {
+            const resetIcon = document.getElementById(selectedId)
+            addLike(document, db, storyName, resetSetState, resetState, selectedAttribute, resetIcon)
+        }
+
         const icon = document.getElementById(iconId)
-        addLike(document, db, storyName, setLike, like, attribute, icon)
+        addLike(document, db, storyName, setState, state, attribute, icon)
     }
-    // const addLike = async () => {
-    //     let updateValue = 0
-    //    const likebtn = document.getElementById('likeIcon')
-    //     if(likebtn.classList.contains(styles.liked))  {
-    //         setLike(like - 1)
-    //         likebtn.classList.remove(styles.liked)
-    //         updateValue = like - 1
-    //     } else {
-    //         setLike(like + 1)
-    //         likebtn.classList.add(styles.liked)
-    //         updateValue = like + 1
-    //     }
-
-    //     const sfDocRef = doc(db, "likes", storyName.toLowerCase());
-    //     console.log('doc ref', sfDocRef, storyName)
-
-    //     try {
-    //         await runTransaction(db, async (transaction) => {
-    //             const sfDoc = await transaction.get(sfDocRef);
-    //             if (!sfDoc.exists()) {
-    //                 throw "Document does not exist!";
-    //             }
-
-    //             const newLike = updateValue
-    //             transaction.update(sfDocRef, { likes: newLike });
-    //         });
-    //         // console.log("Transaction successfully committed!");
-    //     } catch (e) {
-    //         console.log("Transaction failed: ", e);
-    //     }
-    // }
 
     const [isOpen, setIsOpen] = useState(false)
     return (
@@ -127,11 +136,11 @@ export const Anxiety = () => {
                 <div className={styles.words}>
                     <h1 className={styles.storyTitle}>Anxiety</h1>
                     <StoryReaction
-                    view={view}
-                    like={like}
-                    love = {love}
-                    relate = {relate}
-                    insight = {insight}
+                        view={view}
+                        like={like}
+                        love={love}
+                        relate={relate}
+                        insight={insight}
                     />
 
                     <br />

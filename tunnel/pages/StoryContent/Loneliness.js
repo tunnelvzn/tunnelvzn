@@ -12,7 +12,8 @@ import { Icon } from '@iconify/react';
 import { collection, addDoc, getDocs, runTransaction, doc } from "firebase/firestore";
 import { async } from "@firebase/util";
 import { setConfig } from "next/config";
-import { addLike, StoryForm, SuccessModal } from "../../comps/Story_Util";
+import addLike from "../../comps/Story_Util";
+import {StoryForm, SuccessModal } from "../../comps/Story_Util";
 import StoryReaction from "../../comps/StoryReaction/StoryReaction";
 export const Loneliness = () => {
 
@@ -75,9 +76,54 @@ export const Loneliness = () => {
 
 
     }, [])
-    const toAddLike = (attribute, setLike, like, iconId) => {
+
+    const toAddLike = (attribute, setState, state, iconId) => {
+        const ids = ['likeIcon', 'loveIcon', 'relateIcon', 'insightIcon']
+        let selectedId
+        let selectedAttribute
+        let resetState
+        let resetSetState
+        for (const id of ids) {
+            const icon = document.getElementById(id)
+            console.log(icon.classList)
+            if (Array.from(icon.classList).includes(styles.liked)) {
+                selectedId = id
+                switch (iconId) {
+                    case 'likeIcon':
+                        selectedAttribute = 'like'
+                        resetState = like
+                        resetSetState = setLike
+                        break;
+                    case 'loveIcon':
+                        selectedAttribute = 'love'
+                        resetState = love
+                        resetSetState = setLove
+                        break;
+                    case 'relateIcon':
+                        selectedAttribute = 'relatable'
+                        resetState = relate
+                        resetSetState = setRelate
+                        break;
+                    case 'insightIcon':
+                        selectedAttribute = 'insightful'
+                        resetState = insight
+                        resetSetState = setInsight
+                        break;
+                    default:
+                        break
+                }
+            }
+        }
+
+
+        if (selectedId) {
+            const resetIcon = document.getElementById(selectedId)
+            addLike(document, db, storyName, resetSetState, resetState, selectedAttribute, resetIcon)
+        }
+
         const icon = document.getElementById(iconId)
-        addLike(document, db, storyName, setLike, like, attribute, icon)
+        console.log(icon, selectedId)
+        addLike(document, db, storyName, setState, state, attribute, icon)
     }
 
     const [isOpen, setIsOpen] = useState(false)
@@ -97,11 +143,11 @@ export const Loneliness = () => {
                     <h1 className={styles.storyTitle}>Loneliness</h1>
 
                     <StoryReaction
-                    view={view}
-                    like={like}
-                    love = {love}
-                    relate = {relate}
-                    insight = {insight}
+                        view={view}
+                        like={like}
+                        love={love}
+                        relate={relate}
+                        insight={insight}
                     />
 
                     <br />
