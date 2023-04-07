@@ -14,6 +14,7 @@ import { async } from "@firebase/util";
 import { setConfig } from "next/config";
 import addLike from "../../comps/Story_Util";
 import { StoryForm, SuccessModal } from "../../comps/Story_Util";
+import StoryReaction from "../../comps/StoryReaction/StoryReaction";
 export const Anxiety = () => {
     const [like, setLike] = useState(0)
     const [love, setLove] = useState(0)
@@ -125,38 +126,13 @@ export const Anxiety = () => {
                 </div>
                 <div className={styles.words}>
                     <h1 className={styles.storyTitle}>Anxiety</h1>
-
-                    <div className={`${styles.reactionContain} d-flex`}>
-
-                        {/* Old reaction counter code */}
-                        {/* <small className="me-4">Likes: {like}</small>
-                        <small>Views: {view}</small> */}
-
-                        {/* New reaction counter code */}
-                        <div className={styles.viewCount}>
-                            <span className={styles.circle}><Icon icon="mdi:eye-outline" color="#212121" /></span>
-                            <small>{view}</small>
-                        </div>
-                        <div className={styles.reactionCount}>
-                            <span className={`${styles.circle} ${styles.tooltip}`}>
-                                <Icon icon="material-symbols:thumb-up-outline" hFlip={true} />
-                                <span className={styles.tooltiptext}>Like: {like}</span>
-                            </span>
-                            <span className={`${styles.circle} ${styles.tooltip}`}>
-                                <Icon icon="mdi:cards-heart-outline" />
-                                <span className={styles.tooltiptext}>Love: {love}</span>
-                            </span>
-                            <span className={`${styles.circle} ${styles.tooltip}`}>
-                                <Icon icon="mdi:people-check-outline" />
-                                <span className={styles.tooltiptext}>Relatable: {relate}</span>
-                            </span>
-                            <span className={`${styles.circle} ${styles.tooltip}`}>
-                                <Icon icon="majesticons:lightbulb-shine-line" />
-                                <span className={styles.tooltiptext}>Insightful: {insight}</span>
-                            </span>
-                            <small>{like + love + relate + insight}</small>
-                        </div>
-                    </div>
+                    <StoryReaction
+                    view={view}
+                    like={like}
+                    love = {love}
+                    relate = {relate}
+                    insight = {insight}
+                    />
 
                     <br />
                     <br />
