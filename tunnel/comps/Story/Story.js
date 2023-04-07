@@ -17,7 +17,6 @@ const Story = ({ id, name, contentImage }) => {
       useContext(GlobalContext);
     let currImage = 'comingSoon.svg'
    
-    // aria label should include {name} so it would be: "story about {name}"
     let storyContent = (
         <div className={styles.storyWrapper} onClick={()=> {setNav(false)}}>
             <div className='text-center ms-5 me-5'>
@@ -26,7 +25,9 @@ const Story = ({ id, name, contentImage }) => {
                     setStoryName(name)
                     console.log(name)
                     }}>
-                    <img className={styles.story} src={`/../../galleryImages/${contentImage}`} />
+                    <div className={styles.story}>
+                        <img className={styles.story} src={`/../../galleryImages/${contentImage}`} />
+                    </div>
                 </div>
                 <h6 className={styles.storyTitles}>{name}</h6>
             </div>
@@ -37,7 +38,9 @@ const Story = ({ id, name, contentImage }) => {
         <div className={styles.storyWrapper}>
             <div role="button" aria-label="story coming soon" tabIndex="0" className='text-center ms-5 me-5'>
                 <Link href="/404">
-                    <img className={styles.story} src={`/../../galleryImages/${currImage}`} />
+                    <div className={styles.comingSoonStory}>
+                        <img className={styles.story} src={`/../../galleryImages/${currImage}`} />
+                    </div>
                 </Link>
                 <h6 className={styles.storyTitles}>Coming soon...</h6>
             </div>

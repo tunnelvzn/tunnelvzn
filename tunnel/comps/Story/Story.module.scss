@@ -9,9 +9,12 @@
     width: auto;
     border-collapse: separate; 
     margin-bottom: 3vh;
-    // overflow-y: hidden;
     transition: all 0.3s ease-in-out;
     box-shadow: 0px 0px #212121;
+}
+
+.comingSoonStory {
+    cursor: default;
 }
 
 
@@ -27,9 +30,6 @@
     .storyTitles {
         font-size: 2vh;
     }
-    // .story {
-    //     margin-top: 8vh;
-    // }
     .storyWrapper {
         margin-right: -2vh;
         margin-left: -3vh;
@@ -42,26 +42,13 @@
     .storyTitles {
         font-size: 2vh;
     }
-    // .story {
-    //     margin-top: 8vh;
-    // }
     .storyWrapper {
         margin-top: 8vh;
     }
 }
 
-// Medium devices (tablets, 768px and up)
-// @media (min-width: 768px) {
-//     .storyTitles {
-//         color: rgb(225, 0, 255);
-//     }
-// }
-
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
-    // .story {
-    //     margin-top: 13vh;
-    // }
     .storyWrapper {
         margin-top: 13vh;
     }
@@ -80,9 +67,6 @@
 
 // XXX-large devices 
 @media (min-width: 1920px) {
-    // .story {
-    //     margin-top: 15vh;
-    // }
     .storyWrapper {
         margin-top: 15vh;
     }

@@ -1,24 +1,22 @@
-// we will revisit the return button after we roll out the button component
-// .return {
-//   display: flex;
-//   position: absolute;
-//   justify-content: center;
-//   flex-direction: column;
-//   color: #212121;
-//   margin-left: 17vh;
-//   z-index: 1000;
-//   border: 2px solid #212121;
-//   padding-left: 4.2vh;
-//   padding-right: 4.2vh;
-//   font-size: 2.5vh;
-//   border-radius: 100px;
-//   background-color: #FFFFFF;
-//   box-shadow: 0px 0px #212121;
-//   margin-top: 1.2vh;
-//   transition: all 0.3s ease-in-out;
-//   cursor: pointer;  
-//   height: 53px;
-// }
+.return {
+  position: absolute;
+  margin-left: 17vh;
+  z-index: 1000;
+  border: 2px solid #212121;
+  background-color: #FFFFFF;
+  box-shadow: 0px 0px #212121;
+  margin-bottom: 1vh;
+  margin-top: 1.2vh;
+  transition: all 0.3s ease-in-out;
+  cursor: pointer; 
+  height: 7vh; 
+  width: 7vh;
+  text-align: center;
+  border-radius: 50%;
+  display: inline-block;
+  text-align: center;
+  vertical-align: middle;
+}
 
 .submitImage {
   height: 50vh;
@@ -453,6 +451,10 @@
   .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
+  }
+  .return:hover {
+    margin-top: 1vh;
+    box-shadow: 3px 3px #212121;
   }
 }
 

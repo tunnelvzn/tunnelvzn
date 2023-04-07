@@ -6,6 +6,9 @@ body {
   background-color: #FFFFFF;
 }
 
+img {
+  pointer-events: none;
+}
 
 body, div, p, h1, h2, h3, h4 {
   font-family: 'Klee One', cursive;
