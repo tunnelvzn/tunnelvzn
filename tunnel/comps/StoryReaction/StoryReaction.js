@@ -14,19 +14,19 @@ const StoryReaction = (props) => {
                         </div>
                         <div className={styles.reactionCount}>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
-                                <Icon icon="material-symbols:thumb-up-outline" hFlip={true} />
+                                <Icon className={styles.icon} icon="material-symbols:thumb-up-outline"  hFlip={true} />
                                 <span className={styles.tooltiptext}>Like: {like}</span>
                             </span>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
-                                <Icon icon="mdi:cards-heart-outline" />
+                                <Icon className={styles.icon} icon="mdi:cards-heart-outline" />
                                 <span className={styles.tooltiptext}>Love: {love}</span>
                             </span>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
-                                <Icon icon="mdi:people-check-outline" />
+                                <Icon className={styles.icon} icon="mdi:people-check-outline" />
                                 <span className={styles.tooltiptext}>Relatable: {relate}</span>
                             </span>
                             <span className={`${styles.circle} ${styles.tooltip}`}>
-                                <Icon icon="majesticons:lightbulb-shine-line" />
+                                <Icon className={styles.icon} icon="majesticons:lightbulb-shine-line" />
                                 <span className={styles.tooltiptext}>Insightful: {insight}</span>
                             </span>
                             <small>{like + love + relate + insight}</small>

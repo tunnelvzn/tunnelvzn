@@ -17,6 +17,7 @@
   
   /* Tooltip text */
   .tooltip .tooltiptext {
+    display: none;
     visibility: hidden;
     width: 120px;
     background-color: black;
@@ -43,7 +44,11 @@
     display: inline-block;
     text-align: center;
     margin-right: 1vh;
-    vertical-align: middle;
+    // vertical-align: middle;
+  }
+
+  .icon{
+    margin-bottom: 5px;
   }
   
   .reactionCount {
@@ -64,6 +69,7 @@
   // Large devices (desktops, 992px and up)
   @media (min-width: 992px) {
     .tooltip:hover .tooltiptext {
+        display: inline;
       visibility: visible;
       opacity: 1;
     }
