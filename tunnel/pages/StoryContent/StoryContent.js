@@ -37,15 +37,14 @@ const StoryContent = () => {
 
     return (
         <div>
-            {/* once we roll out button component, we can revisit this */}
-            {/* <div>
+            <div>
                 <button className={`${styles.return}`} onClick={() => {
                     setRoute('/')
                     sessionStorage.setItem("route", "/");
                     setNav(false)
                     console.log('trigger, to route: ', route)
-                }}><span className={`${styles.returnText}`}>Back</span></button>
-            </div> */}
+                }}><span className={`${styles.returnText}`}><Icon icon="akar-icons:arrow-back"  color="#212121"  width="30" height="30" /></span></button>
+            </div>
 
             <section className={`${styles.arrow} ${styles.bounce} text-center`}>
                 <h6>Scroll/Arrow Key Down</h6>
