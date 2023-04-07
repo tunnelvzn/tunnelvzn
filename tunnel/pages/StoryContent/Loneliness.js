@@ -152,9 +152,9 @@ export const Loneliness = () => {
 
                     <br />
                     <br />
-                    <h2 className={styles.storySynopsis}>Synopsis:</h2>
+                    <h2 className={styles.storySynopsis}>Preview:</h2>
                     <br />
-                    <p>Believing the commute is robbing his time to build relationships with people, John decides to live on-campus, however, it wasn't what he had expected...</p>
+                    <p>John chose to reside on campus because his commute prevented him from developing meaningful connections with others. However, he was in for a surprise.</p>
                 </div>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>

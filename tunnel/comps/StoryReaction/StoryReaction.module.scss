@@ -36,19 +36,14 @@
   }
   
   .circle {
-    height: 30px;
-    width: 30px;
+    height: 4vh;
+    width: 4vh;
     background-color: #FFFFFF;
     border: 1px solid #212121;  
     border-radius: 50%;
     display: inline-block;
     text-align: center;
     margin-right: 1vh;
-    // vertical-align: middle;
-  }
-
-  .icon{
-    margin-bottom: 5px;
   }
   
   .reactionCount {

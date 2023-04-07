@@ -147,7 +147,7 @@ export const Anxiety = () => {
                     <br />
                     <h2 className={styles.storySynopsis}>Preview:</h2>
                     <br />
-                    <p>Far from home, separated from her friends, and picking up the pieces after her computer science midterm, Mia struggles to put her mind at ease...</p>
+                    <p>Mia tried to recover from her computer science midterm grade. Yet, being far away from her friends and family made it difficult to calm her mind.</p>
                 </div>
             </div>
 
