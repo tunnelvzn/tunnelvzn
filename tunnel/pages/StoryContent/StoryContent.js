@@ -10,6 +10,7 @@ import Link from 'next/link'
 import { Icon } from '@iconify/react';
 import { Loneliness } from './Loneliness';
 import { Anxiety } from './Anxiety';
+import { Envy } from './Envy'
 const StoryContent = () => {
     const {
         intro,
@@ -33,6 +34,9 @@ const StoryContent = () => {
         case "Anxiety":
             renderComponent = <Anxiety />
             break
+        case "Envy":
+            renderComponent = <Envy />
+            break
     }
 
     return (
@@ -43,7 +47,7 @@ const StoryContent = () => {
                     sessionStorage.setItem("route", "/");
                     setNav(false)
                     console.log('trigger, to route: ', route)
-                }}><span className={`${styles.returnText}`}><Icon icon="akar-icons:arrow-back"  color="#212121"  width="30" height="30" /></span></button>
+                }}><span className={`${styles.returnText}`}><Icon icon="akar-icons:arrow-back" color="#212121" width="30" height="30" /></span></button>
             </div>
 
             <section className={`${styles.arrow} ${styles.bounce} text-center`}>
@@ -53,7 +57,7 @@ const StoryContent = () => {
 
             {renderComponent}
 
-           
+
         </div>
     )
 }
