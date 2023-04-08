@@ -159,11 +159,11 @@ export const Envy = () => {
                 <p className={`${styles.words} ${styles.offset}`}>
                     I remember writing in my personal statement that I aspired to be someone great. 
                     A person who would contribute to curing some of the world’s most incurable diseases, saving lives, and being humble about it. 
-                    What have I become now? Where had that motivation gone? While waiting for the seconds until 6:00 AM, I ponder restlessly.
+                    <i>What have I become now? Where had that motivation gone?</i> While waiting for the seconds until 6:00 AM, I ponder restlessly.
                     <br/><br/> 
                     It’s registration day for the Spring quarter, and I am ready to spam the registration button with my two groggy roommates. 
                     “Bruh, the site is frozen!” Jami exclaims impatiently. My other roommate, John, lets out a heavy sigh and slumps back into his chair, defeated. 
-                    By some stroke of luck, I manage to get through. I wish this luck had applied to other aspects of my life instead.
+                    By some stroke of luck, I manage to get through. <i>I wish this luck had applied to other aspects of my life instead.</i>
                 </p>
             </div>
 
@@ -192,7 +192,7 @@ export const Envy = () => {
                     It was clear that I’d been lying to myself that I would find something that would click. 
                     “Well, I’m going back to bed,” Jami announces. I’ve known Jami for over a year. 
                     He's a bright individual who secured direct admission into Computer Science and is currently attempting to obtain an internship. 
-                    How does he do it? And how can I be like him? 
+                    <i>How does he do it? And how can I be like him?</i>
                 </p>
             </div>
 
@@ -204,10 +204,10 @@ export const Envy = () => {
                 <p className={`${styles.words}`}>
                     “John, what are you doing?” I ask. “I’m looking for an alternative class and then sleeping until ten,” John replies. 
                     “Oh, ok,” I respond, having not much else to say. John is doing well. He has goals of getting his masters and is a forward-thinker. 
-                    I wish that were me. 
+                    <i>I wish that were me.</i>
                     <br/><br/>
                     The future is impossible to plan when I’m already busy with coursework. I often feel like the odd one out in this group. 
-                    Now that I think about it, all my friends seem absorbed in their fields of study and are finding success. What even is success to me?
+                    Now that I think about it, all my friends seem absorbed in their fields of study and are finding success. <i>What even is success to me?</i>
                 </p>
             </div>
 
@@ -220,7 +220,7 @@ export const Envy = () => {
                     I realize I’m procrastinating on finishing my homework because instead of opening Google Docs and Canvas, I spend an hour browsing LinkedIn out of habit. 
                     I despise the platform, but I couldn’t resist the algorithm as it bombarded me with an endless stream of job and internship announcements so it would tell me how big of a failure I was. 
                     <br/><br/>
-                    I have nothing against those individuals, yet, they remind me of my shortcomings. Where is my life update? What do I want to intern for? I don’t know! I have no one to blame but myself for looking in the first place.
+                    I have nothing against those individuals, yet, they remind me of my shortcomings. <i>Where is my life update? What do I want to intern for? I don’t know!</i> I have no one to blame but myself for looking in the first place.
                 </p>
             </div>
 
@@ -246,7 +246,7 @@ export const Envy = () => {
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     I sit on the bench near the flowerless and bare cherry trees. As I stared at them, I realized I had more in common with those cherry trees than any of the people on LinkedIn or my successful roommates.  
-                    Once, the trees were blooming, so pink and pretty. Now, they are but a shell of their former selves. Just like my life up to this point, the pinnacle of its life has passed. 
+                    <i>Once, the trees were blooming, so pink and pretty. Now, they are but a shell of their former selves. Just like my life up to this point, the pinnacle of its life has passed.</i> 
                     <br/><br/>
                     I laugh at myself, proud of making such a dumb comparison. As I come to this realization, I understand that the trees will soon burst forth with new flowers, captivating crowds once more. 
                     Meanwhile, I will remain unable to impress anyone.
@@ -273,7 +273,7 @@ export const Envy = () => {
                 <p className={`${styles.words} ${styles.offset}`}>
                     Perhaps to motivate me, they kept bringing up their friend’s daughter and how she majors in Business and does great things for her community. 
                     It doesn’t make me feel good. I hate the sinking feeling deep in my chest. Eventually, I started to resent talking to them because I didn’t want the reminder. 
-                    How in the world did things go so wrong? 
+                    <i>How in the world did things go so wrong?</i>
                 </p>
             </div>
 
@@ -284,9 +284,9 @@ export const Envy = () => {
                 </div>
                 <p className={`${styles.words}`}>
                     Having seen enough of the scenery, I head back to McCarty Hall. By now, more people are roaming about. 
-                    All are pursuing their goals and dreams. What’s so appealing about others? How can I be myself? My thoughts trailed off. 
+                    All are pursuing their goals and dreams. <i>What’s so appealing about others? How can I be myself?</i> My thoughts trailed off. 
                     <br/><br/>
-                    I catch the sun ascending above the campus with my eyes. What even am I here for? I wonder. Now, I’m back in my room with more questions than answers. 
+                    I catch the sun ascending above the campus with my eyes. <i>What even am I here for?</i> I wonder. Now, I’m back in my room with more questions than answers. 
                     John has already left for class, whereas Jami is still asleep. I view my schedule again, brain empty. “It will be another wasteful quarter,” I muttered. 
                 </p>
             </div>
@@ -327,7 +327,7 @@ export const Envy = () => {
                     "It's a pretty long story. Where do I even start?" Jami thinks. "From the beginning?" I suggest. Jami playfully responds, "Well, it all started when I was born." I can't help but chuckle at Jami's witty remark. 
                     <br/><br/>
                     As I listen to him and discuss each other's uncertainties, I realize that we aren’t so different after all, making me feel a sense of warmth, compelling me to look toward the sun. 
-                    Perhaps, it is a beautiful day - a day I should relish by taking pleasure in life's small joys. After all, the future remains unpredictable.
+                    <i>Perhaps, it is a beautiful day - a day I should relish by taking pleasure in life's small joys. After all, the future remains unpredictable.</i>
                 </p>
             </div>
 

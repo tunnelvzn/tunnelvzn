@@ -33,7 +33,7 @@ const Updates = () => {
                             Published stories are still subject to change due to new feedback.
                         </li>
                         <li>
-                            Story three will release on March 31st, 2023. [Delayed due to new feedback]
+                            Story four is in early development.
                         </li>
                     </ul>
                 </section>
@@ -41,19 +41,19 @@ const Updates = () => {
                     <h3 className={styles.subTitle}>Upcoming Website Improvements</h3>
                     <ul>
                         <li>
-                            Database updates & feedback functionality improvements
+                            Story reaction function bugs
                         </li>
                         <li>
-                            Screenreader accessibility enhancements
+                            Images on mobile are stretched awkwardly
+                        </li>
+                        <li>
+                            Return button oddly shaped and positioned
                         </li>
                         <li>
                             Responsiveness for tablets 
                         </li>
                         <li>
                             Dark mode
-                        </li>
-                        <li>
-                            User account for additional features
                         </li>
                         <li>
                             Page transition animations
