@@ -12,7 +12,7 @@ function MyApp({ Component, pageProps }) {
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <link rel="icon" href="/favicon.png" />
-        <meta name="author" content="Tunnel_vzn" />
+        <meta name="author" content="Eddy & Company" />
         <meta name="title" content="Tunnel_vzn"></meta>
         <meta name="description" content="A student ran organization telling stories inspired by the experiences of University of Washington students." />
         <meta name="keywords" content="storytelling" />
