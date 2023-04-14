@@ -1,0 +1,36 @@
+.button {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    z-index: 200;
+    border: 1px solid #212121;
+    padding-left: 4vh;
+    padding-right: 4vh;
+    border-radius: 100px;
+    box-shadow: 0px 0px #212121;
+    margin-bottom: 1vh;
+    margin-top: 1.2vh;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;   
+}
+
+.largeButton {
+    margin-left: 2vh;
+    margin-right: 2vh;
+    z-index: 200;
+    border: 1px solid #212121;
+    padding: 5vh;
+    padding-left: 5vh;
+    padding-right: 5vh;
+    border-radius: 100px;
+    box-shadow: 0px 0px #212121;
+    margin-bottom: 1vh;
+    margin-top: 1.2vh;
+    transition: all 0.3s ease-in-out;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    cursor: pointer;   
+}

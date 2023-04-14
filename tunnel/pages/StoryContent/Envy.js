@@ -23,6 +23,7 @@ import { setConfig } from "next/config";
 import addLike from "../../comps/Story_Util";
 import { StoryForm, SuccessModal } from "../../comps/Story_Util";
 import StoryReaction from "../../comps/StoryReaction/StoryReaction";
+import Button from '/comps/Button';
 export const Envy = () => {
   const [like, setLike] = useState(0);
   const [love, setLove] = useState(0);
@@ -620,6 +621,7 @@ export const Envy = () => {
           club for providing additional feedback!
         </p>
       </div>
+      <Button>hahahah</Button>
     </div>
   );
 };
