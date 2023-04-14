@@ -131,7 +131,7 @@ export const Envy = () => {
             <div className={styles.section}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/envyImages/cover.png" className={styles.storyImg} layout="fill" alt="text coming soon" />
+                    <Image src="/envyImages/cover.png" className={styles.storyImg} layout="fill" alt="A boy named Rao sitting on a bench and staring at the cherry blossom tree branches" />
                 </div>
                 <div className={styles.words}>
                     <h1 className={styles.storyTitle}>Envy</h1>
@@ -154,7 +154,7 @@ export const Envy = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/envyImages/leanBack.png" className={styles.storyImg} layout="fill" alt="text coming soon" />
+                    <Image src="/envyImages/leanBack.png" className={styles.storyImg} layout="fill" alt="Rao leaning back on his chair while staring at his laptop" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     I remember writing in my personal statement that I aspired to be someone great. 
@@ -170,7 +170,7 @@ export const Envy = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/envyImages/deskThink.png" className={styles.storyImg} layout="fill" alt="text coming soon" />
+                    <Image src="/envyImages/deskThink.png" className={styles.storyImg} layout="fill" alt="Rao thinking about how exploring differing topics harmed his GPA" />
                 </div>
                 <p className={`${styles.words}`}>
                     Presently, I find myself in a disheartening situation. Though I’m a Sophomore, I must declare a major soon or risk hitting the credit limit and getting locked from future registrations. 
@@ -185,7 +185,7 @@ export const Envy = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/envyImages/jamiSleep.png" className={styles.storyImg} layout="fill" alt="text coming soon" />
+                    <Image src="/envyImages/jamiSleep.png" className={styles.storyImg} layout="fill" alt="Jami stating that he is going back to sleep" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     I register for more seemingly intriguing classes, yet it’s a gamble. 
@@ -199,7 +199,7 @@ export const Envy = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/envyImages/johnGood.png" className={styles.storyImg} layout="fill" alt="text coming soon" />
+                    <Image src="/envyImages/johnGood.png" className={styles.storyImg} layout="fill" alt="John still at his laptop trying to find replacement classes" />
                 </div>
                 <p className={`${styles.words}`}>
                     “John, what are you doing?” I ask. “I’m looking for an alternative class and then sleeping until ten,” John replies. 
@@ -214,7 +214,7 @@ export const Envy = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/envyImages/whatToTake.png" className={styles.storyImg} layout="fill" alt="text coming soon" />
+                    <Image src="/envyImages/whatToTake.png" className={styles.storyImg} layout="fill" alt="Rao struggling to create a good schedule for next quarter" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     I realize I’m procrastinating on finishing my homework because instead of opening Google Docs and Canvas, I spend an hour browsing LinkedIn out of habit. 
@@ -227,7 +227,7 @@ export const Envy = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/envyImages/goingOut.png" className={styles.storyImg} layout="fill" alt="text coming soon" />
+                    <Image src="/envyImages/goingOut.png" className={styles.storyImg} layout="fill" alt="Rao walking outside to get some fresh air" />
                 </div>
                 <p className={`${styles.words}`}>
                     In an attempt to clear my head, I decided to take a walk around campus. My roommates were asleep, so I gathered my things and ventured outside. 
@@ -242,7 +242,7 @@ export const Envy = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/envyImages/staringTrees.png" className={styles.storyImg} layout="fill" alt="text coming soon" />
+                    <Image src="/envyImages/staringTrees.png" className={styles.storyImg} layout="fill" alt="Rao sitting on a bench and staring at the cherry blossom tree branches" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     I sit on the bench near the flowerless and bare cherry trees. As I stared at them, I realized I had more in common with those cherry trees than any of the people on LinkedIn or my successful roommates.  
@@ -256,7 +256,7 @@ export const Envy = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/envyImages/parentsCall.png" className={styles.storyImg} layout="fill" alt="text coming soon" />
+                    <Image src="/envyImages/parentsCall.png" className={styles.storyImg} layout="fill" alt="Rao remembering his phone calls with his parents" />
                 </div>
                 <p className={`${styles.words}`}>
                     As my self-deprecation dissipates, I lean back on the bench so my watery eyes wouldn’t turn the clear day into a rainy one. 
@@ -268,7 +268,7 @@ export const Envy = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/envyImages/usingPhone.png" className={styles.storyImg} layout="fill" alt="text coming soon" />
+                    <Image src="/envyImages/usingPhone.png" className={styles.storyImg} layout="fill" alt="Rao looking at his phone" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     Perhaps to motivate me, they kept bringing up their friend’s daughter and how she majors in Business and does great things for her community. 
@@ -280,7 +280,7 @@ export const Envy = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/envyImages/sunUp.png" className={styles.storyImg} layout="fill" alt="text coming soon" />
+                    <Image src="/envyImages/sunUp.png" className={styles.storyImg} layout="fill" alt="Rao looking at the sun from his dorm room" />
                 </div>
                 <p className={`${styles.words}`}>
                     Having seen enough of the scenery, I head back to McCarty Hall. By now, more people are roaming about. 
@@ -294,7 +294,7 @@ export const Envy = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/envyImages/hereForU.png" className={styles.storyImg} layout="fill" alt="text coming soon" />
+                    <Image src="/envyImages/hereForU.png" className={styles.storyImg} layout="fill" alt="Jami giving Rao his support" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     “Hey, what happened? What are you taking?” a voice behind me asks. Jami peeks over my shoulder. “I didn’t realize you were awake—just these classes. 
@@ -308,7 +308,7 @@ export const Envy = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/envyImages/weCanTalk.png" className={styles.storyImg} layout="fill" alt="text coming soon" />
+                    <Image src="/envyImages/weCanTalk.png" className={styles.storyImg} layout="fill" alt="Jami offering to talk with Rao" />
                 </div>
                 <p className={`${styles.words}`}>
                     “Yeah?” I reply, turning away from Jami and staring back at the schedule. I’m unsure what to feel or do. 
@@ -320,7 +320,7 @@ export const Envy = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/envyImages/greaterThings.png" className={styles.storyImg} layout="fill" alt="text coming soon" />
+                    <Image src="/envyImages/greaterThings.png" className={styles.storyImg} layout="fill" alt="Rao and Jami walking outside and talking" />
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     "Oh, a surprisingly nice day," Jami notes. Preoccupied with my current situation, I jump to the point. "Hey, Jami, what got you interested in CS?" I solicit.  
@@ -371,7 +371,7 @@ export const Envy = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <p className={styles.words}>
-                    This story was written by Eddy, illustrated by Anna, and peer-reviewed by 24 UW Students.
+                    This story was inspired by the <Link href="https://docs.google.com/document/d/1Nz1J3HJsIyW9whklx7BUsGQ2lFpfz_1N6kxLEII_IlI/edit?usp=sharing"><a className={styles.partnerLink} target="_blank">work</a></Link> of Dylan Scott, written by Eddy, illustrated by Anna, and peer-reviewed by 24 UW Students.
                     <br />
                     <br />
                     Also, special thanks to members of the <Link href="https://www.instagram.com/writersinprogressuw/"><a className={styles.partnerLink} target="_blank">Writers In Progress</a></Link> club for providing additional feedback!
