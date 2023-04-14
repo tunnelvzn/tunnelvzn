@@ -12,7 +12,7 @@
     margin-left: -5px;
     border-width: 5px;
     border-style: solid;
-    border-color: transparent transparent black transparent;
+    border-color: transparent transparent #212121 transparent;
   }
   
   /* Tooltip text */
@@ -20,7 +20,7 @@
     display: none;
     visibility: hidden;
     width: 120px;
-    background-color: black;
+    background-color: #212121;
     color: #fff;
     text-align: center;
     padding: 5px 0;

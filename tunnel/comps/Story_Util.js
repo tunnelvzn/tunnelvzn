@@ -118,7 +118,7 @@ export function StoryForm(props) {
     return (
         <>
             <div>
-                <label className={`${styles.question} mb-1`}>Any feedback about the story? What should be changed? What do you want to see added? Anything at all! (Optional)</label>
+                <label className={`${styles.question} mb-1`}>Any feedback about the story? What should be changed? What do you want to see added? Anything at all!</label>
                 <textarea 
                     id="feedback"
                     onInput={(e) => { setUserInput(e.target.value); setError(false) }}

@@ -13,6 +13,9 @@ img {
 body, div, p, h1, h2, h3, h4 {
   font-family: 'Klee One', cursive;
 }
+p, h1, h2, h3, h4, h5, h6, small, label, a, li, button {
+  color: #212121 !important;
+}
 /* Handle on hover */
 div::-webkit-scrollbar-thumb:hover {
   background: #212121;

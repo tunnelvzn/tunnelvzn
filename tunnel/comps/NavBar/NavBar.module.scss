@@ -3,7 +3,7 @@
     margin-left: 2vh;
     margin-right: 2vh;
     z-index: 200;
-    border: 2px solid #212121;
+    border: 1px solid #212121;
     padding-left: 4vh;
     padding-right: 4vh;
     border-radius: 100px;
@@ -24,7 +24,7 @@
     margin-left: 2vh;
     margin-right: 2vh;
     z-index: 200;
-    border: 2px solid #212121;
+    border: 1px solid #212121;
     padding-left: 4.2vh;
     padding-right: 4.2vh;
     border-radius: 100px;
@@ -36,7 +36,7 @@
 }
 
 .topUiBackground {
-    border-bottom: 2px solid #212121;
+    border-bottom: 1px solid #212121;
     position: fixed;
     width: 100%;
     z-index: 3;
@@ -59,7 +59,7 @@
    background: #FFFFFF;
    position: fixed; 
    bottom: 0;
-   border-left: 2px solid #212121;
+   border-left: 1px solid #212121;
    transition: all 0.5s ease-out;
    z-index: 2;
 }
@@ -141,7 +141,7 @@
     }
     .logoFont a {
         text-decoration: none;
-        color: #212121;
+        color: #212121 !important;
         font-family: 'Nova Round', cursive;
         cursor: pointer;
     }
@@ -159,10 +159,12 @@
     .menuButton:hover {
         margin-top: 1vh;
         box-shadow: 3px 3px #212121;
+        border: 1px solid #212121;
     }
     .soundButton:hover {
         margin-top: 1vh;
         box-shadow: 3px 3px #212121;
+        border: 1px solid #212121;
     }
     .pageTabs:hover, .pageTabs a:hover {
         color: #FFFFFF;
