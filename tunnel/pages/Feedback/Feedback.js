@@ -8,6 +8,8 @@ import { GlobalContext } from '../../comps/Global/useGlobalContext';
 import { Button } from '../../comps/Button';
 import { doc, setDoc, Timestamp, collection } from "firebase/firestore";
 import { async } from '@firebase/util';
+import { CSSTransition } from 'react-transition-group';
+
 export const Feedback = ({}) => {
 
     const [submit, setSubmit] = useState(false)
@@ -26,14 +28,17 @@ export const Feedback = ({}) => {
         const email = document.getElementById('userEmail').value
    
         if (!email) {
+            document.getElementById('userEmail').scrollIntoView({ behavior: "smooth" });
             setError('email')
             hasError = true
             return false
         }
         const ratingOption = document.querySelector('input[name="overall-rating"]:checked');
-        const ratingOptionValue = ratingOption.value
+
+        const ratingOptionValue = ratingOption?.value ? ratingOption.value : null
 
         if (!ratingOption) {
+            document.querySelector('input[name="overall-rating"]').scrollIntoView({ behavior: "smooth" });
             setError('overall')
             hasError = true
             return false
@@ -42,6 +47,7 @@ export const Feedback = ({}) => {
         const Elaborate = document.getElementById('elaboration').value
         console.log(Elaborate, Elaborate.length)
         if (Elaborate.length <= 10) {
+            document.getElementById('elaboration').scrollIntoView({ behavior: "smooth" });
             if (Elaborate.length == 0) {
                 setError('Elaborate')
             } else {
@@ -96,43 +102,43 @@ export const Feedback = ({}) => {
                 </div>
                 <div className='mt-4'>
                     <label className={`${styles.question} mb-1`}>1. Your preferred email.*</label>
-                    <input id="userEmail" type="email" placeholder="email123@email.com" className={`${styles.input} w-100`}></input>
                     {error == "email" && <div className='alert alert-danger'>Please put in your email</div>}
+                    <input id="userEmail" type="email" placeholder="email123@email.com" className={`${styles.input} w-100`} onInput={()=>{setError('')}}></input>
                 </div>
                 <div className={`${styles.multi} mt-4`} >
 
                     <label className={`${styles.question} mb-1`}>2. What do you think about the project?*</label>
-                    {error == "overall" && <div className='alert alert-danger'>Please select one option</div>}
+                    {error == "overall" && <div className='alert alert-danger' >Please select one option</div>}
                     <div className='mt-2'>
-                        <input className='me-2' type="radio" id="Awesome" name="overall-rating" value="5"></input>
+                        <input className='me-2' type="radio" id="Awesome" name="overall-rating" value="5" onInput={()=>{setError('')}}></input>
                         <label htmlFor="Awesome">Awesome</label>
                     </div>
 
                     <div className='mt-2'>
-                        <input className='me-2' type="radio" id="Good" name="overall-rating" value="4"></input>
+                        <input className='me-2' type="radio" id="Good" name="overall-rating" value="4" onInput={()=>{setError('')}}></input>
                         <label htmlFor="Good">Good</label>
                     </div>
 
                     <div className='mt-2'>
-                        <input className='me-2' type="radio" id="Decent" name="overall-rating" value="3"></input>
+                        <input className='me-2' type="radio" id="Decent" name="overall-rating" value="3" onInput={()=>{setError('')}}></input>
                         <label htmlFor="Decent">Decent</label>
                     </div>
 
                     <div className='mt-2'>
-                        <input className='me-2' type="radio" id="Bad" name="overall-rating" value="2"></input>
+                        <input className='me-2' type="radio" id="Bad" name="overall-rating" value="2" onInput={()=>{setError('')}}></input>
                         <label htmlFor="Bad">Bad</label>
                     </div>
 
                     <div className='mt-2'>
-                        <input className='me-2' type="radio" id="Terrible" name="overall-rating" value="1"></input>
+                        <input className='me-2' type="radio" id="Terrible" name="overall-rating" value="1" onInput={()=>{setError('')}}></input>
                         <label htmlFor="Terrible">Terrible</label>
                     </div>
                 </div>
                 <div className='mt-4'>
+                    <label className={`${styles.question} mb-1`}>3. Elaborate on your answer to the previous question.*</label>
                     {error == "Elaborate" && <div className='alert alert-danger'>Please answer this question</div>}
                     {error == "Elaborate more" && <div className='alert alert-danger'>{"Please give us a longer answer :)"}</div>}
-                    <label className={`${styles.question} mb-1`}>3. Elaborate on your answer to the previous question.*</label>
-                    <textarea id="elaboration" type="text" placeholder="I believe this because..." className={`${styles.input} ${styles.largeInput} w-100`}></textarea >
+                    <textarea onInput={()=>{setError('')}} id="elaboration" type="text" placeholder="I believe this because..." className={`${styles.input} ${styles.largeInput} w-100`}></textarea >
                 </div>
 
                 <div className='mt-4'>
