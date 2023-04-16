@@ -85,54 +85,6 @@ export const Envy = () => {
     fetchData().catch(console.log("hey"));
   }, []);
   const toAddLike = (attribute, setState, state, iconId) => {
-    const ids = ["likeIcon", "loveIcon", "relateIcon", "insightIcon"];
-    let selectedId;
-    let selectedAttribute;
-    let resetState;
-    let resetSetState;
-    for (const id of ids) {
-      const icon = document.getElementById(id);
-      console.log(icon.classList);
-      if (Array.from(icon.classList).includes(styles.liked)) {
-        selectedId = id;
-        switch (iconId) {
-          case "likeIcon":
-            selectedAttribute = "like";
-            resetState = like;
-            resetSetState = setLike;
-            break;
-          case "loveIcon":
-            selectedAttribute = "love";
-            resetState = love;
-            resetSetState = setLove;
-            break;
-          case "relateIcon":
-            selectedAttribute = "relatable";
-            resetState = relate;
-            resetSetState = setRelate;
-            break;
-          case "insightIcon":
-            selectedAttribute = "insightful";
-            resetState = insight;
-            resetSetState = setInsight;
-            break;
-        }
-      }
-    }
-
-    if (selectedId) {
-      const resetIcon = document.getElementById(selectedId);
-      addLike(
-        document,
-        db,
-        storyName,
-        resetSetState,
-        resetState,
-        selectedAttribute,
-        resetIcon
-      );
-    }
-
     const icon = document.getElementById(iconId);
     addLike(document, db, storyName, setState, state, attribute, icon);
   };
