@@ -497,6 +497,32 @@ export const Envy = () => {
         </p>
       </div>
 
+      <div className={`${styles.section} ${styles.normSection}`}>
+        <div className={styles.block}></div>
+        <p className={styles.words}>
+          This story was inspired by the{" "}
+          <Link href="https://docs.google.com/document/d/1Nz1J3HJsIyW9whklx7BUsGQ2lFpfz_1N6kxLEII_IlI/edit?usp=sharing">
+            <a className={styles.partnerLink} target="_blank">
+              work
+            </a>
+          </Link>{" "}
+          of Dylan Scott, written by Eddy, illustrated by Anna, and
+          peer-reviewed by 24 UW Students.
+          <br />
+          <br />
+          Also, special thanks to members of the{" "}
+          <Link href="https://www.instagram.com/writersinprogressuw/">
+            <a className={styles.partnerLink} target="_blank">
+              Writers In Progress
+            </a>
+          </Link>{" "}
+          club for providing additional feedback!
+          <div className={styles.importantContainer}>
+            <Image src="/mostImportant.svg" layout="fill" />
+          </div>
+        </p>
+      </div>
+
       <div className={`${styles.section} ${styles.normSection} text-center`}>
         <div className={styles.block}></div>
         <div className={styles.formContents}>
@@ -597,31 +623,6 @@ export const Envy = () => {
           </div>
         </div>
       </div>
-
-      {/* THE BELOW IS THE CODE FOR THE CREDIT PANEL */}
-      <div className={`${styles.section} ${styles.normSection}`}>
-        <div className={styles.block}></div>
-        <p className={styles.words}>
-          This story was inspired by the{" "}
-          <Link href="https://docs.google.com/document/d/1Nz1J3HJsIyW9whklx7BUsGQ2lFpfz_1N6kxLEII_IlI/edit?usp=sharing">
-            <a className={styles.partnerLink} target="_blank">
-              work
-            </a>
-          </Link>{" "}
-          of Dylan Scott, written by Eddy, illustrated by Anna, and
-          peer-reviewed by 24 UW Students.
-          <br />
-          <br />
-          Also, special thanks to members of the{" "}
-          <Link href="https://www.instagram.com/writersinprogressuw/">
-            <a className={styles.partnerLink} target="_blank">
-              Writers In Progress
-            </a>
-          </Link>{" "}
-          club for providing additional feedback!
-        </p>
-      </div>
-      <Button>hahahah</Button>
     </div>
   );
 };

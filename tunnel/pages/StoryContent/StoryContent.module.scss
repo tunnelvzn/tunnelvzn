@@ -177,7 +177,14 @@
 }
 
 .partnerLink:hover {
-  color: #6213ff;
+  color: #6213ff !important;
+}
+
+.importantContainer {
+  height: 25vh;
+  width: auto;
+  position: relative;
+  margin-top: 20vh;
 }
 
 

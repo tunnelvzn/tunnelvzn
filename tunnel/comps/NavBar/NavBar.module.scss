@@ -139,12 +139,6 @@
         padding: 1.6vh;
         font-size: 3vh;
     }
-    .logoFont a {
-        text-decoration: none;
-        color: #212121 !important;
-        font-family: 'Nova Round', cursive;
-        cursor: pointer;
-    }
     .subnav {
         right: -50%;
         width: 50%;
@@ -167,9 +161,12 @@
         border: 1px solid #212121;
     }
     .pageTabs:hover, .pageTabs a:hover {
-        color: #FFFFFF;
+        color: #FFFFFF !important;
         -webkit-text-stroke-width: 1px;
         -webkit-text-stroke-color: #212121;
+    }
+    .logoFont a:hover {
+        color: #6213ff !important;
     }
     .subnav {
         right: -40%;

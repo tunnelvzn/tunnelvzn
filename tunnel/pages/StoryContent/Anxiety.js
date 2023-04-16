@@ -262,6 +262,19 @@ export const Anxiety = () => {
                 </p>
             </div>
 
+            <div className={`${styles.section} ${styles.normSection}`}>
+                <div className={styles.block}></div>
+                <p className={styles.words}>
+                    This story was written by Eddy, illustrated by Anna, edited by Sylvia and Augene, and peer-reviewed by 15 UW Students.
+                    <br />
+                    <br />
+                    Also, special thanks to members of the <Link href="https://www.instagram.com/writersinprogressuw/"><a className={styles.partnerLink} target="_blank">Writers In Progress</a></Link> club for providing additional feedback!
+                    <div className={styles.importantContainer}>
+                        <Image src="/mostImportant.svg" layout="fill" />
+                    </div>
+                </p>
+            </div>
+
             <div className={`${styles.section} ${styles.normSection} text-center`}>
                 <div className={styles.block}></div>
                 <div className={styles.formContents}>
@@ -296,17 +309,6 @@ export const Anxiety = () => {
                         </div>
                     </div>
                 </div>
-            </div>
-
-            {/* THE BELOW IS THE CODE FOR THE CREDIT PANEL */}
-            <div className={`${styles.section} ${styles.normSection}`}>
-                <div className={styles.block}></div>
-                <p className={styles.words}>
-                    This story was written by Eddy, illustrated by Anna, edited by Sylvia and Augene, and peer-reviewed by 15 UW Students.
-                    <br />
-                    <br />
-                    Also, special thanks to members of the <Link href="https://www.instagram.com/writersinprogressuw/"><a className={styles.partnerLink} target="_blank">Writers In Progress</a></Link> club for providing additional feedback!
-                </p>
             </div>
         </div>
     )
