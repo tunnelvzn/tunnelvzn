@@ -204,7 +204,7 @@ export const Envy = () => {
           known Jami for over a year. He's a bright individual who secured
           direct admission into Computer Science and is currently attempting to
           obtain an internship.
-          <i>How does he do it? And how can I be like him?</i>
+          <i>How does he do it? I think I worked just as hard as him. I should deserve this honor too.</i>
         </p>
       </div>
 
