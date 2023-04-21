@@ -1,6 +1,6 @@
 import { useState, useContext, useEffect} from 'react';
 import { useRouter } from 'next/router';
-import StoryContent from './storyContent/StoryContent'
+import StoryContent from './StoryContent/StoryContent'
 import NavBar from '../comps/NavBar'
 import { GlobalContext } from '../comps/Global/useGlobalContext.js'
 
