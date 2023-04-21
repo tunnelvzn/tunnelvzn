@@ -1,9 +1,9 @@
 import { useState, useContext, useEffect} from 'react';
 import { useRouter } from 'next/router';
-import StoryContent from './storyContent/StoryContent.js'
+import StoryContent from './storyContent/StoryContent'
 import NavBar from '../comps/NavBar'
 import { GlobalContext } from '../comps/Global/useGlobalContext.js'
-// tunnel\comps\Global\useGlobalContext.js
+
 export default function Story() {
   const router = useRouter();
   const { story } = router.query;
