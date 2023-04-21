@@ -23,8 +23,8 @@ const StoryContent = () => {
     } =
         useContext(GlobalContext);
     const router = useRouter()
-    const { id } = router.query
-    const story = stories.find(story => story.id == id)
+
+
     console.log(storyName)
     let renderComponent;
     switch (storyName) {
@@ -45,8 +45,10 @@ const StoryContent = () => {
                 <button className={`${styles.return}`} onClick={() => {
                     setRoute('/')
                     sessionStorage.setItem("route", "/");
+                    router.push('/')
+                    console.log('push route')
                     setNav(false)
-                    console.log('trigger, to route: ', route)
+
                 }}><span className={`${styles.returnText}`}><Icon icon="akar-icons:arrow-back" color="#212121" width="30" height="30" /></span></button>
             </div>
 

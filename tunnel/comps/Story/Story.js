@@ -2,7 +2,9 @@ import styles from './Story.module.scss'
 import Link from 'next/link'
 import { GlobalContext } from '../Global/useGlobalContext'
 import { useContext } from 'react'
+import { useRouter } from 'next/router';
 const Story = ({ id, name, contentImage }) => {
+    const router = useRouter()
     const {
         intro, 
         setIntro,
@@ -21,7 +23,8 @@ const Story = ({ id, name, contentImage }) => {
         <div className={styles.storyWrapper} onClick={()=> {setNav(false)}}>
             <div className='text-center ms-5 me-5'>
                 <div role="button" aria-label={`story about ${name}`} tabIndex="0" onClick={()=> {
-                    setRoute('/StoryContent'); 
+
+                    router.push(`/Story?story=${name}`)
                     setStoryName(name)
                     console.log(name)
                     }}>

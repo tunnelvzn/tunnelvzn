@@ -205,6 +205,8 @@ export default function Home() {
 
   yourFunction()
 
+  console.log('load' ,route)
+
   let introContent = (
     <div className={`${styles.introContent} d-flex flex-column justify-content-center`}>
       <Head>
@@ -271,10 +273,6 @@ export default function Home() {
         {route == '/Credits' && <Credits />}
         {route == '/Updates' && <Updates />}
         {route == '/Feedback' && <Feedback/>}
-
-        {/* <Footer/> */}
-
-        {route == '/StoryContent' && <StoryContent />}
       </div>
     </div>
   )

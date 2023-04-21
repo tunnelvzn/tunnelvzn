@@ -1,7 +1,7 @@
 import styles from "./Feedback.module.scss";
 import Footer from "/comps/Footer";
 import Head from "next/head";
-import { useState, useContext, React } from "react";
+import { useState, useContext, React, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
 import { GlobalContext } from "../../comps/Global/useGlobalContext";
@@ -14,16 +14,21 @@ export const Feedback = ({}) => {
   const [submit, setSubmit] = useState(false);
   const [error, setError] = useState("");
   const { setRoute, db } = useContext(GlobalContext);
+  const emailRef = useRef();
+  const ratingRef = useRef();
+  const elaborationRef = useRef();
+
 
   const upLoadToFirebase = async () => {
+    event.preventDefault();
+    console.log(emailRef.current)
     let hasError = false;
     console.log("upLoadToFirebase");
     const email = document.getElementById("userEmail").value;
-
+   
     if (!email) {
-      document
-        .getElementById("userEmail")
-        .scrollIntoView({ behavior: "smooth" });
+        console.log( document.getElementsByClassName("email")[0])
+        emailRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
       setError("email");
       hasError = true;
       return false;
@@ -35,9 +40,7 @@ export const Feedback = ({}) => {
     const ratingOptionValue = ratingOption?.value ? ratingOption.value : null;
 
     if (!ratingOption) {
-      document
-        .querySelector('input[name="overall-rating"]')
-        .scrollIntoView({ behavior: "smooth" });
+        ratingRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
       setError("overall");
       hasError = true;
       return false;
@@ -46,9 +49,7 @@ export const Feedback = ({}) => {
     const Elaborate = document.getElementById("elaboration").value;
     console.log(Elaborate, Elaborate.length);
     if (Elaborate.length <= 10) {
-      document
-        .getElementById("elaboration")
-        .scrollIntoView({ behavior: "smooth" });
+        elaborationRef.current.scrollIntoView({ behavior: 'smooth', block: 'center' });
       if (Elaborate.length == 0) {
         setError("Elaborate");
       } else {
@@ -103,7 +104,7 @@ export const Feedback = ({}) => {
               form!
             </h6>
           </div>
-          <div className="mt-4">
+          <div className="mt-4" ref={emailRef}>
             <label className={`${styles.question} mb-1`}>
               1. Your preferred email.*
             </label>
@@ -120,12 +121,12 @@ export const Feedback = ({}) => {
               }}
             ></input>
           </div>
-          <div className={`${styles.multi} mt-4`}>
+          <div className={`${styles.multi} mt-4`} ref={ratingRef}>
             <label className={`${styles.question} mb-1`}>
               2. What do you think about the project?*
             </label>
             {error == "overall" && (
-              <div className="alert alert-danger">Please select one option</div>
+              <div className="alert alert-danger" >Please select one option</div>
             )}
             <div className="mt-2">
               <input
@@ -196,8 +197,8 @@ export const Feedback = ({}) => {
               ></input>
               <label htmlFor="Terrible">Terrible</label>
             </div>
-          </div>
-          <div className="mt-4">
+          </div> 
+          <div className="mt-4" ref={elaborationRef}>
             <label className={`${styles.question} mb-1`}>
               3. Elaborate on your answer to the previous question.*
             </label>
@@ -207,7 +208,7 @@ export const Feedback = ({}) => {
               </div>
             )}
             {error == "Elaborate more" && (
-              <div className="alert alert-danger">
+              <div className="alert alert-danger " >
                 {"Please give us a longer answer :)"}
               </div>
             )}
