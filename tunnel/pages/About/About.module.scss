@@ -26,11 +26,7 @@
     margin-bottom: 3vh;
 }
 
-.insertLink {
-    color: #212121;
-}
-
-.insertLink:hover {
+.partnerLink {
     color: #212121;
 }
 
@@ -68,5 +64,12 @@
     }
     .aboutTitle {
         font-size: 10vw;
+    }
+}
+
+@media (min-width: 992px) {
+    .partnerLink:hover {
+        color: #6213ff !important;
+        text-decoration: none;
     }
 }

@@ -241,12 +241,6 @@
   text-decoration: none;
   color: #212121;
 }
-
-.goHomeBtn:hover {
-  cursor: pointer;
-  margin-top: 2.5vh;
-  box-shadow: 3px 3px #212121;
-}
 // 404 styling end
 
 
@@ -367,6 +361,11 @@
     opacity: 10%;
     display: block;
     filter: blur(1px);
+  }
+  .goHomeBtn:hover {
+    cursor: pointer;
+    margin-top: 2.5vh;
+    box-shadow: 3px 3px #212121;
   }
 }
 

@@ -45,10 +45,6 @@
     color: #212121;
 }
 
-.footerLink:hover {
-    color: #6213ff !important;
-}
-
 .iconStyle {
     margin-left: 0.3vh;
     margin-right: 0.3vh;
@@ -115,6 +111,12 @@
     .footer p {
         display: block;
         margin-left: 2vh;
+    }
+    p .footerLink:hover {
+        text-decoration: none;
+    }
+    p .footerLink:hover {
+        color: #6213ff !important;
     }
 }
 

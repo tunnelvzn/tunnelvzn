@@ -51,7 +51,7 @@ const StoryContent = () => {
             </div>
 
             <section className={`${styles.arrow} ${styles.bounce} text-center`}>
-                <h6>Scroll/Arrow Key Down</h6>
+                <h6>Scroll Down</h6>
                 <h1 className={styles.theArrow}>▿</h1>
             </section>
 

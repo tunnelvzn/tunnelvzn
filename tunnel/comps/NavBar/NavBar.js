@@ -76,7 +76,7 @@ const Navbar = (props) => {
                     </section>
                 </h5>
                 <div className={styles.menuButton} onClick={()=> { makeNoise()}}>
-                    <Hamburger label="Show menu" hideOutline={false} toggled={nav} toggle={setNav} color="#212121" duration={0.4} size={40} direction="left" distance="sm" easing="ease-in" />
+                    <Hamburger label="Show menu" hideOutline={false} toggled={nav} toggle={setNav} duration={0.4} size={40} direction="left" distance="sm" color="#212121" easing="ease-in" />
                 </div>
             </div>
             <Subnav show={nav} />
