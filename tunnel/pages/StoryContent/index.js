@@ -1,1 +1,3 @@
-export {default} from './StoryContent.js'
+import StoryContent from './StoryContent';
+
+export default StoryContent;
