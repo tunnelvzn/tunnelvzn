@@ -21,9 +21,7 @@ const Updates = () => {
                 <section>
                     <h3 className={styles.subTitle}>Transparency Statement</h3>
                     <p>
-                        We are actively improving user experience in two main aspects: content and website.  
-                        We believe in transparency and maintaining good communication with students. 
-                        Thus, the purpose of this page is to inform you about the state of the organization.
+                        We are actively improving user experience in two main aspects: content and website. We believe in transparency and maintaining good communication with students. Thus, the purpose of this page is to inform you about the state of the organization.
                     </p>
                 </section>
                 <section>
@@ -33,21 +31,38 @@ const Updates = () => {
                             Published stories are still subject to change due to new feedback.
                         </li>
                         <li>
-                            Story four is in early development.
+                            Story four is in early research and development.
                         </li>
                     </ul>
                 </section>
                 <section>
-                    <h3 className={styles.subTitle}>Upcoming Website Improvements</h3>
+                    <h3 className={styles.subTitle}>Known Bugs</h3>
                     <ul>
                         <li>
-                            Story reaction function bugs
+                            Incomplete routing causes missing headers on stories and a faulty audio mute button.
                         </li>
                         <li>
-                            Images on mobile are stretched awkwardly
+                            Images on mobile stretched awkwardly.
                         </li>
                         <li>
-                            Return button oddly shaped and positioned
+                            The return button is oddly shaped and positioned.
+                        </li>
+                        <li>
+                            Pages don't start from the beginning.
+                        </li>
+                        <li>
+                            Non-existent story reaction statistics on mobile.
+                        </li>
+                        <li>
+                            Faulty screen reader menu button.
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 className={styles.subTitle}>Incoming Website Updates</h3>
+                    <ul>
+                        <li>
+                            Detailed roadmap
                         </li>
                         <li>
                             Responsiveness for tablets 
@@ -56,10 +71,16 @@ const Updates = () => {
                             Dark mode
                         </li>
                         <li>
-                            Page transition animations
+                            Page and text transition animations
                         </li>
                         <li>
-                            General UI updates
+                            User accounts
+                        </li>
+                        <li>
+                            Story annotation feature
+                        </li>
+                        <li>
+                            DIY stories functionality
                         </li>
                     </ul>
                 </section>
