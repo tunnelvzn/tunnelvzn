@@ -573,6 +573,7 @@ export const Envy = () => {
               />
             </div>
           </div>
+          <div className={styles.block}></div>
         </div>
       </div>
     </div>

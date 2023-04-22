@@ -49,7 +49,7 @@ const StoryContent = () => {
                     console.log('push route')
                     setNav(false)
 
-                }}><span className={`${styles.returnText}`}><Icon icon="akar-icons:arrow-back" color="#212121" width="30" height="30" /></span></button>
+                }}><span className={`${styles.returnIcon}`}><Icon icon="akar-icons:arrow-back" color="#212121" width="30" height="30" /></span></button>
             </div>
 
             <section className={`${styles.arrow} ${styles.bounce} text-center`}>

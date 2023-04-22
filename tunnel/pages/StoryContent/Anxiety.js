@@ -307,6 +307,7 @@ export const Anxiety = () => {
                         <div className={styles.textboxContainer}>
                             <StoryForm styles={styles} onSubmit={() => { setIsOpen(true) }} />
                         </div>
+                        <div className={styles.block}></div>
                     </div>
                 </div>
             </div>
