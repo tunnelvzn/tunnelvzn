@@ -8,10 +8,12 @@
   cursor: pointer; 
   height: 7vh; 
   opacity: 80%;
-  bottom: 0;
-  left: 0;
   margin-left: 2vh;
-  margin-bottom: 2vh;
+  // Uncomment the below commented lines and delete lines 15 and 16
+  // bottom: 0;
+  // margin-bottom: 2vh;
+  top: 0;
+  margin-top: 2vh;
   width: 7vh;
   border-radius: 50%;
   display: flex;

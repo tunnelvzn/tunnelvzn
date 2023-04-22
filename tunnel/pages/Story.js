@@ -24,7 +24,8 @@ export default function Story() {
 
   return (
    <>
-    <NavBar />
+   {/* I commented out the navbar on the story pages because interacting with it basically crashes the whole site */}
+    {/* <NavBar /> */}
     <StoryContent/>
    </>
   );
