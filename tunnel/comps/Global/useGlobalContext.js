@@ -30,6 +30,7 @@ export const GlobalProvider = ({ children }) => {
     const [intro, setIntro] = useState(true)
     const [storyName, setStoryName] = useState('')
     const [nav, setNav] = useState(false)
+    const [mainNav, setMainNav] = useState(true)
     const [loginModal, setLoginModal] = useState(false)
     useEffect(() => {
         const sessionIntro = sessionStorage.getItem('intro')
@@ -57,7 +58,7 @@ export const GlobalProvider = ({ children }) => {
         click.play()
     }
    return(
-    <GlobalContext.Provider value = {{intro, setIntro, audio, pause, setPause, route, setRoute, nav, setNav, storyName, setStoryName, db, auth,loginModal, setLoginModal,user, setUser, makeNoise}}> 
+    <GlobalContext.Provider value = {{intro, setIntro, audio, pause, setPause, route, setRoute, nav, setNav, storyName, setStoryName, db, auth,loginModal, setLoginModal,user, setUser, makeNoise, mainNav, setMainNav}}> 
         {children} 
     </GlobalContext.Provider>
    )

@@ -19,7 +19,8 @@ const StoryContent = () => {
         route,
         setRoute,
         setNav,
-        storyName
+        storyName,
+        setMainNav
     } =
         useContext(GlobalContext);
     const router = useRouter()
@@ -47,6 +48,7 @@ const StoryContent = () => {
                     sessionStorage.setItem("route", "/");
                     router.push('/')
                     console.log('push route')
+                    setMainNav(true)
                     setNav(false)
 
                 }}><span className={`${styles.returnIcon}`}><Icon icon="akar-icons:arrow-back" color="#212121" width={28} height={28} /></span></button>

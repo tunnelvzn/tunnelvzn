@@ -22,7 +22,8 @@ const Navbar = (props) => {
         setNav,
         user,
         auth,
-        makeNoise
+        makeNoise,
+        mainNav
       } = 
       useContext(GlobalContext);
       console.log("intro: ",intro)
@@ -54,7 +55,7 @@ const Navbar = (props) => {
     }
     // auth.currentUser.reload()
     console.log('from nav', auth.currentUser)
-    return (
+    return (mainNav &&
         <>  
             <div className= {`${styles.topUiBackground} w-100 d-flex text-center justify-content-between`}>
                 <div role="button" aria-label="sound toggle" className={styles.soundButton} onClick={()=> {toggleMusic()}}>

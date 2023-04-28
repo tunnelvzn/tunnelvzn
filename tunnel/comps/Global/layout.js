@@ -1,7 +1,8 @@
-import React from 'react';
+import {React, useContext} from 'react';
 import NavBar from '../NavBar'
-import {GlobalProvider} from './useGlobalContext'
+import {GlobalProvider, GlobalContext} from './useGlobalContext'
 const Layout = ({ children }) => {
+    const {nav} = useContext(GlobalContext);
   // Render your navbar component here
     return (
     <GlobalProvider>

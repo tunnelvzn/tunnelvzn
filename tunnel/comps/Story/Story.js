@@ -14,7 +14,8 @@ const Story = ({ id, name, contentImage}) => {
         nav, 
         setNav,
         setStoryName, 
-        storyName
+        storyName,
+        setMainNav
       } = 
       useContext(GlobalContext);
     let currImage = 'comingSoon.svg'
@@ -23,7 +24,7 @@ const Story = ({ id, name, contentImage}) => {
         <div className={styles.storyWrapper} onClick={()=> {setNav(false)}}>
             <div className='text-center ms-5 me-5'>
                 <div role="button" aria-label={`story about ${name}`} tabIndex="0" onClick={()=> {
-
+                    setMainNav(false)
                     router.push(`/Story?story=${name}`)
                     setStoryName(name)
                     console.log(name)
