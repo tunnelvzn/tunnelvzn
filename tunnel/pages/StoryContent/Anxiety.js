@@ -85,7 +85,7 @@ export const Anxiety = () => {
         <div className={styles.container}>
             <SuccessModal className="mt-5"
                 styles={styles}
-                message={'Thank you! Your feedback has been sent!'}
+                message={'Your feedback has been received!'}
                 isOpen={isOpen}
                 setIsOpen={setIsOpen} />
             <div className={styles.section}>
@@ -95,6 +95,7 @@ export const Anxiety = () => {
                 </div>
                 <div className={styles.words}>
                     <h1 className={styles.storyTitle}>Anxiety</h1>
+                    <p className={styles.storyFacts}>01.17.2023 · 10 min read</p>
                     <StoryReaction
                         view={view}
                         like={like}
@@ -104,8 +105,6 @@ export const Anxiety = () => {
                     />
 
                     <br />
-                    <br />
-                    <h2 className={styles.storySynopsis}>Preview:</h2>
                     <br />
                     <p>Mia tried to recover from her computer science midterm grade. Yet, being far away from her friends and family made it difficult to calm her mind.</p>
                 </div>

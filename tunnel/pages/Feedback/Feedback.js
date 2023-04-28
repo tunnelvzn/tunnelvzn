@@ -97,6 +97,7 @@ export const Feedback = ({}) => {
       {!submit && (
         <div className={styles.feedbackContent}>
           <div className={styles.block}></div>
+          <div className={styles.block}></div>
           <div className={`${styles.header} text-center`}>
             <h1 className={styles.feedbackTitle}>Feedback</h1>
             <h6>

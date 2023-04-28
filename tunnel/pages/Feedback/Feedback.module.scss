@@ -42,6 +42,9 @@
     margin-bottom: 1vh;
     font-size: 2.6vh;
 }
+.button:active {
+    opacity: 50%;
+}
 
 .submitScreenBtn {
     max-width: 40vh;
@@ -109,7 +112,7 @@
         margin-right: 25vw;
     }
     .feedbackTitle {
-        font-size: 8vw;
+        font-size: 10vw;
     }
     .submitScreenContent {
         margin-left: 20vh;

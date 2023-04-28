@@ -17,6 +17,9 @@
 .creditLink {
     color: #212121;
 }
+.creditLink:active {
+    opacity: 50%;
+}
 
 .memberVisDiv small {
     opacity: 50%;

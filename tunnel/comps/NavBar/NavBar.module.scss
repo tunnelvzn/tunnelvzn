@@ -35,6 +35,10 @@
     cursor: pointer;    
 }
 
+.menuButton:active, .soundButton:active {
+    opacity: 50%;
+}
+
 .topUiBackground {
     border-bottom: 1px solid #212121;
     position: fixed;
@@ -48,6 +52,10 @@
 .pageTabs a {
     color: #212121;
     cursor: pointer;    
+}
+
+.pageTabs a:active {
+    opacity: 50%;
 }
 
 .feedbackTab a {

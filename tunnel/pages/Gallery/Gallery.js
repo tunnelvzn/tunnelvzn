@@ -24,7 +24,7 @@ const Gallery = () => {
             <div id="horiscroll" className={styles.horizontalScroll}>
                 {stories.map(story => {
                     return (
-                        <Story id={ story.id} name={story.name} contentImage={story.image}/>
+                        <Story id={ story.id} name={story.name} contentImage={story.image} filterImage={story.filterImg}/>
                     )
                 })}
             </div>

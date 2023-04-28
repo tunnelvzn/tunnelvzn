@@ -14,6 +14,10 @@
     border: 0.5px solid #eaeaea;
 }
 
+.story:active {
+    opacity: 50%;
+}
+
 .comingSoonStory {
     cursor: default;
 }

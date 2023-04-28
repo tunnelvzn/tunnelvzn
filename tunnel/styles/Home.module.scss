@@ -98,6 +98,10 @@
   transition: all 0.3s ease-in-out;
   cursor: pointer;
 }
+.startBtn:active {
+  opacity: 50%;
+}
+
 .disclaimer {
   font-family: 'Klee One', cursive;
   position: absolute; 

@@ -18,7 +18,7 @@ p, h1, h2, h3, h4, h5, h6, small, label, a, li, button {
 }
 /* Handle on hover */
 div::-webkit-scrollbar-thumb:hover {
-  background: #6213ff;
+  background: #212121;
   margin-right: 20px;
   border-radius: 10px;
 }
@@ -31,8 +31,7 @@ div::-webkit-scrollbar {
 
 /* Track */
 div::-webkit-scrollbar-track {
-  background: #FFFFFF;
-  border: 1px solid lightgray;
+  background: #eaeaea;
   border-radius: 10px;
   margin-left: 30vw;
   margin-right: 30vw;
@@ -41,7 +40,6 @@ div::-webkit-scrollbar-track {
 /* Handle */
 div::-webkit-scrollbar-thumb {
   background: rgba(0, 0, 0, 0.2);
-  border: 1px solid lightgrey;
   border-radius: 10px;
 }
 

@@ -12,7 +12,7 @@ const Updates = () => {
         <>
         <div className={styles.updateBG}>
             <Head>
-                <title>Tunnel_vzn | Project Updates</title>
+                <title>Tunnel_vzn | Updates</title>
                 <link rel="icon" href="/favicon.png" />
             </Head>
             <div className={styles.updateContent}>

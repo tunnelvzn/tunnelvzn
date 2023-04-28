@@ -20,29 +20,53 @@
   vertical-align: middle;  
 }
 
+.closeLabel {
+  font-size: 2.6vh;
+  float: left;
+}
+
+.closeContainer {
+  height: 6vh;
+  border-bottom: 1px solid #eaeaea;
+}
+
+.closeIcon {
+  float: right;
+  cursor: pointer; 
+}
+
+.closeIcon:active {
+  opacity: 50%;
+}
+
+.storyFacts {
+  opacity: 50% !important;
+}
+
+.return:active {
+  opacity: 50%;
+}
+
 .returnIcon {
   margin: auto;
 }
 
 .submitImage {
-  height: 50vh;
-  width: 50vh;
+  height: 40vh;
+  width: 100%;
   position: relative;
   margin: auto;
 }
 
 .submitText {
+  text-align: center;
   margin-bottom: 4vh;
-}
-
-.popupBtnSpace {
-  margin-left: 2vh;
 }
 
 .modalDivOpen{
   background-color: rgba(0, 0, 0, 0.5);
-  width: 100vw;
-  height: 100vh;
+  width: 100%;
+  height: 100%;
   position: absolute;
   display: flex;
   justify-content: center;
@@ -50,7 +74,7 @@
 }
 
 .modalDivClose{
-  width: 100vw;
+  width: 0;
   height: 0;
   opacity: 0;
   position: absolute;
@@ -129,10 +153,6 @@
 .block {
   height: 13vh;
 }
-.storySynopsis {
-  font-size: 3vh;
-  text-decoration: underline;
-}
 
 .words {
   line-height: 3vh;
@@ -181,10 +201,8 @@
 .partnerLink {
   color: #212121;
 }
-
-.partnerLink:hover {
-  color: #6213ff !important;
-  text-decoration: none;
+.partnerLink:active {
+  opacity: 50%;
 }
 
 .importantContainer {
@@ -212,6 +230,10 @@
   padding: 2vh;
   border-radius: 20px;
   height: 22vh; 
+}
+
+.endStoryBtn:active {
+  opacity: 50%;
 }
 
 .endStoryBtn h6 a {
@@ -286,6 +308,10 @@
   height: 60px;
   background-color: #FFFFFF;
   font-size: 2.6vh;
+}
+
+.button:active {
+  opacity: 50%;
 }
 
 // --------------------RESPONSIVE DESIGN----------------------------------------
@@ -448,6 +474,10 @@
   .endStoryBtn:hover {
     margin-top: -1vh;
     box-shadow: 3px 3px #212121;
+  }
+  .partnerLink:hover {
+    color: #6213ff !important;
+    text-decoration: none;
   }
   .endStoryBtn {
     padding-right: 5vh;

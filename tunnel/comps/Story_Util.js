@@ -1,6 +1,8 @@
 import { runTransaction, doc, addDoc, collection,getDoc, setDoc} from "firebase/firestore";
 import Image from "next/image";
 import styles from "../pages/StoryContent/StoryContent.module.scss";
+import { useRouter } from 'next/router'
+import { Icon } from '@iconify/react';
 
 /**
  * change the button style and update attribute counts when onclick, upload new count to firebase based on story name
@@ -169,6 +171,13 @@ export function StoryForm(props) {
 export const SuccessModal = (props) => {
   const isOpen = props.isOpen;
   const setIsOpen = props.setIsOpen;
+
+  const {
+    setRoute,
+    setNav
+} =
+    useContext(GlobalContext);
+    const router = useRouter()
   return (
     <div
       className={`${
@@ -180,19 +189,24 @@ export const SuccessModal = (props) => {
           isOpen ? props.styles.modalDivContent : "d-none"
         } w-auto `}
       >
+        <div className={styles.closeContainer}>
+          <p className={styles.closeLabel}>Thank you!</p>
+          <Icon icon="material-symbols:close-rounded" color="#212121" width="35" height="35" className={styles.closeIcon} onClick={() => {setIsOpen(false);}}/>
+        </div>
         <div className={styles.submitImage}>
           <Image src="/shootingStars.svg" layout="fill" />
         </div>
         <h2 className={styles.submitText}>{props.message}</h2>
         <div className={styles.buttonContainer}>
-          <button
-            onClick={() => {
-              setIsOpen(false);
-            }}
-            className={styles.button}
-          >
-            Close
-          </button>
+
+        <button onClick={() => {
+                    setRoute('/')
+                    sessionStorage.setItem("route", "/");
+                    router.push('/')
+                    console.log('push route')
+                    setNav(false)
+                }} className={styles.button}>Return Home</button>
+
         </div>
       </div>
     </div>

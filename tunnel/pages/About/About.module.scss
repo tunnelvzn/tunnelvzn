@@ -2,14 +2,6 @@
     background-color: #FFFFFF;
 }
 
-.partnerLink {
-    color: #212121;
-  }
-  
-.partnerLink:hover {
-    color: #0d6efd;
-}
-
 .aboutTitle {
    margin-bottom: 10vh;
 }
@@ -29,6 +21,12 @@
 .partnerLink {
     color: #212121;
 }
+
+.partnerLink:active {
+    opacity: 50%;
+}
+
+
 
 // --------------------RESPONSIVE DESIGN----------------------------------------
 

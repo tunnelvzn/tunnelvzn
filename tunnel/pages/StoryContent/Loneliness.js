@@ -87,7 +87,7 @@ export const Loneliness = () => {
         <div className={styles.container}>
             <SuccessModal className="mt-5"
                 styles={styles}
-                message={'Thank you! Your feedback has been sent!'}
+                message={'Your feedback has been received!'}
                 isOpen={isOpen}
                 setIsOpen={setIsOpen} />
             <div className={styles.section}>
@@ -97,7 +97,7 @@ export const Loneliness = () => {
                 </div>
                 <div className={styles.words}>
                     <h1 className={styles.storyTitle}>Loneliness</h1>
-
+                    <p className={styles.storyFacts}>10.17.2022 · 10 min read</p>
                     <StoryReaction
                         view={view}
                         like={like}
@@ -107,8 +107,6 @@ export const Loneliness = () => {
                     />
 
                     <br />
-                    <br />
-                    <h2 className={styles.storySynopsis}>Preview:</h2>
                     <br />
                     <p>John chose to reside on campus because his commute prevented him from developing meaningful connections with others. However, he was in for a surprise.</p>
                 </div>

@@ -95,7 +95,7 @@ export const Envy = () => {
       <SuccessModal
         className="mt-5"
         styles={styles}
-        message={"Thank you! Your feedback has been sent!"}
+        message={"Your feedback has been received!"}
         isOpen={isOpen}
         setIsOpen={setIsOpen}
       />
@@ -110,18 +110,17 @@ export const Envy = () => {
           />
         </div>
         <div className={styles.words}>
-          <h1 className={styles.storyTitle}>Envy</h1>
-          <StoryReaction
-            view={view}
-            like={like}
-            love={love}
-            relate={relate}
-            insight={insight}
-          />
+            <h1 className={styles.storyTitle}>Envy</h1>
+            <p className={styles.storyFacts}>04.17.2023 · 10 min read</p>
+            <StoryReaction
+              view={view}
+              like={like}
+              love={love}
+              relate={relate}
+              insight={insight}
+            />
 
           <br />
-          <br />
-          <h2 className={styles.storySynopsis}>Preview:</h2>
           <br />
           <p>
             Rao compared himself to others so frequently that it drove him to

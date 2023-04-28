@@ -3,7 +3,7 @@ import Link from 'next/link'
 import { GlobalContext } from '../Global/useGlobalContext'
 import { useContext } from 'react'
 import { useRouter } from 'next/router';
-const Story = ({ id, name, contentImage }) => {
+const Story = ({ id, name, contentImage}) => {
     const router = useRouter()
     const {
         intro, 
@@ -29,7 +29,7 @@ const Story = ({ id, name, contentImage }) => {
                     console.log(name)
                     }}>
                     <div className={styles.story}>
-                        <img className={styles.story} src={`/../../galleryImages/${contentImage}`} />
+                        <img className={`${styles.story} ${styles.standardCover}`} src={`/../../galleryImages/${contentImage}`} />
                     </div>
                 </div>
                 <h6 className={styles.storyTitles}>{name}</h6>
