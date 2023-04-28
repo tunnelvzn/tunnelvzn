@@ -1,4 +1,4 @@
-import styles from './Updates.module.scss'
+import styles from './Updates/Updates.module.scss'
 import Head from 'next/head'
 import Link from 'next/link'
 import Footer from '/comps/Footer';

@@ -1,4 +1,4 @@
-import styles from './Credits.module.scss'
+import styles from './Credits/Credits.module.scss'
 import Image from 'next/image'
 import Footer from '/comps/Footer';
 import Link from 'next/link'

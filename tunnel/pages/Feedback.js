@@ -1,16 +1,17 @@
-import styles from "./Feedback.module.scss";
+import styles from "./Feedback/Feedback.module.scss";
 import Footer from "/comps/Footer";
 import Head from "next/head";
 import { useState, useContext, React, useRef } from "react";
 import Image from "next/image";
 import Link from "next/link";
-import { GlobalContext } from "../../comps/Global/useGlobalContext";
-import { Button } from "../../comps/Button";
+import { GlobalContext } from "../comps/Global/useGlobalContext";
+import { Button } from "../comps/Button";
 import { doc, setDoc, Timestamp, collection } from "firebase/firestore";
 import { async } from "@firebase/util";
 import { CSSTransition } from "react-transition-group";
-
+import { useRouter } from 'next/router';
 export const Feedback = ({}) => {
+  const router = useRouter()
   const [submit, setSubmit] = useState(false);
   const [error, setError] = useState("");
   const { setRoute, db } = useContext(GlobalContext);
@@ -283,6 +284,7 @@ export const Feedback = ({}) => {
               className={`${styles.button} ${styles.submitScreenBtn}`}
               onClick={() => {
                 setRoute("/");
+                router.push('/')
               }}
             >
               <h6>Go Back Home</h6>

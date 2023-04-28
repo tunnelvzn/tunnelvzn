@@ -5,13 +5,15 @@ import { useContext } from 'react'
 import { GlobalContext } from '../Global/useGlobalContext'
 import { FirebaseApp } from 'firebase/app'
 import { getAuth, createUserWithEmailAndPassword } from "firebase/auth";
+import { useRouter } from 'next/router';
 // content inside of hamburger icon
 function Subnav(props) {
+    const router = useRouter()
     const {
         intro,
         setIntro,
         audio,
-        route,
+    route,
         setRoute,
         nav,
         setNav,
@@ -65,6 +67,7 @@ function Subnav(props) {
                         setNav(false)
                         setUnderline(e)
                         makeNoise()
+                        router.push('/')
                     }}><a>Home</a>
                     </li>
 
@@ -74,6 +77,7 @@ function Subnav(props) {
                         setNav(false)
                         setUnderline(e)
                         makeNoise()
+                        router.push('/About')
                     }}><a>About</a>
                     </li>
 
@@ -83,6 +87,7 @@ function Subnav(props) {
                         setNav(false)
                         setUnderline(e)
                         makeNoise()
+                        router.push('/Feedback')
                     }}>
                         <a>Feedback</a>
                     </li>
@@ -93,6 +98,7 @@ function Subnav(props) {
                         setNav(false)
                         setUnderline(e)
                         makeNoise()
+                        router.push('/Updates')
                     }}><a>Updates</a>
                     </li>
 
@@ -102,6 +108,7 @@ function Subnav(props) {
                         setNav(false)
                         setUnderline(e)
                         makeNoise()
+                        router.push('/Credits')
                     }}><a>Credits</a>
                     </li>
                 </ol>

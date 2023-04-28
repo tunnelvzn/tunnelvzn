@@ -1,9 +1,9 @@
-import Story from "../../comps/Story"
-import styles from './Gallery.module.scss'
+import Story from "../comps/Story"
+import styles from './Gallery/Gallery.module.scss'
 import React from "react"
-import stories from '../../data/stories.json'
+import stories from '../data/stories.json'
 import Footer from '/comps/Footer';
-import { GlobalContext } from '../../comps/Global/useGlobalContext'
+import { GlobalContext } from '../comps/Global/useGlobalContext'
 import { useCallback, useContext } from "react"
 
 const Gallery = () => {

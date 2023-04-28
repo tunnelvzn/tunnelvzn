@@ -15,11 +15,12 @@ import About from './About/About';
 import { Icon } from '@iconify/react';
 import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, onAuthStateChanged, updateProfile } from "firebase/auth";
 import { doc, setDoc, getDoc, runTransaction } from "firebase/firestore";
-import Feedback from './Feedback/Feedback'
-
+import Feedback from './Feedback'
+import { useRouter } from 'next/router';
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
 export default function Home() {
+  const router = useRouter();
   const {
     intro,
     setIntro,
@@ -36,6 +37,7 @@ export default function Home() {
   const [initialLoad, setInitialLoad] = useState(true)
   const auth = getAuth();
 
+  const currentRoute = router.pathname;
   const CLIENT_ID = '397365732589-h80pt9uicbepf4ttimn2sjupfc9hbc4j.apps.googleusercontent.com';
   const API_KEY = 'AIzaSyD4sh7zqBRP7FAholgOLkTL6f6dQ12pZL0';
 
@@ -266,11 +268,8 @@ export default function Home() {
       }
 
       <div id="mainContent" className={`${styles.home} ${styles.mainElement} d-flex flex-column justify-content-center`} tabIndex={-1}>
-        {route == '/' && <Gallery />}
-        {route == '/About' && <About />}
-        {route == '/Credits' && <Credits />}
-        {route == '/Updates' && <Updates />}
-        {route == '/Feedback' && <Feedback/>}
+        {currentRoute == '/' && <Gallery />}
+     
       </div>
     </div>
   )
