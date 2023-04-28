@@ -70,7 +70,6 @@ export default function Home() {
         console.log(user)
         setUserDb(user)
         setLoginModal(false)
-        console.log()
       })
       .catch((error) => {
         const errorCode = error.code;
@@ -262,7 +261,6 @@ export default function Home() {
       <a className={styles.skipNavigationLink} href="#mainContent">
         Skip Navigation
       </a>
-      <NavBar />
       {
         loginModal && modalRet
       }

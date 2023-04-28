@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.css'
 import { GlobalProvider } from '../comps/Global/useGlobalContext'
 import Head from 'next/head'
 import { Analytics } from '@vercel/analytics/react';
+import Layout from '../comps/Global/layout'
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -30,9 +31,9 @@ function MyApp({ Component, pageProps }) {
         <meta name="twitter:description" content="A student ran organization telling stories inspired by the experiences of University of Washington students." />
         <meta name="twitter:image" content="https://i.postimg.cc/63LWSR9z/metaimg.png" />
       </Head>
-      <GlobalProvider>
-        <Component {...pageProps} />
-      </GlobalProvider>
+      <Layout>
+  <Component {...pageProps} />
+</Layout>
       <Analytics />
     </>
   )
