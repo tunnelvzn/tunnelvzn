@@ -217,7 +217,7 @@
 }
 
 .personImg {
-  z-index: 100;
+  z-index: 1;
   position: relative;
 }
 
@@ -235,6 +235,10 @@
   transition: all 0.3s ease-in-out;
   box-shadow: 0px 0px #212121;
   position: absolute;
+}
+
+.goHomeBtn:active {
+  opacity: 50%;
 }
 
 .goHomeBtn h6 {

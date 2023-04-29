@@ -28,10 +28,10 @@ const Updates = () => {
                     <h3 className={styles.subTitle}>Upcoming Content</h3>
                     <ul>
                         <li>
-                            Published stories are still subject to change due to new feedback.
+                            Published stories are still subject to change due to new feedback
                         </li>
                         <li>
-                            Story four is in early research and development.
+                            Story four is in early research and development
                         </li>
                     </ul>
                 </section>
@@ -39,28 +39,31 @@ const Updates = () => {
                     <h3 className={styles.subTitle}>Known Bugs</h3>
                     <ul>
                         <li>
-                            Incomplete routing causes missing headers on stories and a faulty audio mute button.
+                            Website title does not link back to the home
                         </li>
                         <li>
-                            Images on mobile stretched awkwardly.
+                            Images on mobile stretched awkwardly
                         </li>
                         <li>
-                            The return button is oddly shaped and positioned.
+                            Non-existent story reaction statistics on mobile
                         </li>
                         <li>
-                            Pages don't start from the beginning.
+                            Faulty screen reader menu button
                         </li>
                         <li>
-                            Non-existent story reaction statistics on mobile.
-                        </li>
-                        <li>
-                            Faulty screen reader menu button.
+                            Inconsistent scroll bar styles
                         </li>
                     </ul>
                 </section>
                 <section>
                     <h3 className={styles.subTitle}>Incoming Website Updates</h3>
                     <ul>
+                        <li>
+                            Better story reaction buttons
+                        </li>
+                        <li>
+                            Enhanced story scroll navigation
+                        </li>
                         <li>
                             Detailed roadmap
                         </li>
@@ -75,6 +78,9 @@ const Updates = () => {
                         </li>
                         <li>
                             User accounts
+                        </li>
+                        <li>
+                            Story sharing
                         </li>
                         <li>
                             Story annotation feature
