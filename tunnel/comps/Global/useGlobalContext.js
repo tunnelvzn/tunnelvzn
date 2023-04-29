@@ -30,7 +30,7 @@ export const GlobalProvider = ({ children }) => {
     const [intro, setIntro] = useState(true)
     const [storyName, setStoryName] = useState('')
     const [nav, setNav] = useState(false)
-    const [mainNav, setMainNav] = useState(true)
+    const [mainNav, setMainNav] = useState(false)
     const [loginModal, setLoginModal] = useState(false)
     useEffect(() => {
         const sessionIntro = sessionStorage.getItem('intro')
@@ -38,6 +38,8 @@ export const GlobalProvider = ({ children }) => {
         console.log(sessionIntro, sessionRoute)
         setRoute(sessionRoute == null? sessionRoute : '/')
         setIntro(sessionIntro == null? sessionIntro : true)
+        setMainNav(sessionIntro == null? false : true)
+        console.log(mainNav)
     }, intro)
     
     // Eclipse

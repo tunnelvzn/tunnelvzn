@@ -31,7 +31,8 @@ export default function Home() {
     setLoginModal,
     user,
     setUser,
-    db
+    db,
+    setMainNav
   } =
     useContext(GlobalContext);
   const [initialLoad, setInitialLoad] = useState(true)
@@ -201,13 +202,17 @@ export default function Home() {
   const yourFunction = async () => {
     await delay(6000);
     setInitialLoad(false)
-    console.log("Waited 6s");
+
   };
 
   yourFunction()
 
   console.log('load' ,route)
-
+  useEffect(() => {
+    if(!intro ) {
+      setMainNav(true)
+    }
+  },[intro])
   let introContent = (
     <div className={`${styles.introContent} d-flex flex-column justify-content-center`}>
       <Head>
@@ -224,6 +229,7 @@ export default function Home() {
         {!initialLoad &&
           <div role="button" aria-label="enter experience" tabIndex="0" className={styles.startBtn} onClick={() => {
             console.log('click')
+            setMainNav(true)
             setIntro(false);
             song.loop = true;
             song.play()
