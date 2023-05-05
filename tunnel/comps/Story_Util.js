@@ -194,7 +194,7 @@ export const SuccessModal = (props) => {
           <Icon icon="material-symbols:close-rounded" color="#212121" width="35" height="35" className={styles.closeIcon} onClick={() => {setIsOpen(false);}}/>
         </div>
         <div className={styles.submitImage}>
-          <Image src="/shootingStars.svg" layout="fill" />
+          <Image src="/shootingStars.svg" layout="fill" alt="hand drawn shooting stars"/>
         </div>
         <h2 className={styles.submitText}>{props.message}</h2>
         <div className={styles.buttonContainer}>

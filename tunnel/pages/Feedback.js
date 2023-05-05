@@ -271,7 +271,7 @@ export const Feedback = ({}) => {
           <div className={styles.block}></div>
           <div className="text-center">
             <div className={styles.submitImage}>
-              <Image src="/shootingStars.svg" layout="fill" />
+              <Image src="/shootingStars.svg" layout="fill" alt="hand drawn shooting stars"/>
             </div>
             <div className={styles.submitText}>
               <h2>Thank you for your feedback!</h2>

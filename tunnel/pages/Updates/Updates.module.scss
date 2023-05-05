@@ -26,6 +26,16 @@
     color: #212121;
 }
 
+.roadmapContain {
+    width: 100%;
+    height: 30vh;
+    position: relative;
+    .roadmapImg {
+        object-fit: contain;
+        position: absolute;
+    }
+}
+
 // --------------------RESPONSIVE DESIGN----------------------------------------
 
 // X-Small devices (portrait phones, less than 576px)
@@ -50,6 +60,9 @@
     .updateTitle {
         font-size: 15vw;
     }
+    .roadmapContain {
+        height: 45vh;
+    }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -60,5 +73,20 @@
     }
     .updateTitle {
         font-size: 10vw;
+    }
+    .roadmapContain {
+        height: 40vh;
+    }
+}
+
+@media (min-width: 992px) {
+    .roadmapContain {
+        height: 50vh;
+    }
+}
+
+@media (min-width: 1200px) {
+    .roadmapContain {
+        height: 55vh;
     }
 }

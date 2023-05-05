@@ -19,6 +19,12 @@ const Updates = () => {
                 <div className={styles.block}></div>
                 <h1 className={`${styles.updateTitle} text-center`}>Updates</h1>
                 <section>
+                <h3 className={styles.subTitle}>Roadmap</h3>
+                <div className={styles.roadmapContain}>
+                    <Image src="/updateImages/roadmap.png" layout="fill" className={styles.roadmapImg} alt="tunnel vision's roadmap from version one to five"/>
+                </div>
+                </section>
+                <section>
                     <h3 className={styles.subTitle}>Transparency Statement</h3>
                     <p>
                         We are actively improving user experience in two main aspects: content and website. We believe in transparency and maintaining good communication with students. Thus, the purpose of this page is to inform you about the state of the organization.
