@@ -78,7 +78,7 @@ export const Loneliness = () => {
     }, [])
 
     const toAddLike = (attribute, setState, state, iconId) => {
-        const icon = document.getElementById(iconId)
+        const icon = document.getElementById(iconId).parentNode;
         addLike(document, db, storyName, setState, state, attribute, icon)
     }
 
