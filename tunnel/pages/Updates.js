@@ -42,10 +42,7 @@ const Updates = () => {
                     <h3 className={styles.subTitle}>Known Bugs</h3>
                     <ul>
                         <li>
-                            Website title does not link back to the home
-                        </li>
-                        <li>
-                            Images on mobile stretched awkwardly
+                            Jarring tablet views
                         </li>
                         <li>
                             Non-existent story reaction statistics on mobile
@@ -62,13 +59,7 @@ const Updates = () => {
                     <h3 className={styles.subTitle}>Incoming Website Updates</h3>
                     <ul>
                         <li>
-                            Better story reaction buttons
-                        </li>
-                        <li>
                             Enhanced story scroll navigation
-                        </li>
-                        <li>
-                            Detailed roadmap
                         </li>
                         <li>
                             Responsiveness for tablets 
