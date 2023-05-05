@@ -6,11 +6,13 @@ import { useState, useContext } from 'react'
 import { Rotate as Hamburger } from 'hamburger-react'
 import ReactAudioPlayer from 'react-audio-player';
 import { GlobalContext } from '../Global/useGlobalContext'
+import { useRouter } from 'next/router'
 // npm install hamburger-react
 
 // content at the top of the page
 
 const Navbar = (props) => {
+    const router = useRouter()
     const {
         intro, 
         setIntro,
@@ -65,6 +67,7 @@ const Navbar = (props) => {
                     <section onClick={() => 
                         {
                             setRoute('/')
+                            router.push('/')
                             console.log(nav)
                             const allTags = document.getElementsByClassName('general-nav-tags')
                             for (let i = 0; i< allTags.length; i++ ) {

@@ -85,7 +85,7 @@ export const Envy = () => {
     fetchData().catch(console.log("hey"));
   }, []);
   const toAddLike = (attribute, setState, state, iconId) => {
-    const icon = document.getElementById(iconId);
+    const icon = document.getElementById(iconId).parentNode;
     addLike(document, db, storyName, setState, state, attribute, icon);
   };
 
@@ -531,7 +531,7 @@ export const Envy = () => {
                   toAddLike("relatable", setRelate, relate, "relateIcon");
                 }}
               >
-                <h6>
+                <div>
                   <Icon
                     id="relateIcon"
                     icon="mdi:people-check-outline"
@@ -539,8 +539,8 @@ export const Envy = () => {
                     height="25"
                     className={styles.reactIcon}
                   />
-                  Relatable
-                </h6>
+                 Relatable
+                </div>
               </div>
               <div
                 className={styles.endStoryBtn}
@@ -559,7 +559,7 @@ export const Envy = () => {
                     height="25"
                     className={styles.reactIcon}
                   />
-                  Insightful
+                 Insightful
                 </h6>
               </div>
             </div>

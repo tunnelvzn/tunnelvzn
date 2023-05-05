@@ -4,9 +4,6 @@ import Link from 'next/link'
 import Footer from '/comps/Footer';
 import Image from 'next/image'
 
-// Fred, do:
-// npm install react-bootstrap bootstrap
-
 const Updates = () => {
     return (  
         <>

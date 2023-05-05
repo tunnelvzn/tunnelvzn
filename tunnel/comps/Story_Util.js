@@ -62,6 +62,7 @@ const addLike = async (
     }
 
     likebtn.classList.add(styles.liked);
+    console.log(likebtn)
   }
 
   const sfDocRef = doc(db, "likes", storyName.toLowerCase());

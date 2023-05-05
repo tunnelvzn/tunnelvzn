@@ -114,7 +114,7 @@ export const Loneliness = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/lightRail.png" className={styles.storyImg} layout="fill" alt="John sitting on the lightrail train and looking out the window" />
+                    <Image src="/lonelinessImages/lightRail.png" className={styles.storyImg} layout="fill" alt="John sitting on the lightrail train and looking out the window"/>
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     During my usual commute to the University of Washington on the light rail, I couldn't help but stare out at the surroundings wishing my life was more vibrant. I realized that I wanted some company, but felt frustrated that I didn't have any.
@@ -125,7 +125,7 @@ export const Loneliness = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/uwStation.png" className={styles.storyImg} layout="fill" alt="John leaving the lightrail car and walking on the platform towards the exit" />
+                    <Image src="/lonelinessImages/uwStation.png" className={styles.storyImg} layout="fill" alt="John leaving the lightrail car and walking on the platform towards the exit" style={{objectFit: 'contain'}}/>
                 </div>
                 <p className={styles.words}>
                     I stepped off the light rail feeling a bit drained and made my way to my first class with a bit of reluctance. As I sat in my usual spot at the back of the lecture room, I couldn't help but notice my classmates engaging in lively conversations around me.
@@ -136,7 +136,7 @@ export const Loneliness = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/lectureRoom.png" className={styles.storyImg} layout="fill" alt="John alone in his lecture room" />
+                    <Image src="/lonelinessImages/lectureRoom.png" className={styles.storyImg} layout="fill" alt="John alone in his lecture room" style={{objectFit: 'contain'}}/>
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     As I sat in class, I found myself struggling to pay attention. I wondered if my daily commute had robbed me of opportunities to connect with others. I noticed my classmates laughing and having a good time as they chatted about all the latest events on and off campus, their club activities, and plans to hang out with friends. It made me realize how much I longed to have that same experience in my own life. It was a feeling that I couldn't shake off.
@@ -145,7 +145,7 @@ export const Loneliness = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/mccarty.png" className={styles.storyImg} layout="fill" alt="mccarty hall, a dorm building on the UW's campus" />
+                    <Image src="/lonelinessImages/mccarty.png" className={styles.storyImg} layout="fill" alt="mccarty hall, a dorm building on the UW's campus" style={{objectFit: 'contain'}}/>
                 </div>
                 <p className={styles.words}>
                     It's been a year since I had those thoughts, and now I'm in my Sophomore year and things are looking up. I'm excited to move into my on-campus dorm and finally have roommates to keep me company. It's a change I've been looking forward to for a while now.
@@ -156,7 +156,7 @@ export const Loneliness = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/dormStart.png" className={styles.storyImg} layout="fill" alt="John's new roommates talk while John is left in the background" />
+                    <Image src="/lonelinessImages/dormStart.png" className={styles.storyImg} layout="fill" alt="John's new roommates talk while John is left in the background" style={{objectFit: 'contain'}}/>
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     My roommates already knew each other and it quickly became clear that I was the outsider. Night after night, they would go out with their friends, leaving me feeling left out. I couldn't help but feel frustrated.
@@ -169,7 +169,7 @@ export const Loneliness = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/floor.png" className={styles.storyImg} layout="fill" alt="John discovers an umbrella on his lecture room floor" />
+                    <Image src="/lonelinessImages/floor.png" className={styles.storyImg} layout="fill" alt="John discovers an umbrella on his lecture room floor" style={{objectFit: 'contain'}}/>
                 </div>
                 <p className={styles.words}>
                     Four weeks have flown by and here I am at the end of another uneventful, wet, and cloudy Seattle day. As I'm getting ready to leave the Savery Hall classroom, I notice an umbrella on the floor. I assume it must have belonged to a student who was sitting in front of me.
@@ -180,7 +180,7 @@ export const Loneliness = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/staircase.png" className={styles.storyImg} layout="fill" alt="John catches up with his classmate at the stairwell to give back the umbrella" />
+                    <Image src="/lonelinessImages/staircase.png" className={styles.storyImg} layout="fill" alt="John catches up with his classmate at the stairwell to give back the umbrella" style={{objectFit: 'contain'}}/>
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     The classmate, who looks a bit surprised, thanks me with appreciation as I hand them the umbrella. As I am about to leave, she asks a strange question about why I always sit in the back of the class when most people prefer sitting near the front.
@@ -191,7 +191,7 @@ export const Loneliness = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/walking.png" className={styles.storyImg} layout="fill" alt="John and his classmate walk out of the building while talking" />
+                    <Image src="/lonelinessImages/walking.png" className={styles.storyImg} layout="fill" alt="John and his classmate walk out of the building while talking" style={{objectFit: 'contain'}}/>
                 </div>
                 <p className={styles.words}>
                     I start to joke about the need for an umbrella when living in Seattle, and my classmate laughs it off and mentions that she is new to the area. We start talking about the classes we're taking and our post-graduation plans. My classmate tells me about herself and how her first quarter is going, and she wants to hear my thoughts about course content and stress.
@@ -202,7 +202,7 @@ export const Loneliness = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/redSquare.png" className={styles.storyImg} layout="fill" alt="John and his new friend part ways at red square" />
+                    <Image src="/lonelinessImages/redSquare.png" className={styles.storyImg} layout="fill" alt="John and his new friend part ways at red square" style={{objectFit: 'contain'}}/>
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     We stop at the entrance of Red Square, and I share my thoughts with my classmate. They seem to appreciate my “advice”, so I feel pretty satisfied with myself. As our conversation comes to a close, my classmate asks if we can exchange Discord handles, which I happily agree to. We chat some more before going our separate ways.
@@ -211,7 +211,7 @@ export const Loneliness = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/hub.png" className={styles.storyImg} layout="fill" alt="John waits in line at the hub to get food" />
+                    <Image src="/lonelinessImages/hub.png" className={styles.storyImg} layout="fill" alt="John waits in line at the hub to get food" style={{objectFit: 'contain'}}/>
                 </div>
                 <p className={styles.words}>
                     I decide to grab food at the Hub before returning to my room. As I stand in line to place my order, I can't help but reflect on the events of the day. I reminisce about the times when I struggled to initiate conversations and how badly I failed. Today, I feel accepted by society, and I'm also happy that I was able to help out my new friend in some way. It's a warm feeling that I can't help but smile about.
@@ -220,7 +220,7 @@ export const Loneliness = () => {
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
                 <div className={styles.imgFrame}>
-                    <Image src="/lonelinessImages/hubExit.png" className={styles.storyImg} layout="fill" alt="John spots his two roommates leave the hub" />
+                    <Image src="/lonelinessImages/hubExit.png" className={styles.storyImg} layout="fill" alt="John spots his two roommates leave the hub" style={{objectFit: 'contain'}}/>
                 </div>
                 <p className={`${styles.words} ${styles.offset}`}>
                     As I'm getting ready to leave the Hub after finishing my meal, I spot my roommates walking out ahead of me. Seeing them breaks my illusion that I’m in a good position and reminds me of the ongoing tension between us. I contemplate how to approach them.
