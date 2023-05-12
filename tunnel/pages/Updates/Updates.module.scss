@@ -27,14 +27,22 @@
 }
 
 .roadmapContain {
-    width: 100%;
-    height: 30vh;
+    border: 1px solid #212121;
     position: relative;
-    .roadmapImg {
-        object-fit: contain;
-        position: absolute;
-    }
+    margin: 0 !important;
+    height: calc(90vw / 2);
+    width: 90vw;
 }
+
+// .roadmapContain {
+//     width: 100%;
+//     height: 30vh;
+//     position: relative;
+//     .roadmapImg {
+//         object-fit: contain;
+//         position: absolute;
+//     }
+// }
 
 // --------------------RESPONSIVE DESIGN----------------------------------------
 
@@ -60,9 +68,13 @@
     .updateTitle {
         font-size: 15vw;
     }
+    // .roadmapContain {
+    //     height: 45vh;
+    // }
     .roadmapContain {
-        height: 45vh;
-    }
+        height: calc(80vw / 2);
+        width: 80vw;
+      }
 }
 
 // Medium devices (tablets, 768px and up)
@@ -74,19 +86,40 @@
     .updateTitle {
         font-size: 10vw;
     }
+    // .roadmapContain {
+    //     height: 40vh;
+    // }
     .roadmapContain {
-        height: 40vh;
-    }
+        height: calc( 60vw / 2);
+        width: 60vw;
+      }
 }
 
 @media (min-width: 992px) {
+    // .roadmapContain {
+    //     height: 50vh;
+    // }
     .roadmapContain {
-        height: 50vh;
-    }
+        margin-left: 2vh;
+        margin-right: 2vh;
+        height: calc( 60vw / 2);
+        width: 60vw;
+      }
 }
 
 @media (min-width: 1200px) {
+    // .roadmapContain {
+    //     height: 55vh;
+    // }
     .roadmapContain {
-        height: 55vh;
-    }
+        height: calc( 60vw / 2);
+        width: 60vw;
+      }
 }
+
+@media (min-width: 1400px) {
+    .roadmapContain {
+      height: calc( 60vw / 2);
+      width: 60vw;
+    }
+  }

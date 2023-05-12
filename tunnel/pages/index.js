@@ -17,6 +17,7 @@ import { getAuth, signInWithEmailAndPassword, createUserWithEmailAndPassword, on
 import { doc, setDoc, getDoc, runTransaction } from "firebase/firestore";
 import Feedback from './Feedback'
 import { useRouter } from 'next/router';
+import Button from '/comps/Button';
 
 const delay = ms => new Promise(res => setTimeout(res, ms));
 export default function Home() {
@@ -225,8 +226,20 @@ export default function Home() {
       {/* Comment the below line out when you work on the code and uncomment the section stuff */}
       {/* <h1 className={`${styles.introSubHeader} text-center`}>We are currently adding our third story! Check back at 5PM PST!</h1> */}
 
-      <section className={styles.firstContactBtn}>
+      <section>
         {!initialLoad &&
+          // HELP ME HELP ME HELP ME HELP ME HELP ME HELP ME HELP ME HELP ME HELP ME HELP ME
+          // <Button aria-label="enter experience" onClick={() => {
+          //     console.log('click')
+          //     setMainNav(true)
+          //     setIntro(false);
+          //     song.loop = true;
+          //     song.play()
+          //     sessionStorage.setItem("intro", "false");
+          //     sessionStorage.setItem("route", "/");
+          //   }}>
+          //     Start The Experience
+          // </Button>
           <div role="button" aria-label="enter experience" tabIndex="0" className={styles.startBtn} onClick={() => {
             console.log('click')
             setMainNav(true)

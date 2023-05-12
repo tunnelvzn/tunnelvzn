@@ -8,9 +8,6 @@
   cursor: pointer; 
   height: 7vh; 
   margin-left: 2vh;
-  // Uncomment the below commented lines and delete lines 15 and 16
-  // bottom: 0;
-  // margin-bottom: 2vh;
   top: 0;
   margin-top: 2vh;
   width: 7vh;
@@ -262,12 +259,15 @@
 
 
 .liked {
-  color: #6213ff !important;
+  color: #212121 !important;
+  text-decoration: underline !important;
   svg{
-    color: #6213ff;
+    color: #212121;
+    text-decoration: underline !important;
   }
   h6{
-    color: #6213ff !important;
+    color: #212121 !important;
+    text-decoration: underline !important;
   }
 }
 
@@ -434,7 +434,6 @@
   .formContainer {
     margin-left: 10vh;
     margin-right: 10vh;
-    // margin-top: 5vh;
   }
   .endStoryBtn {
     padding-left: 5vh;
@@ -482,10 +481,6 @@
     margin-top: -1vh;
     box-shadow: 3px 3px #212121;
   }
-  .partnerLink:hover {
-    color: #6213ff !important;
-    text-decoration: none;
-  }
   .endStoryBtn {
     padding-right: 5vh;
     padding-left: 5vh;
@@ -495,10 +490,6 @@
     margin-top: -1vh;
     box-shadow: 3px 3px #212121;
   }
-  // Uncomment this when the short answer is added.
-  // .choiceContainer {
-  //   display: flex;
-  // }
   .tooltip:hover .tooltiptext {
     visibility: visible;
     opacity: 1;
@@ -514,7 +505,6 @@
   .formContainer {
     margin-left: 25vh;
     margin-right: 25vh;
-    margin-top: 10vh;
   }
   .imgFrame {
     height: calc( 40vw / 1.5);

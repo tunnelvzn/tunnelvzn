@@ -12,7 +12,7 @@ export const Button = (props) => {
     return (
         <>
             {size == undefined &&
-                <button className={styles.button}> {children}</button>}
+                <button className={styles.button}>{children}</button>}
             {size == "large" && 
             <button className={styles.largeButton}>{children}</button>}
         </>

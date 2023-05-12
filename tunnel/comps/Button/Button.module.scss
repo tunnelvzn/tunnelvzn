@@ -1,36 +1,60 @@
 .button {
-    margin-left: 2vh;
-    margin-right: 2vh;
-    z-index: 200;
-    border: 1px solid #212121;
-    padding-left: 4vh;
-    padding-right: 4vh;
-    border-radius: 100px;
-    box-shadow: 0px 0px #212121;
-    margin-bottom: 1vh;
-    margin-top: 1.2vh;
-    transition: all 0.3s ease-in-out;
+    // structure
     display: flex;
     justify-content: center;
     flex-direction: column;
-    cursor: pointer;   
+    z-index: 200;
+    border-radius: 100px;
+    height: 4.2vh;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;    
+
+    // paddings
+    padding-left: 4vh;
+    padding-right: 4vh;
+    padding-top: 3vh;
+    padding-bottom: 3vh;
+
+    // color styles
+    box-shadow: 0px 0px #212121;
+    background-color: #ffffff;
+    border: 1px solid #212121; 
+    font-size: 2vh;  
 }
 
 .largeButton {
-    margin-left: 2vh;
-    margin-right: 2vh;
-    z-index: 200;
-    border: 1px solid #212121;
-    padding: 5vh;
-    padding-left: 5vh;
-    padding-right: 5vh;
-    border-radius: 100px;
-    box-shadow: 0px 0px #212121;
-    margin-bottom: 1vh;
-    margin-top: 1.2vh;
-    transition: all 0.3s ease-in-out;
+    // structure
     display: flex;
     justify-content: center;
     flex-direction: column;
-    cursor: pointer;   
+    z-index: 200;
+    border-radius: 100px;
+    height: 4.2vh;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;    
+
+    // paddings
+    padding-left: 8vh;
+    padding-right: 8vh;
+    padding-top: 4vh;
+    padding-bottom: 4vh;
+
+    // color styles
+    box-shadow: 0px 0px #212121;
+    background-color: #ffffff;
+    border: 1px solid #212121;   
+    font-size: 2.5vh;
 }
+
+.button:active, .largeButton:active {
+    opacity: 50%;
+}
+
+// Large devices (desktops, 992px and up)
+@media (min-width: 992px) {
+    .button:hover, .largeButton:hover {
+        box-shadow: 3px 3px #212121;
+        border: 1px solid #212121;
+    }
+}
+

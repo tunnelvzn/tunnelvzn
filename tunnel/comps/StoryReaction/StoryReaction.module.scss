@@ -53,21 +53,9 @@
   .reactionCount .circle {
     margin-left: -2vh;
   }
-  
-
-
-  // --------------------RESPONSIVE DESIGN----------------------------------------
-  
-
-  
-  
-  // Large devices (desktops, 992px and up)
-  @media (min-width: 992px) {
-    .tooltip:hover .tooltiptext {
-        display: inline;
-      visibility: visible;
-      opacity: 1;
-    }
-   
+  .tooltip:hover .tooltiptext {
+    display: inline;
+    visibility: visible;
+    opacity: 1;
   }
  

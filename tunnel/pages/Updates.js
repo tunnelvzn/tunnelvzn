@@ -42,12 +42,6 @@ const Updates = () => {
                     <h3 className={styles.subTitle}>Known Bugs</h3>
                     <ul>
                         <li>
-                            Jarring tablet views
-                        </li>
-                        <li>
-                            Non-existent story reaction statistics on mobile
-                        </li>
-                        <li>
                             Faulty screen reader menu button
                         </li>
                         <li>
