@@ -133,7 +133,7 @@ export function StoryForm(props) {
   };
 
   return (
-    <>
+    <div className={styles.questionContainer}>
       <div>
         <label className={`${styles.question} mb-1`}>
           Any feedback about the story? What should be changed? What do you want
@@ -165,7 +165,7 @@ export function StoryForm(props) {
           Submit
         </button>
       </div>
-    </>
+    </div>
   );
 }
 

@@ -215,6 +215,7 @@
   padding: 3vh;
   margin-left: 2vh;
   margin-right: 2vh;
+  max-width: 90vh;
   background-color: white;
 }
 
@@ -225,6 +226,10 @@
   padding: 2vh;
   border-radius: 20px;
   height: 22vh; 
+}
+
+.questionContainer {
+  padding-bottom: 1vh;
 }
 
 .endStoryBtn:active {
@@ -279,7 +284,6 @@
 
 .buttonContainer {
   height: 8vh;
-  padding-bottom: 1vh;
 }
 
 .reactIcon {
@@ -418,6 +422,9 @@
 
 // Medium devices (tablets, 768px and up)
 @media (min-width: 768px) {
+  .block {
+    height: 6vh;
+  }
   .arrow {
     margin-top: 89vh;
     display: block;
@@ -450,14 +457,14 @@
 
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
+  .block {
+    display: none;
+  }
   .arrow {
     margin-top: 85vh;
   }
   .storyTitle {
     font-size: 10vh;
-  }
-  .block {
-    display: none;
   }
   .section {
     display: flex;
