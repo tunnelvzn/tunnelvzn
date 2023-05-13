@@ -264,14 +264,15 @@
 
 
 .liked {
-  color: #212121 !important;
+  background-color: #212121;
+  color: white!important;
   text-decoration: underline !important;
   svg{
-    color: #212121;
+    color: white;
     text-decoration: underline !important;
   }
   h6{
-    color: #212121 !important;
+    color: white !important;
     text-decoration: underline !important;
   }
 }
@@ -368,8 +369,8 @@
   .choiceContainer {
     display: grid;
     grid-template-columns: 2fr 2fr;
-    grid-column-gap: 10px;
-    grid-row-gap: 10px;
+    // grid-column-gap: 10px;
+    // grid-row-gap: 10px;
   }
 }
 

@@ -7,14 +7,14 @@ import ReactAudioPlayer from 'react-audio-player';
 import { GlobalContext } from '../Global/useGlobalContext'
 
 export const Button = (props) => {
-    const { size, children } = props;
+    const { size, children, onClick } = props;
 
     return (
         <>
             {size == undefined &&
-                <button className={styles.button}>{children}</button>}
+                <button className={styles.button} onClick={() => onClick()}>{children}</button>}
             {size == "large" && 
-            <button className={styles.largeButton}>{children}</button>}
+            <button className={styles.largeButton} onClick={() => onClick()}>{children}</button>}
         </>
     )
 }

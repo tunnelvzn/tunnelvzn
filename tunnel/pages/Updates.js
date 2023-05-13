@@ -7,7 +7,7 @@ import Image from 'next/image'
 const Updates = () => {
     return (  
         <>
-        <div className={styles.updateBG}>
+        <div  className={`${styles.container} ${styles.updateBG}`} >
             <Head>
                 <title>Tunnel_vzn | Updates</title>
                 <link rel="icon" href="/favicon.png" />

@@ -7,7 +7,7 @@ import Head from 'next/head'
 const Credits = () => {
     return (
         <>
-            <div>
+            <div  className={`${styles.container}`}>
                 <Head>
                     <title>Tunnel_vzn | Credits</title>
                     <link rel="icon" href="/favicon.png" />

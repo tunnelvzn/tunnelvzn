@@ -90,7 +90,7 @@ export const Feedback = ({}) => {
   };
 
   return (
-    <>
+    <div className={`${styles.container}`} >
       <Head>
         <title>Tunnel_vzn | Feedback</title>
         <link rel="icon" href="/favicon.png" />
@@ -294,7 +294,7 @@ export const Feedback = ({}) => {
         </div>
       )}
       <Footer />
-    </>
+    </div>
   );
 };
 

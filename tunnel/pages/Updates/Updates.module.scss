@@ -34,6 +34,38 @@
     width: 90vw;
 }
 
+/* Handle on hover */
+div.container::-webkit-scrollbar-thumb:hover {
+    background: #212121;
+    margin-right: 20px;
+    border-radius: 10px;
+  }
+  
+  div.container::-webkit-scrollbar {
+    border-radius: 10px;
+    height: 5px;
+    width: 5px;
+  }
+  
+  /* Track */
+  div.container::-webkit-scrollbar-track {
+    background: #eaeaea;
+    border-radius: 10px;
+    margin-left: 30vw;
+    margin-right: 30vw;
+  }
+  
+  /* Handle */
+  div.container::-webkit-scrollbar-thumb {
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 10px;
+  }
+  
+  .container {
+      max-height: 95vh;
+      overflow-y: scroll;
+  }
+
 // .roadmapContain {
 //     width: 100%;
 //     height: 30vh;

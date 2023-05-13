@@ -10,7 +10,7 @@ import Footer from '/comps/Footer';
 const About = () => {
     return (  
         <>
-        <div className={styles.aboutBG}>
+        <div className={`${styles.aboutBG} ${styles.container}`}>
             <Head>
                 <title>Tunnel_vzn | About</title>
                 <link rel="icon" href="/favicon.png" />

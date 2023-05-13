@@ -43,14 +43,14 @@ const addLike = async (
       console.log("Sorry, that is not a valid fruit.");
       break;
   }
-
-  console.log(like);
+  const btnDiv = btn.parentNode
+  console.log(btn.parentNode);
   let updateValue = 0;
   let likebtn = btn;
 
-  if (likebtn.classList.contains(styles.liked)) {
+  if (btnDiv.classList.contains(styles.liked)) {
     setLike(like - 1);
-    likebtn.classList.remove(styles.liked);
+    btnDiv.classList.remove(styles.liked);
     updateValue = like - 1;
   } else {
     if (like === undefined) {
@@ -61,8 +61,8 @@ const addLike = async (
       updateValue = like + 1;
     }
 
-    likebtn.classList.add(styles.liked);
-    console.log(likebtn)
+    btnDiv.classList.add(styles.liked);
+    console.log(btnDiv)
   }
 
   const sfDocRef = doc(db, "likes", storyName.toLowerCase());
