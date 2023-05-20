@@ -228,7 +228,7 @@ export default function Home() {
 
       <section>
         {!initialLoad &&
-          <Button aria-label="enter experience" size="large" onClick={() => {
+          <Button aria-label="enter experience"  center={true} size="large" onClick={() => {
               console.log('click')
               setMainNav(true)
               setIntro(false);

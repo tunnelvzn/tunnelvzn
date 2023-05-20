@@ -15,7 +15,7 @@ import { setConfig } from "next/config";
 import addLike from "../../comps/Story_Util";
 import {StoryForm, SuccessModal } from "../../comps/Story_Util";
 import StoryReaction from "../../comps/StoryReaction/StoryReaction";
-export const Loneliness = () => {
+export const Loneliness = (props) => {
 
     const [like, setLike] = useState(0)
     const [love, setLove] = useState(0)
@@ -83,8 +83,9 @@ export const Loneliness = () => {
     }
 
     const [isOpen, setIsOpen] = useState(false)
+    console.log('ref',  props.ref)
     return (
-        <div className={styles.container}>
+        <div className={`${styles.container} storyDiv`} ref={props.ref}>
             <SuccessModal className="mt-5"
                 styles={styles}
                 message={'Your feedback has been received!'}

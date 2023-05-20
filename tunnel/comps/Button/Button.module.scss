@@ -22,6 +22,10 @@
     font-size: 2vh;  
 }
 
+.centerBtn {
+    margin: auto;
+}
+
 .largeButton {
     // structure
     display: flex;
@@ -34,7 +38,7 @@
     cursor: pointer;   
     
     // THIS IS ONLY TO CENTER THE BUTTON BUT I DON"T WANT IT TO BE ALWAYS ON
-    margin: auto;
+
 
     // paddings
     padding-left: 8vh;
