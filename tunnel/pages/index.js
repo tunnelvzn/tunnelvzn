@@ -228,28 +228,17 @@ export default function Home() {
 
       <section>
         {!initialLoad &&
-          // <Button aria-label="enter experience" onClick={() => {
-          //     console.log('click')
-          //     setMainNav(true)
-          //     setIntro(false);
-          //     song.loop = true;
-          //     song.play()
-          //     sessionStorage.setItem("intro", "false");
-          //     sessionStorage.setItem("route", "/");
-          //   }}>
-          //     Start The Experience
-          // </Button>
-          <div role="button" aria-label="enter experience" tabIndex="0" className={styles.startBtn} onClick={() => {
-            console.log('click')
-            setMainNav(true)
-            setIntro(false);
-            song.loop = true;
-            song.play()
-            sessionStorage.setItem("intro", "false");
-            sessionStorage.setItem("route", "/");
-          }}>
-            Start The Experience
-          </div>
+          <Button aria-label="enter experience" size="large" onClick={() => {
+              console.log('click')
+              setMainNav(true)
+              setIntro(false);
+              song.loop = true;
+              song.play()
+              sessionStorage.setItem("intro", "false");
+              sessionStorage.setItem("route", "/");
+            }}>
+              Start The Experience
+          </Button>
         }
         {initialLoad &&
           <section className={styles.center}>

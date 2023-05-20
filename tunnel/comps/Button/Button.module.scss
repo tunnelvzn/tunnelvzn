@@ -31,7 +31,10 @@
     border-radius: 100px;
     height: 4.2vh;
     transition: all 0.3s ease-in-out;
-    cursor: pointer;    
+    cursor: pointer;   
+    
+    // THIS IS ONLY TO CENTER THE BUTTON BUT I DON"T WANT IT TO BE ALWAYS ON
+    margin: auto;
 
     // paddings
     padding-left: 8vh;
@@ -53,7 +56,7 @@
 // Large devices (desktops, 992px and up)
 @media (min-width: 992px) {
     .button:hover, .largeButton:hover {
-        box-shadow: 3px 3px #212121;
+        box-shadow: 4px 4px #212121;
         border: 1px solid #212121;
     }
 }

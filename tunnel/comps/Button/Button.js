@@ -13,7 +13,7 @@ export const Button = (props) => {
         <>
             {size == undefined &&
                 <button className={styles.button} onClick={() => onClick()}>{children}</button>}
-            {size == "large" && 
+            {size == "large" &&
             <button className={styles.largeButton} onClick={() => onClick()}>{children}</button>}
         </>
     )
