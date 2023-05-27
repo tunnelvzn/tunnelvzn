@@ -85,18 +85,18 @@ export const Loneliness = (props) => {
     const [isOpen, setIsOpen] = useState(false)
     console.log('ref',  props.ref)
     return (
-        <div className={`${styles.container} storyDiv`} ref={props.ref}>
+        <div className={`${styles.container}  storyDiv`} ref={props.ref}>
             <SuccessModal className="mt-5"
                 styles={styles}
                 message={'Your feedback has been received!'}
                 isOpen={isOpen}
                 setIsOpen={setIsOpen} />
-            <div className={styles.section}>
+            <div className={`${styles.section}`}> 
                 <div className={styles.block}></div>
-                <div className={styles.imgFrame}>
+                <div className={`${styles.imgFrame} ${styles.fadeIn}`}>
                     <Image src="/lonelinessImages/cover.png" className={styles.storyImg} layout="fill" alt="a dude named John walking past a bench looking downwards" />
                 </div>
-                <div className={styles.words}>
+                <div className={`${styles.words} ${styles.fadeIn}`}>
                     <h1 className={styles.storyTitle}>Loneliness</h1>
                     <p className={styles.storyFacts}>10.17.2022 · 10 min read</p>
                     <StoryReaction

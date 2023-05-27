@@ -90,10 +90,10 @@ export const Anxiety = () => {
                 setIsOpen={setIsOpen} />
             <div className={styles.section}>
                 <div className={styles.block}></div>
-                <div className={styles.imgFrame}>
+                <div className={`${styles.imgFrame} ${styles.fadeIn}`}>
                     <Image src="/anxietyImages/cover.png" className={styles.storyImg} layout="fill" alt="A girl named mia walking with a cup of coffee in her hand while chaos rages in her head" />
                 </div>
-                <div className={styles.words}>
+                <div className={`${styles.words} ${styles.fadeIn}`}>
                     <h1 className={styles.storyTitle}>Anxiety</h1>
                     <p className={styles.storyFacts}>01.17.2023 · 10 min read</p>
                     <StoryReaction

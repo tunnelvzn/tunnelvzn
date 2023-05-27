@@ -103,7 +103,7 @@ export const Envy = () => {
       />
       <div className={styles.section}>
         <div className={styles.block}></div>
-        <div className={styles.imgFrame}>
+        <div className={`${styles.imgFrame} ${styles.fadeIn}`}>
           <Image
             src="/envyImages/cover.png"
             className={styles.storyImg}
@@ -111,7 +111,7 @@ export const Envy = () => {
             alt="A boy named Rao sitting on a bench and staring at the cherry blossom tree branches"
           />
         </div>
-        <div className={styles.words}>
+        <div className={`${styles.words} ${styles.fadeIn}`}>
             <h1 className={styles.storyTitle}>Envy</h1>
             <p className={styles.storyFacts}>04.17.2023 · 10 min read</p>
             <StoryReaction
