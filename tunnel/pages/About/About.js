@@ -10,12 +10,12 @@ import Footer from '/comps/Footer';
 const About = () => {
     return (  
         <>
-        <div className={`${styles.aboutBG} ${styles.container}`}>
+        <div className={`${styles.aboutBG} ${styles.container} `}>
             <Head>
                 <title>Tunnel_vzn | About</title>
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <div className={styles.aboutContent}>
+            <div className={`${styles.aboutContent} fadeIn`}>
                 <div className={styles.block}></div>
                 <div>
                     <h1 className={`${styles.aboutTitle} text-center`}>About Us</h1>

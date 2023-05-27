@@ -96,7 +96,7 @@ export const Feedback = ({}) => {
         <link rel="icon" href="/favicon.png" />
       </Head>
       {!submit && (
-        <div className={styles.feedbackContent}>
+        <div className={`${styles.feedbackContent} fadeIn`}>
           <div className={styles.block}></div>
           <div className={styles.block}></div>
           <div className={`${styles.header} text-center`}>

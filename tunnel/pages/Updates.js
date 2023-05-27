@@ -12,7 +12,7 @@ const Updates = () => {
                 <title>Tunnel_vzn | Updates</title>
                 <link rel="icon" href="/favicon.png" />
             </Head>
-            <div className={styles.updateContent}>
+            <div className={`${styles.updateContent} fadeIn`}>
                 <div className={styles.block}></div>
                 <h1 className={`${styles.updateTitle} text-center`}>Updates</h1>
                 <section>
