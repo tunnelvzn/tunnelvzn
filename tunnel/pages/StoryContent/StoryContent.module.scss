@@ -365,7 +365,7 @@
     width: auto;
     margin-left: 2vh;
     margin-right: 2vh;
-    font-size: 1.9vh;
+    font-size: 16px;
   }
   .imgFrame {
     border: 1px solid #212121;
@@ -404,7 +404,7 @@
     width: auto;
     margin-left: 2vh;
     margin-right: 2vh;
-    font-size: 2vh;
+    font-size: 16px;
   }
   .section {
     scroll-snap-align: start;
@@ -533,7 +533,7 @@
 // XX-Large devices (larger desktops, 1400px and up)
 @media (min-width: 1400px) {
   .words {
-    font-size: 2.3vh;
+    font-size: 20px;
   }
   .imgFrame {
     height: calc( 40vw / 1.5);
