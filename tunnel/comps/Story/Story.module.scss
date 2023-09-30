@@ -33,7 +33,7 @@
 // X-Small devices (portrait phones, less than 576px)
 @media (max-width: 575.98px) {
     .storyTitles {
-        font-size: 2vh;
+        font-size: 16px;
     }
     .storyWrapper {
         margin-right: -2vh;
@@ -45,7 +45,7 @@
 // Small devices (landscape phones, 576px and up)
 @media (min-width: 576px) {
     .storyTitles {
-        font-size: 2vh;
+        font-size: 16px;
     }
     .storyWrapper {
         margin-top: 8vh;
