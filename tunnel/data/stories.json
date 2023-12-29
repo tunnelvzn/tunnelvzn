@@ -14,22 +14,12 @@
     "image": "envy.svg"
 },
 {
-    "id": "null", 
-    "name": "coming soon",
-    "image": "comingSoon.svg"
+    "id": "4", 
+    "name": "Burn Out",
+    "image": "burnout.svg"
 },
 {
-    "id": "null", 
-    "name": "coming soon",
-    "image": "comingSoon.svg"
-},
-{
-    "id": "null", 
-    "name": "coming soon",
-    "image": "comingSoon.svg"
-},
-{
-    "id": "null", 
-    "name": "coming soon",
+    "id": "5", 
+    "name": "Epilogue",
     "image": "comingSoon.svg"
 }]
