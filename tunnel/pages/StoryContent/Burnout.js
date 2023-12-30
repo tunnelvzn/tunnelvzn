@@ -280,6 +280,8 @@ export const Burnout = () => {
           have been if everyone cared more and showed up. I can’t get this out of my 
           mind. “I’ve finished my parts at least, and I have to go to class now,” 
           Mia proclaims. “Yup, see you later,” I respond. And then there was one. 
+          <br/>
+          <br/>
           Focusing on the task at hand was difficult. Dang, 45 minutes, and I still 
           don’t feel like doing my portion. My eyes glanced at the team chat every 
           five minutes, lying to myself that my teammates would respond. “Mia and 
@@ -374,7 +376,10 @@ export const Burnout = () => {
          I recall when I wanted to go to the football game with my friends but had 
          to sell my tickets because I had to help my teammate finish their part due 
          to them slacking off all week. I remember how I almost got sick twice as a 
-         result of exhaustion. And yesterday evening I had to cancel my dinner plans 
+         result of exhaustion. 
+         <br/>
+         <br/>
+         And yesterday evening I had to cancel my dinner plans 
          because I thought I had to cover others again. Today must be the turning point. 
          Could I go out for dinner with friends? I should just go. After all, there will 
          always be work waiting for me. Or not? Should I see that the task gets done 
@@ -397,7 +402,10 @@ export const Burnout = () => {
          laptop. I glance at the team chat, which was dead silent. Ah, those two 
          must be on the slide deck, working! Wait, ARE they working? I navigated 
          to the tab and saw only myself. Ah, I must refresh the browser to see the new 
-         changes! I hit the button several times, eventually accepting the reality 
+         changes! 
+         <br/>
+         <br/>
+         I hit the button several times, eventually accepting the reality 
          and understanding my impatience. I’ve been waiting around, worrying about 
          others for too long, and neglecting myself. “See you guys at the meeting 
          place for dinner tonight,” I text to my friend group, briefly tossing away 
