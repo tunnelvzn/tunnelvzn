@@ -269,9 +269,6 @@ export const Loneliness = (props) => {
                     This story was written and illustrated by Eddy, edited by Sylvia, Augene, and Sami, and peer-reviewed by 23 UW Students.
                     <br />
                     <br />
-                    Images of McCarty Hall from the loneliness story were from <Link href="https://hfs.uw.edu/live-on-campus/Undergraduate-Housing/McCarty-Hall"><a className={styles.partnerLink} target="_blank">hfs.uw.edu</a></Link>.
-                    <br />
-                    <br />
                     Also, special thanks to members of the <Link href="https://www.instagram.com/writersinprogressuw/"><a className={styles.partnerLink} target="_blank">Writers In Progress</a></Link> club for providing additional feedback!
                     <div className={styles.importantContainer}>
                         <Image src="/mostImportant.svg" layout="fill" />

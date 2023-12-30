@@ -135,29 +135,27 @@ export const Burnout = () => {
         <div className={styles.block}></div>
         <div className={styles.imgFrame}>
           <Image
-            src="/envyImages/leanBack.png"
+            src="/burnoutImages/pondering.png"
             className={styles.storyImg}
             layout="fill"
-            alt="Rao leaning back on his chair while staring at his laptop"
+            alt=""
           />
         </div>
         <p className={`${styles.words} ${styles.offset}`}>
-          I remember writing in my personal statement that I aspired to be
-          someone great. A person who would contribute to curing some of the
-          world’s most incurable diseases, saving lives, and being humble about
-          it.
-          <i>What have I become now? Where had that motivation gone?</i> While
-          waiting for the seconds until 6:00 AM, I ponder restlessly.
+          I read my email to my mentor before I hit send: “Hi Jesse, can we postpone 
+          our meeting from tomorrow morning to next week? I have an urgent team 
+          meeting that conflicts.” I let out a sigh of disappointment because this 
+          wouldn’t have happened if my three teammates stepped up their game, but I 
+          guess that was too much to ask for. All quarter long, my teammates from 
+          one of my classes seemingly dragged their feet, and I pulled their weight. 
           <br />
           <br />
-          It’s registration day for the Spring quarter, and I am ready to spam
-          the registration button with my two groggy roommates. “Bruh, the site
-          is frozen!” Jami exclaims impatiently. My other roommate, John, lets
-          out a heavy sigh and slumps back into his chair, defeated. By some
-          stroke of luck, I manage to get through.{" "}
-          <i>
-            I wish this luck had applied to other aspects of my life instead.
-          </i>
+          After waiting and hoping they would make their contributions, they finally 
+          swore to show up tomorrow at Odegaard Library at 10 am. “Man, we have to 
+          give the presentation in 3 days, and we are nowhere near finished,” I say 
+          to myself while coping with a headache after thinking about all the work we 
+          have left and all the events I had to cancel for tomorrow’s potentially 
+          busy day. 
         </p>
       </div>
 
@@ -165,25 +163,20 @@ export const Burnout = () => {
         <div className={styles.block}></div>
         <div className={styles.imgFrame}>
           <Image
-            src="/envyImages/deskThink.png"
+            src="/burnoutImages/walkingOde.png"
             className={styles.storyImg}
             layout="fill"
-            alt="Rao thinking about how exploring differing topics harmed his GPA"
+            alt=""
           />
         </div>
         <p className={`${styles.words}`}>
-          Presently, I find myself in a disheartening situation. Though I’m a
-          Sophomore, I must declare a major soon or risk hitting the credit
-          limit and getting locked from future registrations. Sadly, I haven’t
-          settled on anything, and it troubles me. I ultimately lost interest in
-          Bioengineering after getting destroyed in gen chem.
-          <br />
-          <br />I took a shot at a Computer Science class last quarter, and my
-          performance was dismal even though I studied a lot by myself and with
-          others. After those failed exploits, it became challenging to be
-          interested in anything. I became a one-day-only member of several
-          clubs and explorer of many fields of study. However, I only gained
-          hits to my GPA and mental state.
+          Did I tell the other club officers that I’ll be busy the whole day tomorrow? 
+          Have I canceled my dinner plans with my friends? Did I tell my start-up 
+          partners I would be too busy to attend the meeting? More importantly, I 
+          thought, will my team be there tomorrow? I thought about that and what to 
+          do if they weren’t present all night until I fell asleep after hours of 
+          pondering, and during my walk to Odegaard in the morning, the question 
+          became: Will they be there today? 
         </p>
       </div>
 
@@ -191,20 +184,20 @@ export const Burnout = () => {
         <div className={styles.block}></div>
         <div className={styles.imgFrame}>
           <Image
-            src="/envyImages/jamiSleep.png"
+            src="/burnoutImages/enterOde.png"
             className={styles.storyImg}
             layout="fill"
-            alt="Jami stating that he is going back to sleep"
+            alt=""
           />
         </div>
         <p className={`${styles.words} ${styles.offset}`}>
-          I register for more seemingly intriguing classes, yet it’s a gamble.
-          It was clear that I’d been lying to myself that I would find something
-          that would click. “Well, I’m going back to bed,” Jami announces. I’ve
-          known Jami for over a year. He's a bright individual who secured
-          direct admission into Computer Science and is currently attempting to
-          obtain an internship.
-          <i>How does he do it? I think I worked just as hard as him. I should deserve this honor too.</i>
+          I spared no time in the library and began wandering around while looking 
+          madly around, hoping my team would already be at a table with their laptops 
+          out. Ode was buzzing with dead week activity. The voices of many students 
+          created an energetic murmur that made it easy to focus. However, I could 
+          not care. “Where are they???” I growl inside my head. Wait, I can just 
+          message them to see if they are there. As I reach into my pocket to get 
+          out my phone, I feel the tremble of several notifications.
         </p>
       </div>
 
@@ -212,24 +205,19 @@ export const Burnout = () => {
         <div className={styles.block}></div>
         <div className={styles.imgFrame}>
           <Image
-            src="/envyImages/johnGood.png"
+            src="/burnoutImages/insideOdeOnPhone.png"
             className={styles.storyImg}
             layout="fill"
-            alt="John still at his laptop trying to find replacement classes"
+            alt=""
           />
         </div>
         <p className={`${styles.words}`}>
-          “John, what are you doing?” I ask. “I’m looking for an alternative
-          class and then sleeping until ten,” John replies. “Oh, ok,” I respond,
-          having not much else to say. John is doing well. He has goals of
-          getting his masters and is a forward-thinker.
-          <i>I wish that were me.</i>
-          <br />
-          <br />
-          The future is impossible to plan when I’m already busy with
-          coursework. I often feel like the odd one out in this group. Now that
-          I think about it, all my friends seem absorbed in their fields of
-          study and are finding success. <i>What even is success to me?</i>
+         They were from a couple of my teammates. “Sorry, something came up,” and 
+         “Me too,” they say. At that moment, I felt a wave of fire travel through 
+         my soul as my stomach lurched. How could they do this to me? After what I 
+         have been through this quarter and my sacrifices, they stood me up again. 
+         “Is anyone going to show up today?? You agreed to be available, and I’m 
+         already at Ode. You guys need to show up,” I lash out through text.  
         </p>
       </div>
 
@@ -237,26 +225,22 @@ export const Burnout = () => {
         <div className={styles.block}></div>
         <div className={styles.imgFrame}>
           <Image
-            src="/envyImages/whatToTake.png"
+            src="/burnoutImages/seesTeammate.png"
             className={styles.storyImg}
             layout="fill"
-            alt="Rao struggling to create a good schedule for next quarter"
+            alt=""
           />
         </div>
         <p className={`${styles.words} ${styles.offset}`}>
-          I realize I’m procrastinating on finishing my homework because instead
-          of opening Google Docs and Canvas, I spend an hour browsing LinkedIn
-          out of habit. I despise the platform, but I couldn’t resist the
-          algorithm as it bombarded me with an endless stream of job and
-          internship announcements so it would tell me how big of a failure I
-          was.
-          <br />
-          <br />I have nothing against those individuals, yet, they remind me of
-          my shortcomings.{" "}
-          <i>
-            Where is my life update? What do I want to intern for? I don’t know!
-          </i>{" "}
-          I have no one to blame but myself for looking in the first place.
+         I thought about my desperate texts. I tried to be as accommodating and 
+         sympathetic as possible, but I found it harder and harder to maintain my 
+         composure with these people. Life doesn’t revolve around them. I don’t 
+         revolve around them. If they don’t pull their weight, things won’t get done. 
+         They can present their empty slide. I’ll say we divided and conquered. 
+         I’ve done all I ca- my internal rant stops as my eyes fixate on a familiar 
+         face. IT’S ONE OF MY TEAMMATES! “Mia, you’re here! It’s just you and me 
+         today,” I say while a bit out of breath after making my way to her near 
+         the staircase.
         </p>
       </div>
 
@@ -264,22 +248,20 @@ export const Burnout = () => {
         <div className={styles.block}></div>
         <div className={styles.imgFrame}>
           <Image
-            src="/envyImages/goingOut.png"
+            src="/burnoutImages/teamMeet.png"
             className={styles.storyImg}
             layout="fill"
-            alt="Rao walking outside to get some fresh air"
+            alt=""
           />
         </div>
         <p className={`${styles.words}`}>
-          In an attempt to clear my head, I decided to take a walk around
-          campus. My roommates were asleep, so I gathered my things and ventured
-          outside. I’d say it’s a beautiful day, with fresh air and a slight
-          breeze. But it didn’t matter to me.
-          <br />
-          <br />I worm my way to the quad with a blank expression. Sometimes, my
-          mind opens, giving me the empowerment that I would be able to find a
-          passion soon and endless opportunities would present themselves. Other
-          times, I feel utterly defeated.
+          “Yea, that sucks. Let’s find somewhere to sit and get working because I 
+          have class in 45 minutes,” Mia says. Mia is the only other person who cares. 
+          Why would I lump her with the other two? “Oh, I see a spot over there!” 
+          I say, pointing to the back of the library in front of the doors that says, 
+          “Do not block.” The most Mia and I could do was to start dividing the 
+          presentation into parts for each group member and hope that the absentees 
+          pull through. 
         </p>
       </div>
 
@@ -287,26 +269,22 @@ export const Burnout = () => {
         <div className={styles.block}></div>
         <div className={styles.imgFrame}>
           <Image
-            src="/envyImages/staringTrees.png"
+            src="/burnoutImages/teammateLeaves.png"
             className={styles.storyImg}
             layout="fill"
-            alt="Rao sitting on a bench and staring at the cherry blossom tree branches"
+            alt=""
           />
         </div>
         <p className={`${styles.words} ${styles.offset}`}>
-          I sit on the bench near the flowerless and bare cherry trees. As I
-          stared at them, I realized I had more in common with those cherry
-          trees than any of the people on LinkedIn or my successful roommates.
-          <i>
-            Once, the trees were blooming, so pink and pretty. Now, they are but
-            a shell of their former selves. Just like my life up to this point,
-            the pinnacle of its life has passed.
-          </i>
-          <br />
-          <br />I laugh at myself, proud of making such a dumb comparison. As I
-          come to this realization, I understand that the trees will soon burst
-          forth with new flowers, captivating crowds once more. Meanwhile, I
-          will remain unable to impress anyone.
+          To me, it felt like a waste of a morning. Imagine how productive we would 
+          have been if everyone cared more and showed up. I can’t get this out of my 
+          mind. “I’ve finished my parts at least, and I have to go to class now,” 
+          Mia proclaims. “Yup, see you later,” I respond. And then there was one. 
+          Focusing on the task at hand was difficult. Dang, 45 minutes, and I still 
+          don’t feel like doing my portion. My eyes glanced at the team chat every 
+          five minutes, lying to myself that my teammates would respond. “Mia and 
+          I gave you guys the remaining slides to do. Please have them done ASAP so 
+          we can hopefully practice before our presentation,” I write to the team chat.  
         </p>
       </div>
 
@@ -314,20 +292,20 @@ export const Burnout = () => {
         <div className={styles.block}></div>
         <div className={styles.imgFrame}>
           <Image
-            src="/envyImages/parentsCall.png"
+            src="/burnoutImages/thenThereWasOne.png"
             className={styles.storyImg}
             layout="fill"
-            alt="Rao remembering his phone calls with his parents"
+            alt=""
           />
         </div>
         <p className={`${styles.words}`}>
-          As my self-deprecation dissipates, I lean back on the bench so my
-          watery eyes wouldn’t turn the clear day into a rainy one. My parents
-          were proud when they took my picture under the cherry trees. My
-          parents knew about my plans for success and were eager to brag about
-          them to their friends. It’s a far cry from what I’m telling them these
-          days. Our video chats always end with me saying: “I’ll figure
-          something out soon.” I never did.
+         Eventually, I gave up staring at the dead chat and accepted that my team 
+         wasn’t present when I needed them the most. However, I will always be 
+         there to cover for them without a speck of gratitude like this was a given 
+         that there will always be a person who cares more and is willing to go the 
+         extra mile. “Truly a thankless job,” I mutter. I’ll go to my first class 
+         early so I can clear my head on the walk there, and maybe, just maybe, 
+         the two absentees will have responded when I get there. 
         </p>
       </div>
 
@@ -335,19 +313,28 @@ export const Burnout = () => {
         <div className={styles.block}></div>
         <div className={styles.imgFrame}>
           <Image
-            src="/envyImages/usingPhone.png"
+            src="/burnoutImages/leavingOde.png"
             className={styles.storyImg}
             layout="fill"
-            alt="Rao looking at his phone"
+            alt=""
           />
         </div>
         <p className={`${styles.words} ${styles.offset}`}>
-          Perhaps to motivate me, they kept bringing up their friend’s daughter
-          and how she majors in Business and does great things for her
-          community. It doesn’t make me feel good. I hate the sinking feeling
-          deep in my chest. Eventually, I started to resent talking to them
-          because I didn’t want the reminder.
-          <i>How in the world did things go so wrong?</i>
+         Walking out of Ode, I felt like I was about to collapse, yet still 
+         hanging on. Was I in control of my life? Or were other people 
+         controlling how I lived my life? Do I let people control mine? I could 
+         study for my calculus final. Should I finish the assignments from my two 
+         other classes? Or I could brush up on the lesson plan I have to give during 
+         my quiz section tomorrow. Isn’t it pretty unfair? Even though I eliminated 
+         some things from my schedule, I still can’t seem to catch my breath.
+         <br/>
+         <br/>
+         On top of that, I have to be the one who cares more about the class. Was it 
+         possible for one person to do all this? Wouldn’t it be nice if there were 
+         multiple of myself so we could share my responsibilities? Maybe then I would 
+         be more in control and have free time. Well, that isn’t possible. So, I’ll 
+         settle for dropping everything and running away. I could daydream all day, 
+         but in the end, I’ll only delay the inevitable.
         </p>
       </div>
 
@@ -355,23 +342,20 @@ export const Burnout = () => {
         <div className={styles.block}></div>
         <div className={styles.imgFrame}>
           <Image
-            src="/envyImages/sunUp.png"
+            src="/burnoutImages/outsideOdeOnPhone.png"
             className={styles.storyImg}
             layout="fill"
-            alt="Rao looking at the sun from his dorm room"
+            alt=""
           />
         </div>
         <p className={`${styles.words}`}>
-          Having seen enough of the scenery, I head back to McCarty Hall. By
-          now, more people are roaming about. All are pursuing their goals and
-          dreams. <i>What’s so appealing about others? How can I be myself?</i>{" "}
-          My thoughts trailed off.
-          <br />
-          <br />I catch the sun ascending above the campus with my eyes.{" "}
-          <i>What even am I here for?</i> I wonder. Now, I’m back in my room
-          with more questions than answers. John has already left for class,
-          whereas Jami is still asleep. I view my schedule again, brain empty.
-          “It will be another wasteful quarter,” I muttered.
+         Another tremble in my pocket had me reach for my phone again. It’s my 
+         teammates. “That sounds fine to me. I can take the last topic and create 
+         the slides right now,” one says. “And I’ll take what’s left,” the other 
+         chimes in. Hearing that relieved me, and I even felt joy that my teammates 
+         would pull through. Though one of my problems seemed to be at an end, it 
+         felt like the pieces were finally falling into place, and I couldn’t help 
+         but smile. Maybe I was wrong about my team.
         </p>
       </div>
 
@@ -379,23 +363,22 @@ export const Burnout = () => {
         <div className={styles.block}></div>
         <div className={styles.imgFrame}>
           <Image
-            src="/envyImages/hereForU.png"
+            src="/burnoutImages/denny.png"
             className={styles.storyImg}
             layout="fill"
-            alt="Jami giving Rao his support"
+            alt=""
           />
         </div>
         <p className={`${styles.words} ${styles.offset}`}>
-          “Hey, what happened? What are you taking?” a voice behind me asks.
-          Jami peeks over my shoulder. “I didn’t realize you were awake—just
-          these classes. I can’t think of much else,” I say with annoyance.
-          <br />
-          <br />
-          “Aww, that's not good. I’m sure it would work out sooner or later,”
-          Jami comforts. “I hope so,” I reply, wanting to give up. “Life
-          surprises you,” Jami continues. “Maybe,” I respond disbelievingly, yet
-          it makes me feel better since it came from him. “I’m here if you need
-          to talk,” Jami assures.
+         My mind flashes back to when I gave up so much to cover others this quarter. 
+         I recall when I wanted to go to the football game with my friends but had 
+         to sell my tickets because I had to help my teammate finish their part due 
+         to them slacking off all week. I remember how I almost got sick twice as a 
+         result of exhaustion. And yesterday evening I had to cancel my dinner plans 
+         because I thought I had to cover others again. Today must be the turning point. 
+         Could I go out for dinner with friends? I should just go. After all, there will 
+         always be work waiting for me. Or not? Should I see that the task gets done 
+         before I relieve myself?
         </p>
       </div>
 
@@ -403,75 +386,35 @@ export const Burnout = () => {
         <div className={styles.block}></div>
         <div className={styles.imgFrame}>
           <Image
-            src="/envyImages/weCanTalk.png"
+            src="/burnoutImages/lectureHall.png"
             className={styles.storyImg}
             layout="fill"
-            alt="Jami offering to talk with Rao"
+            alt=""
           />
         </div>
         <p className={`${styles.words}`}>
-          “Yeah?” I reply, turning away from Jami and staring back at the
-          schedule. I’m unsure what to feel or do. Looking back at what
-          transpired this morning, it was clear that living in my mind tore me
-          down. I realize I need to get some things off my chest. Maybe then,
-          I’ll feel better. “Can I talk to you about something? We can get
-          coffee on the way,” I turn to ask Jami. He readily agrees.
-        </p>
-      </div>
-
-      <div className={`${styles.section} ${styles.normSection}`}>
-        <div className={styles.block}></div>
-        <div className={styles.imgFrame}>
-          <Image
-            src="/envyImages/greaterThings.png"
-            className={styles.storyImg}
-            layout="fill"
-            alt="Rao and Jami walking outside and talking"
-          />
-        </div>
-        <p className={`${styles.words} ${styles.offset}`}>
-          "Oh, a surprisingly nice day," Jami notes. Preoccupied with my current
-          situation, I jump to the point. "Hey, Jami, what got you interested in
-          CS?" I solicit. "It's a pretty long story. Where do I even start?"
-          Jami thinks. "From the beginning?" I suggest. Jami playfully responds,
-          "Well, it all started when I was born." I can't help but chuckle at
-          Jami's witty remark.
-          <br />
-          <br />
-          As I listen to him and discuss each other's uncertainties, I realize
-          that we aren’t so different after all, making me feel a sense of
-          warmth, compelling me to look toward the sun.
-          <i>
-            Perhaps, it is a beautiful day - a day I should relish by taking
-            pleasure in life's small joys. After all, the future remains
-            unpredictable.
-          </i>
+         I debated until I sat in my lecture room for my first class and opened my 
+         laptop. I glance at the team chat, which was dead silent. Ah, those two 
+         must be on the slide deck, working! Wait, ARE they working? I navigated 
+         to the tab and saw only myself. Ah, I must refresh the browser to see the new 
+         changes! I hit the button several times, eventually accepting the reality 
+         and understanding my impatience. I’ve been waiting around, worrying about 
+         others for too long, and neglecting myself. “See you guys at the meeting 
+         place for dinner tonight,” I text to my friend group, briefly tossing away 
+         my responsibilities.
         </p>
       </div>
 
       <div className={`${styles.section} ${styles.normSection}`}>
         <div className={styles.block}></div>
         <p className={styles.words}>
-          This story was inspired by the{" "}
-          <Link href="https://docs.google.com/document/d/1Nz1J3HJsIyW9whklx7BUsGQ2lFpfz_1N6kxLEII_IlI/edit?usp=sharing">
-            <a className={styles.partnerLink} target="_blank">
-              work
-            </a>
-          </Link>{" "}
-          of Dylan Scott, written by Eddy, illustrated by Anna, and
-          peer-reviewed by 24 UW Students.
-          <br />
-          <br />
-          Also, special thanks to members of the{" "}
-          <Link href="https://www.instagram.com/writersinprogressuw/">
-            <a className={styles.partnerLink} target="_blank">
-              Writers In Progress
-            </a>
-          </Link>{" "}
-          club for providing additional feedback!
-          <div className={styles.importantContainer}>
-            <Image src="/mostImportant.svg" layout="fill" />
-          </div>
+            This story was written and illustrated by Eddy and peer-reviewed by 9 UW Students.
+            <br />
+            <br />
+            Also, special thanks to members of the <Link href="https://www.instagram.com/writersinprogressuw/"><a className={styles.partnerLink} target="_blank">Writers In Progress</a></Link> club for providing additional feedback!
+            <div className={styles.importantContainer}>
+                <Image src="/mostImportant.svg" layout="fill" />
+            </div>
         </p>
       </div>
 
