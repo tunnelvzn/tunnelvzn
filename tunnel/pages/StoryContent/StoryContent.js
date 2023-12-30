@@ -11,6 +11,7 @@ import { Icon } from "@iconify/react";
 import { Loneliness } from "./Loneliness";
 import { Anxiety } from "./Anxiety";
 import { Envy } from "./Envy";
+import { Burnout } from "./Burnout";
 const StoryContent = () => {
   const {
     intro,
@@ -59,6 +60,9 @@ const StoryContent = () => {
       break;
     case "Envy":
       renderComponent = <Envy />;
+      break;
+    case "Burnout":
+      renderComponent = <Burnout />;
       break;
   }
 

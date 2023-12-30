@@ -61,12 +61,12 @@ const Credits = () => {
                                     <div className={`${styles.memberVisDiv} m-3 text-center`}>
                                         <Image src="/creditsImages/joon.svg" className={styles.memberVis} height={120} width={120} alt="joon's initials"/>
                                         <h5>Joon C.</h5>
-                                        <small>Supporter</small>
+                                        <small>Ex-developer</small>
                                     </div>
                                     <div className={`${styles.memberVisDiv} m-3 text-center`}>
                                         <Image src="/creditsImages/sami.svg" className={styles.memberVis} height={120} width={120} alt="sami's initials"/>
                                         <h5>Sami F.</h5>
-                                        <small>Supporter</small>
+                                        <small>Ex-designer</small>
                                     </div>
                                 </div>
                             </div>
