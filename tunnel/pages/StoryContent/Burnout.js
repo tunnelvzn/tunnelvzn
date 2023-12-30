@@ -138,7 +138,7 @@ export const Burnout = () => {
             src="/burnoutImages/pondering.png"
             className={styles.storyImg}
             layout="fill"
-            alt=""
+            alt="Sarah at her laptop while thinking"
           />
         </div>
         <p className={`${styles.words} ${styles.offset}`}>
@@ -166,17 +166,17 @@ export const Burnout = () => {
             src="/burnoutImages/walkingOde.png"
             className={styles.storyImg}
             layout="fill"
-            alt=""
+            alt="Sarah walking to the library"
           />
         </div>
         <p className={`${styles.words}`}>
-          Did I tell the other club officers that I’ll be busy the whole day tomorrow? 
+          <i>Did I tell the other club officers that I’ll be busy the whole day tomorrow? 
           Have I canceled my dinner plans with my friends? Did I tell my start-up 
           partners I would be too busy to attend the meeting? More importantly, I 
-          thought, will my team be there tomorrow? I thought about that and what to 
+          thought, will my team be there tomorrow?</i> I thought about that and what to 
           do if they weren’t present all night until I fell asleep after hours of 
           pondering, and during my walk to Odegaard in the morning, the question 
-          became: Will they be there today? 
+          became: <i>Will they be there today?</i> 
         </p>
       </div>
 
@@ -187,7 +187,7 @@ export const Burnout = () => {
             src="/burnoutImages/enterOde.png"
             className={styles.storyImg}
             layout="fill"
-            alt=""
+            alt="Sarah enters the library"
           />
         </div>
         <p className={`${styles.words} ${styles.offset}`}>
@@ -195,8 +195,8 @@ export const Burnout = () => {
           madly around, hoping my team would already be at a table with their laptops 
           out. Ode was buzzing with dead week activity. The voices of many students 
           created an energetic murmur that made it easy to focus. However, I could 
-          not care. “Where are they???” I growl inside my head. Wait, I can just 
-          message them to see if they are there. As I reach into my pocket to get 
+          not care. “Where are they???” I growl inside my head. <i>Wait, I can just 
+          message them to see if they are there.</i> As I reach into my pocket to get 
           out my phone, I feel the tremble of several notifications.
         </p>
       </div>
@@ -208,14 +208,14 @@ export const Burnout = () => {
             src="/burnoutImages/insideOdeOnPhone.png"
             className={styles.storyImg}
             layout="fill"
-            alt=""
+            alt="Sarah in the library looking at her phone"
           />
         </div>
         <p className={`${styles.words}`}>
          They were from a couple of my teammates. “Sorry, something came up,” and 
          “Me too,” they say. At that moment, I felt a wave of fire travel through 
-         my soul as my stomach lurched. How could they do this to me? After what I 
-         have been through this quarter and my sacrifices, they stood me up again. 
+         my soul as my stomach lurched. <i>How could they do this to me? After what I 
+         have been through this quarter and my sacrifices, they stood me up again.</i> 
          “Is anyone going to show up today?? You agreed to be available, and I’m 
          already at Ode. You guys need to show up,” I lash out through text.  
         </p>
@@ -228,15 +228,15 @@ export const Burnout = () => {
             src="/burnoutImages/seesTeammate.png"
             className={styles.storyImg}
             layout="fill"
-            alt=""
+            alt="Sarah sees her teammate"
           />
         </div>
         <p className={`${styles.words} ${styles.offset}`}>
          I thought about my desperate texts. I tried to be as accommodating and 
          sympathetic as possible, but I found it harder and harder to maintain my 
-         composure with these people. Life doesn’t revolve around them. I don’t 
+         composure with these people. <i>Life doesn’t revolve around them. I don’t 
          revolve around them. If they don’t pull their weight, things won’t get done. 
-         They can present their empty slide. I’ll say we divided and conquered. 
+         They can present their empty slide. I’ll say we divided and conquered.</i> 
          I’ve done all I ca- my internal rant stops as my eyes fixate on a familiar 
          face. IT’S ONE OF MY TEAMMATES! “Mia, you’re here! It’s just you and me 
          today,” I say while a bit out of breath after making my way to her near 
@@ -251,13 +251,13 @@ export const Burnout = () => {
             src="/burnoutImages/teamMeet.png"
             className={styles.storyImg}
             layout="fill"
-            alt=""
+            alt="Sarah and her teammate sits down to do work"
           />
         </div>
         <p className={`${styles.words}`}>
           “Yea, that sucks. Let’s find somewhere to sit and get working because I 
-          have class in 45 minutes,” Mia says. Mia is the only other person who cares. 
-          Why would I lump her with the other two? “Oh, I see a spot over there!” 
+          have class in 45 minutes,” Mia says. <i>Mia is the only other person who cares. 
+          Why would I lump her with the other two?</i> “Oh, I see a spot over there!” 
           I say, pointing to the back of the library in front of the doors that says, 
           “Do not block.” The most Mia and I could do was to start dividing the 
           presentation into parts for each group member and hope that the absentees 
@@ -272,7 +272,7 @@ export const Burnout = () => {
             src="/burnoutImages/teammateLeaves.png"
             className={styles.storyImg}
             layout="fill"
-            alt=""
+            alt="Sarah watching her teammate leave"
           />
         </div>
         <p className={`${styles.words} ${styles.offset}`}>
@@ -282,8 +282,8 @@ export const Burnout = () => {
           Mia proclaims. “Yup, see you later,” I respond. And then there was one. 
           <br/>
           <br/>
-          Focusing on the task at hand was difficult. Dang, 45 minutes, and I still 
-          don’t feel like doing my portion. My eyes glanced at the team chat every 
+          Focusing on the task at hand was difficult. <i>Dang, 45 minutes, and I still 
+          don’t feel like doing my portion.</i> My eyes glanced at the team chat every 
           five minutes, lying to myself that my teammates would respond. “Mia and 
           I gave you guys the remaining slides to do. Please have them done ASAP so 
           we can hopefully practice before our presentation,” I write to the team chat.  
@@ -297,7 +297,7 @@ export const Burnout = () => {
             src="/burnoutImages/thenThereWasOne.png"
             className={styles.storyImg}
             layout="fill"
-            alt=""
+            alt="Sarah tries to go back to work"
           />
         </div>
         <p className={`${styles.words}`}>
@@ -305,9 +305,9 @@ export const Burnout = () => {
          wasn’t present when I needed them the most. However, I will always be 
          there to cover for them without a speck of gratitude like this was a given 
          that there will always be a person who cares more and is willing to go the 
-         extra mile. “Truly a thankless job,” I mutter. I’ll go to my first class 
+         extra mile. “Truly a thankless job,” I mutter. <i>I’ll go to my first class 
          early so I can clear my head on the walk there, and maybe, just maybe, 
-         the two absentees will have responded when I get there. 
+         the two absentees will have responded when I get there.</i>
         </p>
       </div>
 
@@ -318,24 +318,24 @@ export const Burnout = () => {
             src="/burnoutImages/leavingOde.png"
             className={styles.storyImg}
             layout="fill"
-            alt=""
+            alt="Sarah leaves the library"
           />
         </div>
         <p className={`${styles.words} ${styles.offset}`}>
          Walking out of Ode, I felt like I was about to collapse, yet still 
-         hanging on. Was I in control of my life? Or were other people 
-         controlling how I lived my life? Do I let people control mine? I could 
+         hanging on. <i>Was I in control of my life? Or were other people 
+         controlling how I lived my life? Do I let people control mine?</i> I could 
          study for my calculus final. Should I finish the assignments from my two 
          other classes? Or I could brush up on the lesson plan I have to give during 
          my quiz section tomorrow. Isn’t it pretty unfair? Even though I eliminated 
          some things from my schedule, I still can’t seem to catch my breath.
          <br/>
          <br/>
-         On top of that, I have to be the one who cares more about the class. Was it 
+         On top of that, I have to be the one who cares more about the class. <i>Was it 
          possible for one person to do all this? Wouldn’t it be nice if there were 
          multiple of myself so we could share my responsibilities? Maybe then I would 
          be more in control and have free time. Well, that isn’t possible. So, I’ll 
-         settle for dropping everything and running away. I could daydream all day, 
+         settle for dropping everything and running away.</i> I could daydream all day, 
          but in the end, I’ll only delay the inevitable.
         </p>
       </div>
@@ -347,7 +347,7 @@ export const Burnout = () => {
             src="/burnoutImages/outsideOdeOnPhone.png"
             className={styles.storyImg}
             layout="fill"
-            alt=""
+            alt="Sarah outside the library looking at her phone"
           />
         </div>
         <p className={`${styles.words}`}>
@@ -357,7 +357,7 @@ export const Burnout = () => {
          chimes in. Hearing that relieved me, and I even felt joy that my teammates 
          would pull through. Though one of my problems seemed to be at an end, it 
          felt like the pieces were finally falling into place, and I couldn’t help 
-         but smile. Maybe I was wrong about my team.
+         but smile. <i>Maybe I was wrong about my team.</i>
         </p>
       </div>
 
@@ -368,7 +368,7 @@ export const Burnout = () => {
             src="/burnoutImages/denny.png"
             className={styles.storyImg}
             layout="fill"
-            alt=""
+            alt="Sarah walking by Denny Hall"
           />
         </div>
         <p className={`${styles.words} ${styles.offset}`}>
@@ -380,10 +380,10 @@ export const Burnout = () => {
          <br/>
          <br/>
          And yesterday evening I had to cancel my dinner plans 
-         because I thought I had to cover others again. Today must be the turning point. 
+         because I thought I had to cover others again. <i>Today must be the turning point. 
          Could I go out for dinner with friends? I should just go. After all, there will 
          always be work waiting for me. Or not? Should I see that the task gets done 
-         before I relieve myself?
+         before I relieve myself?</i>
         </p>
       </div>
 
@@ -394,20 +394,20 @@ export const Burnout = () => {
             src="/burnoutImages/lectureHall.png"
             className={styles.storyImg}
             layout="fill"
-            alt=""
+            alt="Sarah in her lecture room"
           />
         </div>
         <p className={`${styles.words}`}>
          I debated until I sat in my lecture room for my first class and opened my 
-         laptop. I glance at the team chat, which was dead silent. Ah, those two 
-         must be on the slide deck, working! Wait, ARE they working? I navigated 
-         to the tab and saw only myself. Ah, I must refresh the browser to see the new 
-         changes! 
+         laptop. I glance at the team chat, which was dead silent. <i>Ah, those two 
+         must be on the slide deck, working! Wait, ARE they working?</i> I navigated 
+         to the tab and saw only myself. <i>Ah, I must refresh the browser to see the new 
+         changes!</i> 
          <br/>
          <br/>
          I hit the button several times, eventually accepting the reality 
-         and understanding my impatience. I’ve been waiting around, worrying about 
-         others for too long, and neglecting myself. “See you guys at the meeting 
+         and understanding my impatience. <i>I’ve been waiting around, worrying about 
+         others for too long, and neglecting myself.</i> “See you guys at the meeting 
          place for dinner tonight,” I text to my friend group, briefly tossing away 
          my responsibilities.
         </p>
