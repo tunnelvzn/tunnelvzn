@@ -20,14 +20,14 @@ const Credits = () => {
                             <div className="mt-4 d-md-flex justify-content-center">
                                 <div className="mt-4 d-sm-flex d-inline justify-content-around">
                                     <div className={`${styles.memberVisDiv} m-3 text-center`}>
+                                        <Image src="/creditsImages/eddy.svg" className={styles.memberVis} height={120} width={120} alt="eddy's initials"/>
+                                        <h5>Eddy P.</h5>
+                                        <small>Founder</small>
+                                    </div>
+                                    <div className={`${styles.memberVisDiv} m-3 text-center`}>
                                         <Image src="/creditsImages/fred.svg" className={styles.memberVis} height={120} width={120} alt="fred's initials"/>
                                         <h5>Fred Z.</h5>
                                         <small>Developer</small>
-                                    </div>
-                                    <div className={`${styles.memberVisDiv} m-3 text-center`}>
-                                        <Image src="/creditsImages/rui.svg" className={styles.memberVis} height={120} width={120} alt="rui's initials"/>
-                                        <h5>Rui H.</h5>
-                                        <small>Illustrator</small>
                                     </div>
                                 </div>
                                 <div className="mt-4 d-sm-flex d-inline justify-content-around">
@@ -37,9 +37,9 @@ const Credits = () => {
                                         <small>Illustrator</small>
                                     </div>
                                     <div className={`${styles.memberVisDiv} m-3 text-center`}>
-                                        <Image src="/creditsImages/sylvia.svg" className={styles.memberVis} height={120} width={120} alt="sylvia's initials"/>
-                                        <h5>Sylvia L.</h5>
-                                        <small>Editor</small>
+                                        <Image src="/creditsImages/rui.svg" className={styles.memberVis} height={120} width={120} alt="rui's initials"/>
+                                        <h5>Rui H.</h5>
+                                        <small>Illustrator</small>
                                     </div>
                                 </div>
                             </div>
@@ -51,9 +51,9 @@ const Credits = () => {
                                         <small>Editor</small>
                                     </div>
                                     <div className={`${styles.memberVisDiv} m-3 text-center`}>
-                                        <Image src="/creditsImages/eddy.svg" className={styles.memberVis} height={120} width={120} alt="eddy's initials"/>
-                                        <h5>Eddy P.</h5>
-                                        <small>Founder</small>
+                                        <Image src="/creditsImages/sylvia.svg" className={styles.memberVis} height={120} width={120} alt="sylvia's initials"/>
+                                        <h5>Sylvia L.</h5>
+                                        <small>Editor</small>
                                     </div>
                                 </div>
 
@@ -61,12 +61,12 @@ const Credits = () => {
                                     <div className={`${styles.memberVisDiv} m-3 text-center`}>
                                         <Image src="/creditsImages/joon.svg" className={styles.memberVis} height={120} width={120} alt="joon's initials"/>
                                         <h5>Joon C.</h5>
-                                        <small>Ex-developer</small>
+                                        <small>Designer</small>
                                     </div>
                                     <div className={`${styles.memberVisDiv} m-3 text-center`}>
                                         <Image src="/creditsImages/sami.svg" className={styles.memberVis} height={120} width={120} alt="sami's initials"/>
                                         <h5>Sami F.</h5>
-                                        <small>Ex-designer</small>
+                                        <small>Designer</small>
                                     </div>
                                 </div>
                             </div>
