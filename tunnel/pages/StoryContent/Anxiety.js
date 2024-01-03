@@ -118,7 +118,7 @@ export const Anxiety = () => {
                 <p className={`${styles.words} ${styles.offset}`}>
                     I wake up at 10 AM on a chilly, overcast morning to stare out the window of my U-district apartment. My relatively new surroundings jolt my memory, and I recall getting my CSE midterm results yesterday. The harsh reality sweeps through my mind like a wave, giving me chills.
                     <br /><br />
-                    Despite my initial reluctance, I push myself out of bed to start the day. I need to get my usual Starbucks order on the way to class but noticed that my lecture was going to start in forty-five minutes. Consulting the clock, I quickly grab my stuff and head out.
+                    Despite my initial reluctance, I push myself out of bed to start the day. I need to get my usual Coffee order on the way to class but noticed that my lecture was going to start in forty-five minutes. Consulting the clock, I quickly grab my stuff and head out.
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
@@ -127,7 +127,7 @@ export const Anxiety = () => {
                     <Image src="/anxietyImages/cafe.png" className={styles.storyImg} layout="fill" alt="mia waiting for her starbucks drink and the people engaged in conversation make her reminisce about her past" />
                 </div>
                 <p className={styles.words}>
-                    As I enter the bustling U-District Starbucks, I find a seat to await my drink. While waiting, my gaze inadvertently fixates upon a group of conversing students. The scene evokes memories of my close-knit friend group from high school.
+                    As I enter the bustling U-District Café, I find a seat to await my drink. While waiting, my gaze inadvertently fixates upon a group of conversing students. The scene evokes memories of my close-knit friend group from high school.
                     <br /><br />
                     My friends stayed in California to attend UC Berkeley, but I got rejected. Although it was heartbreaking, I knew it wasn’t the end of the world for me, and I maintain that perspective to this day.
                 </p>
@@ -193,7 +193,7 @@ export const Anxiety = () => {
                     <Image src="/anxietyImages/walls.png" className={styles.storyImg} layout="fill" alt="mia thinking about how she is now away from her friends and feels isolated" />
                 </div>
                 <p className={styles.words}>
-                    Among those memories is lurking in my old friend group’s Discord. They would talk about their shared struggles, and I saw them overcome their obstacles together and celebrate. In contrast, I find myself alone in my current predicament. <i>I guess my friends moved on without me.</i>
+                    Among those memories is lurking in my old friend group’s chat group. They would talk about their shared struggles, and I saw them overcome their obstacles together and celebrate. In contrast, I find myself alone in my current predicament. <i>I guess my friends moved on without me.</i>
                     <br /><br />
                     On the rare occasions when they pinged me and asked how I was doing, I answered: “alright.” <i>How would they understand anyways? They most likely didn’t put up with a competitive-major system.</i> Moments like these have stacked up to create walls that continuously close in on me, leaving no room to breathe nor an exit in sight.
                 </p>

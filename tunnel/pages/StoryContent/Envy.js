@@ -246,7 +246,7 @@ export const Envy = () => {
         </div>
         <p className={`${styles.words} ${styles.offset}`}>
           I realize I’m procrastinating on finishing my homework because instead
-          of opening Google Docs and Canvas, I spend an hour browsing LinkedIn
+          of opening Google Docs and Canvas, I spend an hour browsing professional networking platforms 
           out of habit. I despise the platform, but I couldn’t resist the
           algorithm as it bombarded me with an endless stream of job and
           internship announcements so it would tell me how big of a failure I
@@ -297,7 +297,7 @@ export const Envy = () => {
         <p className={`${styles.words} ${styles.offset}`}>
           I sit on the bench near the flowerless and bare cherry trees. As I
           stared at them, I realized I had more in common with those cherry
-          trees than any of the people on LinkedIn or my successful roommates.
+          trees than any of the people on professional networking platforms or my successful roommates.
           <i>
             Once, the trees were blooming, so pink and pretty. Now, they are but
             a shell of their former selves. Just like my life up to this point,
