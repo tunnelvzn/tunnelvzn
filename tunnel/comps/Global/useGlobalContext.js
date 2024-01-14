@@ -41,19 +41,11 @@ export const GlobalProvider = ({ children }) => {
         setMainNav(sessionIntro == null? false : true)
         console.log(mainNav)
     }, intro)
-    
-    // Eclipse
-    // https://drive.google.com/u/0/uc?id=1xFWLoxKWYk6Ub8reLvzVg89a-p__Cvzl&export=download
-
-    // Aurora
-    // https://docs.google.com/uc?export=download&id=1qcaDUv3lxrnOufajibXXL27Ymi8I78Us
    
     const [pause, setPause] = useState(false)
     const [audio] = useState(typeof Audio !== "undefined" && new Audio(`https://drive.google.com/u/0/uc?id=1xFWLoxKWYk6Ub8reLvzVg89a-p__Cvzl&export=download`));
     let click;
     if(typeof Audio != "undefined") {
-        // old audio: https://s3-us-west-2.amazonaws.com/s.cdpn.io/242518/click.mp3
-        // another old audio: https://drive.google.com/u/0/uc?id=1_43OmEv8PdHNwq31E41oGMM3d6tputTL&export=download
         click  = new Audio('https://drive.google.com/u/0/uc?id=1uW1Pdf2vdZ-jc8W0Rvrx4Nvi8Q8No2Ms&export=download');
       }
     const makeNoise = () => {
