@@ -42,12 +42,14 @@ export const GlobalProvider = ({ children }) => {
         console.log(mainNav)
     }, intro)
 
+    // background: https://drive.google.com/u/0/uc?id=1xFWLoxKWYk6Ub8reLvzVg89a-p__Cvzl&export=download
+    // button sound: 
+
     const [pause, setPause] = useState(false)
-    // const [audio] = useState(typeof Audio !== "undefined" && new Audio(`https://drive.google.com/u/0/uc?id=1xFWLoxKWYk6Ub8reLvzVg89a-p__Cvzl&export=download`));
-    const [audio] = useState(typeof Audio !== "undefined" && new Audio(`https://drive.usercontent.google.com/u/1/uc?id=1xFWLoxKWYk6Ub8reLvzVg89a-p__Cvzl&export=download`));
+    const [audio] = useState(typeof Audio !== "undefined" && new Audio(`/eclipseBG.mp3`));
     let click;
     if(typeof Audio != "undefined") {
-        click  = new Audio('https://drive.google.com/u/0/uc?id=1uW1Pdf2vdZ-jc8W0Rvrx4Nvi8Q8No2Ms&export=download');
+        click  = new Audio(`/buttonSound.mp3`);
       }
     const makeNoise = () => {
         click.play()
