@@ -54,7 +54,7 @@ const About = () => {
                         <Accordion.Item eventKey="3">
                             <Accordion.Header>Is Tunnel_vzn making any profit?</Accordion.Header>
                             <Accordion.Body>
-                                Nope! Tunnel_vzn is a non-profit project whose sole goal is to tell stories. We do have a Ko-fi donation page. No one is required to donate, but we would greatly appreciate it! Ultimately, we just wanted to feel more official since we have no plans of being sponsored by anyone.                            
+                                Nope! Tunnel_vzn is a non-profit project whose sole goal is to tell stories.                         
                             </Accordion.Body>
                         </Accordion.Item>
                         <Accordion.Item eventKey="4">
@@ -69,7 +69,7 @@ const About = () => {
                     <h3 className={styles.subTitle}>Campus Resources</h3>
                     <p>
                         Since our project discusses mental health topics, it would be a shame not to mention the campus resources available to students. 
-                        We are linking <Link href="http://livewell.uw.edu/"><a className={styles.partnerLink} target="_blank">Livewell</a></Link> and the <Link href="https://www.washington.edu/counseling/"><a className={styles.partnerLink} target="_blank">Counseling Center</a></Link> as great resources depending on the type of care you need!
+                        We are linking <Link href="http://livewell.uw.edu/"><a className={styles.partnerLink} target="_blank">Livewell</a></Link> and the <Link href="https://www.washington.edu/counseling/"><a className={styles.partnerLink} target="_blank">Counseling Center</a></Link> as great resources, depending on the type of care you need!
                     </p>
                 </div>
                 <div className={styles.block}></div>
