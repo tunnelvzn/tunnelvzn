@@ -454,7 +454,7 @@ export const Envy = () => {
         <div className={styles.block}></div>
         <p className={styles.words}>
           This story was inspired by the{" "}
-          <Link href="https://docs.google.com/document/d/1Nz1J3HJsIyW9whklx7BUsGQ2lFpfz_1N6kxLEII_IlI/edit?usp=sharing">
+          <Link href="https://drive.google.com/file/d/1EC3Lzby6CkMPkefuiCEh-mwTLfZrA3ow/view?usp=sharing">
             <a className={styles.partnerLink} target="_blank">
               work
             </a>

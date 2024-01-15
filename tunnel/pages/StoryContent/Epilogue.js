@@ -121,22 +121,22 @@ export const Epilogue = (props) => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <p className={`${styles.words} ${styles.offset}`}>
-                    Somewhere in an office building...
-                    <br /><br />
-                    Sarah has transitioned from the whirlwind of university life to the eventful rhythm of a full-time job as a product management professional. Her mind often wanders back to those annoying university days. The memories of carrying her team on projects and the internal debates about her priorities shaped her approach to work today. 
-                    <br /><br />
-                    Amidst these reflections, the most transformative lesson was prioritizing self-care. Sarah learned to put her well-being first, unafraid to say no when necessary. This newfound assertiveness enhanced her professional performance and ensured a healthier work-life balance.
-                </p>
-            </div>
-            <div className={`${styles.section} ${styles.normSection}`}>
-                <div className={styles.block}></div>
                 <p className={`${styles.words}`}>
                     Somewhere outside the Husky Stadium...
                     <br /><br />
                     Rao takes graduation pictures with his friends and family. He finds solace in going at his own pace as he navigates the post-grad landscape. He has learned valuable lessons from those a bit further ahead on their paths, like his two roommates. Listening to their stories, Rao gains insight into their journey. 
                     <br /><br />
                     The only person he should be competing with is himself. Rao acknowledges that as long as there is progress, he will get where he needs to go. Embracing this newfound wisdom, Rao takes life one step at a time, cherishing each moment and safeguarding life’s joy from being lost.
+                </p>
+            </div>
+            <div className={`${styles.section} ${styles.normSection}`}>
+                <div className={styles.block}></div>
+                <p className={`${styles.words} ${styles.offset}`}>
+                    Somewhere in an office building...
+                    <br /><br />
+                    Sarah has transitioned from the whirlwind of university life to the eventful rhythm of a full-time job as a product management professional. Her mind often wanders back to those annoying university days. The memories of carrying her team on projects and the internal debates about her priorities shaped her approach to work today. 
+                    <br /><br />
+                    Amidst these reflections, the most transformative lesson was prioritizing self-care. Sarah learned to put her well-being first, unafraid to say no when necessary. This newfound assertiveness enhanced her professional performance and ensured a healthier work-life balance.
                 </p>
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>

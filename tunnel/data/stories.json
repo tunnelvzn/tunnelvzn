@@ -10,13 +10,13 @@
 },
 {
     "id": "3", 
-    "name": "Burnout",
-    "image": "burnout.svg"
+    "name": "Envy",
+    "image": "envy.svg"
 },
 {
     "id": "4", 
-    "name": "Envy",
-    "image": "envy.svg"
+    "name": "Burnout",
+    "image": "burnout.svg"
 },
 {
     "id": "5", 
