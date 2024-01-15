@@ -12,6 +12,7 @@ import { Loneliness } from "./Loneliness";
 import { Anxiety } from "./Anxiety";
 import { Envy } from "./Envy";
 import { Burnout } from "./Burnout";
+import { Epilogue } from "./Epilogue";
 const StoryContent = () => {
   const {
     intro,
@@ -63,6 +64,9 @@ const StoryContent = () => {
       break;
     case "Burnout":
       renderComponent = <Burnout />;
+      break;
+    case "Epilogue":
+      renderComponent = <Epilogue />;
       break;
   }
 
