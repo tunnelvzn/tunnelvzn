@@ -16,7 +16,7 @@ import addLike from "../../comps/Story_Util";
 import {StoryForm, SuccessModal } from "../../comps/Story_Util";
 import StoryReaction from "../../comps/StoryReaction/StoryReaction";
 export const Epilogue = (props) => {
-
+    const router = useRouter()
     const [like, setLike] = useState(0)
     const [love, setLove] = useState(0)
     const [relate, setRelate] = useState(0)
@@ -160,8 +160,22 @@ export const Epilogue = (props) => {
             </div>
             <div className={`${styles.section} ${styles.normSection}`}>
                 <div className={styles.block}></div>
-                <div className={styles.imgFrame}>
-                    <Image src="/epilogueImages/cover.png" className={styles.storyImg} layout="fill" alt="" />
+                <div>
+                    <div className={styles.imgFrame}>
+                        <Image src="/epilogueImages/cover.png" className={styles.storyImg} layout="fill" alt="A sunset in the quad at the university of washington" />
+                    </div>
+                    <br/>
+                    <br/>
+                    <div className={styles.buttonContainer}>
+                        <button className={`${styles.button} ${styles.epilogueBtn}`} 
+                        onClick={() => {
+                            setRoute("/Credits");
+                            router.push('/Credits')
+                        }}
+                        >
+                            <h6>View Credits</h6>
+                        </button>
+                    </div>
                 </div>
                 <div className={styles.block}></div>
                 <div className={styles.block}></div>
