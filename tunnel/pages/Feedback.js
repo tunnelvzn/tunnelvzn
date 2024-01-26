@@ -280,15 +280,17 @@ export const Feedback = ({}) => {
                 can give you credit! Have a nice day!
               </h3>
             </div>
-            <button
-              className={`${styles.button} ${styles.submitScreenBtn}`}
-              onClick={() => {
-                setRoute("/");
-                router.push('/')
-              }}
-            >
-              <h6>Go Back Home</h6>
+            <div className={`${styles.buttonContainer} text-center mt-3`}>
+              <button
+                className={`${styles.button} ${styles.submitScreenBtn}`}
+                onClick={() => {
+                  setRoute("/");
+                  router.push('/')
+                }}
+              >
+                <h6>Go Back Home</h6>
             </button>
+            </div>
           </div>
           <div className={styles.block}></div>
         </div>

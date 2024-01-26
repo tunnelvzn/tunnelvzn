@@ -22,59 +22,84 @@ const Updates = () => {
                 </div>
                 </section>
                 <section>
-                    <h3 className={styles.subTitle}>Transparency Statement</h3>
-                    <p>
-                        We are actively improving user experience in two main aspects: content and website. We believe in transparency and maintaining good communication with students. Thus, the purpose of this page is to inform you about the state of the organization.
-                    </p>
-                </section>
-                <section>
-                    <h3 className={styles.subTitle}>Upcoming Content</h3>
+                    <h3 className={styles.subTitle}>Version 5.0 (TBD)</h3>
                     <ul>
                         <li>
-                            Published stories are still subject to change due to new feedback
-                        </li>
-                        <li>
-                            Story four is in early research and development
+                            TBD
                         </li>
                     </ul>
                 </section>
                 <section>
-                    <h3 className={styles.subTitle}>Known Bugs</h3>
+                    <h3 className={styles.subTitle}>Version 4.0 (Content Additions)</h3>
                     <ul>
                         <li>
-                            Faulty screen reader menu button
+                            Burnout Story
                         </li>
                         <li>
-                            Inconsistent scroll bar styles
+                            Epilogue Story
                         </li>
                     </ul>
                 </section>
                 <section>
-                    <h3 className={styles.subTitle}>Incoming Website Updates</h3>
+                    <h3 className={styles.subTitle}>Version 3.0 (UI Refinements & Site Efficiency)</h3>
                     <ul>
                         <li>
-                            Enhanced story scroll navigation
+                            Consistent Background Music
                         </li>
                         <li>
-                            Responsiveness for tablets 
+                            Thinner Lines & Borders
                         </li>
                         <li>
-                            Dark mode
+                            Custom Scroll Bars
                         </li>
                         <li>
-                            Page and text transition animations
+                            Color Refinement
                         </li>
                         <li>
-                            User accounts
+                            Faster Loading Speeds
                         </li>
                         <li>
-                            Story sharing
+                            Finalized Hover Animations
                         </li>
                         <li>
-                            Story annotation feature
+                            Page Transitions
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 className={styles.subTitle}>Version 2.0 (Enhanced Feedback Features)</h3>
+                    <ul>
+                        <li>
+                            Envy Story
                         </li>
                         <li>
-                            DIY stories functionality
+                            Embedded Feedback forms
+                        </li>
+                        <li>
+                            Story Reactions
+                        </li>
+                        <li>
+                            Database
+                        </li>
+                    </ul>
+                </section>
+                <section>
+                    <h3 className={styles.subTitle}>Version 1.0 (MVP)</h3>
+                    <ul>
+                        <li>
+                            Loneliness & Anxiety Stories
+                        </li>
+                        <li>
+                            Website Responsiveness
+                        </li>
+                        <li>
+                            Background Music
+                        </li>
+                        <li>
+                            General And Story Feedback (Temporary Google Forms)
+                        </li>
+                        <li>
+                            Basic Accessibility Functionalities
                         </li>
                     </ul>
                 </section>
