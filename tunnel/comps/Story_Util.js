@@ -175,6 +175,7 @@ export const SuccessModal = (props) => {
 
   const {
     setRoute,
+    setMainNav,
     setNav
 } =
     useContext(GlobalContext);
@@ -201,11 +202,12 @@ export const SuccessModal = (props) => {
         <div className={styles.buttonContainer}>
 
         <button onClick={() => {
-                    setRoute('/')
+                    setRoute('/');
                     sessionStorage.setItem("route", "/");
-                    router.push('/')
-                    console.log('push route')
-                    setNav(false)
+                    router.push('/');
+                    console.log('push route');
+                    setNav(false);
+                    setMainNav(true);
                 }} className={styles.button}>Return Home</button>
 
         </div>

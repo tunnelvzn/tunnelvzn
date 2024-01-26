@@ -26,6 +26,8 @@ export const Epilogue = (props) => {
         db,
         storyName,
         setRoute,
+        setNav,
+        setMainNav,
         setStoryName,
         makeNoise
     } =
@@ -170,7 +172,9 @@ export const Epilogue = (props) => {
                         <button className={`${styles.button} ${styles.epilogueBtn}`} 
                         onClick={() => {
                             setRoute("/Credits");
-                            router.push('/Credits')
+                            router.push('/Credits');
+                            setMainNav(true);
+                            setNav(false);
                         }}
                         >
                             <h6>View Credits</h6>
